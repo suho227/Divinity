@@ -1,6 +1,12 @@
 {
-  "Index": {
-    "title": "홈페이지",
-    "welcome": "환영합니다"
+  "navigation": {
+    "about": "소개",
+    "curriculum": "커리큘럼",
+    "church": "교회 생활",
+    "admissions": "입학",
+    "news": "뉴스",
+    "lang_ja": "日本語",
+    "lang_ko": "한국어",
+    "lang_en": "English"
   }
 }
