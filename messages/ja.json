@@ -2,5 +2,15 @@
     "Index": {
         "title": "ホームページ",
         "welcome": "ようこそ"
+    },
+    "navigation": {
+        "about": "紹介",
+        "curriculum": "カリキュラム",
+        "church": "教会生活",
+        "admissions": "入学案内",
+        "news": "ニュース",
+        "lang_ja": "日本語",
+        "lang_ko": "한국어",
+        "lang_en": "English"
     }
 }
