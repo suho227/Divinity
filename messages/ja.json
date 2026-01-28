@@ -1,16 +1,22 @@
 {
-    "Index": {
-        "title": "ホームページ",
-        "welcome": "ようこそ"
-    },
     "navigation": {
-        "about": "紹介",
-        "curriculum": "カリキュラム",
-        "church": "教会生活",
-        "admissions": "入学案内",
-        "news": "ニュース",
-        "lang_ja": "日本語",
-        "lang_ko": "한국어",
-        "lang_en": "English"
+        "about": "About Us",
+        "greeting": "ご挨拶",
+        "intro": "神学校の紹介",
+        "location": "アクセス",
+        "departments": "学科案内",
+        "worship": "礼拝",
+        "notice": "お知らせ",
+        "archive": "資料室"
+    },
+    "Index": {
+        "introSubtitle": "INTRODUCTION",
+        "introTitle": "日本と世界の教会を生かす伝道者を育てる",
+        "introDescription": "東京国際神学校は福音の熱情で日本全域と世界の教会を生かす伝道者を育てるための道場です。聖經中心の徹底的な教育と熱心な祈禱が生き生きとした現場で、皆さんの使命を見つけることでしょう。",
+        "introMore": "詳細を見る",
+        "subTitle": "宗教法人",
+        "title": "東京国際神学校",
+        "description": "日本と世界の教会生かす伝道者を育てる",
+        "admission": "入学案内"
     }
 }

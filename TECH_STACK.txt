@@ -1,0 +1,30 @@
+# Project Technology Stack
+
+## Core Framework
+- **Next.js**: v16.1.4 (App Router)
+- **React**: v19.2.3
+- **TypeScript**: v5.x
+- **Node.js**: >= 20 (Required)
+
+## Styling
+- **Tailwind CSS**: v4.x
+- **PostCSS**: v8.x (via `@tailwindcss/postcss`)
+- **Autoprefixer**: v10.4.23
+
+## Internationalization (i18n)
+- **next-intl**: v4.7.0
+  - Supports: ko, ja, en, zh
+  - Middleware-based routing
+
+## CMS (Content Management)
+- **Sanity.io**
+  - **next-sanity**: v12.0.14
+  - **@sanity/client**: v7.14.1
+  - **@sanity/image-url**: v2.0.3
+
+## Linting & Code Quality
+- **ESLint**: v9.x
+- **Prettier**: (Configured via VS Code or project settings)
+
+## Package Manager
+- **npm** (implied by `package-lock.json`)

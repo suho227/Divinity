@@ -1,12 +1,41 @@
 {
   "navigation": {
-    "about": "소개",
-    "curriculum": "커리큘럼",
-    "church": "교회 생활",
-    "admissions": "입학",
-    "news": "뉴스",
-    "lang_ja": "日本語",
-    "lang_ko": "한국어",
-    "lang_en": "English"
+    "about": "About Us",
+    "greeting": "인사말",
+    "intro": "학교 소개",
+    "location": "오는 길",
+    "departments": "학과안내",
+    "worship": "예배",
+    "notice": "공지사항",
+    "archive": "자료실"
+  },
+  "Index": {
+    "introSubtitle": "INTRODUCTION",
+    "introTitle": "일본과 세계의 교회를 살리는\n사명자를 양성합니다.",
+    "introDescription": "도쿄국제신학교는 복음의 열정으로 일본 전역과 세계 열방을 향해 나아갈 영적 지도자를 키우는 요람입니다. 성경 중심의 철저한 교육과 뜨거운 기도가 살아있는 현장에서 여러분의 사명을 발견하십시오.",
+    "introMore": "더 알아보기",
+    "subTitle": "종교법인",
+    "title": "도쿄국제신학교",
+    "description": "일본과 세계의 교회를 살리는 전도자를 양성합니다",
+    "admission": "입학 안내",
+    "About": {
+      "greeting": {
+        "title": "인사말",
+        "subtitle": "총장 메시지",
+        "content": "도쿄국제신학교 홈페이지를 방문해 주신 여러분을 환영합니다...\n사명자를 키우는 일에 최선을 다하겠습니다."
+      },
+      "intro": {
+        "title": "학교 소개",
+        "subtitle": "사명과 정체성",
+        "history": "우리 학교의 역사...",
+        "philosophy": "교육 철학..."
+      },
+      "location": {
+        "title": "오는 길",
+        "subtitle": "찾아오시는 방법",
+        "address": "〒111-0053 東京都台東区浅草橋3-11-8",
+        "transport": "JR 아사쿠사바시역 도보 5분"
+      }
+    }
   }
 }

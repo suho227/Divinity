@@ -1,0 +1,22 @@
+{
+    "navigation": {
+        "about": "About Us",
+        "greeting": "问候",
+        "intro": "学校介绍",
+        "location": "来校路线",
+        "departments": "学科介绍",
+        "worship": "礼拜",
+        "notice": "公告事项",
+        "archive": "资料室"
+    },
+    "Index": {
+        "introSubtitle": "INTRODUCTION",
+        "introTitle": "培养能够复兴日本和世界\n教会的使命者。",
+        "introDescription": "东京国际神学院是培养怀揣福音热情，走向全日本和世界列邦的属灵领袖的摇篮。在以圣经为中心、充满彻底教育与热忱祷告的现场，请发现您的使命。",
+        "introMore": "了解更多",
+        "subTitle": "宗教法人",
+        "title": "东京国际神学院",
+        "description": "培育使日本与世界教会得以复兴的传道人。",
+        "admission": "入学指南"
+    }
+}

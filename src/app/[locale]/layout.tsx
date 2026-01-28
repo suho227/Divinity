@@ -1,8 +1,8 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import Header from '@/components/header'; // 헤더 컴포넌트 임포트
-import '../globals.css'; // 전역 스타일 임포트
-
+import "../globals.css"; // 전역 스타일 임포트
+import Footer from '@/components/footer'; // 푸터 임포트
 // 1. Props의 정체를 정의합니다 (이름표 만들기)
 interface LayoutProps {
     children: React.ReactNode;
@@ -28,7 +28,12 @@ export default async function LocaleLayout({
                     <Header />
 
                     {/* 실제 페이지 내용이 들어가는 부분 */}
-                    {children}
+                    <main className="min-h-screen">
+                        {children}
+                    </main>
+
+                    {/* 푸터 추가 */}
+                    <Footer />
                 </NextIntlClientProvider>
             </body>
         </html>

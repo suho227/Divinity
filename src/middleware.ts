@@ -1,14 +1,10 @@
 import createMiddleware from 'next-intl/middleware';
+import { routing } from '@/navigation';
 
-export default createMiddleware({
-    // A list of all locales that are supported
-    locales: ['en', 'ko', 'ja'],
-
-    // Used when no locale matches
-    defaultLocale: 'ko'
-});
+export default createMiddleware(routing);
 
 export const config = {
-    // Match only internationalized pathnames
-    matcher: ['/', '/(ko|en|ja)/:path*']
+    // 모든 페이지 이동을 미들웨어가 감시하도록 설정합니다.
+    // 특히 (ko|ja|en|zh) 부분에 추가한 모든 언어가 포함되어야 합니다.
+    matcher: ['/', '/(ko|ja|en|zh)/:path*']
 };

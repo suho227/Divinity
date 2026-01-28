@@ -1,16 +1,22 @@
 {
-    "Index": {
-        "title": "Home Page",
-        "welcome": "Welcome"
-    },
     "navigation": {
-        "about": "About",
-        "curriculum": "Curriculum",
-        "church": "Church Life",
-        "admissions": "Admissions",
-        "news": "News",
-        "lang_ja": "日本語",
-        "lang_ko": "한국어",
-        "lang_en": "English"
+        "about": "About Us",
+        "greeting": "Greeting",
+        "intro": "School Introduction",
+        "location": "Access",
+        "departments": "Departments",
+        "worship": "Worship",
+        "notice": "Notice",
+        "archive": "Archive"
+    },
+    "Index": {
+        "introSubtitle": "INTRODUCTION",
+        "introTitle": "Equipping Ministers to Revitalize\nChurches in Japan and the World",
+        "introDescription": "Tokyo International Seminary is a cradle for spiritual leaders who will reach out to all of Japan and the nations with the passion of the Gospel. Discover your mission in a place where thorough Bible-centered education and fervent prayer are alive.",
+        "introMore": "Learn More",
+        "subTitle": "Religious Juridical Person",
+        "title": "Tokyo International Seminary",
+        "description": "Equipping Ministers to Revitalize Churches in Japan and the World",
+        "admission": "Admission"
     }
 }
