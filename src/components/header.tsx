@@ -1,12 +1,20 @@
 'use client';
 
-import { Link } from '@/navigation';
+import { Link, usePathname } from '@/navigation'; // 반드시 @/navigation인지 확인하세요!
 import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
+
+const languages = [
+    { code: 'ko', name: '한국어' },
+    { code: 'ja', name: '日本語' },
+    { code: 'en', name: 'English' },
+    { code: 'zh', name: '中文' },
+];
 
 export default function Header() {
     const t = useTranslations('navigation');
     const locale = useLocale();
+    const pathname = usePathname();
 
     // About Us 하위 메뉴 데이터
     const aboutSubMenus = [
@@ -17,19 +25,35 @@ export default function Header() {
 
     return (
         <header className="w-full sticky top-0 z-50 shadow-2xl font-sans">
-            {/* 1. 상단 블랙 바 (이전과 동일) */}
+            {/* 1. 상단 블랙 바 */}
             <div className="bg-black py-2.5 px-8 flex justify-between items-center border-b border-white/10">
                 <div className="flex gap-6 text-[11px] text-white/70 font-bold tracking-widest">
-                    <span>TEL. 03-XXXX-XXXX</span>
-                    <span>EMAIL. info@tits.ac.jp</span>
+                    <span>TEL. 03-3865-4442</span>
+                    <span>EMAIL. [EMAIL_ADDRESS]</span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                    {['ko', 'ja', 'en', 'zh'].map((lang) => (
-                        <Link key={lang} href="/" locale={lang}
-                            className={`px-2.5 py-1 rounded-md text-[10px] font-black transition-all ${locale === lang ? 'bg-brand-orange text-white' : 'text-white/50 hover:text-white'}`}>
-                            {lang.toUpperCase()}
-                        </Link>
-                    ))}
+                <div className="relative group">
+                    {/* 트리거 버튼: 현재 선택된 언어 표시 */}
+                    <button className="flex items-center gap-2 text-white/80 hover:text-brand-orange transition-all text-[11px] font-black tracking-widest uppercase py-1">
+                        <span className="text-brand-orange">🌐</span>
+                        {languages.find(l => l.code === locale)?.name}
+                        <span className="text-[8px] transition-transform group-hover:rotate-180 ml-1">▼</span>
+                    </button>
+
+                    {/* 실제 드롭다운 목록: 평소엔 숨겨져 있다가 group-hover 시 나타남 */}
+                    <ul className="absolute top-full right-0 mt-1 w-32 bg-black border border-white/10 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                        {languages.map((lang) => (
+                            <li key={lang.code}>
+                                <Link
+                                    href={pathname} // 현재 경로 유지
+                                    locale={lang.code}
+                                    className={`block px-4 py-2 text-[11px] font-bold transition-all border-b border-white/5 
+                                    ${locale === lang.code ? 'text-brand-orange bg-white/5' : 'text-gray-400 hover:text-white hover:bg-white/10'}`}
+                                >
+                                    {lang.name}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
 

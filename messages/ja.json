@@ -7,7 +7,13 @@
         "departments": "学科案内",
         "worship": "礼拝",
         "notice": "お知らせ",
-        "archive": "資料室"
+        "archive": "資料室",
+        "subTitle": "宗教法人",
+        "title": "東京国際神学校",
+        "address": "〒133-0051 東京都江戸川区北小岩3-13-11",
+        "transport": "京成江戸川駅から徒歩8分\nJR小岩駅から徒歩16分",
+        "tel": "03-3865-4442",
+        "schoolName": "東京国際神学校"
     },
     "Index": {
         "introSubtitle": "INTRODUCTION",
@@ -18,5 +24,56 @@
         "title": "東京国際神学校",
         "description": "日本と世界の教会生かす伝道者を育てる",
         "admission": "入学案内"
+    },
+    "About": {
+        "greeting": {
+            "title": "ご挨拶",
+            "subtitle": "総長メッセージ",
+            "content": "東京国際神学校のウェブサイトへようこそ...",
+            "pageTitle": "ご挨拶",
+            "principal": {
+                "role": "校長",
+                "name": "校長",
+                "message": "校長の挨拶内容"
+            },
+            "chancellor": {
+                "role": "総長",
+                "name": "総長",
+                "message": "総長の挨拶内容"
+            }
+        },
+        "intro": {
+            "title": "学校紹介",
+            "subtitle": "使命とアイデンティティ",
+            "history": "本校の歴史...",
+            "philosophy": "教育理念..."
+        },
+        "location": {
+            "title": "アクセス",
+            "subtitle": "アクセス方法",
+            "tel": "03-3865-4442",
+            "address": "〒133-0051 東京都江戸川区北小岩3-13-11\n在日大韓キリスト教会 東京聖山教会",
+            "transport": "京成江戸川駅から徒歩8分\nJR小岩駅から徒歩16分"
+        },
+        "departments": {
+            "title": "学科案内",
+            "subtitle": "学科案内",
+            "description": "学科案内"
+        },
+        "worship": {
+            "title": "礼拝",
+            "subtitle": "礼拝",
+            "description": "礼拝"
+        },
+        "notice": {
+            "title": "お知らせ",
+            "subtitle": "お知らせ",
+            "description": "お知らせ"
+        },
+        "archive": {
+            "title": "資料室",
+            "subtitle": "資料室",
+            "description": "資料室"
+        }
     }
 }

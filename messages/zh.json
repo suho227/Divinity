@@ -7,7 +7,13 @@
         "departments": "学科介绍",
         "worship": "礼拜",
         "notice": "公告事项",
-        "archive": "资料室"
+        "archive": "资料室",
+        "subTitle": "宗教法人",
+        "title": "东京国际神学院",
+        "address": "〒133-0051 東京都江戸川区北小岩3-13-11\n在日大韓キリスト教会 東京聖山教会",
+        "transport": "京成江戸川駅から徒歩8分\nJR小岩駅から徒歩16分",
+        "tel": "03-3865-4442",
+        "schoolName": "东京国际神学院"
     },
     "Index": {
         "introSubtitle": "INTRODUCTION",
@@ -18,5 +24,36 @@
         "title": "东京国际神学院",
         "description": "培育使日本与世界教会得以复兴的传道人。",
         "admission": "入学指南"
+    },
+    "About": {
+        "greeting": {
+            "title": "问候",
+            "subtitle": "校长致辞",
+            "content": "欢迎访问东京国际神学院网站...",
+            "pageTitle": "问候",
+            "principal": {
+                "role": "校长",
+                "name": "校长",
+                "message": "欢迎访问东京国际神学院网站..."
+            },
+            "chancellor": {
+                "role": "总长",
+                "name": "总长",
+                "message": "欢迎访问东京国际神学院网站..."
+            }
+        },
+        "intro": {
+            "title": "学校介绍",
+            "subtitle": "使命与身份",
+            "history": "本校的历史...",
+            "philosophy": "教育理念..."
+        },
+        "location": {
+            "title": "来校路线",
+            "subtitle": "如何找到我们",
+            "tel": "03-3865-4442",
+            "address": "〒133-0051 日本东京都江户川区北小岩3丁目13-11\n在日大韩基督教会东京圣山教会",
+            "transport": "京成江户川站步行8分钟\nJR小岩站步行16分钟"
+        }
     }
 }

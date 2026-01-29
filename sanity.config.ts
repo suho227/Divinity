@@ -1,6 +1,6 @@
 import { defineConfig } from 'sanity';
 import { deskTool } from 'sanity/desk';
-import about from './src/sanity/schemas/about'; // 방금 만든 파일 임포트
+import { about } from './src/sanity/schemas/schemaTypes/about'; // 방금 만든 파일 임포트
 
 export default defineConfig({
     name: 'default',

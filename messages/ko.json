@@ -1,13 +1,19 @@
 {
   "navigation": {
+    "intro": "학교 소개",
     "about": "About Us",
     "greeting": "인사말",
-    "intro": "학교 소개",
-    "location": "오는 길",
+    "location": "오시는 길",
     "departments": "학과안내",
     "worship": "예배",
     "notice": "공지사항",
-    "archive": "자료실"
+    "archive": "자료실",
+    "subTitle": "종교법인",
+    "title": "도쿄국제신학교",
+    "schoolName": "도쿄국제신학교",
+    "address": "〒111-0053 東京都台東区浅草橋3-11-8",
+    "transport": "JR 아사쿠사바시역 도보 5분",
+    "tel": "03-3865-4442"
   },
   "Index": {
     "introSubtitle": "INTRODUCTION",
@@ -17,24 +23,70 @@
     "subTitle": "종교법인",
     "title": "도쿄국제신학교",
     "description": "일본과 세계의 교회를 살리는 전도자를 양성합니다",
-    "admission": "입학 안내",
-    "About": {
-      "greeting": {
-        "title": "인사말",
-        "subtitle": "총장 메시지",
-        "content": "도쿄국제신학교 홈페이지를 방문해 주신 여러분을 환영합니다...\n사명자를 키우는 일에 최선을 다하겠습니다."
+    "admission": "입학 안내"
+  },
+  "About": {
+    "greeting": {
+      "pageTitle": "인사말",
+      "chancellor": {
+        "role": "총장 (Chancellor)",
+        "name": "총장",
+        "message": "도쿄국제신학교는 시대의 사명자를 키우는..."
       },
-      "intro": {
-        "title": "학교 소개",
-        "subtitle": "사명과 정체성",
-        "history": "우리 학교의 역사...",
-        "philosophy": "교육 철학..."
+      "principal": {
+        "role": "교장 (Principal)",
+        "name": "교장",
+        "message": "진정한 복음의 전도자가 되기 위해..."
+      }
+    },
+    "intro": {
+      "title": "학교 소개",
+      "subtitle": "사명과 정체성",
+      "history": "우리 학교의 역사...",
+      "philosophy": "교육 철학..."
+    },
+    "location": {
+      "title": "오시는 길",
+      "subtitle": "찾아오시는 방법",
+      "tel": "03-3865-4442",
+      "address": "〒133-0051 도쿄도 에도가와구 기타코이와\n 3-13-11 재일대한기독교회 도쿄성산교회",
+      "transport": "케이세이 에도가와역에서 도보 8분\nJR 코이와역에서 도보 16분"
+    },
+    "departments": {
+      "pageTitle": "학과 안내",
+      "introMessage": "신학과정(B.Th.) 1학년은 신학의 기초를 세우고 성경적 세계관을 확립하는 가장 중요한 시기입니다. 본 과정을 통해 사명자로서의 첫걸음을 견고히 내딛게 됩니다.",
+      "degreeName": "신학사 (B.Th.) 과정",
+      "yearInfo": "제 1학년 커리큘럼",
+      "semester1": "제 1학기",
+      "semester2": "제 2학기",
+      "categories": {
+        "majorReq": "학필",
+        "majorElect": "학선",
+        "genReq": "교필",
+        "genElect": "교선",
+        "other": "전선/전필"
       },
-      "location": {
-        "title": "오는 길",
-        "subtitle": "찾아오시는 방법",
-        "address": "〒111-0053 東京都台東区浅草橋3-11-8",
-        "transport": "JR 아사쿠사바시역 도보 5분"
+      "subjects": {
+        "otIntro": "구약개론",
+        "ntIntro": "신약개론",
+        "histEd": "기독교교육사",
+        "philTheo": "철학적 신학",
+        "psychIntro": "심리학개론",
+        "theoEng1": "신학영어 I",
+        "bibWorldview": "성경적 세계관",
+        "churchMusic": "교회음악",
+        "otBack": "구약배경사",
+        "westminster": "웨스트민스터 신앙고백서",
+        "introEd": "기독교교육개론",
+        "pentateuch": "오경해석",
+        "histDoc": "교리사",
+        "philIntro": "철학의 이해",
+        "edPsych": "교육심리학",
+        "wisdom": "지혜서(지혜문학 연구)",
+        "theoEng2": "신학영어 II",
+        "modernWorld": "현대의 세계관",
+        "comm": "커뮤니케이션",
+        "ntBack": "신약배경사"
       }
     }
   }

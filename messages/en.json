@@ -7,7 +7,13 @@
         "departments": "Departments",
         "worship": "Worship",
         "notice": "Notice",
-        "archive": "Archive"
+        "archive": "Archive",
+        "subTitle": "Religious Juridical Person",
+        "title": "Tokyo International Seminary",
+        "address": "〒133-0051 Tokyo-to, Edogawa-ku, Kita-Koiwa 3-13-11, Japan",
+        "transport": "8 minutes walk from Keisei Edogawa Station\n16 minutes walk from JR Koiwa Station",
+        "tel": "03-3865-4442",
+        "schoolName": "Tokyo International Seminary"
     },
     "Index": {
         "introSubtitle": "INTRODUCTION",
@@ -18,5 +24,46 @@
         "title": "Tokyo International Seminary",
         "description": "Equipping Ministers to Revitalize Churches in Japan and the World",
         "admission": "Admission"
+    },
+    "About": {
+        "greeting": {
+            "title": "Greeting",
+            "subtitle": "Message from the President",
+            "content": "Welcome to the website of Tokyo International Seminary...",
+            "pageTitle": "Greeting",
+            "principal": {
+                "role": "Principal",
+                "name": "Principal",
+                "message": "Welcome to the website of Tokyo International Seminary..."
+            },
+            "chancellor": {
+                "role": "Chancellor",
+                "name": "Chancellor",
+                "message": "Welcome to the website of Tokyo International Seminary..."
+            }
+        },
+        "intro": {
+            "title": "School Introduction",
+            "subtitle": "Mission and Identity",
+            "history": "Our school's history...",
+            "philosophy": "Educational philosophy..."
+        },
+        "location": {
+            "title": "Access",
+            "subtitle": "How to Find Us",
+            "tel": "03-3865-4442",
+            "address": "〒133-0051 Tokyo-to, Edogawa-ku, Kita-Koiwa 3-13-11, Japan",
+            "transport": "8-minute walk from Keisei-Edogawa Station\n16 minutes walk from JR Koiwa Station"
+        },
+        "departments": {
+            "title": "Departments",
+            "subtitle": "Departments",
+            "description": "Departments"
+        },
+        "worship": {
+            "title": "Worship",
+            "subtitle": "Worship",
+            "description": "Worship"
+        }
     }
 }
