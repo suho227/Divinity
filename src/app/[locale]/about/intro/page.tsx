@@ -3,39 +3,70 @@ import Image from 'next/image';
 
 export default function IntroPage() {
     const t = useTranslations('About.intro');
+    const philosophies = [1, 2, 3, 4, 5];
+    const mottos = [1, 2, 3];
     return (
-        <main className="relative bg-white min-h-screen py-20 px-8 overflow-hidden">
-            {/* 🌟 [추가됨] 배경 이미지 및 오버레이 영역 🌟 */}
+        <main className="relative bg-[#FAF7F2] min-h-screen py-24 px-8 overflow-hidden">
+            {/* 배경 이미지 및 오버레이 */}
             <div className="absolute inset-0 z-0">
-                {/* 1. 배경 이미지 */}
-                {/* src에 실제 사용하실 이미지 경로를 넣어주세요. 예: /intro-bg.jpg */}
-                <Image
-                    src="/logo1.jpg" // 임시로 logo1.jpg를 사용했습니다. 원하는 이미지로 변경하세요.
-                    alt="Intro Background"
-                    fill
-                    className="object-cover"
-                    priority
-                />
-                {/* 2. 흰색 반투명 오버레이 */}
-                <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
+                <Image src="/greeting-bg.jpg" alt="Background" fill className="object-cover" priority />
+                <div className="absolute inset-0 bg-[#FAF7F2]/90 backdrop-blur-sm"></div>
             </div>
 
-            {/* 실제 콘텐츠 영역 */}
             <div className="relative z-10 max-w-6xl mx-auto">
-                <div className="text-center mb-20">
-                    <h2 className="text-brand-orange font-bold tracking-widest mb-4 uppercase">{t('subtitle')}</h2>
-                    <h1 className="text-4xl md:text-5xl font-black text-brand-navy">{t('title')}</h1>
+                {/* 1. 페이지 제목 */}
+                <div className="mb-24">
+                    <h1 className="text-4xl font-black text-[#002855] border-l-8 border-[#F39200] pl-6 uppercase tracking-tight">
+                        {t('pageTitle')}
+                    </h1>
                 </div>
-                <div className="grid md:grid-cols-2 gap-12">
-                    <div className="bg-white/95 backdrop-blur-sm p-12 rounded-sm shadow-xl border-t-4 border-brand-orange">
-                        <h3 className="text-2xl font-bold mb-6 text-brand-navy">설립 이념</h3>
-                        <p className="leading-relaxed text-gray-600">{t('philosophy')}</p>
+
+                {/* 2. 교육 이념 섹션 (5개 항목 - 여유로운 그리드) */}
+                <section className="mb-40">
+                    <div className="flex flex-col items-center mb-16">
+                        <span className="text-[#F39200] font-bold tracking-[0.3em] text-xs mb-3 uppercase">{t('philosophy.subtitle')}</span>
+                        <h2 className="text-4xl font-black text-[#002855]">{t('philosophy.title')}</h2>
+                        <div className="w-12 h-1 bg-[#002855] mt-6"></div>
                     </div>
-                    <div className="bg-white/95 backdrop-blur-sm p-12 rounded-sm shadow-xl border-t-4 border-brand-orange">
-                        <h3 className="text-2xl font-bold mb-6 text-brand-navy">연혁</h3>
-                        <p className="leading-relaxed text-gray-600">{t('history')}</p>
+
+                    {/* 5개 항목 배치: 1~3번은 3열, 4~5번은 아래쪽에 넓게 배치 */}
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {philosophies.map((num) => (
+                            <div key={num}
+                                className={`bg-white p-10 shadow-sm border border-blue-50 flex flex-col items-center text-center transition-all hover:shadow-md ${num > 3 ? 'lg:mx-auto lg:w-[100%] lg:max-w-[380px]' : ''}`}>
+                                <span className="w-10 h-10 bg-[#002855] text-white rounded-full flex items-center justify-center font-serif mb-6 text-sm">
+                                    0{num}
+                                </span>
+                                <p className="text-xl font-bold text-gray-800 leading-snug break-keep">
+                                    {t(`philosophy.item${num}`)}
+                                </p>
+                            </div>
+                        ))}
                     </div>
-                </div>
+                </section>
+
+                {/* 3. 교훈 섹션 (3개 항목 - 명시적 색상 적용) */}
+                <section>
+                    <div className="flex flex-col items-center mb-16">
+                        <span className="text-[#F39200] font-bold tracking-[0.3em] text-xs mb-3 uppercase">{t('motto.subtitle')}</span>
+                        <h2 className="text-4xl font-black text-[#002855]">{t('motto.title')}</h2>
+                        <div className="w-12 h-1 bg-[#F39200] mt-6"></div>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-8">
+                        {mottos.map((num) => (
+                            <div key={num} className="relative group">
+                                {/* bg-brand-navy 대신 직접 코드를 넣어 확실히 보이게 했습니다. */}
+                                <div className="bg-[#002855] p-14 shadow-xl border-b-8 border-[#F39200] text-center transition-transform group-hover:scale-[1.02]">
+                                    <h3 className="text-2xl font-bold text-white mb-2 break-keep">
+                                        {t(`motto.item${num}`)}
+                                    </h3>
+                                    <div className="w-6 h-0.5 bg-white/20 mx-auto mt-4"></div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
             </div>
         </main>
     );

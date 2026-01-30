@@ -1,19 +1,23 @@
 {
     "navigation": {
+        "intro": "Introduction",
         "about": "About Us",
         "greeting": "Greeting",
-        "intro": "School Introduction",
-        "location": "Access",
+        "history": "History",
+        "location": "Location",
         "departments": "Departments",
+        "dept_bth": "B.Th.",
+        "dept_grad": "M.Div./Th.M./Ph.D.",
+        "dept_japanese": "Japanese Dept",
         "worship": "Worship",
         "notice": "Notice",
         "archive": "Archive",
         "subTitle": "Religious Juridical Person",
         "title": "Tokyo International Seminary",
-        "address": "〒133-0051 Tokyo-to, Edogawa-ku, Kita-Koiwa 3-13-11, Japan",
-        "transport": "8 minutes walk from Keisei Edogawa Station\n16 minutes walk from JR Koiwa Station",
-        "tel": "03-3865-4442",
-        "schoolName": "Tokyo International Seminary"
+        "schoolName": "Tokyo International Seminary",
+        "address": "3-11-8 Asakusabashi, Taito-ku, Tokyo 111-0053",
+        "transport": "5 min walk from JR Asakusabashi Station",
+        "tel": "03-3865-4442"
     },
     "Index": {
         "introSubtitle": "INTRODUCTION",
@@ -27,43 +31,110 @@
     },
     "About": {
         "greeting": {
-            "title": "Greeting",
-            "subtitle": "Message from the President",
-            "content": "Welcome to the website of Tokyo International Seminary...",
             "pageTitle": "Greeting",
+            "chancellor": {
+                "role": "Chairman",
+                "name": "Chairman",
+                "message": "Tokyo International Seminary has actively launched cooperative ministries in response to God's calling for the Japanese church in this era, signing an MOU with the Reformed General Assembly and Sudokukje Graduate University.\nThis is a union of faith to raise up pastors equipped with the Word, theology, and field experience for the recovery of Japanese denominations and churches without pastors.\n\nOur school stands firmly on biblical reformed theology and intends to clearly fulfill its mission as a seminary that trains pastors who revitalize churches and ministers who restore the field.\nFurthermore, we declare that we will prepare missional leaders to preach the Gospel in a multi-ethnic and multi-cultural society, obey the Lord's Great Commission to make disciples of all nations, and advance toward world evangelization.\n\nBelieving that God, who began this work, will personally guide and complete it, Tokyo International Seminary will remain faithful to the end as an instrument serving the Japanese church and the nations."
+            },
             "principal": {
                 "role": "Principal",
                 "name": "Principal",
-                "message": "Welcome to the website of Tokyo International Seminary..."
-            },
-            "chancellor": {
-                "role": "Chancellor",
-                "name": "Chancellor",
-                "message": "Welcome to the website of Tokyo International Seminary..."
+                "message": "To become a true minister of the Gospel..."
             }
         },
         "intro": {
-            "title": "School Introduction",
-            "subtitle": "Mission and Identity",
-            "history": "Our school's history...",
-            "philosophy": "Educational philosophy..."
+            "pageTitle": "School Introduction",
+            "philosophy": {
+                "title": "Education Philosophy",
+                "subtitle": "Education Philosophy",
+                "item1": "1. Sola Scriptura: The standard for all education and ministry is the Word of God.",
+                "item2": "2. Solus Christus: We build the church and ministers centering on Christ.",
+                "item3": "3. Sola Gratia: We educate for a life of calling received by grace.",
+                "item4": "4. Sola Fide: We train for ministry and mission lived out by faith.",
+                "item5": "5. Soli Deo Gloria: The purpose of all education is the glory of God."
+            },
+            "motto": {
+                "title": "School Motto",
+                "subtitle": "School Motto",
+                "item1": "1. Internalization of the Gospel only",
+                "item2": "2. Lifestyle of Prayer",
+                "item3": "3. World Evangelization"
+            }
+        },
+        "history": {
+            "pageTitle": "School History",
+            "title": "History of Tokyo International Seminary"
         },
         "location": {
             "title": "Access",
             "subtitle": "How to Find Us",
             "tel": "03-3865-4442",
-            "address": "〒133-0051 Tokyo-to, Edogawa-ku, Kita-Koiwa 3-13-11, Japan",
+            "address": "〒133-0051 Tokyo-to, Edogawa-ku, Kita-Koiwa 3-13-11\nTokyo Seongsan Church",
             "transport": "8-minute walk from Keisei-Edogawa Station\n16 minutes walk from JR Koiwa Station"
         },
         "departments": {
-            "title": "Departments",
-            "subtitle": "Departments",
-            "description": "Departments"
-        },
-        "worship": {
-            "title": "Worship",
-            "subtitle": "Worship",
-            "description": "Worship"
+            "grad_intro": "This graduate program cultivates professional ministers equipped with the Word and competence through an MOU with the Reformed General Assembly and Sudokukje Graduate University.",
+            "grad_partner": "Lecturers & Cooperation: Sudokukje Graduate University",
+            "years": {
+                "y1": "1st Year Course",
+                "y2": "2nd Year Course",
+                "y3": "3rd Year Course",
+                "common": "Common & Separate Classes"
+            },
+            "dept_grad": "Theology Master/Doctorate",
+            "pageTitle": "Department Info",
+            "introMessage": "Department of Theology cultivating ministers who study the truth of the Gospel through Bible-based theological education and serve the church and the world.",
+            "degreeName": "B.Th. Course",
+            "yearInfo": "1st Year Curriculum",
+            "semester1": "1st Semester",
+            "semester2": "2nd Semester",
+            "categories": {
+                "majorReq": "Major Req",
+                "majorElect": "Major Elec",
+                "genReq": "Gen Req",
+                "genElect": "Gen Elec",
+                "other": "Elec/Req"
+            },
+            "subjects": {
+                "otIntro": "OT Intro",
+                "ntIntro": "NT Intro",
+                "histEd": "History of Christian Ed",
+                "philTheo": "Philosophical Theology",
+                "psychIntro": "Intro to Psychology",
+                "theoEng1": "Theological English I",
+                "bibWorldview": "Biblical Worldview",
+                "churchMusic": "Church Music",
+                "otBack": "OT Background",
+                "westminster": "Westminster Confession",
+                "introEd": "Intro to Christian Ed",
+                "pentateuch": "Pentateuch Exegesis",
+                "histDoc": "History of Doctrine",
+                "philIntro": "Understanding Philosophy",
+                "edPsych": "Educational Psychology",
+                "wisdom": "Wisdom Literature",
+                "theoEng2": "Theological English II",
+                "modernWorld": "Modern Worldview",
+                "comm": "Communication",
+                "ntBack": "NT Background"
+            },
+            "graduate": {
+                "pageTitle": "Theology Master/Doctorate (M.Div/Th.M/Ph.D)",
+                "intro": "This graduate program cultivates professional ministers equipped with the Word and competence through an MOU with the Reformed General Assembly and Sudokukje Graduate University.",
+                "partner": "Lecturers & Cooperation: Sudokukje Graduate University",
+                "years": {
+                    "y1": "1st Year Course",
+                    "y2": "2nd Year Course",
+                    "y3": "3rd Year Course",
+                    "common": "Common & Separate Classes"
+                },
+                "subjects": {
+                    "y1": "Systematic Theology (Sudokukje), History of Early Church, Hebrew Basics, Gospel of Luke, Worship Studies, Soteriology, Modern Church History, Poetic Books, New Testament Theology, Evangelism",
+                    "y2": "Anthropology (Sudokukje), History of Medieval Church, Pentateuch, Greek, Homiletics / Practicum, Ecclesiology, History of Japanese Church, Prophets, General Epistles, Pastoral Counseling",
+                    "y3": "Christology (Sudokukje), History of Reformation, Historical Books, Pauline Epistles, Missiology, Revelation & Eschatology, Prison Epistles, Old Testament Theology / General, Hermeneutics, Apocalyptic Literature",
+                    "common": "Confessions, Christian Education, OT Hermeneutics, Acts, Revelation, NT Interpretation & Preaching, OT Exegesis / Psalms, Church Polity, Pastoral Theology, Study of Jesus' Parables"
+                }
+            }
         }
     }
 }

@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
+
 export default function Navbar() {
     const t = useTranslations('Navigation');
 
@@ -29,5 +30,6 @@ export default function Navbar() {
                 <Link href="/en" className="hover:text-black">EN</Link>
             </div>
         </nav>
+
     );
 }
