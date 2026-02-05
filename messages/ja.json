@@ -17,7 +17,8 @@
         "schoolName": "東京国際神学校",
         "address": "〒111-0053 東京都台東区浅草橋3-11-8",
         "transport": "JR浅草橋駅から徒歩5分",
-        "tel": "03-3865-4442"
+        "tel": "03-3865-4442",
+        "dept_calendar": "学事日程"
     },
     "Index": {
         "introSubtitle": "INTRODUCTION",

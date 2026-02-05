@@ -17,7 +17,9 @@
         "schoolName": "Tokyo International Seminary",
         "address": "3-11-8 Asakusabashi, Taito-ku, Tokyo 111-0053",
         "transport": "5 min walk from JR Asakusabashi Station",
-        "tel": "03-3865-4442"
+        "tel": "03-3865-4442",
+        "email": "info@tokyo-international-seminary.org",
+        "dept_calendar": "Calendar"
     },
     "Index": {
         "introSubtitle": "INTRODUCTION",
@@ -133,6 +135,17 @@
                     "y2": "Anthropology (Sudokukje), History of Medieval Church, Pentateuch, Greek, Homiletics / Practicum, Ecclesiology, History of Japanese Church, Prophets, General Epistles, Pastoral Counseling",
                     "y3": "Christology (Sudokukje), History of Reformation, Historical Books, Pauline Epistles, Missiology, Revelation & Eschatology, Prison Epistles, Old Testament Theology / General, Hermeneutics, Apocalyptic Literature",
                     "common": "Confessions, Christian Education, OT Hermeneutics, Acts, Revelation, NT Interpretation & Preaching, OT Exegesis / Psalms, Church Polity, Pastoral Theology, Study of Jesus' Parables"
+                }
+            },
+            "calendar": {
+                "pageTitle": "Academic Calendar",
+                "monthName": "{month}month",
+                "noEvent": "No official events scheduled for this month.",
+                "events": {
+                    "m3": "17: Opening Seminar (3/17~18)\n18: Opening Seminar (3/17~18)",
+                    "m4": "21: No Class (4/21~22)\n22: No Class (4/21~22)",
+                    "m5": "05: No Class (5/5~6)\n06: No Class (5/5~6)",
+                    "m6": "23: Closing Intensive Seminar (6/23~24) - For Researchers\n24: Closing Intensive Seminar (6/23~24) - For Researchers"
                 }
             }
         }

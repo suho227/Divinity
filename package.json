@@ -13,6 +13,7 @@
     "@sanity/image-url": "^2.0.3",
     "@supabase/ssr": "^0.8.0",
     "@supabase/supabase-js": "^2.93.3",
+    "lucide-react": "^0.563.0",
     "next": "16.1.4",
     "next-intl": "^4.7.0",
     "next-sanity": "^12.0.14",

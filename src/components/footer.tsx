@@ -61,7 +61,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <p className="mt-6 text-xs text-gray-500 italic">
-                        "Your life with the Gospel of Jesus Christ."
+                        &quot;Your life with the Gospel of Jesus Christ.&quot;
                     </p>
                 </div>
             </div>

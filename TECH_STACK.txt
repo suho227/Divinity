@@ -1,30 +1,89 @@
-# Project Technology Stack
+[Divinity Seminary (Sinhak) - Project Overview]
 
-## Core Framework
-- **Next.js**: v16.1.4 (App Router)
-- **React**: v19.2.3
-- **TypeScript**: v5.x
-- **Node.js**: >= 20 (Required)
+1. Project Identity
+- Name: sinhak
+- Version: 0.1.0
+- Description: Tokyo International Seminary Website
+- Type: Next.js Web Application
 
-## Styling
-- **Tailwind CSS**: v4.x
-- **PostCSS**: v8.x (via `@tailwindcss/postcss`)
-- **Autoprefixer**: v10.4.23
+2. Technology Stack
+--------------------------------------------------------------------------------
+[Core]
+- Framework: Next.js 16.1.4 (App Router)
+- Language: TypeScript 5.x
+- Runtime: Node.js
 
-## Internationalization (i18n)
-- **next-intl**: v4.7.0
-  - Supports: ko, ja, en, zh
-  - Middleware-based routing
+[Frontend & UI]
+- Library: React 19.2.3
+- Styling: Tailwind CSS v4.x (@tailwindcss/postcss)
+- CSS Processing: PostCSS, Autoprefixer
+- Icons/Assets: lucide-react (presumed), NEXT.js Image optimization
 
-## CMS (Content Management)
-- **Sanity.io**
-  - **next-sanity**: v12.0.14
-  - **@sanity/client**: v7.14.1
-  - **@sanity/image-url**: v2.0.3
+[Backend & Services]
+- Database & Auth: Supabase
+  - Client: @supabase/ssr, @supabase/supabase-js
+  - Usage: Authentication (Cookies), Database interaction
+- CMS (Content Management): Sanity.io
+  - Client: @sanity/client, next-sanity, @sanity/image-url
+  - Usage: Dynamic content management (Announcements, etc.)
+  - Config: Single workspace, 'production' dataset
 
-## Linting & Code Quality
-- **ESLint**: v9.x
-- **Prettier**: (Configured via VS Code or project settings)
+[Internationalization (i18n)]
+- Library: next-intl (v4.7.0)
+- RoutingStrategy: Prefix-based (e.g., /en/about, /ko/about)
+- Supported Locales: ko (default), en, ja, zh
+- Message Storage: /messages/*.json
 
-## Package Manager
-- **npm** (implied by `package-lock.json`)
+3. Project Structure
+--------------------------------------------------------------------------------
+/
+├── messages/               # Translation JSON files (en.json, ko.json, etc.)
+├── public/                 # Static assets (images, fonts)
+├── src/
+│   ├── app/                # Next.js App Router pages
+│   │   └── [locale]/       # Localized routes root
+│   ├── components/         # Reusable React components
+│   ├── sanity/             # Sanity CMS configuration & schemas
+│   │   └── schemas/        # Content type definitions
+│   ├── utils/              # Helper functions (e.g., Supabase client)
+│   ├── i18n.ts             # next-intl server-side configuration
+│   ├── middleware.ts       # Route protection & locale redirection
+│   └── navigation.ts       # Navigation logic / router wrappers
+├── .env.local              # Local environment variables
+├── next.config.mjs         # Next.js configuration (with i18n plugin)
+├── tailwind.config.ts      # Tailwind configuration
+└── tsconfig.json           # TypeScript configuration
+
+4. Key Configurations
+--------------------------------------------------------------------------------
+[Routing & i18n]
+- Middleware (`src/middleware.ts`) automatically handles locale prefixes.
+- Matches: `/`, `/(ko|ja|en|zh)/:path*`
+- Fallback Locale: 'ko'
+
+[Sanity CMS]
+- Project ID: Configured in environmental variables
+- Dataset: production
+- Plugins: deskTool (Studio UI)
+
+[Tailwind CSS]
+- Version 4 usage (CSS-first configuration likely in global css or PostCSS)
+- Configured via `postcss.config.mjs`
+
+5. Environment Variables (.env.local)
+--------------------------------------------------------------------------------
+Required keys for local development:
+- NEXT_PUBLIC_SANITY_PROJECT_ID
+- NEXT_PUBLIC_SANITY_DATASET
+- NEXT_PUBLIC_SUPABASE_URL
+- NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+6. Available Scripts
+--------------------------------------------------------------------------------
+- npm run dev      : Start development server (Next.js)
+- npm run build    : Build for production
+- npm run start    : Start production server
+- npm run lint     : Run ESLint
+
+
+Woosuho227!!
