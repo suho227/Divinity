@@ -19,7 +19,10 @@
         "transport": "5 min walk from JR Asakusabashi Station",
         "tel": "03-3865-4442",
         "email": "info@tokyo-international-seminary.org",
-        "dept_calendar": "Calendar"
+        "dept_calendar": "Calendar",
+        "dept_worship": "Worship",
+        "dept_notice": "Notice",
+        "dept_archive": "Archive"
     },
     "Index": {
         "introSubtitle": "INTRODUCTION",
@@ -41,8 +44,8 @@
             },
             "principal": {
                 "role": "Principal",
-                "name": "Principal",
-                "message": "To become a true minister of the Gospel..."
+                "name": "Shin Timothy",
+                "message": "Welcome to Tokyo International Theological Seminary.\n\nThe goal of this theological seminary is to train men and women in a Christ-centered, biblically-rooted, and mission oriented theological education for the sake of Japan and world evangelization.\n\nJapan presents both great opportunity and great challenge for Christian ministry. As one of the most influential yet spiritually underserved nations in the world, it calls for evangelists who are grounded in biblical truth, spiritual sensitivity, and mission-mindedness. This seminary was established in response to that need.\n\nOur curriculum integrates biblical studies, theology, ministry practice, and spiritual formation within a Christ-centered learning community. Our faculty includes professors who have served in theological education through Sudo International University (SIS) and pastors from the Reformed Presbyterian Church of Korea (RPCK), bringing both academic excellence and pastoral experience into the classroom.\n\nWhether you are considering for pastoral ministry, cross-cultural mission, Christian education, or deeper theological understanding, we invite you to consider joining our community.\n\n\n"
             }
         },
         "intro": {
@@ -139,7 +142,8 @@
             },
             "calendar": {
                 "pageTitle": "Academic Calendar",
-                "monthName": "{month}month",
+                "monthName": "{month}",
+                "majorSchedule": "Major Schedule",
                 "noEvent": "No official events scheduled for this month.",
                 "events": {
                     "m3": "17: Opening Seminar (3/17~18)\n18: Opening Seminar (3/17~18)",

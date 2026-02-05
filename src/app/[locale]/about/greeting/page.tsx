@@ -6,7 +6,7 @@ export default function GreetingPage() {
 
     const leaders = [
         { key: 'chancellor', image: '/chancellor.jpg' },
-        { key: 'principal', image: '/principal.jpg' }
+        { key: 'principal', image: '/p_tim.jpg' }
     ];
 
     return (
@@ -32,7 +32,7 @@ export default function GreetingPage() {
                             <div className="w-full lg:w-1/3 flex flex-col gap-4">
                                 {/* 1. 사진 카드: 심플하고 깨끗하게 */}
                                 <div className="bg-white p-4 shadow-md rounded-sm border border-gray-100 relative group">
-                                    <div className="relative w-full aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
+                                    <div className="relative w-full aspect-[3/4] overflow-hidden rounded-sm shadow-md">
                                         <Image
                                             src={leader.image}
                                             alt={t(`${leader.key}.name`)}
@@ -52,7 +52,8 @@ export default function GreetingPage() {
                                     </h4>
                                     <div className="w-8 h-0.5 bg-brand-orange mb-3"></div>
                                     <p className="text-sm text-gray-400 font-medium tracking-widest uppercase">
-                                        {leader.key === 'chancellor' ? 'Shin Kishou' : 'Principal Name'}
+                                        {/* chancellor일 때는 신희창 목사님 성함, 아니면 신 디모데 목사님 성함 노출 */}
+                                        {leader.key === 'chancellor' ? 'Shin Kishou' : 'Shin Timothy'}
                                     </p>
                                 </div>
                             </div>

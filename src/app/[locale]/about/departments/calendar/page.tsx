@@ -23,17 +23,14 @@ export default function CalendarPage() {
 
     // 데이터 파싱
     const eventRawData = t.has(`events.m${currentMonth + 1}`) ? t(`events.m${currentMonth + 1}`) : "";
-
-    // 달력 밑줄용: ["17", "18"]
     const eventDays = eventRawData ? eventRawData.split(', ').map(item => item.split(':')[0].trim()) : [];
-
-    // 오른쪽 리스트용: 중복 제거 (같은 내용은 한 번만 표시)
     const displayEvents = eventRawData ? eventRawData.split(', ').filter((item, index, self) =>
         index === self.findIndex((t) => t.split(':')[1] === item.split(':')[1])
     ) : [];
 
     return (
         <main className="relative bg-[#FAF7F2] min-h-screen py-24 px-8 overflow-hidden">
+            {/* 배경 이미지 */}
             <div className="absolute inset-0 z-0">
                 <Image src="/greeting-bg.jpg" alt="Background" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
@@ -49,19 +46,26 @@ export default function CalendarPage() {
                 <div className="flex flex-col lg:flex-row gap-12 items-start">
                     {/* [왼쪽] 달력 영역 */}
                     <div className="w-full lg:w-[450px] bg-white shadow-2xl rounded-sm border border-gray-100 shrink-0">
+                        {/* 달력 헤더 */}
                         <div className="bg-[#002855] p-6 flex justify-between items-center text-white">
                             <button onClick={handlePrevMonth} className="hover:text-[#F39200] text-xl px-2">◀</button>
                             <div className="text-center">
                                 <span className="block text-[10px] tracking-[0.3em] text-[#F39200] font-bold uppercase mb-1">{currentYear}</span>
-                                <h2 className="text-2xl font-black">{currentMonth + 1}월</h2>
+                                <h2 className="text-2xl font-black">
+                                    {t('monthName', { month: currentMonth + 1 })}
+                                </h2>
                             </div>
                             <button onClick={handleNextMonth} className="hover:text-[#F39200] text-xl px-2">▶</button>
                         </div>
+
+                        {/* 요일 표시 (SUN, MON...) - 다시 추가됨 */}
                         <div className="grid grid-cols-7 border-b border-gray-50 bg-gray-50/30">
                             {weekDays.map(day => (
                                 <div key={day} className={`py-3 text-center text-[10px] font-black ${day === 'SUN' ? 'text-red-500' : 'text-gray-400'}`}>{day}</div>
                             ))}
                         </div>
+
+                        {/* 날짜 그리드 */}
                         <div className="grid grid-cols-7 p-4">
                             {blankDays.map(b => <div key={`b-${b}`} className="aspect-square"></div>)}
                             {daysArray.map(d => {
@@ -80,7 +84,9 @@ export default function CalendarPage() {
                     <div className="flex-grow w-full">
                         <div className="bg-white/90 p-10 md:p-14 shadow-xl border-t-8 border-[#F39200] relative">
                             <div className="mb-12 border-b border-gray-100 pb-6 flex justify-between items-end">
-                                <h3 className="text-3xl font-black text-[#002855]">{currentMonth + 1}월 주요 일정</h3>
+                                <h3 className="text-3xl font-black text-[#002855]">
+                                    {t('monthName', { month: currentMonth + 1 })} {t('majorSchedule')}
+                                </h3>
                                 <span className="text-[#F39200] font-serif italic hidden md:block">Academic Calendar</span>
                             </div>
 
@@ -95,7 +101,6 @@ export default function CalendarPage() {
                                                     <span className="text-[10px] text-gray-400 uppercase tracking-widest mt-2">Day</span>
                                                 </div>
                                                 <div className="flex-grow">
-                                                    {/* 🌟 whitespace-pre-line으로 강사 목록 줄바꿈 적용 */}
                                                     <p className="text-xl font-bold text-gray-800 leading-relaxed whitespace-pre-line group-hover:text-[#002855] transition-colors">
                                                         {content}
                                                     </p>
@@ -107,6 +112,7 @@ export default function CalendarPage() {
                             ) : (
                                 <div className="py-32 text-center text-gray-300 italic text-lg">{t('noEvent')}</div>
                             )}
+                            {/* 배경 숫자 장식 */}
                             <span className="absolute -bottom-10 -right-6 text-[200px] font-black text-gray-400/5 pointer-events-none italic">
                                 {String(currentMonth + 1).padStart(2, '0')}
                             </span>
