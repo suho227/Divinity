@@ -16,7 +16,6 @@ export default function Header() {
     const locale = useLocale();
     const pathname = usePathname();
 
-    // About Us 하위 메뉴 데이터
     const aboutSubMenus = [
         { name: 'greeting', href: '/about/greeting' },
         { name: 'intro', href: '/about/intro' },
@@ -24,7 +23,6 @@ export default function Header() {
         { name: 'location', href: '/about/location' },
     ];
 
-    // 🌟 학과 하위 메뉴 데이터 (유지)
     const deptMenuItems = [
         { href: '/about/departments/bth', label: 'dept_bth' },
         { href: '/about/departments/graduate', label: 'dept_grad' },
@@ -34,7 +32,6 @@ export default function Header() {
 
     return (
         <header className="w-full sticky top-0 z-50 shadow-2xl font-sans">
-            {/* 1. 상단 블랙 바 (생략 - 기존과 동일) */}
             <div className="bg-black py-2.5 px-8 flex justify-between items-center border-b border-white/10">
                 <div className="flex gap-6 text-[11px] text-white/70 font-bold tracking-widest">
                     <span>TEL. 03-3865-4442</span>
@@ -63,9 +60,7 @@ export default function Header() {
                 </div>
             </div>
 
-            {/* 2. 메인 바 */}
             <div className="bg-[#001529] px-8 py-5 flex items-center relative h-24">
-                {/* [좌측] 로고 (유지) */}
                 <Link href="/" className="flex items-center gap-4 z-20 shrink-0">
                     <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-brand-orange bg-white">
                         <Image src="/logo2.jpg" alt="Logo" fill className="object-cover" />
@@ -76,11 +71,8 @@ export default function Header() {
                     </div>
                 </Link>
 
-                {/* [중앙] 네비게이션 메뉴 */}
                 <nav className="absolute inset-0 flex justify-center items-center pointer-events-none">
                     <div className="flex gap-10 pointer-events-auto">
-
-                        {/* 🌟 About Us 드롭다운 메뉴 */}
                         <div className="relative group">
                             <Link href="/about/intro" className="text-white font-bold text-[17px] hover:text-brand-orange transition-all py-8 flex items-center gap-1">
                                 {t('about')}
@@ -97,14 +89,11 @@ export default function Header() {
                             </ul>
                         </div>
 
-                        {/* 🌟 학과 안내 (Departments) 드롭다운 메뉴 추가 🌟 */}
                         <div className="relative group">
-                            {/* 메인 버튼 클릭 시 신학과(bth)로 이동하거나, 단순 텍스트로 두고 싶으면 span으로 바꾸셔도 됩니다. */}
                             <Link href="/about/departments/bth" className="text-white font-bold text-[17px] hover:text-brand-orange transition-all py-8 flex items-center gap-1">
                                 {t('departments')}
                                 <span className="text-[10px] transition-transform group-hover:rotate-180">▼</span>
                             </Link>
-
                             <ul className="absolute top-full left-1/2 -translate-x-1/2 w-56 bg-[#001529] border-t-2 border-brand-orange shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                                 {deptMenuItems.map((item) => (
                                     <li key={item.label}>
@@ -116,8 +105,8 @@ export default function Header() {
                             </ul>
                         </div>
 
-                        {/* 🌟 나머지 단일 메뉴들 ('departments' 제거됨) */}
-                        {['worship', 'notice', 'archive'].map((item) => (
+                        {/* 🌟 'worship'이 제거된 단일 메뉴 리스트 */}
+                        {['notice', 'archive'].map((item) => (
                             <Link key={item} href={`/${item}`} className="text-white font-bold text-[17px] hover:text-brand-orange transition-all py-8">
                                 {t(item)}
                             </Link>

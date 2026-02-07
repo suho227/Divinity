@@ -40,7 +40,6 @@ export default function Footer() {
                     <ul className="grid grid-cols-2 gap-4 text-sm text-gray-300">
                         <li><Link href="/about" className="hover:text-white transition-colors">{t('about')}</Link></li>
                         <li><Link href="/departments" className="hover:text-white transition-colors">{t('departments')}</Link></li>
-                        <li><Link href="/worship" className="hover:text-white transition-colors">{t('worship')}</Link></li>
                         <li><Link href="/notice" className="hover:text-white transition-colors">{t('notice')}</Link></li>
                         <li><Link href="/archive" className="hover:text-white transition-colors">{t('archive')}</Link></li>
                     </ul>

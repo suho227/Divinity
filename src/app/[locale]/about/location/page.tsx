@@ -8,7 +8,7 @@ export default function LocationPage() {
 
     // 1. 구글이 가장 잘 알아듣는 언어별 [교회명 + 상세주소] 조합
     const queryMap: Record<string, string> = {
-        en: '3 Chome-13-11 Kitakoiwa, Edogawa City, Tokyo 133-0051',
+        en: '3-chōme-13-11 Kitakoiwa, Edogawa City, Tokyo 133-0051',
         zh: '日本东京都江户川区北小岩3丁目13-11 133-0051'
     };
 
