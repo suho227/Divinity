@@ -1,17 +1,26 @@
+'use client';
+
 import { defineConfig } from 'sanity';
-import { deskTool } from 'sanity/desk';
-import { about } from './src/sanity/schemas/schemaTypes/about'; // 방금 만든 파일 임포트
+import { structureTool } from 'sanity/structure'; // 최신 버전은 deskTool 대신 structureTool을 권장합니다.
+import { about } from './src/sanity/schemas/schemaTypes/about';
+import notice from './src/sanity/schemas/schemaTypes/notice';
 
 export default defineConfig({
     name: 'default',
     title: 'Divinity Seminary Admin',
 
-    projectId: 'c0fa6a1b-fb4b-4af8-8842-ad37c1c9b53b', // 이미 적혀있을 거예요
-    dataset: 'production',
+    // 🌟 이 두 줄은 client.ts에서만 쓰이므로 여기서는 삭제해도 됩니다.
+    // apiVersion: '2023-05-03',
+    // useCdn: false,
 
-    plugins: [deskTool()],
+    projectId: 'o656ekmv', //
+    organizationId: 'oWQyIjvX6', //
+    dataset: 'production', //
+
+    plugins: [structureTool()],
 
     schema: {
-        types: [about], // 여기에 추가해야 관리자 화면에 나타납니다!
+        // 🌟 about과 notice가 정상적으로 등록되었습니다.
+        types: [about, notice],
     },
 });

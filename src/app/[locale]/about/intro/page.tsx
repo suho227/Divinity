@@ -32,23 +32,21 @@ export default function IntroPage() {
                         <div className="w-12 h-1 bg-[#002855] mt-6"></div>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                         {philosophies.map((num) => (
                             <div key={num}
-                                className={`bg-white p-10 shadow-sm border border-blue-50 flex flex-col items-center text-center transition-all hover:shadow-md ${num > 3 ? 'lg:mx-auto lg:w-[100%] lg:max-w-[380px]' : ''}`}>
+                                className={`bg-white p-6 md:p-10 shadow-sm border border-blue-50 flex flex-col items-center text-center transition-all 
+            ${num > 3 ? 'lg:mx-auto lg:w-full lg:max-w-[380px]' : 'w-full'}`}>
 
-                                {/* 파란색 숫자 원형 (유지) */}
-                                <span className="w-10 h-10 bg-[#002855] text-white rounded-full flex items-center justify-center font-serif mb-6 text-sm">
+                                <span className="w-8 h-8 md:w-10 md:h-10 bg-[#002855] text-white rounded-full flex items-center justify-center mb-4 md:mb-6 text-xs md:text-sm">
                                     0{num}
                                 </span>
 
-                                {/* 🌟 주제: 글씨를 크고 굵게 */}
-                                <h3 className="text-2xl font-black text-[#001529] mb-4 break-keep">
+                                <h3 className="text-xl md:text-2xl font-black text-[#001529] mb-3 md:mb-4 break-keep">
                                     {t(`philosophy.item${num}.title`)}
                                 </h3>
 
-                                {/* 🌟 설명: 주제 아래에 작고 읽기 편하게 */}
-                                <p className="text-gray-600 text-base leading-relaxed break-keep">
+                                <p className="text-gray-600 text-sm md:text-base leading-relaxed break-keep">
                                     {t(`philosophy.item${num}.desc`)}
                                 </p>
                             </div>

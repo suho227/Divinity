@@ -30,6 +30,9 @@
         "admission": "Admission"
     },
     "About": {
+        "notice": {
+            "pageTitle": "Notice"
+        },
         "greeting": {
             "pageTitle": "Greeting",
             "chancellor": {

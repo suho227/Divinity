@@ -30,6 +30,9 @@
         "admission": "入学案内"
     },
     "About": {
+        "notice": {
+            "pageTitle": "お知らせ"
+        },
         "greeting": {
             "pageTitle": "ご挨拶",
             "chancellor": {

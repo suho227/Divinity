@@ -30,6 +30,9 @@
         "admission": "入学指南"
     },
     "About": {
+        "notice": {
+            "pageTitle": "通知"
+        },
         "greeting": {
             "pageTitle": "问候",
             "chancellor": {
