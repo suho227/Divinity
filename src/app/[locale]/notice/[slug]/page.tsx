@@ -2,60 +2,86 @@ import { client, urlFor } from '@/sanity/client';
 import { PortableText } from '@portabletext/react';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { Link } from '@/navigation'; // 🌟 더 빠른 이동을 위해 추가
+import { Link } from '@/navigation';
+import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {
     const { locale, slug } = await params;
     const notice = await client.fetch(`*[_type == "notice" && slug.current == $slug][0]`, { slug });
-    return { title: `${notice?.title[locale] || notice?.title['ko']} | 도쿄국제신학교` };
+    return { title: `${notice?.title?.[locale] || notice?.title?.['ko']} | 도쿄국제신학교` };
 }
 
 const components = {
     types: {
         image: ({ value }: any) => (
-            <div className="relative w-full h-[400px] my-10">
-                <Image src={urlFor(value).url()} alt="Notice Content Image" fill className="object-contain rounded-xl" />
+            <div className="relative w-full h-[300px] md:h-[500px] my-8">
+                <Image
+                    src={urlFor(value).url()}
+                    alt="Notice Content"
+                    fill
+                    className="object-contain rounded-lg"
+                />
             </div>
         ),
     },
 };
 
 export default async function NoticeDetailPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
-    const { locale, slug } = await params; // Next.js 16 대응 완벽합니다!
+    const { locale, slug } = await params;
+    const t = await getTranslations('About.notice');
     const notice = await client.fetch(`*[_type == "notice" && slug.current == $slug][0]`, { slug });
 
     if (!notice) notFound();
 
     return (
-        <main className="bg-white min-h-screen py-24 px-8">
-            <article className="max-w-3xl mx-auto">
-                <header className="mb-12 pb-8 border-b-2 border-gray-100">
-                    <div className="flex items-center gap-3 mb-4">
-                        {notice.isImportant && (
-                            // 🌟 정의하신 brand-orange 컬러를 사용합니다
-                            <span className="bg-brand-orange text-white text-[11px] font-black px-2 py-1 rounded">IMPORTANT</span>
-                        )}
-                        <span className="text-sm font-serif text-gray-400">
-                            {new Date(notice.publishedAt).toLocaleDateString(locale)}
-                        </span>
+        <main className="bg-gray-50 min-h-screen py-16 md:py-24 px-4">
+            <div className="max-w-4xl mx-auto">
+
+                {/* 1. 직사각형 보드 스타일 (Shadow와 Border로 게시판 느낌 강조) */}
+                <article className="bg-white shadow-xl border border-gray-200 overflow-hidden rounded-lg">
+
+                    {/* 2. 남색 헤더 영역: 글자색을 반드시 text-white로 설정해야 보입니다! */}
+                    <header className="bg-[#1A2B4C] p-10 md:p-14 text-white">
+                        <div className="flex items-center gap-3 mb-6">
+                            {notice.isImportant && (
+                                <span className="bg-[#E88B2E] text-white text-[10px] font-bold px-2 py-1 rounded">
+                                    IMPORTANT
+                                </span>
+                            )}
+                            <span className="text-sm opacity-70 font-serif">
+                                {new Date(notice.publishedAt).toLocaleDateString(locale)}
+                            </span>
+                        </div>
+
+                        {/* 🌟 제목 색상을 흰색으로 고정하여 투명 현상 해결 */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight break-keep text-white">
+                            {notice.title[locale] || notice.title['ko']}
+                        </h1>
+                    </header>
+
+                    {/* 3. 본문 영역: 충분한 여백(p-12)을 주어 가독성 확보 */}
+                    <div className="p-10 md:p-16 min-h-[400px]">
+                        <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed font-light prose-img:mx-auto">
+                            <PortableText
+                                value={notice.content[locale] || notice.content['ko']}
+                                components={components}
+                            />
+                        </div>
                     </div>
-                    {/* 🌟 정의하신 brand-navy 컬러를 사용합니다 */}
-                    <h1 className="text-3xl md:text-5xl font-black text-brand-navy leading-tight mb-4 break-keep">
-                        {notice.title[locale] || notice.title['ko']}
-                    </h1>
-                </header>
+                </article>
 
-                <div className="prose prose-lg prose-blue max-w-none text-gray-700">
-                    <PortableText value={notice.content[locale] || notice.content['ko']} components={components} />
-                </div>
-
-                <div className="mt-16 pt-8 border-t text-center">
-                    {/* 🌟 Link 컴포넌트로 부드러운 전환 */}
-                    <Link href="/notice" className="text-brand-navy font-bold hover:text-brand-orange transition-colors">
-                        ← 목록으로 돌아가기
+                {/* 4. 목록으로 돌아가기 버튼 (박스 형태로 감쌈) */}
+                <div className="mt-12 text-center">
+                    <Link
+                        href="/notice"
+                        className="inline-flex items-center gap-3 bg-white text-[#1A2B4C] font-bold px-8 py-4 rounded-full shadow-md border border-gray-100 hover:bg-[#E88B2E] hover:text-white transition-all group"
+                    >
+                        <span className="group-hover:-translate-x-1 transition-transform">←</span>
+                        {/* t('backToList')를 불러옵니다 (ko.json/ja.json 확인 필수) */}
+                        <span>{t('backToList')}</span>
                     </Link>
                 </div>
-            </article>
+            </div>
         </main>
     );
 }
