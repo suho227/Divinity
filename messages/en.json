@@ -172,6 +172,22 @@
                     "y2": "Anthropology, Medieval Church History, Greek...",
                     "y3": "Christology, Reformation History, Missiology...",
                     "common": "Confessions, Christian Education, OT Hermeneutics"
+                },
+                "sharedCourses": {
+                    "title": "Shared Courses",
+                    "provider": "Seminary lectures: 首都国際大学院大学",
+                    "courses": [
+                        "Theology Proper",
+                        "Early Church History",
+                        "Hebrew",
+                        "Gospels",
+                        "Liturgy",
+                        "Systematic Theology",
+                        "Modern Church History",
+                        "Psalms",
+                        "New Testament Theology",
+                        "Evangelism"
+                    ]
                 }
             },
             "calendar": {
@@ -185,6 +201,34 @@
                     "m5": "22: School Holiday",
                     "m6": "23: Closing Intensive Seminar"
                 }
+            },
+            "sharedCourses": {
+                "title": "Shared Courses",
+                "provider": "Seminary lectures: 首都国際大学院大学",
+                "courses": [
+                    "Theology Proper",
+                    "Early Church History",
+                    "Hebrew",
+                    "Gospels",
+                    "Liturgy",
+                    "Systematic Theology",
+                    "Modern Church History",
+                    "Psalms",
+                    "New Testament Theology",
+                    "Evangelism"
+                ]
+            }
+        },
+        "calendar": {
+            "pageTitle": "Academic Calendar",
+            "monthName": "{month}",
+            "majorSchedule": "Major Schedule",
+            "noEvent": "No official events scheduled.",
+            "events": {
+                "m3": "17: Opening Seminar",
+                "m4": "21: School Holiday",
+                "m5": "22: School Holiday",
+                "m6": "23: Closing Intensive Seminar"
             }
         }
     }

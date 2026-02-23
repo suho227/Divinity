@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 export default function DepartmentsPage() {
     const t = useTranslations('About.departments');
+    const sharedCourses = t.raw('graduate.sharedCourses.courses') as string[];
 
     const sem1 = [
         { name: t('subjects.otIntro'), type: t('categories.majorReq') },
@@ -105,6 +106,27 @@ export default function DepartmentsPage() {
                         </table>
                     </div>
                 </div>
+
+                <section className="mt-12 bg-white shadow-xl rounded-sm overflow-hidden border-t-4 border-brand-orange">
+                    <div className="bg-gray-50 px-6 py-5 border-b border-gray-100">
+                        <h3 className="text-brand-navy font-black text-xl tracking-tighter">
+                            {t('graduate.sharedCourses.title')}
+                        </h3>
+                        <p className="text-brand-orange font-bold text-sm mt-2">
+                            {t('graduate.sharedCourses.provider')}
+                        </p>
+                    </div>
+                    <div className="px-6 py-6">
+                        <ul className="grid md:grid-cols-2 gap-x-8 gap-y-3">
+                            {sharedCourses.map((course, idx) => (
+                                <li key={idx} className="text-gray-700 text-sm flex items-start gap-2 border-b border-gray-50 pb-2">
+                                    <span className="text-brand-orange mt-1">▪</span>
+                                    <span className="break-keep">{course}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </section>
             </div>
         </main>
     );
