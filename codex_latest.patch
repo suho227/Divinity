@@ -1,0 +1,1368 @@
+diff --git a/messages/en.json b/messages/en.json
+index 6c3ed37..042ead3 100644
+--- a/messages/en.json
++++ b/messages/en.json
+@@ -1,191 +1,207 @@
+ {
+-    "navigation": {
+-        "intro": "Introduction",
+-        "about": "About Us",
+-        "greeting": "Greeting",
+-        "history": "History",
+-        "location": "Location",
+-        "departments": "Departments",
+-        "dept_bth": "B.Th.",
+-        "dept_grad": "M.Div./Th.M./Ph.D.",
+-        "dept_japanese": "Japanese Dept",
+-        "notice": "Notice",
+-        "archive": "Archive",
+-        "subTitle": "Religious Juridical Person",
+-        "title": "Tokyo International Seminary",
+-        "schoolName": "Tokyo International Seminary",
+-        "address": "3-11-8 Asakusabashi, Taito-ku, Tokyo 111-0053",
+-        "transport": "5 min walk from JR Asakusabashi Station",
+-        "tel": "03-3865-4442",
+-        "email": "tokyo.seminary@gmail.com",
+-        "dept_calendar": "Academic Calendar"
++  "navigation": {
++    "intro": "Introduction",
++    "about": "About Us",
++    "greeting": "Greeting",
++    "history": "History",
++    "location": "Location",
++    "departments": "Departments",
++    "dept_bth": "B.Th.",
++    "dept_grad": "M.Div./Th.M./Ph.D.",
++    "dept_japanese": "Japanese Dept",
++    "notice": "Notice",
++    "archive": "Archive",
++    "subTitle": "Religious Juridical Person",
++    "title": "Tokyo International Seminary",
++    "schoolName": "Tokyo International Seminary",
++    "address": "3-11-8 Asakusabashi, Taito-ku, Tokyo 111-0053",
++    "transport": "5 min walk from JR Asakusabashi Station",
++    "tel": "03-3865-4442",
++    "email": "tokyo.seminary@gmail.com",
++    "dept_calendar": "Academic Calendar"
++  },
++  "Index": {
++    "introSubtitle": "INTRODUCTION",
++    "introTitle": "Equipping Ministers to Revitalize\nChurches in Japan and the World",
++    "introDescription": "Tokyo International Seminary is a cradle for spiritual leaders reaching out to all of Japan and the nations with the passion of the Gospel.",
++    "introMore": "Learn More",
++    "subTitle": "Religious Juridical Person",
++    "title": "Tokyo International Seminary",
++    "description": "Equipping Ministers to Revitalize Churches in Japan and the World",
++    "admission": "Admission"
++  },
++  "About": {
++    "notice": {
++      "pageTitle": "Notice",
++      "backToList": "Back to List"
+     },
+-    "Index": {
+-        "introSubtitle": "INTRODUCTION",
+-        "introTitle": "Equipping Ministers to Revitalize\nChurches in Japan and the World",
+-        "introDescription": "Tokyo International Seminary is a cradle for spiritual leaders reaching out to all of Japan and the nations with the passion of the Gospel.",
+-        "introMore": "Learn More",
+-        "subTitle": "Religious Juridical Person",
+-        "title": "Tokyo International Seminary",
+-        "description": "Equipping Ministers to Revitalize Churches in Japan and the World",
+-        "admission": "Admission"
++    "greeting": {
++      "pageTitle": "Greeting",
++      "chairman": {
++        "role": "chairman",
++        "name": "pastor Jung Eunju",
++        "message": "We sincerely thank everyone who has taken the time to visit Tokyo International Theological Seminary. Our seminary follows the tradition of Reformed theology based on the Bible and is dedicated to training pastors and missionaries. Although Japan marks the 167th anniversary of Protestant missions, the current rate of evangelization remains below 1%. From a missiological perspective, Japan can truly be described as an \"unreached people group.\" Furthermore, it is deeply regrettable that within the Japanese Christian community today, the number of pastorless churches is increasing due to the aging of pastors, and churches with fewer than fifteen members that are not self-supporting now account for approximately 80% of all churches. Tokyo International Theological Seminary faces these realities of our time and seeks to play a role in bringing about transformation. By training pastors and missionaries who are fully equipped with the gospel of Jesus Christ’s atoning sacrifice on the cross and His resurrection, we are committed to igniting the vitality of life in the churches of Japan and throughout the nations. We humbly ask for your warm interest and prayers.",
++        "history": [
++          "B.A. in Business Administration, College of Law and Economics, Dong-A University (1974)",
++          "Master of Divinity, Theological Seminary (81st Class), Chongshin University, Sadang Campus (1988)",
++          "Doctor of Ministry (D.Min.), American University of California (2005)",
++          "Former President and Former Acting Executive, General Assembly of the Presbyterian Church in Korea (Reformed)",
++          "Chairman, UniWorld Social Welfare Foundation (Current)",
++          "President, International Taekwondo Masters Federation (Current)",
++          "Chairman, Reformed Gongbo, Official Denominational Newspaper (Current)"
++        ]
++      },
++      "dean": {
++        "role": "Dean",
++        "name": "pastor Shin Kishou",
++        "message": "In response to God’s calling for the church in Japan in this present age, Tokyo International Theological Seminary has entered into Memorandums of Understanding with the Reformed General Assembly and Capital International Graduate University, strengthening our commitment to cooperative mission work. This partnership represents a union of faith established to restore Japanese denominations and pastorless churches by nurturing pastors who are grounded in God’s Word, sound theology, and practical ministry experience. Standing firmly on biblical Reformed theology, our seminary seeks to fulfill its mission by training pastors who give life to the church and servants who bring restoration to the field. Furthermore, we are committed to preparing missional leaders who can proclaim the gospel within multicultural and multiethnic societies. In obedience to our Lord’s Great Commission to “make disciples of all nations,” we declare our dedication to advancing world evangelization. Trusting that this work, initiated by God Himself, will also be guided and brought to completion by Him, Tokyo International Theological Seminary will continue to walk faithfully to the end as an instrument serving the church in Japan and all peoples.",
++        "history": [
++          "Graduate, Westminster Graduate School (B.Th. Equivalent)",
++          "Graduate, Calvin University",
++          "Graduate, Tokyo Sunshine College, Department of Japanese Language",
++          "Graduate, Manila Theological College, Graduate School of Theology",
++          "Master of Divinity (M.Div.), Theological Research Institute, Capital International Graduate University",
++          "Doctor of Philosophy in Theology, California Union Graduate School",
++          "Honorary Doctor of Ministry, American University",
++          "Senior Pastor, Azabu Evangelical Church (Current)",
++          "Chairman of the Board, Azabu Christian School (Current)",
++          "President, NPO Reima (Current)",
++          "President, Tokyo International Theological Seminary (Current)"
++        ]
++      }
+     },
+-    "About": {
+-        "notice": {
+-            "pageTitle": "Notice",
+-            "backToList": "Back to List"
++    "intro": {
++      "pageTitle": "School Introduction",
++      "philosophy": {
++        "title": "Education Philosophy",
++        "subtitle": "Education Philosophy",
++        "item1": {
++          "title": "1. Sola Scriptura",
++          "desc": "The standard for all education and ministry is the Word of God."
+         },
+-        "greeting": {
+-            "pageTitle": "Greeting",
+-            "chairman": {
+-                "role": "chairman",
+-                "name": "pastor Jung Eunju",
+-                "message": "We sincerely thank everyone who has taken the time to visit Tokyo International Theological Seminary. Our seminary follows the tradition of Reformed theology based on the Bible and is dedicated to training pastors and missionaries. Although Japan marks the 167th anniversary of Protestant missions, the current rate of evangelization remains below 1%. From a missiological perspective, Japan can truly be described as an \"unreached people group.\" Furthermore, it is deeply regrettable that within the Japanese Christian community today, the number of pastorless churches is increasing due to the aging of pastors, and churches with fewer than fifteen members that are not self-supporting now account for approximately 80% of all churches. Tokyo International Theological Seminary faces these realities of our time and seeks to play a role in bringing about transformation. By training pastors and missionaries who are fully equipped with the gospel of Jesus Christ’s atoning sacrifice on the cross and His resurrection, we are committed to igniting the vitality of life in the churches of Japan and throughout the nations. We humbly ask for your warm interest and prayers.",
+-                "history": [
+-                    "B.A. in Business Administration, College of Law and Economics, Dong-A University (1974)",
+-                    "Master of Divinity, Theological Seminary (81st Class), Chongshin University, Sadang Campus (1988)",
+-                    "Doctor of Ministry (D.Min.), American University of California (2005)",
+-                    "Former President and Former Acting Executive, General Assembly of the Presbyterian Church in Korea (Reformed)",
+-                    "Chairman, UniWorld Social Welfare Foundation (Current)",
+-                    "President, International Taekwondo Masters Federation (Current)",
+-                    "Chairman, Reformed Gongbo, Official Denominational Newspaper (Current)"
+-                ]
+-            },
+-            "dean": {
+-                "role": "Dean",
+-                "name": "pastor Shin Kishou",
+-                "message": "In response to God’s calling for the church in Japan in this present age, Tokyo International Theological Seminary has entered into Memorandums of Understanding with the Reformed General Assembly and Capital International Graduate University, strengthening our commitment to cooperative mission work. This partnership represents a union of faith established to restore Japanese denominations and pastorless churches by nurturing pastors who are grounded in God’s Word, sound theology, and practical ministry experience. Standing firmly on biblical Reformed theology, our seminary seeks to fulfill its mission by training pastors who give life to the church and servants who bring restoration to the field. Furthermore, we are committed to preparing missional leaders who can proclaim the gospel within multicultural and multiethnic societies. In obedience to our Lord’s Great Commission to “make disciples of all nations,” we declare our dedication to advancing world evangelization. Trusting that this work, initiated by God Himself, will also be guided and brought to completion by Him, Tokyo International Theological Seminary will continue to walk faithfully to the end as an instrument serving the church in Japan and all peoples.",
+-                "history": [
+-                    "Graduate, Westminster Graduate School (B.Th. Equivalent)",
+-                    "Graduate, Calvin University",
+-                    "Graduate, Tokyo Sunshine College, Department of Japanese Language",
+-                    "Graduate, Manila Theological College, Graduate School of Theology",
+-                    "Master of Divinity (M.Div.), Theological Research Institute, Capital International Graduate University",
+-                    "Doctor of Philosophy in Theology, California Union Graduate School",
+-                    "Honorary Doctor of Ministry, American University",
+-                    "Senior Pastor, Azabu Evangelical Church (Current)",
+-                    "Chairman of the Board, Azabu Christian School (Current)",
+-                    "President, NPO Reima (Current)",
+-                    "President, Tokyo International Theological Seminary (Current)"
+-                ]
+-            }
++        "item2": {
++          "title": "2. Solus Christus",
++          "desc": "We build the church and ministers centering on Christ."
+         },
+-        "intro": {
+-            "pageTitle": "School Introduction",
+-            "philosophy": {
+-                "title": "Education Philosophy",
+-                "subtitle": "Education Philosophy",
+-                "item1": {
+-                    "title": "1. Sola Scriptura",
+-                    "desc": "The standard for all education and ministry is the Word of God."
+-                },
+-                "item2": {
+-                    "title": "2. Solus Christus",
+-                    "desc": "We build the church and ministers centering on Christ."
+-                },
+-                "item3": {
+-                    "title": "3. Sola Gratia",
+-                    "desc": "We educate for a life of calling received by grace."
+-                },
+-                "item4": {
+-                    "title": "4. Sola Fide",
+-                    "desc": "We train for ministry and mission lived out by faith."
+-                },
+-                "item5": {
+-                    "title": "5. Soli Deo Gloria",
+-                    "desc": "The purpose of all education is the glory of God."
+-                }
+-            },
+-            "motto": {
+-                "title": "School Motto",
+-                "subtitle": "School Motto",
+-                "item1": "Internalization of the Gospel only",
+-                "item2": "Lifestyle of Prayer",
+-                "item3": "World Evangelization"
+-            }
++        "item3": {
++          "title": "3. Sola Gratia",
++          "desc": "We educate for a life of calling received by grace."
+         },
+-        "history": {
+-            "pageTitle": "School History",
+-            "title": "History of TITS",
+-            "items": {
+-                "item1": {
+-                    "year": "2026",
+-                    "event": "Foundation of Tokyo International Seminary"
+-                }
+-            }
++        "item4": {
++          "title": "4. Sola Fide",
++          "desc": "We train for ministry and mission lived out by faith."
+         },
+-        "location": {
+-            "title": "Location",
+-            "subtitle": "How to Find Us",
+-            "address": "〒133-0051 Kita-Koiwa 3-13-11, Edogawa-ku, Tokyo",
+-            "transport": "8 min walk from Keisei-Edogawa Station",
+-            "tel": "03-3865-4442"
++        "item5": {
++          "title": "5. Soli Deo Gloria",
++          "desc": "The purpose of all education is the glory of God."
++        }
++      },
++      "motto": {
++        "title": "School Motto",
++        "subtitle": "School Motto",
++        "item1": "Internalization of the Gospel only",
++        "item2": "Lifestyle of Prayer",
++        "item3": "World Evangelization"
++      }
++    },
++    "history": {
++      "pageTitle": "School History",
++      "title": "History of TITS",
++      "items": {
++        "item1": {
++          "year": "2026",
++          "event": "Foundation of Tokyo International Seminary"
++        }
++      }
++    },
++    "location": {
++      "title": "Location",
++      "subtitle": "How to Find Us",
++      "address": "〒133-0051 Kita-Koiwa 3-13-11, Edogawa-ku, Tokyo",
++      "transport": "8 min walk from Keisei-Edogawa Station",
++      "tel": "03-3865-4442"
++    },
++    "departments": {
++      "pageTitle": "Department Info",
++      "introMessage": "Department of Theology cultivating ministers through Bible-based theological education.",
++      "degreeName": "B.Th. Course",
++      "yearInfo": "1st Year Curriculum",
++      "semester1": "1st Semester",
++      "semester2": "2nd Semester",
++      "categories": {
++        "majorReq": "Major Req",
++        "majorElect": "Major Elec",
++        "genReq": "Gen Req",
++        "genElect": "Gen Elec",
++        "other": "Elec/Req"
++      },
++      "subjects": {
++        "otIntro": "OT Intro",
++        "ntIntro": "NT Intro",
++        "histEd": "History of Christian Ed",
++        "philTheo": "Philosophical Theology",
++        "psychIntro": "Intro to Psychology",
++        "theoEng1": "Theological English I",
++        "bibWorldview": "Biblical Worldview",
++        "churchMusic": "Church Music",
++        "otBack": "OT Background",
++        "westminster": "Westminster Confession",
++        "introEd": "Intro to Christian Ed",
++        "pentateuch": "Pentateuch Exegesis",
++        "histDoc": "History of Doctrine",
++        "philIntro": "Understanding Philosophy",
++        "edPsych": "Educational Psychology",
++        "wisdom": "Wisdom Literature",
++        "theoEng2": "Theological English II",
++        "modernWorld": "Modern Worldview",
++        "comm": "Communication",
++        "ntBack": "NT Background"
++      },
++      "graduate": {
++        "pageTitle": "M.Div/Th.M/Ph.D",
++        "intro": "Professional ministers program through an MOU with Sudokukje Graduate University.",
++        "partner": "Lecturers & Cooperation: Sudokukje Graduate University",
++        "years": {
++          "y1": "1st Year",
++          "y2": "2nd Year",
++          "y3": "3rd Year",
++          "common": "Common & Separate Classes"
++        },
++        "subjects": {
++          "y1": "Systematic Theology, Early Church History, Hebrew...",
++          "y2": "Anthropology, Medieval Church History, Greek...",
++          "y3": "Christology, Reformation History, Missiology...",
++          "common": "Confessions, Christian Education, OT Hermeneutics"
+         },
+-        "departments": {
+-            "pageTitle": "Department Info",
+-            "introMessage": "Department of Theology cultivating ministers through Bible-based theological education.",
+-            "degreeName": "B.Th. Course",
+-            "yearInfo": "1st Year Curriculum",
+-            "semester1": "1st Semester",
+-            "semester2": "2nd Semester",
+-            "categories": {
+-                "majorReq": "Major Req",
+-                "majorElect": "Major Elec",
+-                "genReq": "Gen Req",
+-                "genElect": "Gen Elec",
+-                "other": "Elec/Req"
+-            },
+-            "subjects": {
+-                "otIntro": "OT Intro",
+-                "ntIntro": "NT Intro",
+-                "histEd": "History of Christian Ed",
+-                "philTheo": "Philosophical Theology",
+-                "psychIntro": "Intro to Psychology",
+-                "theoEng1": "Theological English I",
+-                "bibWorldview": "Biblical Worldview",
+-                "churchMusic": "Church Music",
+-                "otBack": "OT Background",
+-                "westminster": "Westminster Confession",
+-                "introEd": "Intro to Christian Ed",
+-                "pentateuch": "Pentateuch Exegesis",
+-                "histDoc": "History of Doctrine",
+-                "philIntro": "Understanding Philosophy",
+-                "edPsych": "Educational Psychology",
+-                "wisdom": "Wisdom Literature",
+-                "theoEng2": "Theological English II",
+-                "modernWorld": "Modern Worldview",
+-                "comm": "Communication",
+-                "ntBack": "NT Background"
+-            },
+-            "graduate": {
+-                "pageTitle": "M.Div/Th.M/Ph.D",
+-                "intro": "Professional ministers program through an MOU with Sudokukje Graduate University.",
+-                "partner": "Lecturers & Cooperation: Sudokukje Graduate University",
+-                "years": {
+-                    "y1": "1st Year",
+-                    "y2": "2nd Year",
+-                    "y3": "3rd Year",
+-                    "common": "Common & Separate Classes"
+-                },
+-                "subjects": {
+-                    "y1": "Systematic Theology, Early Church History, Hebrew...",
+-                    "y2": "Anthropology, Medieval Church History, Greek...",
+-                    "y3": "Christology, Reformation History, Missiology...",
+-                    "common": "Confessions, Christian Education, OT Hermeneutics"
+-                }
+-            },
+-            "calendar": {
+-                "pageTitle": "Academic Calendar",
+-                "monthName": "{month}",
+-                "majorSchedule": "Major Schedule",
+-                "noEvent": "No official events scheduled.",
+-                "events": {
+-                    "m3": "17: Opening Seminar",
+-                    "m4": "21: School Holiday",
+-                    "m5": "22: School Holiday",
+-                    "m6": "23: Closing Intensive Seminar"
+-                }
+-            }
++        "sharedCourses": {
++          "title": "Shared Courses",
++          "provider": "Seminary lectures: 首都国際大学院大学",
++          "courses": [
++            "Theology Proper",
++            "Early Church History",
++            "Hebrew",
++            "Gospels",
++            "Liturgy",
++            "Systematic Theology",
++            "Modern Church History",
++            "Psalms",
++            "New Testament Theology",
++            "Evangelism"
++          ]
++        }
++      },
++      "calendar": {
++        "pageTitle": "Academic Calendar",
++        "monthName": "{month}",
++        "majorSchedule": "Major Schedule",
++        "noEvent": "No official events scheduled.",
++        "events": {
++          "m3": "17: Opening Seminar",
++          "m4": "21: School Holiday",
++          "m5": "22: School Holiday",
++          "m6": "23: Closing Intensive Seminar"
+         }
++      }
+     }
+-}
+\ No newline at end of file
++  }
++}
+diff --git a/messages/ja.json b/messages/ja.json
+index 427cf96..ea32d82 100644
+--- a/messages/ja.json
++++ b/messages/ja.json
+@@ -1,199 +1,215 @@
+ {
+-    "navigation": {
+-        "intro": "学校紹介",
+-        "about": "About Us",
+-        "greeting": "ご挨拶",
+-        "history": "沿革",
+-        "location": "アクセス",
+-        "departments": "学科案内",
+-        "dept_bth": "神学科",
+-        "dept_grad": "神学修士/博士",
+-        "dept_japanese": "日本語学科",
+-        "notice": "お知らせ",
+-        "archive": "資料室",
+-        "subTitle": "宗教法人",
+-        "title": "東京国際神学校",
+-        "schoolName": "東京国際神学校",
+-        "address": "〒111-0053 東京都台東区浅草橋3-11-8",
+-        "transport": "JR浅草橋駅から徒歩5分",
+-        "tel": "03-3865-4442",
+-        "email": "tokyo.seminary@gmail.com",
+-        "dept_calendar": "学事日程"
++  "navigation": {
++    "intro": "学校紹介",
++    "about": "About Us",
++    "greeting": "ご挨拶",
++    "history": "沿革",
++    "location": "アクセス",
++    "departments": "学科案内",
++    "dept_bth": "神学科",
++    "dept_grad": "神学修士/博士",
++    "dept_japanese": "日本語学科",
++    "notice": "お知らせ",
++    "archive": "資料室",
++    "subTitle": "宗教法人",
++    "title": "東京国際神学校",
++    "schoolName": "東京国際神学校",
++    "address": "〒111-0053 東京都台東区浅草橋3-11-8",
++    "transport": "JR浅草橋駅から徒歩5分",
++    "tel": "03-3865-4442",
++    "email": "tokyo.seminary@gmail.com",
++    "dept_calendar": "学事日程"
++  },
++  "NotFound": {
++    "title": "ページが見つかりません。",
++    "description": "お探しのページは削除されたか、URLが変更された可能性があります。"
++  },
++  "Index": {
++    "introSubtitle": "INTRODUCTION",
++    "introTitle": "日本と世界の教会を生かす\n使命者を養成します。",
++    "introDescription": "東京国際神学校は福音の情熱で日本全域と世界列邦に向かう霊的指導者を育てるための道場です。",
++    "introMore": "詳細を見る",
++    "subTitle": "宗教法人",
++    "title": "東京国際神学校",
++    "description": "日本と世界の教会を生かす伝道者を養成します",
++    "admission": "入学案内"
++  },
++  "About": {
++    "notice": {
++      "pageTitle": "お知らせ",
++      "backToList": "一覧に戻る"
+     },
+-    "NotFound": {
+-        "title": "ページが見つかりません。",
+-        "description": "お探しのページは削除されたか、URLが変更された可能性があります。"
++    "greeting": {
++      "pageTitle": "ご挨拶",
++      "chairman": {
++        "role": "理事長",
++        "name": "丁恩柱 牧師",
++        "message": "東京国際神学校にお訪ねいただいた皆様に、心より感謝申し上げます。\n\n本校は聖書に基づいた改革派神学の路線に従い、牧회자および宣教師を養成する神学校です。プロテスタント宣教167周年を迎えた日本の現在の福音化率は、未だ1％未満に留まっています。宣教学の観点から見ると、日本はまさに「未伝道部族」とも言えるのです。\n\nさらに遺憾なことに、現在の日本キリスト教界は牧会者の高齢化による「無牧教会」が増加しており、信徒数15名以下の未自立教会が全体の80％に達しているのが現状です。東京国際神学校は、このような時代の現実に向き合い、変革の一翼を担ってまいります。\n\nイエスキリストの十字架の贖いと復活の福音で完全に武装した牧会者・宣教師を養成し、日本の教会と万国に向けて、命の躍動を引き起こしてまいる所存です。皆様の温かい関心とお祈りをお願い申し上げます。",
++        "history": [
++          "東亜大学校 法経大学 経営学科 卒業 (1974)",
++          "総神大学校(舎堂) 神学大学院(第81回) 卒業 (1988)",
++          "American University of California 牧会学博士 (D.Min.) (2005)",
++          "大韓イエス教長老会総会(改革) 元総会長 (元総代理)",
++          "社会福祉法人 ユニワールド 理事長 (現)",
++          "一般社団法人 国際テコンドーマスター連盟 総裁 (現)",
++          "改革公報 理事長 (現)"
++        ]
++      },
++      "dean": {
++        "role": "校長",
++        "name": "申キショウ牧師",
++        "message": "東京国際神学校へようこそ。\n\n本神学校のビジョンは、キリスト中心で聖書に根ざした宣教的神学教育を通し、日本と世界に福音をもたらす働き人を育成することです。\n\n日本は、キリスト教宣教において大きな可能性と同時に深い課題を抱える国です。世界でも有数の影響力を持ちながら、霊的には十分に福音が行き渡っていないこの国は、聖書の真理に坚く立ち、霊性と宣教的使命感を備えた伝道者を必要としています。本神学校は、その必要に応えるために設立されました。\n\n本校のカリキュラムは、聖書学、神学、実践的使役、霊的形成を統合し、キリスト中心の学びの共同体の中で提供されます。教員には、首都国際大学（SIS）において神学教育に携わってきた教授陣と、大韓イエス長老会改革教団（RPCK）に属する牧師が含まれており、学問的卓越性と牧会的経験の双方を教育に生かしています。\n\n牧会者としての働き、他文化宣教、キリスト教教育、あるいは神学理解をより深めたいと願う方々に、本学での学びをご検討いただければ幸いです。",
++        "history": [
++          "ウェストミンスター大学院大学校 卒業 (B.Th.Equiv.)",
++          "カルビン大学校 卒業",
++          "東京サンシャイン専門学校 卒業 (日本語学科)",
++          "マニラ神科大学 卒業 (神学研究科)",
++          "首都国際大学院大学校 神学研究院 卒業 (牧会学修士 / M.Div.)",
++          "カリフォルニア・ユニオン大学院 (神学哲学博士)",
++          "American University 名誉牧会学博士",
++          "宗教法人 麻布福音教会 担任牧師 (現)",
++          "Azabu Christian School 代表理事長 (現)",
++          "NPO法人 レイマ 代表理事長 (現)",
++          "宗教法人 東京国際神学校 学長 (現)"
++        ]
++      }
+     },
+-    "Index": {
+-        "introSubtitle": "INTRODUCTION",
+-        "introTitle": "日本と世界の教会を生かす\n使命者を養成します。",
+-        "introDescription": "東京国際神学校は福音の情熱で日本全域と世界列邦に向かう霊的指導者を育てるための道場です。",
+-        "introMore": "詳細を見る",
+-        "subTitle": "宗教法人",
+-        "title": "東京国際神学校",
+-        "description": "日本と世界の教会を生かす伝道者を養成します",
+-        "admission": "入学案内"
+-    },
+-    "About": {
+-        "notice": {
+-            "pageTitle": "お知らせ",
+-            "backToList": "一覧に戻る"
++    "intro": {
++      "pageTitle": "学校紹介",
++      "philosophy": {
++        "title": "教育理念",
++        "subtitle": "Education Philosophy",
++        "item1": {
++          "title": "1. ただ聖書",
++          "desc": "全ての教育と牧会の基準は神様のみ言葉である。"
++        },
++        "item2": {
++          "title": "2. ただキリスト",
++          "desc": "キリストを中心に教会と使役者をたてていく。"
+         },
+-        "greeting": {
+-            "pageTitle": "ご挨拶",
+-            "chairman": {
+-                "role": "理事長",
+-                "name": "丁恩柱 牧師",
+-                "message": "東京国際神学校にお訪ねいただいた皆様に、心より感謝申し上げます。\n\n本校は聖書に基づいた改革派神学の路線に従い、牧회자および宣教師を養成する神学校です。プロテスタント宣教167周年を迎えた日本の現在の福音化率は、未だ1％未満に留まっています。宣教学の観点から見ると、日本はまさに「未伝道部族」とも言えるのです。\n\nさらに遺憾なことに、現在の日本キリスト教界は牧会者の高齢化による「無牧教会」が増加しており、信徒数15名以下の未自立教会が全体の80％に達しているのが現状です。東京国際神学校は、このような時代の現実に向き合い、変革の一翼を担ってまいります。\n\nイエスキリストの十字架の贖いと復活の福音で完全に武装した牧会者・宣教師を養成し、日本の教会と万国に向けて、命の躍動を引き起こしてまいる所存です。皆様の温かい関心とお祈りをお願い申し上げます。",
+-                "history": [
+-                    "東亜大学校 法経大学 経営学科 卒業 (1974)",
+-                    "総神大学校(舎堂) 神学大学院(第81回) 卒業 (1988)",
+-                    "American University of California 牧会学博士 (D.Min.) (2005)",
+-                    "大韓イエス教長老会総会(改革) 元総会長 (元総代理)",
+-                    "社会福祉法人 ユニワールド 理事長 (現)",
+-                    "一般社団法人 国際テコンドーマスター連盟 総裁 (現)",
+-                    "改革公報 理事長 (現)"
+-                ]
+-            },
+-            "dean": {
+-                "role": "校長",
+-                "name": "申キショウ牧師",
+-                "message": "東京国際神学校へようこそ。\n\n本神学校のビジョンは、キリスト中心で聖書に根ざした宣教的神学教育を通し、日本と世界に福音をもたらす働き人を育成することです。\n\n日本は、キリスト教宣教において大きな可能性と同時に深い課題を抱える国です。世界でも有数の影響力を持ちながら、霊的には十分に福音が行き渡っていないこの国は、聖書の真理に坚く立ち、霊性と宣教的使命感を備えた伝道者を必要としています。本神学校は、その必要に応えるために設立されました。\n\n本校のカリキュラムは、聖書学、神学、実践的使役、霊的形成を統合し、キリスト中心の学びの共同体の中で提供されます。教員には、首都国際大学（SIS）において神学教育に携わってきた教授陣と、大韓イエス長老会改革教団（RPCK）に属する牧師が含まれており、学問的卓越性と牧会的経験の双方を教育に生かしています。\n\n牧会者としての働き、他文化宣教、キリスト教教育、あるいは神学理解をより深めたいと願う方々に、本学での学びをご検討いただければ幸いです。",
+-                "history": [
+-                    "ウェストミンスター大学院大学校 卒業 (B.Th.Equiv.)",
+-                    "カルビン大学校 卒業",
+-                    "東京サンシャイン専門学校 卒業 (日本語学科)",
+-                    "マニラ神科大学 卒業 (神学研究科)",
+-                    "首都国際大学院大学校 神学研究院 卒業 (牧会学修士 / M.Div.)",
+-                    "カリフォルニア・ユニオン大学院 (神学哲学博士)",
+-                    "American University 名誉牧会学博士",
+-                    "宗教法人 麻布福音教会 担任牧師 (現)",
+-                    "Azabu Christian School 代表理事長 (現)",
+-                    "NPO法人 レイマ 代表理事長 (現)",
+-                    "宗教法人 東京国際神学校 学長 (現)"
+-                ]
+-            }
++        "item3": {
++          "title": "3. ただ恵み",
++          "desc": "恵みによって呼ばれた使命者としての人生を教育する。"
+         },
+-        "intro": {
+-            "pageTitle": "学校紹介",
+-            "philosophy": {
+-                "title": "教育理念",
+-                "subtitle": "Education Philosophy",
+-                "item1": {
+-                    "title": "1. ただ聖書",
+-                    "desc": "全ての教育と牧会の基準は神様のみ言葉である。"
+-                },
+-                "item2": {
+-                    "title": "2. ただキリスト",
+-                    "desc": "キリストを中心に教会と使役者をたてていく。"
+-                },
+-                "item3": {
+-                    "title": "3. ただ恵み",
+-                    "desc": "恵みによって呼ばれた使命者としての人生を教育する。"
+-                },
+-                "item4": {
+-                    "title": "4. ただ信仰",
+-                    "desc": "信仰による牧会と宣教を訓練する。"
+-                },
+-                "item5": {
+-                    "title": "5. ただ神に栄光",
+-                    "desc": "全ての教育の目的は神の栄光である。"
+-                }
+-            },
+-            "motto": {
+-                "title": "校訓",
+-                "subtitle": "School Motto",
+-                "item1": "ただ福音の体質化",
+-                "item2": "祈りの生活化",
+-                "item3": "世界福音化"
+-            }
++        "item4": {
++          "title": "4. ただ信仰",
++          "desc": "信仰による牧会と宣教を訓練する。"
+         },
+-        "history": {
+-            "pageTitle": "学校沿革",
+-            "title": "東京国際神学校の歩み",
+-            "items": {
+-                "item1": {
+-                    "year": "2026",
+-                    "event": "東京国際神学校 設立"
+-                }
+-            }
++        "item5": {
++          "title": "5. ただ神に栄光",
++          "desc": "全ての教育の目的は神の栄光である。"
++        }
++      },
++      "motto": {
++        "title": "校訓",
++        "subtitle": "School Motto",
++        "item1": "ただ福音の体質化",
++        "item2": "祈りの生活化",
++        "item3": "世界福音化"
++      }
++    },
++    "history": {
++      "pageTitle": "学校沿革",
++      "title": "東京国際神学校の歩み",
++      "items": {
++        "item1": {
++          "year": "2026",
++          "event": "東京国際神学校 設立"
++        }
++      }
++    },
++    "location": {
++      "title": "アクセス",
++      "subtitle": "アクセス方法",
++      "address": "〒133-0051 東京都江戸川区北小岩3-13-11",
++      "transport": "京成江戸川駅から徒歩8分",
++      "tel": "03-3865-4442"
++    },
++    "departments": {
++      "pageTitle": "学科案内",
++      "introMessage": "聖書に基づいた神学教育を通じて使役者を養成する神学科",
++      "degreeName": "神学士 (B.Th.) 課程",
++      "yearInfo": "1年カリキュラム",
++      "semester1": "1学期",
++      "semester2": "2学期",
++      "categories": {
++        "majorReq": "学必",
++        "majorElect": "学選",
++        "genReq": "教必",
++        "genElect": "教選",
++        "other": "専選/専必"
++      },
++      "subjects": {
++        "otIntro": "旧約概論",
++        "ntIntro": "新約概論",
++        "histEd": "キリスト教教育史",
++        "philTheo": "哲学的神学",
++        "psychIntro": "心理学概論",
++        "theoEng1": "神学英語 I",
++        "bibWorldview": "聖書的世界観",
++        "churchMusic": "教会音楽",
++        "otBack": "旧約背景史",
++        "westminster": "ウェストミンスター信仰告白",
++        "introEd": "キリスト教教育概論",
++        "pentateuch": "モーセ五書解釈",
++        "histDoc": "教理史",
++        "philIntro": "哲学の理解",
++        "edPsych": "教育心理学",
++        "wisdom": "知恵書(知恵文学研究)",
++        "theoEng2": "神学英語 II",
++        "modernWorld": "現代の世界観",
++        "comm": "コミュニケーション",
++        "ntBack": "新約背景史"
++      },
++      "graduate": {
++        "pageTitle": "神学修士/博士 (M.Div/Th.M/Ph.D)",
++        "intro": "本大学院課程は、改革総会および首都国際大学院大学とのMOUを通じて、御言葉と実力を兼ね備えた専門使役者を養成します。",
++        "partner": "講師および協力：首都国際大学院大学",
++        "years": {
++          "y1": "1年課程",
++          "y2": "2年課程",
++          "y3": "3年課程",
++          "common": "共通および分離授業"
+         },
+-        "location": {
+-            "title": "アクセス",
+-            "subtitle": "アクセス方法",
+-            "address": "〒133-0051 東京都江戸川区北小岩3-13-11",
+-            "transport": "京成江戸川駅から徒歩8分",
+-            "tel": "03-3865-4442"
++        "subjects": {
++          "y1": "神論, 初期教会史, ヘブライ語基礎, 福音書, 礼拝学, 救済論, 近現代教会史, 詩歌書, 新約神学, 伝道学",
++          "y2": "人間論, 中世教会史, モーセ五書, ギリシャ語, 説教学/実習, 教会論, 日本教会史, 預言書, 共同書簡, 牧会カウンセリング",
++          "y3": "キリスト論, 宗教改革史, 歴史書, パウロ書簡, 宣教学, 黙示録と終末論, 獄中書簡, 旧約神学/総論, 聖書解釈学, 黙示文学",
++          "common": "新条学, 教会教育, 旧約解釈学, 使徒言行録, ヨハネ黙示録, 新約解釈と説教"
+         },
+-        "departments": {
+-            "pageTitle": "学科案内",
+-            "introMessage": "聖書に基づいた神学教育を通じて使役者を養成する神学科",
+-            "degreeName": "神学士 (B.Th.) 課程",
+-            "yearInfo": "1年カリキュラム",
+-            "semester1": "1学期",
+-            "semester2": "2学期",
+-            "categories": {
+-                "majorReq": "学必",
+-                "majorElect": "学選",
+-                "genReq": "教必",
+-                "genElect": "教選",
+-                "other": "専選/専必"
+-            },
+-            "subjects": {
+-                "otIntro": "旧約概論",
+-                "ntIntro": "新約概論",
+-                "histEd": "キリスト教教育史",
+-                "philTheo": "哲学的神学",
+-                "psychIntro": "心理学概論",
+-                "theoEng1": "神学英語 I",
+-                "bibWorldview": "聖書的世界観",
+-                "churchMusic": "教会音楽",
+-                "otBack": "旧約背景史",
+-                "westminster": "ウェストミンスター信仰告白",
+-                "introEd": "キリスト教教育概論",
+-                "pentateuch": "モーセ五書解釈",
+-                "histDoc": "教理史",
+-                "philIntro": "哲学の理解",
+-                "edPsych": "教育心理学",
+-                "wisdom": "知恵書(知恵文学研究)",
+-                "theoEng2": "神学英語 II",
+-                "modernWorld": "現代の世界観",
+-                "comm": "コミュニケーション",
+-                "ntBack": "新約背景史"
+-            },
+-            "graduate": {
+-                "pageTitle": "神学修士/博士 (M.Div/Th.M/Ph.D)",
+-                "intro": "本大学院課程は、改革総会および首都国際大学院大学とのMOUを通じて、御言葉と実力を兼ね備えた専門使役者を養成します。",
+-                "partner": "講師および協力：首都国際大学院大学",
+-                "years": {
+-                    "y1": "1年課程",
+-                    "y2": "2年課程",
+-                    "y3": "3年課程",
+-                    "common": "共通および分離授業"
+-                },
+-                "subjects": {
+-                    "y1": "神論, 初期教会史, ヘブライ語基礎, 福音書, 礼拝学, 救済論, 近現代教会史, 詩歌書, 新約神学, 伝道学",
+-                    "y2": "人間論, 中世教会史, モーセ五書, ギリシャ語, 説教学/実習, 教会論, 日本教会史, 預言書, 共同書簡, 牧会カウンセリング",
+-                    "y3": "キリスト論, 宗教改革史, 歴史書, パウロ書簡, 宣教学, 黙示録と終末論, 獄中書簡, 旧約神学/総論, 聖書解釈学, 黙示文学",
+-                    "common": "新条学, 教会教育, 旧約解釈学, 使徒言行録, ヨハネ黙示録, 新約解釈と説教"
+-                }
+-            },
+-            "japanese": {
+-                "pageTitle": "日本語学科",
+-                "description": "学科紹介を準備中です。"
+-            },
+-            "calendar": {
+-                "pageTitle": "学事日程",
+-                "monthName": "{month}月",
+-                "majorSchedule": "主な日程",
+-                "noEvent": "該当月には公式行事が計画されていません。",
+-                "events": {
+-                    "m3": "17: 開校セミナー",
+-                    "m4": "21: 休校",
+-                    "m5": "22: 休校",
+-                    "m6": "23: 卒業セミナー"
+-                }
+-            }
++        "sharedCourses": {
++          "title": "共通科目",
++          "provider": "神学校講義: 首都国際大学院大学",
++          "courses": [
++            "神論",
++            "初代教会史",
++            "ヘブライ語",
++            "福音書",
++            "礼拝学",
++            "組織神学",
++            "近現代教会史",
++            "詩篇",
++            "新約神学",
++            "伝道学"
++          ]
++        }
++      },
++      "japanese": {
++        "pageTitle": "日本語学科",
++        "description": "学科紹介を準備中です。"
++      },
++      "calendar": {
++        "pageTitle": "学事日程",
++        "monthName": "{month}月",
++        "majorSchedule": "主な日程",
++        "noEvent": "該当月には公式行事が計画されていません。",
++        "events": {
++          "m3": "17: 開校セミナー",
++          "m4": "21: 休校",
++          "m5": "22: 休校",
++          "m6": "23: 卒業セミナー"
+         }
++      }
+     }
+-}
+\ No newline at end of file
++  }
++}
+diff --git a/messages/ko.json b/messages/ko.json
+index 21aba96..ae18d92 100644
+--- a/messages/ko.json
++++ b/messages/ko.json
+@@ -180,6 +180,22 @@
+         "japanese": {
+           "pageTitle": "일본어학과",
+           "description": "학과 소개 준비 중입니다."
++        },
++        "sharedCourses": {
++          "title": "공통 과목",
++          "provider": "신학교 강의: 首都国際大学院大学",
++          "courses": [
++            "신론",
++            "초기교회사",
++            "히브리어",
++            "복음서",
++            "예배학",
++            "조직신학",
++            "근현대교회사",
++            "시편",
++            "신약신학",
++            "전도학"
++          ]
+         }
+       },
+       "calendar": {
+@@ -196,4 +212,4 @@
+       }
+     }
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/messages/zh.json b/messages/zh.json
+index 5e9af35..08afde0 100644
+--- a/messages/zh.json
++++ b/messages/zh.json
+@@ -1,195 +1,211 @@
+ {
+-    "navigation": {
+-        "intro": "学校介绍",
+-        "about": "About Us",
+-        "greeting": "问候",
+-        "history": "沿革",
+-        "location": "路线",
+-        "departments": "学科介绍",
+-        "dept_bth": "神学科",
+-        "dept_grad": "神学硕士/博士",
+-        "dept_japanese": "日语学科",
+-        "notice": "通知",
+-        "archive": "资料室",
+-        "subTitle": "宗教法人",
+-        "title": "东京国际神学院",
+-        "schoolName": "东京国际神学院",
+-        "address": "〒111-0053 東京都台東区浅草桥3-11-8",
+-        "transport": "JR浅草桥站步行5分钟",
+-        "tel": "03-3865-4442",
+-        "email": "tokyo.seminary@gmail.com",
+-        "dept_calendar": "学术日历"
++  "navigation": {
++    "intro": "学校介绍",
++    "about": "About Us",
++    "greeting": "问候",
++    "history": "沿革",
++    "location": "路线",
++    "departments": "学科介绍",
++    "dept_bth": "神学科",
++    "dept_grad": "神学硕士/博士",
++    "dept_japanese": "日语学科",
++    "notice": "通知",
++    "archive": "资料室",
++    "subTitle": "宗教法人",
++    "title": "东京国际神学院",
++    "schoolName": "东京国际神学院",
++    "address": "〒111-0053 東京都台東区浅草桥3-11-8",
++    "transport": "JR浅草桥站步行5分钟",
++    "tel": "03-3865-4442",
++    "email": "tokyo.seminary@gmail.com",
++    "dept_calendar": "学术日历"
++  },
++  "NotFound": {
++    "title": "找不到该页面。",
++    "description": "您查找的页面可能已被删除，或网址已更改。"
++  },
++  "Index": {
++    "introSubtitle": "INTRODUCTION",
++    "introTitle": "培养能够复兴日本和世界\n教会的使命者。",
++    "introDescription": "东京国际神学院是培养怀揣福音热情，走向全日本和世界列邦的属灵领袖的摇篮。",
++    "introMore": "了解更多",
++    "subTitle": "宗教法人",
++    "title": "东京国际神学院",
++    "description": "培育使日本与世界教会得以复兴的传道人。",
++    "admission": "入学指南"
++  },
++  "About": {
++    "notice": {
++      "pageTitle": "通知",
++      "backToList": "返回列表"
+     },
+-    "NotFound": {
+-        "title": "找不到该页面。",
+-        "description": "您查找的页面可能已被删除，或网址已更改。"
++    "greeting": {
++      "pageTitle": "问候",
++      "chairman": {
++        "role": "",
++        "name": "丁 恩柱 牧师",
++        "message": "谨此向所有莅临东京国际神学校的各位，致以最诚挚的感谢与祝福。\n\n本校遵循以圣经为核心的改革宗神学传统，致力于培养满怀使命感的牧会者与宣教士。尽管日本已迎来新教宣教167周年，但目前的福音化率仍然不足1%。从宣教学的角度来看，日本可以说仍然是一个极具挑战的“未得之民”地区。\n\n更令人遗憾的是，当今日本基督教界因牧会者老龄化而导致“无牧教会”不断增加，信徒人数在15人以下、尚未实现自立的教会约占整体的80%。面对这一严峻的现状，东京国际神学校正直面时代现实，并立志在上帝的旨意中，承担起推动变革的一份神圣责任。\n\n我们将悉心培养完全装备于耶稣基督十字架救赎与复活福音中的神之仆人，致力于向日本的教会以及世界万国带去生命的更新与活力。诚挚恳请各位给予我们持续的关心，并为我们的事工献上代祷。",
++        "history": [
++          "东亚大学 法经学院 经营学系 毕业 (1974)",
++          "总神大学校（舍堂）神学大学院 第81届 毕业 (1988)",
++          "American University of California 牧会学博士（D.Min.）取得 (2005)",
++          "大韩耶稣教长老会总会（改革）前总会长／前总代理",
++          "社会福祉法人 UniWorld 理事长（现任）",
++          "一般社团法人 国际跆拳道大师联盟 总裁（现任）",
++          "改革公报 理事长（现任，教团官方报纸）"
++        ]
++      },
++      "dean": {
++        "role": "院长",
++        "name": "申 キショウ 牧师",
++        "message": "东京国际神学校积极回应神赐予当代日本教会的急迫呼召。我们已与改革宗总会及首都国际研究生大学签署合作备忘录，正式开启并推进协力宣教的神圣事工。\n\n这一合作是为了恢复日本各教派及无牧教会而建立的“信仰联合”，旨在培养兼具神的话语深度、扎实的神学根基与实际牧会现场应对能力的时代牧者。本校始终立足于圣经性的改革宗神学，致力于履行神学校的神圣使命，培育使教会得生命、使事工现场得恢复的忠心仆人。\n\n与此同时，我们也积极预备能够在多民族、多文化社会中传扬福音的宣教型领袖。我们将顺服主所吩咐的“使万民作我的门徒”的大使命，向全地宣告迈向世界福音化的决心与异象。\n\n我们深信，这项由神亲自开启的工作，也必将由神亲自引导并最终成全。东京国际神学校将作为服事日本教会与万民的宝贵器皿，忠心地在真理的道路上行走到底。",
++        "history": [
++          "威斯敏斯特研究生大学 毕业（神学学士同等，B.Th. Equiv.）",
++          "加尔文大学 毕业",
++          "东京阳光专门学校 毕业（日语学科）",
++          "马尼拉神科大学 毕业（神学研究科）",
++          "首都国际研究生大学 神学研究院 毕业（牧会学硕士 / M.Div.）",
++          "加利福尼亚联合研究生院 神学哲学博士（Ph.D.）",
++          "American University 名誉牧会学博士",
++          "宗教法人 麻布福音教会 主任牧师（现任）",
++          "Azabu Christian School 理事长（现任）",
++          "NPO法人 Reima 理事长（现任）",
++          "宗教法人 东京国际神学校 校长（现任）"
++        ]
++      }
+     },
+-    "Index": {
+-        "introSubtitle": "INTRODUCTION",
+-        "introTitle": "培养能够复兴日本和世界\n教会的使命者。",
+-        "introDescription": "东京国际神学院是培养怀揣福音热情，走向全日本和世界列邦的属灵领袖的摇篮。",
+-        "introMore": "了解更多",
+-        "subTitle": "宗教法人",
+-        "title": "东京国际神学院",
+-        "description": "培育使日本与世界教会得以复兴的传道人。",
+-        "admission": "入学指南"
+-    },
+-    "About": {
+-        "notice": {
+-            "pageTitle": "通知",
+-            "backToList": "返回列表"
++    "intro": {
++      "pageTitle": "学校介绍",
++      "philosophy": {
++        "title": "教育理念",
++        "subtitle": "Education Philosophy",
++        "item1": {
++          "title": "1. 唯独圣经",
++          "desc": "所有教育和牧会的标准是神的话语。"
++        },
++        "item2": {
++          "title": "2. 唯独基督",
++          "desc": "以基督为中心建立教会和事工者。"
+         },
+-        "greeting": {
+-            "pageTitle": "问候",
+-            "chairman": {
+-                "role": "",
+-                "name": "丁 恩柱 牧师",
+-                "message": "谨此向所有莅临东京国际神学校的各位，致以最诚挚的感谢与祝福。\n\n本校遵循以圣经为核心的改革宗神学传统，致力于培养满怀使命感的牧会者与宣教士。尽管日本已迎来新教宣教167周年，但目前的福音化率仍然不足1%。从宣教学的角度来看，日本可以说仍然是一个极具挑战的“未得之民”地区。\n\n更令人遗憾的是，当今日本基督教界因牧会者老龄化而导致“无牧教会”不断增加，信徒人数在15人以下、尚未实现自立的教会约占整体的80%。面对这一严峻的现状，东京国际神学校正直面时代现实，并立志在上帝的旨意中，承担起推动变革的一份神圣责任。\n\n我们将悉心培养完全装备于耶稣基督十字架救赎与复活福音中的神之仆人，致力于向日本的教会以及世界万国带去生命的更新与活力。诚挚恳请各位给予我们持续的关心，并为我们的事工献上代祷。",
+-                "history": [
+-                    "东亚大学 法经学院 经营学系 毕业 (1974)",
+-                    "总神大学校（舍堂）神学大学院 第81届 毕业 (1988)",
+-                    "American University of California 牧会学博士（D.Min.）取得 (2005)",
+-                    "大韩耶稣教长老会总会（改革）前总会长／前总代理",
+-                    "社会福祉法人 UniWorld 理事长（现任）",
+-                    "一般社团法人 国际跆拳道大师联盟 总裁（现任）",
+-                    "改革公报 理事长（现任，教团官方报纸）"
+-                ]
+-            },
+-            "dean": {
+-                "role": "院长",
+-                "name": "申 キショウ 牧师",
+-                "message": "东京国际神学校积极回应神赐予当代日本教会的急迫呼召。我们已与改革宗总会及首都国际研究生大学签署合作备忘录，正式开启并推进协力宣教的神圣事工。\n\n这一合作是为了恢复日本各教派及无牧教会而建立的“信仰联合”，旨在培养兼具神的话语深度、扎实的神学根基与实际牧会现场应对能力的时代牧者。本校始终立足于圣经性的改革宗神学，致力于履行神学校的神圣使命，培育使教会得生命、使事工现场得恢复的忠心仆人。\n\n与此同时，我们也积极预备能够在多民族、多文化社会中传扬福音的宣教型领袖。我们将顺服主所吩咐的“使万民作我的门徒”的大使命，向全地宣告迈向世界福音化的决心与异象。\n\n我们深信，这项由神亲自开启的工作，也必将由神亲自引导并最终成全。东京国际神学校将作为服事日本教会与万民的宝贵器皿，忠心地在真理的道路上行走到底。",
+-                "history": [
+-                    "威斯敏斯特研究生大学 毕业（神学学士同等，B.Th. Equiv.）",
+-                    "加尔文大学 毕业",
+-                    "东京阳光专门学校 毕业（日语学科）",
+-                    "马尼拉神科大学 毕业（神学研究科）",
+-                    "首都国际研究生大学 神学研究院 毕业（牧会学硕士 / M.Div.）",
+-                    "加利福尼亚联合研究生院 神学哲学博士（Ph.D.）",
+-                    "American University 名誉牧会学博士",
+-                    "宗教法人 麻布福音教会 主任牧师（现任）",
+-                    "Azabu Christian School 理事长（现任）",
+-                    "NPO法人 Reima 理事长（现任）",
+-                    "宗教法人 东京国际神学校 校长（现任）"
+-                ]
+-            }
++        "item3": {
++          "title": "3. 唯独恩典",
++          "desc": "教育蒙恩召的使命者的人生。"
+         },
+-        "intro": {
+-            "pageTitle": "学校介绍",
+-            "philosophy": {
+-                "title": "教育理念",
+-                "subtitle": "Education Philosophy",
+-                "item1": {
+-                    "title": "1. 唯独圣经",
+-                    "desc": "所有教育和牧会的标准是神的话语。"
+-                },
+-                "item2": {
+-                    "title": "2. 唯独基督",
+-                    "desc": "以基督为中心建立教会和事工者。"
+-                },
+-                "item3": {
+-                    "title": "3. 唯独恩典",
+-                    "desc": "教育蒙恩召的使命者的人生。"
+-                },
+-                "item4": {
+-                    "title": "4. 唯独信心",
+-                    "desc": "训练凭信心生活的牧会和宣教。"
+-                },
+-                "item5": {
+-                    "title": "5. 唯独荣耀归神",
+-                    "desc": "所有教育的目的是神的荣耀。"
+-                }
+-            },
+-            "motto": {
+-                "title": "校 训",
+-                "subtitle": "School Motto",
+-                "item1": "唯独福音的体质化",
+-                "item2": "祷告的生活化",
+-                "item3": "世界福音化"
+-            }
++        "item4": {
++          "title": "4. 唯独信心",
++          "desc": "训练凭信心生活的牧会和宣教。"
+         },
+-        "history": {
+-            "pageTitle": "学校沿革",
+-            "title": "东京国际神学院的足迹",
+-            "items": {
+-                "item1": {
+-                    "year": "2026",
+-                    "event": "东京国际神学院 成立"
+-                }
+-            }
++        "item5": {
++          "title": "5. 唯独荣耀归神",
++          "desc": "所有教育的目的是神的荣耀。"
++        }
++      },
++      "motto": {
++        "title": "校 训",
++        "subtitle": "School Motto",
++        "item1": "唯独福音的体质化",
++        "item2": "祷告的生活化",
++        "item3": "世界福音化"
++      }
++    },
++    "history": {
++      "pageTitle": "学校沿革",
++      "title": "东京国际神学院的足迹",
++      "items": {
++        "item1": {
++          "year": "2026",
++          "event": "东京国际神学院 成立"
++        }
++      }
++    },
++    "location": {
++      "title": "来校路线",
++      "subtitle": "如何找到我们",
++      "address": "〒133-0051 东京都江户川区北小岩 3-13-11",
++      "transport": "京成江户川站步行8分钟",
++      "tel": "03-3865-4442"
++    },
++    "departments": {
++      "pageTitle": "学科介绍",
++      "introMessage": "以圣经为基础的神学教育，研究福音真理，培养服事教会和世界的事工者。",
++      "degreeName": "神学士 (B.Th.) 课程",
++      "yearInfo": "一年级课程表",
++      "semester1": "第一学期",
++      "semester2": "第二学期",
++      "categories": {
++        "majorReq": "专业必修",
++        "majorElect": "专业选修",
++        "genReq": "通识必修",
++        "genElect": "通识选修",
++        "other": "专选/专必"
++      },
++      "subjects": {
++        "otIntro": "旧约概论",
++        "ntIntro": "新约概论",
++        "histEd": "基督教教育史",
++        "philTheo": "哲学神学",
++        "psychIntro": "心理学概论",
++        "theoEng1": "神学英语 I",
++        "bibWorldview": "圣经世界观",
++        "churchMusic": "教会音乐",
++        "otBack": "旧约背景史",
++        "westminster": "威斯敏斯特信条",
++        "introEd": "基督教教育概论",
++        "pentateuch": "五经解释",
++        "histDoc": "教义史",
++        "philIntro": "哲学的理解",
++        "edPsych": "教育心理学",
++        "wisdom": "智慧书",
++        "theoEng2": "神学英语 II",
++        "modernWorld": "现代世界观",
++        "comm": "沟通",
++        "ntBack": "新约背景史"
++      },
++      "graduate": {
++        "pageTitle": "神学硕士/博士 (M.Div/Th.M/Ph.D)",
++        "intro": "本研究生院课程通过与改革总会及首都国际大学院大学的MOU，培养专业事工者。",
++        "partner": "讲师及合作：首都国际大学院大学",
++        "years": {
++          "y1": "一年级",
++          "y2": "二年级",
++          "y3": "三年级",
++          "common": "共同及分班授课"
+         },
+-        "location": {
+-            "title": "来校路线",
+-            "subtitle": "如何找到我们",
+-            "address": "〒133-0051 东京都江户川区北小岩 3-13-11",
+-            "transport": "京成江户川站步行8分钟",
+-            "tel": "03-3865-4442"
++        "subjects": {
++          "y1": "组织神学, 初期教会史, 希伯来语...",
++          "y2": "人类学, 中世教会史, 希腊语...",
++          "y3": "基督论, 宗教改革史, 宣教学...",
++          "common": "新条学, 教会教育, 旧约解释学"
+         },
+-        "departments": {
+-            "pageTitle": "学科介绍",
+-            "introMessage": "以圣经为基础的神学教育，研究福音真理，培养服事教会和世界的事工者。",
+-            "degreeName": "神学士 (B.Th.) 课程",
+-            "yearInfo": "一年级课程表",
+-            "semester1": "第一学期",
+-            "semester2": "第二学期",
+-            "categories": {
+-                "majorReq": "专业必修",
+-                "majorElect": "专业选修",
+-                "genReq": "通识必修",
+-                "genElect": "通识选修",
+-                "other": "专选/专必"
+-            },
+-            "subjects": {
+-                "otIntro": "旧约概论",
+-                "ntIntro": "新约概论",
+-                "histEd": "基督教教育史",
+-                "philTheo": "哲学神学",
+-                "psychIntro": "心理学概论",
+-                "theoEng1": "神学英语 I",
+-                "bibWorldview": "圣经世界观",
+-                "churchMusic": "教会音乐",
+-                "otBack": "旧约背景史",
+-                "westminster": "威斯敏斯特信条",
+-                "introEd": "基督教教育概论",
+-                "pentateuch": "五经解释",
+-                "histDoc": "教义史",
+-                "philIntro": "哲学的理解",
+-                "edPsych": "教育心理学",
+-                "wisdom": "智慧书",
+-                "theoEng2": "神学英语 II",
+-                "modernWorld": "现代世界观",
+-                "comm": "沟通",
+-                "ntBack": "新约背景史"
+-            },
+-            "graduate": {
+-                "pageTitle": "神学硕士/博士 (M.Div/Th.M/Ph.D)",
+-                "intro": "本研究生院课程通过与改革总会及首都国际大学院大学的MOU，培养专业事工者。",
+-                "partner": "讲师及合作：首都国际大学院大学",
+-                "years": {
+-                    "y1": "一年级",
+-                    "y2": "二年级",
+-                    "y3": "三年级",
+-                    "common": "共同及分班授课"
+-                },
+-                "subjects": {
+-                    "y1": "组织神学, 初期教会史, 希伯来语...",
+-                    "y2": "人类学, 中世教会史, 希腊语...",
+-                    "y3": "基督论, 宗教改革史, 宣教学...",
+-                    "common": "新条学, 教会教育, 旧约解释学"
+-                }
+-            },
+-            "calendar": {
+-                "pageTitle": "学术日历",
+-                "monthName": "{month}",
+-                "majorSchedule": "学术日程",
+-                "noEvent": "本月没有安排官方活动。",
+-                "events": {
+-                    "m3": "17: 开学特别讲座",
+-                    "m4": "21: 休校",
+-                    "m5": "22: 休校",
+-                    "m6": "23: 结业集中讲座"
+-                }
+-            }
++        "sharedCourses": {
++          "title": "共同课程",
++          "provider": "神学院课程：首都国际大学院大学",
++          "courses": [
++            "神论",
++            "初期教会史",
++            "希伯来语",
++            "福音书",
++            "礼拜学",
++            "系统神学",
++            "近现代教会史",
++            "诗篇",
++            "新约神学",
++            "传道学"
++          ]
++        }
++      },
++      "calendar": {
++        "pageTitle": "学术日历",
++        "monthName": "{month}",
++        "majorSchedule": "学术日程",
++        "noEvent": "本月没有安排官方活动。",
++        "events": {
++          "m3": "17: 开学特别讲座",
++          "m4": "21: 休校",
++          "m5": "22: 休校",
++          "m6": "23: 结业集中讲座"
+         }
++      }
+     }
+-}
+\ No newline at end of file
++  }
++}
+diff --git a/src/app/[locale]/about/departments/graduate/page.tsx b/src/app/[locale]/about/departments/graduate/page.tsx
+index c4832f5..588d3e4 100644
+--- a/src/app/[locale]/about/departments/graduate/page.tsx
++++ b/src/app/[locale]/about/departments/graduate/page.tsx
+@@ -1,56 +1,72 @@
+ 'use client';
+ 
+ import { useTranslations } from 'next-intl';
+-import Image from 'next/image';
++
++type CurriculumGroup = {
++  year: string;
++  subjects: string[];
++};
+ 
+ export default function GraduatePage() {
+-    // 🌟 'About.departments.graduate' 경로를 기본으로 설정합니다.
+-    const t = useTranslations('About.departments.graduate');
+-
+-    // JSON에서 콤마(,)로 구분된 문자열을 가져와서 배열로 만듭니다.
+-    const curriculum = [
+-        { year: t('years.y1'), subjects: t('subjects.y1').split(', ') },
+-        { year: t('years.y2'), subjects: t('subjects.y2').split(', ') },
+-        { year: t('years.y3'), subjects: t('subjects.y3').split(', ') },
+-        { year: t('years.common'), subjects: t('subjects.common').split(', ') }
+-    ];
+-
+-    return (
+-        <main className="relative bg-[#FAF7F2] min-h-screen py-24 px-8">
+-            {/* 배경 설정 (생략 - 기존과 동일) */}
+-
+-            <div className="relative z-10 max-w-7xl mx-auto">
+-                <h1 className="text-4xl font-black text-[#002855] border-l-8 border-[#F39200] pl-6 mb-12 uppercase">
+-                    {t('pageTitle')}
+-                </h1>
+-
+-                {/* 메시지 섹션 */}
+-                <div className="bg-[#002855]/5 border border-[#002855]/10 p-8 rounded-sm mb-16">
+-                    <p className="text-[#002855] font-bold text-lg mb-2">“ {t('intro')} ”</p>
+-                    <p className="text-[#F39200] font-black text-sm tracking-widest uppercase">{t('partner')}</p>
+-                </div>
+-
+-                {/* 커리큘럼 그리드 */}
+-                <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+-                    {curriculum.map((item, idx) => (
+-                        <div key={idx} className="bg-white shadow-xl border-t-4 border-[#002855]">
+-                            <div className="bg-gray-50 p-5 border-b border-gray-100">
+-                                <h3 className="text-[#002855] font-black text-xl text-center">{item.year}</h3>
+-                            </div>
+-                            <div className="p-6">
+-                                <ul className="space-y-3">
+-                                    {item.subjects.map((sub, sIdx) => (
+-                                        <li key={sIdx} className="text-gray-600 text-sm flex items-start gap-2 border-b border-gray-50 pb-2">
+-                                            <span className="text-[#F39200] mt-1">▪</span>
+-                                            <span className="break-keep">{sub}</span>
+-                                        </li>
+-                                    ))}
+-                                </ul>
+-                            </div>
+-                        </div>
+-                    ))}
+-                </div>
++  const t = useTranslations('About.departments.graduate');
++
++  const curriculum: CurriculumGroup[] = [
++    { year: t('years.y1'), subjects: t('subjects.y1').split(', ') },
++    { year: t('years.y2'), subjects: t('subjects.y2').split(', ') },
++    { year: t('years.y3'), subjects: t('subjects.y3').split(', ') },
++  ];
++
++  const sharedCourses = t.raw('sharedCourses.courses') as string[];
++
++  return (
++    <main className="relative bg-[#FAF7F2] min-h-screen py-24 px-8">
++      <div className="relative z-10 max-w-7xl mx-auto">
++        <h1 className="text-4xl font-black text-[#002855] border-l-8 border-[#F39200] pl-6 mb-12 uppercase">
++          {t('pageTitle')}
++        </h1>
++
++        <div className="bg-[#002855]/5 border border-[#002855]/10 p-8 rounded-sm mb-16">
++          <p className="text-[#002855] font-bold text-lg mb-2">“ {t('intro')} ”</p>
++          <p className="text-[#F39200] font-black text-sm tracking-widest uppercase">{t('partner')}</p>
++        </div>
++
++        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mb-10">
++          {curriculum.map((item, idx) => (
++            <div key={idx} className="bg-white shadow-xl border-t-4 border-[#002855]">
++              <div className="bg-gray-50 p-5 border-b border-gray-100">
++                <h3 className="text-[#002855] font-black text-xl text-center">{item.year}</h3>
++              </div>
++              <div className="p-6">
++                <ul className="space-y-3">
++                  {item.subjects.map((sub, sIdx) => (
++                    <li key={sIdx} className="text-gray-600 text-sm flex items-start gap-2 border-b border-gray-50 pb-2">
++                      <span className="text-[#F39200] mt-1">▪</span>
++                      <span className="break-keep">{sub}</span>
++                    </li>
++                  ))}
++                </ul>
++              </div>
+             </div>
+-        </main>
+-    );
+-}
+\ No newline at end of file
++          ))}
++        </div>
++
++        <section className="bg-white shadow-xl border-t-4 border-[#F39200]">
++          <div className="bg-gray-50 p-5 border-b border-gray-100">
++            <h3 className="text-[#002855] font-black text-xl">{t('sharedCourses.title')}</h3>
++            <p className="text-[#F39200] font-bold text-sm mt-2">{t('sharedCourses.provider')}</p>
++          </div>
++          <div className="p-6">
++            <ul className="grid md:grid-cols-2 gap-x-8 gap-y-3">
++              {sharedCourses.map((course, idx) => (
++                <li key={idx} className="text-gray-700 text-sm flex items-start gap-2 border-b border-gray-50 pb-2">
++                  <span className="text-[#F39200] mt-1">▪</span>
++                  <span className="break-keep">{course}</span>
++                </li>
++              ))}
++            </ul>
++          </div>
++        </section>
++      </div>
++    </main>
++  );
++}

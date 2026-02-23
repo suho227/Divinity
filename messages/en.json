@@ -1,191 +1,207 @@
 {
-    "navigation": {
-        "intro": "Introduction",
-        "about": "About Us",
-        "greeting": "Greeting",
-        "history": "History",
-        "location": "Location",
-        "departments": "Departments",
-        "dept_bth": "B.Th.",
-        "dept_grad": "M.Div./Th.M./Ph.D.",
-        "dept_japanese": "Japanese Dept",
-        "notice": "Notice",
-        "archive": "Archive",
-        "subTitle": "Religious Juridical Person",
-        "title": "Tokyo International Seminary",
-        "schoolName": "Tokyo International Seminary",
-        "address": "3-11-8 Asakusabashi, Taito-ku, Tokyo 111-0053",
-        "transport": "5 min walk from JR Asakusabashi Station",
-        "tel": "03-3865-4442",
-        "email": "tokyo.seminary@gmail.com",
-        "dept_calendar": "Academic Calendar"
+  "navigation": {
+    "intro": "Introduction",
+    "about": "About Us",
+    "greeting": "Greeting",
+    "history": "History",
+    "location": "Location",
+    "departments": "Departments",
+    "dept_bth": "B.Th.",
+    "dept_grad": "M.Div./Th.M./Ph.D.",
+    "dept_japanese": "Japanese Dept",
+    "notice": "Notice",
+    "archive": "Archive",
+    "subTitle": "Religious Juridical Person",
+    "title": "Tokyo International Seminary",
+    "schoolName": "Tokyo International Seminary",
+    "address": "3-11-8 Asakusabashi, Taito-ku, Tokyo 111-0053",
+    "transport": "5 min walk from JR Asakusabashi Station",
+    "tel": "03-3865-4442",
+    "email": "tokyo.seminary@gmail.com",
+    "dept_calendar": "Academic Calendar"
+  },
+  "Index": {
+    "introSubtitle": "INTRODUCTION",
+    "introTitle": "Equipping Ministers to Revitalize\nChurches in Japan and the World",
+    "introDescription": "Tokyo International Seminary is a cradle for spiritual leaders reaching out to all of Japan and the nations with the passion of the Gospel.",
+    "introMore": "Learn More",
+    "subTitle": "Religious Juridical Person",
+    "title": "Tokyo International Seminary",
+    "description": "Equipping Ministers to Revitalize Churches in Japan and the World",
+    "admission": "Admission"
+  },
+  "About": {
+    "notice": {
+      "pageTitle": "Notice",
+      "backToList": "Back to List"
     },
-    "Index": {
-        "introSubtitle": "INTRODUCTION",
-        "introTitle": "Equipping Ministers to Revitalize\nChurches in Japan and the World",
-        "introDescription": "Tokyo International Seminary is a cradle for spiritual leaders reaching out to all of Japan and the nations with the passion of the Gospel.",
-        "introMore": "Learn More",
-        "subTitle": "Religious Juridical Person",
-        "title": "Tokyo International Seminary",
-        "description": "Equipping Ministers to Revitalize Churches in Japan and the World",
-        "admission": "Admission"
+    "greeting": {
+      "pageTitle": "Greeting",
+      "chairman": {
+        "role": "chairman",
+        "name": "pastor Jung Eunju",
+        "message": "We sincerely thank everyone who has taken the time to visit Tokyo International Theological Seminary. Our seminary follows the tradition of Reformed theology based on the Bible and is dedicated to training pastors and missionaries. Although Japan marks the 167th anniversary of Protestant missions, the current rate of evangelization remains below 1%. From a missiological perspective, Japan can truly be described as an \"unreached people group.\" Furthermore, it is deeply regrettable that within the Japanese Christian community today, the number of pastorless churches is increasing due to the aging of pastors, and churches with fewer than fifteen members that are not self-supporting now account for approximately 80% of all churches. Tokyo International Theological Seminary faces these realities of our time and seeks to play a role in bringing about transformation. By training pastors and missionaries who are fully equipped with the gospel of Jesus Christ’s atoning sacrifice on the cross and His resurrection, we are committed to igniting the vitality of life in the churches of Japan and throughout the nations. We humbly ask for your warm interest and prayers.",
+        "history": [
+          "B.A. in Business Administration, College of Law and Economics, Dong-A University (1974)",
+          "Master of Divinity, Theological Seminary (81st Class), Chongshin University, Sadang Campus (1988)",
+          "Doctor of Ministry (D.Min.), American University of California (2005)",
+          "Former President and Former Acting Executive, General Assembly of the Presbyterian Church in Korea (Reformed)",
+          "Chairman, UniWorld Social Welfare Foundation (Current)",
+          "President, International Taekwondo Masters Federation (Current)",
+          "Chairman, Reformed Gongbo, Official Denominational Newspaper (Current)"
+        ]
+      },
+      "dean": {
+        "role": "Dean",
+        "name": "pastor Shin Kishou",
+        "message": "In response to God’s calling for the church in Japan in this present age, Tokyo International Theological Seminary has entered into Memorandums of Understanding with the Reformed General Assembly and Capital International Graduate University, strengthening our commitment to cooperative mission work. This partnership represents a union of faith established to restore Japanese denominations and pastorless churches by nurturing pastors who are grounded in God’s Word, sound theology, and practical ministry experience. Standing firmly on biblical Reformed theology, our seminary seeks to fulfill its mission by training pastors who give life to the church and servants who bring restoration to the field. Furthermore, we are committed to preparing missional leaders who can proclaim the gospel within multicultural and multiethnic societies. In obedience to our Lord’s Great Commission to “make disciples of all nations,” we declare our dedication to advancing world evangelization. Trusting that this work, initiated by God Himself, will also be guided and brought to completion by Him, Tokyo International Theological Seminary will continue to walk faithfully to the end as an instrument serving the church in Japan and all peoples.",
+        "history": [
+          "Graduate, Westminster Graduate School (B.Th. Equivalent)",
+          "Graduate, Calvin University",
+          "Graduate, Tokyo Sunshine College, Department of Japanese Language",
+          "Graduate, Manila Theological College, Graduate School of Theology",
+          "Master of Divinity (M.Div.), Theological Research Institute, Capital International Graduate University",
+          "Doctor of Philosophy in Theology, California Union Graduate School",
+          "Honorary Doctor of Ministry, American University",
+          "Senior Pastor, Azabu Evangelical Church (Current)",
+          "Chairman of the Board, Azabu Christian School (Current)",
+          "President, NPO Reima (Current)",
+          "President, Tokyo International Theological Seminary (Current)"
+        ]
+      }
     },
-    "About": {
-        "notice": {
-            "pageTitle": "Notice",
-            "backToList": "Back to List"
+    "intro": {
+      "pageTitle": "School Introduction",
+      "philosophy": {
+        "title": "Education Philosophy",
+        "subtitle": "Education Philosophy",
+        "item1": {
+          "title": "1. Sola Scriptura",
+          "desc": "The standard for all education and ministry is the Word of God."
         },
-        "greeting": {
-            "pageTitle": "Greeting",
-            "chairman": {
-                "role": "chairman",
-                "name": "pastor Jung Eunju",
-                "message": "We sincerely thank everyone who has taken the time to visit Tokyo International Theological Seminary. Our seminary follows the tradition of Reformed theology based on the Bible and is dedicated to training pastors and missionaries. Although Japan marks the 167th anniversary of Protestant missions, the current rate of evangelization remains below 1%. From a missiological perspective, Japan can truly be described as an \"unreached people group.\" Furthermore, it is deeply regrettable that within the Japanese Christian community today, the number of pastorless churches is increasing due to the aging of pastors, and churches with fewer than fifteen members that are not self-supporting now account for approximately 80% of all churches. Tokyo International Theological Seminary faces these realities of our time and seeks to play a role in bringing about transformation. By training pastors and missionaries who are fully equipped with the gospel of Jesus Christ’s atoning sacrifice on the cross and His resurrection, we are committed to igniting the vitality of life in the churches of Japan and throughout the nations. We humbly ask for your warm interest and prayers.",
-                "history": [
-                    "B.A. in Business Administration, College of Law and Economics, Dong-A University (1974)",
-                    "Master of Divinity, Theological Seminary (81st Class), Chongshin University, Sadang Campus (1988)",
-                    "Doctor of Ministry (D.Min.), American University of California (2005)",
-                    "Former President and Former Acting Executive, General Assembly of the Presbyterian Church in Korea (Reformed)",
-                    "Chairman, UniWorld Social Welfare Foundation (Current)",
-                    "President, International Taekwondo Masters Federation (Current)",
-                    "Chairman, Reformed Gongbo, Official Denominational Newspaper (Current)"
-                ]
-            },
-            "dean": {
-                "role": "Dean",
-                "name": "pastor Shin Kishou",
-                "message": "In response to God’s calling for the church in Japan in this present age, Tokyo International Theological Seminary has entered into Memorandums of Understanding with the Reformed General Assembly and Capital International Graduate University, strengthening our commitment to cooperative mission work. This partnership represents a union of faith established to restore Japanese denominations and pastorless churches by nurturing pastors who are grounded in God’s Word, sound theology, and practical ministry experience. Standing firmly on biblical Reformed theology, our seminary seeks to fulfill its mission by training pastors who give life to the church and servants who bring restoration to the field. Furthermore, we are committed to preparing missional leaders who can proclaim the gospel within multicultural and multiethnic societies. In obedience to our Lord’s Great Commission to “make disciples of all nations,” we declare our dedication to advancing world evangelization. Trusting that this work, initiated by God Himself, will also be guided and brought to completion by Him, Tokyo International Theological Seminary will continue to walk faithfully to the end as an instrument serving the church in Japan and all peoples.",
-                "history": [
-                    "Graduate, Westminster Graduate School (B.Th. Equivalent)",
-                    "Graduate, Calvin University",
-                    "Graduate, Tokyo Sunshine College, Department of Japanese Language",
-                    "Graduate, Manila Theological College, Graduate School of Theology",
-                    "Master of Divinity (M.Div.), Theological Research Institute, Capital International Graduate University",
-                    "Doctor of Philosophy in Theology, California Union Graduate School",
-                    "Honorary Doctor of Ministry, American University",
-                    "Senior Pastor, Azabu Evangelical Church (Current)",
-                    "Chairman of the Board, Azabu Christian School (Current)",
-                    "President, NPO Reima (Current)",
-                    "President, Tokyo International Theological Seminary (Current)"
-                ]
-            }
+        "item2": {
+          "title": "2. Solus Christus",
+          "desc": "We build the church and ministers centering on Christ."
         },
-        "intro": {
-            "pageTitle": "School Introduction",
-            "philosophy": {
-                "title": "Education Philosophy",
-                "subtitle": "Education Philosophy",
-                "item1": {
-                    "title": "1. Sola Scriptura",
-                    "desc": "The standard for all education and ministry is the Word of God."
-                },
-                "item2": {
-                    "title": "2. Solus Christus",
-                    "desc": "We build the church and ministers centering on Christ."
-                },
-                "item3": {
-                    "title": "3. Sola Gratia",
-                    "desc": "We educate for a life of calling received by grace."
-                },
-                "item4": {
-                    "title": "4. Sola Fide",
-                    "desc": "We train for ministry and mission lived out by faith."
-                },
-                "item5": {
-                    "title": "5. Soli Deo Gloria",
-                    "desc": "The purpose of all education is the glory of God."
-                }
-            },
-            "motto": {
-                "title": "School Motto",
-                "subtitle": "School Motto",
-                "item1": "Internalization of the Gospel only",
-                "item2": "Lifestyle of Prayer",
-                "item3": "World Evangelization"
-            }
+        "item3": {
+          "title": "3. Sola Gratia",
+          "desc": "We educate for a life of calling received by grace."
         },
-        "history": {
-            "pageTitle": "School History",
-            "title": "History of TITS",
-            "items": {
-                "item1": {
-                    "year": "2026",
-                    "event": "Foundation of Tokyo International Seminary"
-                }
-            }
+        "item4": {
+          "title": "4. Sola Fide",
+          "desc": "We train for ministry and mission lived out by faith."
         },
-        "location": {
-            "title": "Location",
-            "subtitle": "How to Find Us",
-            "address": "〒133-0051 Kita-Koiwa 3-13-11, Edogawa-ku, Tokyo",
-            "transport": "8 min walk from Keisei-Edogawa Station",
-            "tel": "03-3865-4442"
-        },
-        "departments": {
-            "pageTitle": "Department Info",
-            "introMessage": "Department of Theology cultivating ministers through Bible-based theological education.",
-            "degreeName": "B.Th. Course",
-            "yearInfo": "1st Year Curriculum",
-            "semester1": "1st Semester",
-            "semester2": "2nd Semester",
-            "categories": {
-                "majorReq": "Major Req",
-                "majorElect": "Major Elec",
-                "genReq": "Gen Req",
-                "genElect": "Gen Elec",
-                "other": "Elec/Req"
-            },
-            "subjects": {
-                "otIntro": "OT Intro",
-                "ntIntro": "NT Intro",
-                "histEd": "History of Christian Ed",
-                "philTheo": "Philosophical Theology",
-                "psychIntro": "Intro to Psychology",
-                "theoEng1": "Theological English I",
-                "bibWorldview": "Biblical Worldview",
-                "churchMusic": "Church Music",
-                "otBack": "OT Background",
-                "westminster": "Westminster Confession",
-                "introEd": "Intro to Christian Ed",
-                "pentateuch": "Pentateuch Exegesis",
-                "histDoc": "History of Doctrine",
-                "philIntro": "Understanding Philosophy",
-                "edPsych": "Educational Psychology",
-                "wisdom": "Wisdom Literature",
-                "theoEng2": "Theological English II",
-                "modernWorld": "Modern Worldview",
-                "comm": "Communication",
-                "ntBack": "NT Background"
-            },
-            "graduate": {
-                "pageTitle": "M.Div/Th.M/Ph.D",
-                "intro": "Professional ministers program through an MOU with Sudokukje Graduate University.",
-                "partner": "Lecturers & Cooperation: Sudokukje Graduate University",
-                "years": {
-                    "y1": "1st Year",
-                    "y2": "2nd Year",
-                    "y3": "3rd Year",
-                    "common": "Common & Separate Classes"
-                },
-                "subjects": {
-                    "y1": "Systematic Theology, Early Church History, Hebrew...",
-                    "y2": "Anthropology, Medieval Church History, Greek...",
-                    "y3": "Christology, Reformation History, Missiology...",
-                    "common": "Confessions, Christian Education, OT Hermeneutics"
-                }
-            },
-            "calendar": {
-                "pageTitle": "Academic Calendar",
-                "monthName": "{month}",
-                "majorSchedule": "Major Schedule",
-                "noEvent": "No official events scheduled.",
-                "events": {
-                    "m3": "17: Opening Seminar",
-                    "m4": "21: School Holiday",
-                    "m5": "22: School Holiday",
-                    "m6": "23: Closing Intensive Seminar"
-                }
-            }
+        "item5": {
+          "title": "5. Soli Deo Gloria",
+          "desc": "The purpose of all education is the glory of God."
         }
+      },
+      "motto": {
+        "title": "School Motto",
+        "subtitle": "School Motto",
+        "item1": "Internalization of the Gospel only",
+        "item2": "Lifestyle of Prayer",
+        "item3": "World Evangelization"
+      }
+    },
+    "history": {
+      "pageTitle": "School History",
+      "title": "History of TITS",
+      "items": {
+        "item1": {
+          "year": "2026",
+          "event": "Foundation of Tokyo International Seminary"
+        }
+      }
+    },
+    "location": {
+      "title": "Location",
+      "subtitle": "How to Find Us",
+      "address": "〒133-0051 Kita-Koiwa 3-13-11, Edogawa-ku, Tokyo",
+      "transport": "8 min walk from Keisei-Edogawa Station",
+      "tel": "03-3865-4442"
+    },
+    "departments": {
+      "pageTitle": "Department Info",
+      "introMessage": "Department of Theology cultivating ministers through Bible-based theological education.",
+      "degreeName": "B.Th. Course",
+      "yearInfo": "1st Year Curriculum",
+      "semester1": "1st Semester",
+      "semester2": "2nd Semester",
+      "categories": {
+        "majorReq": "Major Req",
+        "majorElect": "Major Elec",
+        "genReq": "Gen Req",
+        "genElect": "Gen Elec",
+        "other": "Elec/Req"
+      },
+      "subjects": {
+        "otIntro": "OT Intro",
+        "ntIntro": "NT Intro",
+        "histEd": "History of Christian Ed",
+        "philTheo": "Philosophical Theology",
+        "psychIntro": "Intro to Psychology",
+        "theoEng1": "Theological English I",
+        "bibWorldview": "Biblical Worldview",
+        "churchMusic": "Church Music",
+        "otBack": "OT Background",
+        "westminster": "Westminster Confession",
+        "introEd": "Intro to Christian Ed",
+        "pentateuch": "Pentateuch Exegesis",
+        "histDoc": "History of Doctrine",
+        "philIntro": "Understanding Philosophy",
+        "edPsych": "Educational Psychology",
+        "wisdom": "Wisdom Literature",
+        "theoEng2": "Theological English II",
+        "modernWorld": "Modern Worldview",
+        "comm": "Communication",
+        "ntBack": "NT Background"
+      },
+      "graduate": {
+        "pageTitle": "M.Div/Th.M/Ph.D",
+        "intro": "Professional ministers program through an MOU with Sudokukje Graduate University.",
+        "partner": "Lecturers & Cooperation: Sudokukje Graduate University",
+        "years": {
+          "y1": "1st Year",
+          "y2": "2nd Year",
+          "y3": "3rd Year",
+          "common": "Common & Separate Classes"
+        },
+        "subjects": {
+          "y1": "Systematic Theology, Early Church History, Hebrew...",
+          "y2": "Anthropology, Medieval Church History, Greek...",
+          "y3": "Christology, Reformation History, Missiology...",
+          "common": "Confessions, Christian Education, OT Hermeneutics"
+        },
+        "sharedCourses": {
+          "title": "Shared Courses",
+          "provider": "Seminary lectures: 首都国際大学院大学",
+          "courses": [
+            "Theology Proper",
+            "Early Church History",
+            "Hebrew",
+            "Gospels",
+            "Liturgy",
+            "Systematic Theology",
+            "Modern Church History",
+            "Psalms",
+            "New Testament Theology",
+            "Evangelism"
+          ]
+        }
+      },
+      "calendar": {
+        "pageTitle": "Academic Calendar",
+        "monthName": "{month}",
+        "majorSchedule": "Major Schedule",
+        "noEvent": "No official events scheduled.",
+        "events": {
+          "m3": "17: Opening Seminar",
+          "m4": "21: School Holiday",
+          "m5": "22: School Holiday",
+          "m6": "23: Closing Intensive Seminar"
+        }
+      }
     }
+  }
 }
