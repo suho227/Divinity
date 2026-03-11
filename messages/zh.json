@@ -18,7 +18,8 @@
         "transport": "JR浅草桥站步行5分钟",
         "tel": "03-3865-4442",
         "email": "tokyo.seminary@gmail.com",
-        "dept_calendar": "学术日历"
+        "dept_calendar": "学术日历",
+        "faculty": "师资介绍"
     },
     "NotFound": {
         "title": "找不到该页面。",
@@ -205,6 +206,26 @@
                     "m5": "22: 休校",
                     "m6": "23: 结业集中讲座"
                 }
+            }
+        },
+        "faculty": {
+            "pageTitle": "师资团队",
+            "description": "服事东京国际神学院的教授与牧者。",
+            "members": {
+                "shinKwang": "崔新光牧师",
+                "inyong": "金仁用牧师",
+                "kwonseok": "吴权锡牧师",
+                "daeyoung": "金大荣牧师",
+                "woonghwa": "罗雄和牧师",
+                "sungjin": "朴成镇牧师",
+                "giseob": "申基燮牧师",
+                "sangmin": "金相珉牧师",
+                "daesung": "金大成牧师",
+                "donghwi": "卢东辉牧师",
+                "eunju": "郑恩珠牧师",
+                "hangon": "金汉坤牧师",
+                "seongsam": "安成三牧师",
+                "kwangseop": "朴光燮牧师"
             }
         }
     }

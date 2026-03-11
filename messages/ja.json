@@ -18,7 +18,8 @@
         "transport": "JR浅草橋駅から徒歩5分",
         "tel": "03-3865-4442",
         "email": "tokyo.seminary@gmail.com",
-        "dept_calendar": "学事日程"
+        "dept_calendar": "学事日程",
+        "faculty": "教職員"
     },
     "NotFound": {
         "title": "ページが見つかりません。",
@@ -210,6 +211,27 @@
                     "m6": "23: 卒業セミナー"
                 }
             }
+        },
+        "faculty": {
+            "pageTitle": "教職員",
+            "description": "東京国際神学校に仕える教授・牧会者です。",
+            "members": {
+                "shinKwang": "チェ・シングァン牧師",
+                "inyong": "キム・インヨン牧師",
+                "kwonseok": "オ・グォンソク牧師",
+                "daeyoung": "キム・デヨン牧師",
+                "woonghwa": "ナ・ウンファ牧師",
+                "sungjin": "パク・ソンジン牧師",
+                "giseob": "シン・ギソプ牧師",
+                "sangmin": "キム・サンミン牧師",
+                "daesung": "キム・デソン牧師",
+                "donghwi": "ノ・ドンフィ牧師",
+                "eunju": "チョン・ウンジュ牧師",
+                "hangon": "キム・ハンゴン牧師",
+                "seongsam": "アン・ソンサム牧師",
+                "kwangseop": "パク・グァンソプ牧師"
+            }
         }
     }
+}
 }

@@ -18,7 +18,8 @@
     "transport": "JR 아사쿠사바시역 도보 5분",
     "tel": "03-3865-4442",
     "email": "tokyo.seminary@gmail.com",
-    "dept_calendar": "학사일정"
+    "dept_calendar": "학사일정",
+    "faculty": "교사진"
   },
   "NotFound": {
     "title": "페이지를 찾을 수 없습니다.",
@@ -209,6 +210,26 @@
             "m6": "23: 종강 집중 세미나 (6/23~24)"
           }
         }
+      }
+    },
+    "faculty": {
+      "pageTitle": "교사진",
+      "description": "도쿄국제신학교를 섬기는 교수 및 목회진입니다.",
+      "members": {
+        "shinKwang": "최신광 목사",
+        "inyong": "김인용 목사",
+        "kwonseok": "오권석 목사",
+        "daeyoung": "김대영 목사",
+        "woonghwa": "나웅화 목사",
+        "sungjin": "박성진 목사",
+        "giseob": "신기섭 목사",
+        "sangmin": "김상민 목사",
+        "daesung": "김대성 목사",
+        "donghwi": "노동휘 목사",
+        "eunju": "정은주 목사",
+        "hangon": "김한곤 목사",
+        "seongsam": "안성삼 목사",
+        "kwangseop": "박광섭 목사"
       }
     }
   }

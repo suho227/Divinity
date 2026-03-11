@@ -18,7 +18,8 @@
         "transport": "5 min walk from JR Asakusabashi Station",
         "tel": "03-3865-4442",
         "email": "tokyo.seminary@gmail.com",
-        "dept_calendar": "Academic Calendar"
+        "dept_calendar": "Academic Calendar",
+        "faculty": "Faculty"
     },
     "Index": {
         "introSubtitle": "INTRODUCTION",
@@ -229,6 +230,26 @@
                 "m4": "21: School Holiday",
                 "m5": "22: School Holiday",
                 "m6": "23: Closing Intensive Seminar"
+            }
+        },
+        "faculty": {
+            "pageTitle": "Faculty",
+            "description": "Professors and pastors serving Tokyo International Seminary.",
+            "members": {
+                "shinKwang": "pastor Shin Gwang Choi",
+                "inyong": "pastor Inyong Kim",
+                "kwonseok": "pastor Kwonseok Oh",
+                "daeyoung": "pastor Daeyoung Kim",
+                "woonghwa": "pastor Woonghwa Na",
+                "sungjin": "pastor Sungjin Park",
+                "giseob": "pastor Giseob Shin",
+                "sangmin": "pastor Sangmin Kim",
+                "daesung": "pastor Daesung Kim",
+                "donghwi": "pastor Donghwi Noh",
+                "eunju": "pastor Eunju Jeong",
+                "hangon": "pastor Hangon Kim",
+                "seongsam": "pastor Seongsam Ahn",
+                "kwangseop": "pastor Kwangseop Park"
             }
         }
     }

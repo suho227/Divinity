@@ -21,6 +21,7 @@ export default function Header() {
     const aboutSubMenus = [
         { name: 'greeting', href: '/about/greeting' },
         { name: 'intro', href: '/about/intro' },
+        { name: 'faculty', href: '/about/faculty' },
         { name: 'history', href: '/about/history' },
         { name: 'location', href: '/about/location' },
     ];
