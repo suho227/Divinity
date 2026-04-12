@@ -41,6 +41,7 @@
             "chairman": {
                 "role": "chairman",
                 "name": "pastor Jung Eunju",
+                "headline": "A seminary leading Japan to spiritual awakening through the Gospel of the Cross",
                 "message": "We sincerely thank everyone who has taken the time to visit Tokyo International Theological Seminary. Our seminary follows the tradition of Reformed theology based on the Bible and is dedicated to training pastors and missionaries. Although Japan marks the 167th anniversary of Protestant missions, the current rate of evangelization remains below 1%. From a missiological perspective, Japan can truly be described as an \"unreached people group.\" Furthermore, it is deeply regrettable that within the Japanese Christian community today, the number of pastorless churches is increasing due to the aging of pastors, and churches with fewer than fifteen members that are not self-supporting now account for approximately 80% of all churches. Tokyo International Theological Seminary faces these realities of our time and seeks to play a role in bringing about transformation. By training pastors and missionaries who are fully equipped with the gospel of Jesus Christ’s atoning sacrifice on the cross and His resurrection, we are committed to igniting the vitality of life in the churches of Japan and throughout the nations. We humbly ask for your warm interest and prayers.",
                 "history": [
                     "B.A. in Business Administration, College of Law and Economics, Dong-A University (1974)",
@@ -55,6 +56,7 @@
             "dean": {
                 "role": "Dean",
                 "name": "pastor Shin Kishou",
+                "headline": "The work begun by God, toward the restoration of the Japanese Church",
                 "message": "In response to God’s calling for the church in Japan in this present age, Tokyo International Theological Seminary has entered into Memorandums of Understanding with the Reformed General Assembly and Capital International Graduate University, strengthening our commitment to cooperative mission work. This partnership represents a union of faith established to restore Japanese denominations and pastorless churches by nurturing pastors who are grounded in God’s Word, sound theology, and practical ministry experience. Standing firmly on biblical Reformed theology, our seminary seeks to fulfill its mission by training pastors who give life to the church and servants who bring restoration to the field. Furthermore, we are committed to preparing missional leaders who can proclaim the gospel within multicultural and multiethnic societies. In obedience to our Lord’s Great Commission to “make disciples of all nations,” we declare our dedication to advancing world evangelization. Trusting that this work, initiated by God Himself, will also be guided and brought to completion by Him, Tokyo International Theological Seminary will continue to walk faithfully to the end as an instrument serving the church in Japan and all peoples.",
                 "history": [
                     "Graduate, Westminster Graduate School (B.Th. Equivalent)",
@@ -236,20 +238,16 @@
             "pageTitle": "Faculty",
             "description": "Professors and pastors serving Tokyo International Seminary.",
             "members": {
-                "shinKwang": "pastor Shin Gwang Choi",
-                "inyong": "pastor Inyong Kim",
-                "kwonseok": "pastor Kwonseok Oh",
-                "daeyoung": "pastor Daeyoung Kim",
-                "woonghwa": "pastor Woonghwa Na",
-                "sungjin": "pastor Sungjin Park",
-                "giseob": "pastor Giseob Shin",
-                "sangmin": "pastor Sangmin Kim",
-                "daesung": "pastor Daesung Kim",
-                "donghwi": "pastor Donghwi Noh",
-                "eunju": "pastor Eunju Jeong",
-                "hangon": "pastor Hangon Kim",
-                "seongsam": "pastor Seongsam Ahn",
-                "kwangseop": "pastor Kwangseop Park"
+                "kwangseop": "pastor Kwangseop Park",
+                "DongyaulTae": "Professor Dongyaul Tae",
+                "jaeSungKim": "Professor Jae Sung Kim",
+                "AYunKim": "Professor A Yun Kim",
+                "JiHyeLee": "Professor Ji Hye Lee",
+                "JungHwaLee": "Professor Jung Hwa Lee",
+                "ShinKwangChoi": "Professor Shin Kwang Choi",
+                "PungRyongKim": "Professor Pung Ryong Kim",
+                "ByungWooJung": "Professor Byung Woo Jung",
+                "DongJinPark": "Professor Dong Jin Park"
             }
         }
     }

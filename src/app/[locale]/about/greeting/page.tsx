@@ -6,15 +6,15 @@ export default function GreetingPage() {
 
     // 1. 키 명칭 변경: chancellor -> chairman, principal -> dean
     const leaders = [
-        { key: 'chairman', image: '/chairman.jpg' },
-        { key: 'dean', image: '/dean.jpg' }
+        { key: 'chairman', image: '/정은주이사장님.png' },
+        { key: 'dean', image: '/신기섭목사님.png' }
     ];
 
     return (
         <main className="relative bg-white min-h-screen py-24 px-8 overflow-hidden">
             {/* 배경 이미지 및 오버레이 */}
             <div className="absolute inset-0 z-0">
-                <Image src="/greeting-bg.jpg" alt="Background" fill className="object-cover" priority />
+                <Image src="/前景.png" alt="Background" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
             </div>
 
@@ -38,6 +38,9 @@ export default function GreetingPage() {
                                             alt={t(`${leader.key}.name`)}
                                             fill
                                             className="object-cover"
+                                            onError={(event) => {
+                                                event.currentTarget.src = '/p_tim.jpg';
+                                            }}
                                         />
                                     </div>
                                 </div>
@@ -76,18 +79,18 @@ export default function GreetingPage() {
                             </div>
 
                             {/* [우측] 메시지 박스 영역 */}
-                            <div className="w-full lg:w-2/3 bg-[#EBF5FF]/60 backdrop-blur-sm p-10 md:p-16 shadow-sm relative rounded-sm border border-blue-50/50 min-h-[450px] flex items-center">
-                                <span className="absolute top-8 left-8 text-5xl text-blue-200/40 font-serif">“</span>
-                                <div className="w-full">
-                                    <h5 className="text-xs font-black text-brand-orange mb-8 tracking-widest uppercase">Message</h5>
-                                    <p className="text-gray-700 leading-[2.3] text-[18px] whitespace-pre-line text-justify relative z-20 font-light">
-                                        {/* t(`${leader.key}.message`)로 자동 업데이트됨 */}
+                            <div className="w-full lg:w-2/3 bg-[#EBF5FF]/60 backdrop-blur-sm p-6 md:p-10 shadow-sm rounded-sm">
+                                <div className="w-full border border-brand-navy/20 rounded-xl bg-white/90 py-4 px-6 mb-8">
+                                    <h5 className="text-sm md:text-base font-black text-brand-navy text-center leading-relaxed break-keep">
+                                        {t.has(`${leader.key}.headline`) ? t(`${leader.key}.headline`) : 'Message'}
+                                    </h5>
+                                </div>
+                                <div className="w-full border border-brand-navy/20 bg-white/90 p-8 md:p-10 min-h-[460px] flex items-center justify-center">
+                                    <p className="text-gray-700 leading-[2.1] text-[18px] whitespace-pre-line text-justify font-light w-full">
                                         {t(`${leader.key}.message`)}
                                     </p>
                                 </div>
-                                <span className="absolute bottom-8 right-8 text-5xl text-blue-200/40 font-serif">”</span>
                             </div>
-
                         </div>
                     ))}
                 </div>

@@ -4,20 +4,20 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 const facultyMembers = [
-    { key: 'shinKwang', image: '/faculty/shinKwang.jpg' },
-    { key: 'inyong', image: '/faculty/inyong.jpg' },
-    { key: 'kwonseok', image: '/faculty/kwonseok.jpg' },
-    { key: 'daeyoung', image: '/faculty/daeyoung.jpg' },
-    { key: 'woonghwa', image: '/faculty/woonghwa.jpg' },
-    { key: 'sungjin', image: '/faculty/sungjin.jpg' },
-    { key: 'giseob', image: '/faculty/giseob.jpg' },
-    { key: 'sangmin', image: '/faculty/sangmin.jpg' },
-    { key: 'daesung', image: '/faculty/daesung.jpg' },
-    { key: 'donghwi', image: '/faculty/donghwi.jpg' },
-    { key: 'eunju', image: '/faculty/eunju.jpg' },
-    { key: 'hangon', image: '/faculty/hangon.jpg' },
-    { key: 'seongsam', image: '/faculty/seongsam.jpg' },
-    { key: 'kwangseop', image: '/faculty/kwangseop.jpg' }
+    { key: 'DongyaulTae', image: '/태동열교수님(조직신학).png' },
+    { key: 'jaeSungKim', image: '/김재성교수(조직신학).png' },
+    { key: 'AYunKim', image: '/김아윤 교수(구약학).png' },
+    { key: 'JiHyeLee', image: '/이지혜교수(신약학).png' },
+    { key: 'JungHwaLee', image: '/이정화 교수(신약학).png' },
+    { key: 'ShinKwangChoi', image: '/최신광교수(교회사).png' },
+    { key: 'PungRyongKim', image: '/김풍룡교수(교회사).png' },
+    { key: 'ByungWooJung', image: '/정병우교수(성경신학).png' },
+    { key: 'DongJinPark', image: '/박동진교수(실천신학).png' }
+    // { key: 'donghwi', image: '/faculty/donghwi.jpg' },
+    // { key: 'eunju', image: '/faculty/eunju.jpg' },
+    // { key: 'hangon', image: '/faculty/hangon.jpg' },
+    // { key: 'seongsam', image: '/faculty/seongsam.jpg' },
+    // { key: 'kwangseop', image: '/faculty/kwangseop.jpg' }
 ] as const;
 
 export default function FacultyPage() {
