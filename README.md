@@ -20,6 +20,38 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Project Setup
+
+This repository uses:
+- Next.js 16.1.4 with App Router
+- React 19.2.3
+- TypeScript 5.x
+- Tailwind CSS v4 with `@tailwindcss/postcss`
+- `next-intl` for locale-prefixed routes
+- Sanity CMS for content management
+- Supabase for database/auth services
+
+### Environment variables
+
+Create a `.env.local` file from `.env.local.example` and fill in your own values:
+
+```bash
+cp .env.local.example .env.local
+```
+
+Required variables:
+- `NEXT_PUBLIC_SANITY_PROJECT_ID`
+- `NEXT_PUBLIC_SANITY_DATASET`
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+
+### Run locally
+
+```bash
+npm install
+npm run dev
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

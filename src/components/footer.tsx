@@ -62,6 +62,17 @@ export default function Footer() {
                     <p className="mt-6 text-xs text-gray-500 italic">
                         &quot;Your life with the Gospel of Jesus Christ.&quot;
                     </p>
+                    <div className="mt-3 text-sm text-gray-300">
+                        <span className="mr-2">{t('churchLinkLabel')}:</span>
+                        <a
+                            href="https://azabufukuin.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-brand-orange hover:text-white transition-colors font-medium"
+                        >
+                            azabufukuin.com
+                        </a>
+                    </div>
                 </div>
             </div>
 

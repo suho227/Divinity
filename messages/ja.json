@@ -19,7 +19,8 @@
         "tel": "03-3865-4442",
         "email": "tokyo.seminary@gmail.com",
         "dept_calendar": "学事日程",
-        "faculty": "教職員"
+        "faculty": "教職員",
+        "churchLinkLabel": "教会リンク"
     },
     "NotFound": {
         "title": "ページが見つかりません。",

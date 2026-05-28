@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 export default function CalendarPage() {
-    const t = useTranslations('About.departments.calendar');
+    const t = useTranslations('About.departments.graduate.calendar');
     const now = new Date();
     const [viewDate, setViewDate] = useState(new Date(now.getFullYear(), 2, 1)); // 3월 기준
 

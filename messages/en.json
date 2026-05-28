@@ -19,7 +19,8 @@
         "tel": "03-3865-4442",
         "email": "tokyo.seminary@gmail.com",
         "dept_calendar": "Academic Calendar",
-        "faculty": "Faculty"
+        "faculty": "Faculty",
+        "churchLinkLabel": "Church Link"
     },
     "Index": {
         "introSubtitle": "INTRODUCTION",
