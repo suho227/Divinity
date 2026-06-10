@@ -11,6 +11,7 @@
         "dept_japanese": "日语学科",
         "notice": "通知",
         "archive": "资料室",
+        "admissionInfo": "入学信息",
         "subTitle": "宗教法人",
         "title": "东京国际神学院",
         "schoolName": "东京国际神学院",
@@ -20,7 +21,11 @@
         "email": "tokyo.seminary@gmail.com",
         "dept_calendar": "学术日历",
         "faculty": "师资介绍",
-        "churchLinkLabel": "教会链接"
+        "churchLinkLabel": "教会链接",
+        "acsLinkLabel": "ACS ",
+        "acsLinkAriaLabel": "打开 ACS 教育机构网站",
+        "azabuLinkLabel": "麻布福音教会",
+        "azabuLinkAriaLabel": "打开麻布福音教会网站"
     },
     "NotFound": {
         "title": "找不到该页面。",
@@ -196,9 +201,8 @@
                         "新约神学",
                         "传道学"
                     ]
-                }
-            },
-            "calendar": {
+                },
+                 "calendar": {
                 "pageTitle": "学术日历",
                 "monthName": "{month}",
                 "majorSchedule": "学术日程",
@@ -210,6 +214,8 @@
                     "m6": "23: 结业集中讲座"
                 }
             }
+            }
+           
         },
         "faculty": {
             "pageTitle": "师资团队",

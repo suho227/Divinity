@@ -11,6 +11,7 @@
         "dept_japanese": "日本語学科",
         "notice": "お知らせ",
         "archive": "資料室",
+        "admissionInfo": "入学情報",
         "subTitle": "宗教法人",
         "title": "東京国際神学校",
         "schoolName": "東京国際神学校",
@@ -20,7 +21,11 @@
         "email": "tokyo.seminary@gmail.com",
         "dept_calendar": "学事日程",
         "faculty": "教職員",
-        "churchLinkLabel": "教会リンク"
+        "churchLinkLabel": "教会リンク",
+        "acsLinkLabel": "ACS ",
+        "acsLinkAriaLabel": "azabu christian school のウェブサイトを開く",
+        "azabuLinkLabel": "麻布福音教会",
+        "azabuLinkAriaLabel": "麻布福音教会のウェブサイトを開く"
     },
     "NotFound": {
         "title": "ページが見つかりません。",
@@ -196,13 +201,8 @@
                         "新約神学",
                         "伝道学"
                     ]
-                }
-            },
-            "japanese": {
-                "pageTitle": "日本語学科",
-                "description": "学科紹介を準備中です。"
-            },
-            "calendar": {
+                },
+                "calendar": {
                 "pageTitle": "学事日程",
                 "monthName": "{month}月",
                 "majorSchedule": "主な日程",
@@ -214,6 +214,10 @@
                     "m6": "23: 卒業セミナー"
                 }
             }
+            },
+            "japanese": {
+                "pageTitle": "日本語学科",
+                "description": "学科紹介を準備中です。"
         },
         "faculty": {
             "pageTitle": "教職員",
@@ -231,5 +235,6 @@
                 "DongJinPark": "パク・ドンジン教授"
             }
         }
+    }
     }
 }

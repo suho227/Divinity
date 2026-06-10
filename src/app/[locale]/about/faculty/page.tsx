@@ -26,7 +26,7 @@ export default function FacultyPage() {
     return (
         <main className="relative bg-[#FAF7F2] min-h-screen py-24 px-8 overflow-hidden">
             <div className="absolute inset-0 z-0">
-                <Image src="/greeting-bg.jpg" alt="Background" fill className="object-cover" priority />
+                <Image src="/前景.png" alt="Background" fill sizes="100vw" className="object-cover" priority />
                 <div className="absolute inset-0 bg-[#FAF7F2]/90 backdrop-blur-sm"></div>
             </div>
 

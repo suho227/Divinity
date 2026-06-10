@@ -32,7 +32,7 @@ export default function CalendarPage() {
         <main className="relative bg-[#FAF7F2] min-h-screen py-24 px-8 overflow-hidden">
             {/* 배경 이미지 */}
             <div className="absolute inset-0 z-0">
-                <Image src="/greeting-bg.jpg" alt="Background" fill className="object-cover" priority />
+                <Image src="/前景.png" alt="Background" fill sizes="100vw" className="object-cover" priority />
                 <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
             </div>
 

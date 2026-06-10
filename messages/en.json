@@ -11,6 +11,7 @@
         "dept_japanese": "Japanese Dept",
         "notice": "Notice",
         "archive": "Archive",
+        "admissionInfo": "Admissions",
         "subTitle": "Religious Juridical Person",
         "title": "Tokyo International Seminary",
         "schoolName": "Tokyo International Seminary",
@@ -20,7 +21,11 @@
         "email": "tokyo.seminary@gmail.com",
         "dept_calendar": "Academic Calendar",
         "faculty": "Faculty",
-        "churchLinkLabel": "Church Link"
+        "churchLinkLabel": "Church",
+        "acsLinkLabel": "ACS",
+        "acsLinkAriaLabel": "Open the Azabu Christian School website",
+        "azabuLinkLabel": "Azabu Gospel Church",
+        "azabuLinkAriaLabel": "Open the Azabu Gospel Church website"
     },
     "Index": {
         "introSubtitle": "INTRODUCTION",
@@ -192,9 +197,8 @@
                         "New Testament Theology",
                         "Evangelism"
                     ]
-                }
-            },
-            "calendar": {
+                },
+                "calendar": {
                 "pageTitle": "Academic Calendar",
                 "monthName": "{month}",
                 "majorSchedule": "Major Schedule",
@@ -205,7 +209,9 @@
                     "m5": "22: School Holiday",
                     "m6": "23: Closing Intensive Seminar"
                 }
+            }
             },
+            
             "sharedCourses": {
                 "title": "Shared Courses",
                 "provider": "Seminary lectures: 首都国際大学院大学",
