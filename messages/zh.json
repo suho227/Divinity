@@ -12,6 +12,9 @@
         "notice": "通知",
         "archive": "资料室",
         "admissionInfo": "入学信息",
+        "admissionGuide": "入学指南",
+        "admissionForms": "入学表格",
+        "admissionConsultation": "入学咨询",
         "subTitle": "宗教法人",
         "title": "东京国际神学院",
         "schoolName": "东京国际神学院",
@@ -231,7 +234,20 @@
                 "PungRyongKim": "金丰龙教授",
                 "ByungWooJung": "郑炳祐教授",
                 "DongJinPark": "朴东镇教授"
-            }
-        }
+ },
+            "profileModalTitle": "教授简介",
+            "openProfile": "打开{name}简介",
+            "closeProfile": "关闭教授简介",
+            "profiles": {
+                "DongyaulTae": "专业：系统神学\n通过以基督为中心的系统神学教育，帮助学生平衡理解圣经教义与牧会现场。",
+                "jaeSungKim": "专业：系统神学\n立足改革宗神学传统，教授服事教会与宣教现场所需的神学分辨力和牧会应用。",
+                "AYunKim": "专业：旧约学\n深入研读旧约圣经文本与背景，帮助学生理解圣经脉络和救赎历史。",
+                "JiHyeLee": "专业：新约学\n教授新约圣经信息及初代教会背景，强调以福音为中心的解释与应用。",
+                "JungHwaLee": "专业：新约学\n通过新约文本研究和圣经解释训练，帮助学生正确宣讲和教导神的话语。",
+                "ShinKwangChoi": "专业：教会史\n借着教会历史与信仰遗产，教导今日事奉者分辨时代并忠心服事教会。",
+                "PungRyongKim": "专业：教会史\n考察世界教会史与宣教发展，帮助学生从神学角度理解历史中的上帝护理。",
+                "ByungWooJung": "专业：圣经神学\n研究贯穿整本圣经的救赎历史，并提出连接讲道与事奉的圣经神学视角。",
+                "DongJinPark": "专业：实践神学\n提供牧会与宣教现场所需的实践训练，帮助学生建立服事型领导力。"        }
     }
+}
 }

@@ -11,7 +11,10 @@
         "dept_japanese": "Japanese Dept",
         "notice": "Notice",
         "archive": "Archive",
-        "admissionInfo": "Admissions",
+         "admissionInfo": "Admissions",
+        "admissionGuide": "Admissions Guide",
+        "admissionForms": "Application Forms",
+        "admissionConsultation": "Admissions Consultation",
         "subTitle": "Religious Juridical Person",
         "title": "Tokyo International Seminary",
         "schoolName": "Tokyo International Seminary",
@@ -255,7 +258,21 @@
                 "PungRyongKim": "Professor Pung Ryong Kim",
                 "ByungWooJung": "Professor Byung Woo Jung",
                 "DongJinPark": "Professor Dong Jin Park"
+                  },
+            "profileModalTitle": "Faculty Profile",
+            "openProfile": "Open {name} profile",
+            "closeProfile": "Close faculty profile",
+            "profiles": {
+                "DongyaulTae": "Field: Systematic Theology\nGuides students to understand biblical doctrine and ministry practice through Christ-centered systematic theology.",
+                "jaeSungKim": "Field: Systematic Theology\nTeaches theological discernment and pastoral application for serving the church and mission field within the Reformed tradition.",
+                "AYunKim": "Field: Old Testament Studies\nExplores the text and background of the Old Testament so students can grasp the flow of Scripture and redemptive history.",
+                "JiHyeLee": "Field: New Testament Studies\nTeaches the message of the New Testament and its early church context with an emphasis on gospel-centered interpretation and application.",
+                "JungHwaLee": "Field: New Testament Studies\nHelps students faithfully preach and teach Scripture through close study of New Testament texts and biblical interpretation.",
+                "ShinKwangChoi": "Field: Church History\nUses the history and heritage of the church to help future ministers discern their times and serve the church faithfully.",
+                "PungRyongKim": "Field: Church History\nExamines world church history and the movement of mission so students can understand God’s providence throughout history.",
+                "ByungWooJung": "Field: Biblical Theology\nPresents a biblical-theological vision of redemptive history that connects the whole Bible to preaching and ministry.",
+                "DongJinPark": "Field: Practical Theology\nProvides practical training for pastoral and mission contexts, helping students develop servant leadership for ministry."
+            }
             }
         }
     }
-}

@@ -1,5 +1,5 @@
 'use client';
-
+import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
@@ -20,10 +20,35 @@ const facultyMembers = [
     // { key: 'kwangseop', image: '/faculty/kwangseop.jpg' }
 ] as const;
 
+type FacultyMember = (typeof facultyMembers)[number];
+type FacultyMemberKey = FacultyMember['key'];
+
+
 export default function FacultyPage() {
     const t = useTranslations('About.faculty');
 
-    return (
+    const [selectedMemberKey, setSelectedMemberKey] = useState<FacultyMemberKey | null>(null);
+    const selectedMember = facultyMembers.find((member) => member.key === selectedMemberKey);
+
+    useEffect(() => {
+        if (!selectedMemberKey) {
+            return;
+        }
+
+       const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') {
+                setSelectedMemberKey(null);
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [selectedMemberKey]);
+
+return (
         <main className="relative bg-[#FAF7F2] min-h-screen py-24 px-8 overflow-hidden">
             <div className="absolute inset-0 z-0">
                 <Image src="/前景.png" alt="Background" fill sizes="100vw" className="object-cover" priority />
@@ -41,23 +66,85 @@ export default function FacultyPage() {
                 <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {facultyMembers.map((member) => (
                         <article key={member.key} className="bg-white border border-blue-50 shadow-sm p-6 text-center flex flex-col items-center gap-5">
-                            <div className="relative w-28 h-36 overflow-hidden border border-gray-200 bg-gray-100">
-                                <Image
-                                    src={member.image}
-                                    alt={t(`members.${member.key}`)}
-                                    fill
-                                    sizes="112px"
-                                    className="object-cover"
-                                    onError={(event) => {
-                                        event.currentTarget.src = '/faculty/default-profile.svg';
-                                    }}
-                                />
+
+
+    <div className="relative">
+                                <div className="relative w-28 h-36 overflow-hidden border border-gray-200 bg-gray-100">
+                                    <Image
+                                        src={member.image}
+                                        alt={t(`members.${member.key}`)}
+                                        fill
+                                        sizes="112px"
+                                        className="object-cover"
+                                        onError={(event) => {
+                                            event.currentTarget.src = '/faculty/default-profile.svg';
+                                        }}
+                                    />
+                                </div>
+                                <button
+                                    type="button"
+                                    aria-label={t('openProfile', { name: t(`members.${member.key}`) })}
+                                    onClick={() => setSelectedMemberKey(member.key)}
+                                    className="absolute -bottom-2 -right-2 z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#F39200] text-lg font-black leading-none text-white shadow-md transition hover:bg-[#d67f00] focus:outline-none focus:ring-2 focus:ring-[#002855] focus:ring-offset-2"
+                                >
+                                    +
+                                </button>
                             </div>
                             <p className="text-xl font-black text-[#001529] break-keep">{t(`members.${member.key}`)}</p>
                         </article>
                     ))}
                 </section>
             </div>
+
+            {selectedMember ? (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-[#001529]/70 px-4 py-8"
+                    role="presentation"
+                    onClick={() => setSelectedMemberKey(null)}
+                >
+                    <section
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="faculty-profile-title"
+                        aria-describedby="faculty-profile-description"
+                        className="relative w-full max-w-2xl overflow-hidden bg-white shadow-2xl"
+                        onClick={(event) => event.stopPropagation()}
+                    >
+                        <button
+                            type="button"
+                            aria-label={t('closeProfile')}
+                            onClick={() => setSelectedMemberKey(null)}
+                            className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-2xl font-bold text-[#002855] shadow transition hover:bg-[#F39200] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#002855]"
+                        >
+                            ×
+                        </button>
+
+                        <div className="grid gap-0 md:grid-cols-[220px_1fr]">
+                            <div className="relative min-h-72 bg-gray-100 md:min-h-full">
+                                <Image
+                                src={selectedMember.image}
+                                    alt={t(`members.${selectedMember.key}`)}
+                                    fill
+                                     sizes="(min-width: 768px) 220px, 100vw"
+                                    className="object-cover"
+                                    onError={(event) => {
+                                        event.currentTarget.src = '/faculty/default-profile.svg';
+                                    }}
+                                />
+                            </div>
+                                           <div className="p-8 md:p-10">
+                                <p className="text-sm font-black uppercase tracking-[0.25em] text-[#F39200]">{t('profileModalTitle')}</p>
+                                <h2 id="faculty-profile-title" className="mt-3 text-3xl font-black text-[#001529] break-keep">
+                                    {t(`members.${selectedMember.key}`)}
+                                </h2>
+                                <p id="faculty-profile-description" className="mt-6 whitespace-pre-line text-base leading-8 text-gray-700 break-keep">
+                                    {t(`profiles.${selectedMember.key}`)}
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            ) : null}
         </main>
     );
 }
