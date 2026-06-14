@@ -41,7 +41,8 @@ export default function Footer() {
                         <li><Link href="/about" className="hover:text-white transition-colors">{t('about')}</Link></li>
                         <li><Link href="/departments" className="hover:text-white transition-colors">{t('departments')}</Link></li>
                         <li><Link href="/notice" className="hover:text-white transition-colors">{t('notice')}</Link></li>
-                        <li><Link href="/archive" className="hover:text-white transition-colors">{t('archive')}</Link></li>
+                      {/* 자료실 링크 임시 비노출: 다시 사용할 때 아래 링크를 주석 해제하세요. */}
+                        {/* <li><Link href="/archive" className="hover:text-white transition-colors">{t('archive')}</Link></li> */}
                     </ul>
                 </div>
 

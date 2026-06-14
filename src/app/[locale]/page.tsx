@@ -65,9 +65,6 @@ export default function HomePage() {
                         <p className="text-lg text-gray-700 leading-loose mb-10">
                             {t('introDescription')}
                         </p>
-                        <Link href="/about" className="inline-block px-8 py-3 border-2 border-brand-navy text-brand-navy font-bold hover:bg-brand-navy hover:text-white transition-all">
-                            {t('introMore')}
-                        </Link>
                     </div>
                 </div>
             </section>

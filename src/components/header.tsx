@@ -167,11 +167,15 @@ export default function Header() {
                         </div>
 
 
-                         {['admissionInfo', 'notice', 'archive'].map((item) => (
-                            <Link key={item} href={item === 'admissionInfo' ? '/admission' : `/${item}`} className="text-white font-bold text-[16px] hover:text-brand-orange transition-all py-8">
-                                {t(item)}
-                                </Link>
-                            ))}
+                        <Link href="/notice" className="text-white font-bold text-[16px] hover:text-brand-orange transition-all py-8">
+                                {t('notice')}
+                            </Link>
+                                           {/* 자료실 탭 임시 비노출: 다시 사용할 때 아래 링크를 주석 해제하세요. */}
+                            {/*
+                            <Link href="/archive" className="text-white font-bold text-[16px] hover:text-brand-orange transition-all py-8">
+                                {t('archive')}
+                            </Link>
+                            */}
                         </nav>
 
  {/* 데스크탑 외부 링크 버튼 */}
@@ -247,12 +251,12 @@ export default function Header() {
                                     ))}
                                 </div>
                             </li>
-                            <li>
-                                <Link href="/notice" onClick={() => setIsMenuOpen(false)} className="block text-white font-bold">{t('notice')}</Link>
-                            </li>
+                       {/* 자료실 모바일 메뉴 임시 비노출: 다시 사용할 때 아래 링크를 주석 해제하세요. */}
+                            {/*
                             <li>
                                 <Link href="/archive" onClick={() => setIsMenuOpen(false)} className="block text-white font-bold">{t('archive')}</Link>
                             </li>
+                            */}
  {externalMenuLinks.map((link) => (
                                 <li key={link.href}>
                                     <a
