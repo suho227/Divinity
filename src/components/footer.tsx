@@ -74,6 +74,17 @@ export default function Footer() {
                             azabufukuin.com
                         </a>
                     </div>
+                    <div className="mt-3 text-sm text-gray-300">
+                        <span className="mr-2">{t('acs')}:</span>
+                        <a
+                            href="https://www.acs-ed.jp/?lang=zh"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-brand-orange hover:text-white transition-colors font-medium"
+                        >
+                            azabufukuin.com
+                        </a>
+                    </div>
                 </div>
             </div>
 

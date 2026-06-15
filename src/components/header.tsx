@@ -13,7 +13,7 @@ const languages = [
 ];
 
 const externalMenuLinks = [
-    { labelKey: 'acsLinkLabel', href: 'https://www.aca-ed.jp/?lang=zh', ariaLabelKey: 'acsLinkAriaLabel' },
+    { labelKey: 'acsLinkLabel', href: 'https://www.acs-ed.jp/?lang=zh', ariaLabelKey: 'acsLinkAriaLabel' },
     { labelKey: 'azabuLinkLabel', href: 'https://azabufukuin.com/', ariaLabelKey: 'azabuLinkAriaLabel' },
 ];
 
@@ -65,7 +65,6 @@ export default function Header() {
 
     const deptMenuItems = [
         { href: '/about/departments/bth', label: 'dept_bth' },
-        { href: '/about/departments/graduate', label: 'dept_grad' },
         { href: '/about/departments/japanese', label: 'dept_japanese' },
         { href: '/about/departments/calendar', label: 'dept_calendar' }
     ];

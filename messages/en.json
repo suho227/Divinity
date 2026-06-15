@@ -6,8 +6,7 @@
         "history": "History",
         "location": "Location",
         "departments": "Departments",
-        "dept_bth": "B.Th.",
-        "dept_grad": "M.Div./Th.M./Ph.D.",
+        "dept_bth": "Theology",
         "dept_japanese": "Japanese Dept",
         "notice": "Notice",
         "archive": "Archive",
@@ -136,6 +135,33 @@
         "departments": {
             "pageTitle": "Department Info",
             "introMessage": "Department of Theology cultivating ministers through Bible-based theological education.",
+            "curriculum": {
+                "headers": [
+                    "1st Year",
+                    "2nd Year",
+                    "3rd Year",
+                    "Common Courses and Separate Classes (Final Week of the 8th Semester)"
+                ],
+                "rows": [
+                    ["Theology Proper (Sudokukje Graduate University)", "Anthropology (Sudokukje Graduate University)", "Christology (Sudokukje Graduate University)", "Creeds and Confessions (Graduate) Sudokukje Graduate University, 2nd Year 2nd Semester"],
+                    ["Early Church History (Pastor Shin Kwang Choi)", "Medieval Church History (Pastor Shin Kwang Choi)", "Reformation History (Pastor Shin Kwang Choi)", "Church Education (Undergraduate), 2nd Year 2nd Semester (Pastor Sung Jin Park)"],
+                    ["Pastor Jong Seop Jin (Church History)", "Pentateuch (Pastor Sang Min Kim)", "Historical Books (Pastor Dong Hwi Noh)", "Old Testament Hermeneutics (Graduate), 1st Year 1st Semester (Sudokukje)"],
+                    ["Gospels (Pastor Kwon Sung Oh)", "Greek (Pastor In Yong Kim)", "Pauline Epistles (Pastor Dae Young Kim)", "Acts (Undergraduate) - Pastor Kwon Sung Oh, 2-1, 3-1"],
+                    ["Worship Studies (Pastor Dae Young Kim)", "Homiletics / Practice (Pastor Eun Joo Jung)", "Missiology (Pastor Sung Sam Ahn)", "Revelation (Graduate), 3rd Year 2nd Semester (Sudokukje)"],
+                    ["Soteriology (Pastor Yong Hwa Na)", "Ecclesiology (Pastor Han Gon Kim)", "Revelation and Eschatology (Sudokukje Graduate University)", "New Testament Interpretation (Graduate) 1-2 Wed / New Testament Preaching (Undergraduate) 3-2"],
+                    ["Modern and Contemporary Church History (Pastor Sung Jin Park)", "Japanese Church History (Pastor Ki Seop Shin)", "Prison Epistles (Pastor Kwang Seop Park)", "Old Testament Exegesis (Graduate) 2-1 Wed / Psalms (Undergraduate) 4-2 Wed"],
+                    ["Poetic Books (Sudokukje Graduate University)", "Prophets (Sudokukje Graduate University)", "Old Testament Theology / Introduction (Sudokukje Graduate University)", "Church Polity (Graduate) 3-1 Pastor Ki Seop Shin"],
+                    ["New Testament Theology (Sudokukje Graduate University)", "General Epistles (Pastor Sung Jin Park)", "Biblical Hermeneutics (Sudokukje Graduate University)", "Pastoral Theology (Undergraduate) Pastor Sang Min Kim, 1st Year 1st Semester"],
+                    ["Evangelism (Pastor Ki Seop Shin)", "Pastoral Counseling (Pastor Dong Hwi Noh)", "Apocalyptic Literature (Sudokukje Graduate University)", "Study of Jesus' Parables (Undergraduate) 4-1 Sudokukje"],
+                    ["Pastoral Counseling / Praise (Pastor Dong Hwi Noh)", "", "", ""],
+                    ["Pastoral Theology (Pastor Sang Min Kim)", "", "", ""],
+                    ["Biblical Theology (Pastor Seung Lee)", "", "", ""],
+                    ["The Kingdom of God and Jesus' Parables (Professor Seung Ah Han)", "", "", ""],
+                    ["Special Lecture on Heresies (Pastor Young Guk Seo) / Exodus (Pastor Han Gon Kim)", "", "", ""],
+                    ["Missiology (Pastor Timothy Shin)", "", "", ""],
+                    ["Pentateuch (Professor Ki Moon Sung)", "", "", ""]
+                ]
+            },
             "degreeName": "B.Th. Course",
             "yearInfo": "1st Year Curriculum",
             "semester1": "1st Semester",
