@@ -82,7 +82,7 @@ export default function Footer() {
                             rel="noopener noreferrer"
                             className="text-brand-orange hover:text-white transition-colors font-medium"
                         >
-                            azabufukuin.com
+                            www.acs-ed.jp
                         </a>
                     </div>
                 </div>

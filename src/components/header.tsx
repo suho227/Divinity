@@ -54,6 +54,7 @@ export default function Header() {
     const locale = useLocale();
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isLanguageOpen, setIsLanguageOpen] = useState(false);
 
     const aboutSubMenus = [
         { name: 'greeting', href: '/about/greeting' },
@@ -85,17 +86,21 @@ export default function Header() {
                         {/* <span className="hidden sm:inline">TEL. 03-3865-4442</span>
                         <span className="sm:hidden">03-3865-4442</span> */}
                     </div>
-                    <div className="relative group">
-                        <button className="flex items-center gap-2 text-white/80 hover:text-brand-orange transition-all text-[10px] md:text-[11px] font-black tracking-widest uppercase">
-                            <span className="text-brand-orange">🌐</span>
+ <div className="relative">
+                        <button
+                            type="button"
+                            aria-haspopup="menu"
+                            aria-expanded={isLanguageOpen}
+                            onClick={() => setIsLanguageOpen((open) => !open)}
+                            onBlur={() => setTimeout(() => setIsLanguageOpen(false), 100)}
+                            className="flex items-center gap-2 text-white/80 hover:text-brand-orange transition-all text-[10px] md:text-[11px] font-black tracking-widest uppercase"
+                        >                            <span className="text-brand-orange">🌐</span>
                             {languages.find(l => l.code === locale)?.name}
-                            <span className="text-[8px] transition-transform group-hover:rotate-180 ml-1">▼</span>
+                            <span className={`text-[8px] transition-transform ml-1 ${isLanguageOpen ? 'rotate-180' : ''}`}>▼</span>
                         </button>
-                        <ul className="absolute top-full right-0 mt-1 w-32 bg-black border border-white/10 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
-                            {languages.map((lang) => (
+<ul className={`absolute top-full right-0 mt-1 w-32 bg-black border border-white/10 shadow-2xl transition-all duration-300 z-[60] ${isLanguageOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>                            {languages.map((lang) => (
                                 <li key={lang.code}>
-                                    <Link href={pathname} locale={lang.code} className={`block px-4 py-2 text-[11px] font-bold transition-all border-b border-white/5 ${locale === lang.code ? 'text-brand-orange bg-white/5' : 'text-gray-400 hover:text-white hover:bg-white/10'}`}>
-                                        {lang.name}
+ <Link href={pathname} locale={lang.code} onClick={() => setIsLanguageOpen(false)} className={`block px-4 py-2 text-[11px] font-bold transition-all border-b border-white/5 ${locale === lang.code ? 'text-brand-orange bg-white/5' : 'text-gray-400 hover:text-white hover:bg-white/10'}`}>
                                     </Link>
                                 </li>
                             ))}
@@ -215,8 +220,7 @@ export default function Header() {
             {/* 모바일 사이드바 메뉴 (동일) */}
             {isMenuOpen && (
                 <div className="lg:hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm">
-                    <div className="absolute right-0 top-0 h-full w-64 bg-[#001529] p-8 shadow-2xl">
-                        <button onClick={() => setIsMenuOpen(false)} className="text-white absolute top-6 right-6 text-2xl">✕</button>
+                    <div className="absolute right-0 top-0 h-full w-64 overflow-y-auto bg-[#001529] p-8 shadow-2xl">                        <button onClick={() => setIsMenuOpen(false)} className="text-white absolute top-6 right-6 text-2xl">✕</button>
                         <ul className="mt-12 space-y-6">
                             <li>
                                 <p className="text-brand-orange font-black text-xs mb-3">{t('about')}</p>
@@ -235,14 +239,6 @@ export default function Header() {
                                 </div>
                             </li>
                             <li>
-                                <p className="text-brand-orange font-black text-xs mb-3">{t('admissionInfo')}</p>
-                                <div className="space-y-3 pl-4 border-l border-white/10">
-                                    {admissionMenuItems.map(item => (
-                                        <Link key={item.label} href={item.href} onClick={() => setIsMenuOpen(false)} className="block text-gray-300 text-sm hover:text-white">{t(item.label)}</Link>
-                                    ))}
-                                </div>
-                            </li>
-                             <li>
                                 <p className="text-brand-orange font-black text-xs mb-3">{t('admissionInfo')}</p>
                                 <div className="space-y-3 pl-4 border-l border-white/10">
                                     {admissionMenuItems.map(item => (
