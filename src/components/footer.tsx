@@ -75,7 +75,7 @@ export default function Footer() {
                         </a>
                     </div>
                     <div className="mt-3 text-sm text-gray-300">
-                        <span className="mr-2">{t('acs')}:</span>
+                        <span className="mr-2">{t('acsLinkLabel')}:</span>
                         <a
                             href="https://www.acs-ed.jp/?lang=zh"
                             target="_blank"
