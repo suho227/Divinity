@@ -4,20 +4,24 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 const facultyMembers = [
-    { key: 'DongyaulTae', image: '/태동열교수님(조직신학).png' },
-    { key: 'jaeSungKim', image: '/김재성교수(조직신학).png' },
-    { key: 'AYunKim', image: '/김아윤 교수(구약학).png' },
-    { key: 'JiHyeLee', image: '/이지혜교수(신약학).png' },
-    { key: 'JungHwaLee', image: '/이정화 교수(신약학).png' },
-    { key: 'ShinKwangChoi', image: '/최신광교수(교회사).png' },
-    { key: 'PungRyongKim', image: '/김풍룡교수(교회사).png' },
-    { key: 'ByungWooJung', image: '/정병우교수(성경신학).png' },
-    { key: 'DongJinPark', image: '/박동진교수(실천신학).png' }
-    // { key: 'donghwi', image: '/faculty/donghwi.jpg' },
-    // { key: 'eunju', image: '/faculty/eunju.jpg' },
-    // { key: 'hangon', image: '/faculty/hangon.jpg' },
-    // { key: 'seongsam', image: '/faculty/seongsam.jpg' },
-    // { key: 'kwangseop', image: '/faculty/kwangseop.jpg' }
+    { key: 'DongyaulTae', image: '/태동열교수님(조직신학).png', category: 'systematicTheology' },
+    { key: 'jaeSungKim', image: '/김재성교수(조직신학).png', category: 'systematicTheology' },
+    { key: 'AYunKim', image: '/김아윤 교수(구약학).png', category: 'oldTestament' },
+    { key: 'JiHyeLee', image: '/이지혜교수(신약학).png', category: 'newTestament' },
+    { key: 'JungHwaLee', image: '/이정화 교수(신약학).png', category: 'newTestament' },
+    { key: 'ShinKwangChoi', image: '/최신광교수(교회사).png', category: 'churchHistory' },
+    { key: 'PungRyongKim', image: '/김풍룡교수(교회사).png', category: 'churchHistory' },
+    { key: 'ByungWooJung', image: '/정병우교수(성경신학).png', category: 'biblicalTheology' },
+    { key: 'DongJinPark', image: '/박동진교수(실천신학).png', category: 'preaching' }
+] as const;
+
+const facultyCategories = [
+    'systematicTheology',
+    'oldTestament',
+    'newTestament',
+    'churchHistory',
+    'biblicalTheology',
+    'preaching'
 ] as const;
 
 type FacultyMember = (typeof facultyMembers)[number];
@@ -35,7 +39,7 @@ export default function FacultyPage() {
             return;
         }
 
-       const handleKeyDown = (event: KeyboardEvent) => {
+        const handleKeyDown = (event: KeyboardEvent) => {
             if (event.key === 'Escape') {
                 setSelectedMemberKey(null);
             }
@@ -48,7 +52,7 @@ export default function FacultyPage() {
         };
     }, [selectedMemberKey]);
 
-return (
+    return (
         <main className="relative bg-[#FAF7F2] min-h-screen py-24 px-8 overflow-hidden">
             <div className="absolute inset-0 z-0">
                 <Image src="/前景.png" alt="Background" fill sizes="100vw" className="object-cover" priority />
@@ -63,36 +67,47 @@ return (
                     <p className="mt-6 text-gray-700 text-lg break-keep">{t('description')}</p>
                 </div>
 
-                <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {facultyMembers.map((member) => (
-                        <article key={member.key} className="bg-white border border-blue-50 shadow-sm p-6 text-center flex flex-col items-center gap-5">
-
-
-    <div className="relative">
-                                <div className="relative w-28 h-36 overflow-hidden border border-gray-200 bg-gray-100">
-                                    <Image
-                                        src={member.image}
-                                        alt={t(`members.${member.key}`)}
-                                        fill
-                                        sizes="112px"
-                                        className="object-cover"
-                                        onError={(event) => {
-                                            event.currentTarget.src = '/faculty/default-profile.svg';
-                                        }}
-                                    />
+                <section className="space-y-14">
+                    {facultyCategories.map((category) => {
+                        const categoryMembers = facultyMembers.filter((member) => member.category === category);
+                        return (
+                            <div key={category} className="grid gap-6 lg:grid-cols-[180px_1fr]">
+                                <div className="border-t-2 border-[#001529] pt-5">
+                                    <h2 className="text-2xl font-black text-[#001529] break-keep">{t(`categories.${category}`)}</h2>
                                 </div>
-                                <button
-                                    type="button"
-                                    aria-label={t('openProfile', { name: t(`members.${member.key}`) })}
-                                    onClick={() => setSelectedMemberKey(member.key)}
-                                    className="absolute -bottom-2 -right-2 z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#F39200] text-lg font-black leading-none text-white shadow-md transition hover:bg-[#d67f00] focus:outline-none focus:ring-2 focus:ring-[#002855] focus:ring-offset-2"
-                                >
-                                    +
-                                </button>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    {categoryMembers.map((member) => (
+                                        <article key={member.key} className="bg-white border border-blue-50 shadow-sm p-6 text-center flex flex-col items-center gap-5">
+                                            <div className="relative">
+                                                <div className="relative w-28 h-36 overflow-hidden border border-gray-200 bg-gray-100">
+                                                    <Image
+                                                        src={member.image}
+                                                        alt={t(`members.${member.key}`)}
+                                                        fill
+                                                        sizes="112px"
+                                                        className="object-cover"
+                                                        onError={(event) => {
+                                                            event.currentTarget.src = '/faculty/default-profile.svg';
+                                                        }}
+                                                    />
+                                                </div>
+                                                <button
+                                                    type="button"
+                                                    aria-label={t('openProfile', { name: t(`members.${member.key}`) })}
+                                                    onClick={() => setSelectedMemberKey(member.key)}
+                                                    className="absolute -bottom-2 -right-2 z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#F39200] text-lg font-black leading-none text-white shadow-md transition hover:bg-[#d67f00] focus:outline-none focus:ring-2 focus:ring-[#002855] focus:ring-offset-2"
+                                                >
+                                                    +
+                                                </button>
+                                            </div>
+                                            <p className="text-xl font-black text-[#001529] break-keep">{t(`members.${member.key}`)}</p>
+                                            <p className="text-sm font-bold text-[#F39200] break-keep">{t(`categories.${member.category}`)}</p>
+                                        </article>
+                                    ))}
+                                </div>
                             </div>
-                            <p className="text-xl font-black text-[#001529] break-keep">{t(`members.${member.key}`)}</p>
-                        </article>
-                    ))}
+                        );
+                    })}
                 </section>
             </div>
 
@@ -122,21 +137,22 @@ return (
                         <div className="grid gap-0 md:grid-cols-[220px_1fr]">
                             <div className="relative min-h-72 bg-gray-100 md:min-h-full">
                                 <Image
-                                src={selectedMember.image}
+                                    src={selectedMember.image}
                                     alt={t(`members.${selectedMember.key}`)}
                                     fill
-                                     sizes="(min-width: 768px) 220px, 100vw"
+                                    sizes="(min-width: 768px) 220px, 100vw"
                                     className="object-cover"
                                     onError={(event) => {
                                         event.currentTarget.src = '/faculty/default-profile.svg';
                                     }}
                                 />
                             </div>
-                                           <div className="p-8 md:p-10">
+                            <div className="p-8 md:p-10">
                                 <p className="text-sm font-black uppercase tracking-[0.25em] text-[#F39200]">{t('profileModalTitle')}</p>
                                 <h2 id="faculty-profile-title" className="mt-3 text-3xl font-black text-[#001529] break-keep">
                                     {t(`members.${selectedMember.key}`)}
                                 </h2>
+                                <p className="mt-3 inline-flex bg-[#002855] px-3 py-1 text-sm font-bold text-white break-keep">{t(`categories.${selectedMember.category}`)}</p>
                                 <p id="faculty-profile-description" className="mt-6 whitespace-pre-line text-base leading-8 text-gray-700 break-keep">
                                     {t(`profiles.${selectedMember.key}`)}
                                 </p>

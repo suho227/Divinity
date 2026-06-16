@@ -317,15 +317,23 @@
             "openProfile": "{name}のプロフィールを開く",
             "closeProfile": "教授プロフィールを閉じる",
             "profiles": {
-                "DongyaulTae": "専攻：組織神学\nキリスト中心の組織神学教育を通して、学生が聖書的教理と牧会の現場をバランスよく理解できるよう導きます。",
-                "jaeSungKim": "専攻：組織神学\n改革神学の伝統に立ち、教会と宣教の現場に仕えるための神学的識別力と牧会的適用を教えます。",
-                "AYunKim": "専攻：旧約学\n旧約聖書の本文と背景を深く学び、学生が聖書全体の流れと贖いの歴史を理解できるよう導きます。",
-                "JiHyeLee": "専攻：新約学\n新約聖書のメッセージと初代教会の文脈を教え、福音中心の解釈と適用を重視します。",
-                "JungHwaLee": "専攻：新約学\n新約本文の研究と聖書解釈の訓練を通して、学生が御言葉を正しく語り教えられるよう助けます。",
-                "ShinKwangChoi": "専攻：教会史\n教会の歴史と信仰の遺産を通して、現代の奉仕者が時代を見分け、教会に仕えられるよう教えます。",
-                "PungRyongKim": "専攻：教会史\n世界教会史と宣教の流れを学び、学生が歴史における神の摂理を神学的に理解できるよう助けます。",
-                "ByungWooJung": "専攻：聖書神学\n聖書全体を貫く贖いの歴史を学び、説教と奉仕につながる聖書神学的視点を提示します。",
-                "DongJinPark": "専攻：実践神学\n牧会と宣教の現場に必要な実践的訓練を提供し、学生が仕えるリーダーシップを身につけられるよう助けます。"
+ "DongyaulTae": "学歴\n- 경북대학교 무역학과 졸업 (문학사, B.A.)\n- 고려신학대학원 졸업 (목회학석사, M.Div.)\n- Calvin Theological Seminary (Th.M.)\n- Calvin Theological Seminary (Ph.D.)",
+                "jaeSungKim": "学歴\n- 총신대학교 신학과 졸업 (문학사, B.A.)\n- 합동신학대학원 졸업 (목회학석사, M.Div.)\n- 서울대학교 대학원 졸업 (문학석사, M.A.)\n- Calvin Theological Seminary 졸업 (신학석사, Th.M.)\n- Westminster Theological Seminary 졸업 (철학박사, Ph.D.)",
+                "AYunKim": "学歴\n- 고려대학교 중국어중국문학과 졸업 (문학사, B.A.)\n- Trinity Evangelical Divinity School 졸업 (목회학석사, M.Div.)\n- Gordon-Conwell Theological Seminary (Th.M.)\n- Trinity Evangelical Divinity School (Ph.D.)",
+                "JiHyeLee": "学歴\n- 한동대학교 법학부 졸업 (법학사)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Wheaton College (M.A.)\n- Emory University (Th.M.)\n- University of St. Andrews (Ph.D.)",
+                "JungHwaLee": "学歴\n- 이화여자대학교 불어불문학과 졸업 (문학사, B.A.)\n- 서울대학교 대학원 불어불문학과 졸업 (문학석사, M.A.)\n- 서울대학교 대학원 불어불문학과 박사과정 수료\n- 국제신학대학원대학교 졸업 (목회학석사, M.Div.)\n- 국제신학대학원대학교 졸업 (신학석사, Th.M.)\n- 국제신학대학원대학교 졸업 (철학박사, Ph.D.)",
+                "ShinKwangChoi": "学歴\n- 고려대학교 교육학과 졸업 (B.A.)\n- 수도국제대학원대학교 목회연구과 목회학석사 (M.Div. Equiv.)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Calvin Theological Seminary 신학석사 (Th.M., 조직신학·역사신학)\n- Southwestern Baptist Theological Seminary 철학박사 (Ph.D., 조직신학)",
+                "PungRyongKim": "学歴\n- 한성대학교 영문학과 졸업 (문학사, B.A.)\n- 합동신학대학원대학교 졸업 (목회학석사, M.Div.)\n- University of Aberdeen (Th.M.)\n- University of Aberdeen (Ph.D.)",
+                "ByungWooJung": "学歴\n- 국제신학대학원대학교 졸업 (목회학석사, M.Div. / 신학석사, Th.M.)\n- Ezra Bible Institute 대학원 박사과정 수료",
+                "DongJinPark": "学歴\n- 중앙대학교 신문방송학과 졸업 (문학사, B.A.)\n- 합동신학대학원대학교 졸업 (목회학석사, M.Div.)\n- McMaster Divinity College (M.A.)\n- McMaster Divinity College (Ph.D.)"
+            },
+            "categories": {
+                "systematicTheology": "組織神学",
+                "oldTestament": "旧約学",
+                "newTestament": "新約学",
+                "churchHistory": "教会史",
+                "biblicalTheology": "聖書神学",
+                "preaching": "説教学"
             }
         }
     }

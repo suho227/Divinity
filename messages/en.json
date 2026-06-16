@@ -338,16 +338,24 @@
             "openProfile": "Open {name} profile",
             "closeProfile": "Close faculty profile",
             "profiles": {
-                "DongyaulTae": "Field: Systematic Theology\nGuides students to understand biblical doctrine and ministry practice through Christ-centered systematic theology.",
-                "jaeSungKim": "Field: Systematic Theology\nTeaches theological discernment and pastoral application for serving the church and mission field within the Reformed tradition.",
-                "AYunKim": "Field: Old Testament Studies\nExplores the text and background of the Old Testament so students can grasp the flow of Scripture and redemptive history.",
-                "JiHyeLee": "Field: New Testament Studies\nTeaches the message of the New Testament and its early church context with an emphasis on gospel-centered interpretation and application.",
-                "JungHwaLee": "Field: New Testament Studies\nHelps students faithfully preach and teach Scripture through close study of New Testament texts and biblical interpretation.",
-                "ShinKwangChoi": "Field: Church History\nUses the history and heritage of the church to help future ministers discern their times and serve the church faithfully.",
-                "PungRyongKim": "Field: Church History\nExamines world church history and the movement of mission so students can understand God’s providence throughout history.",
-                "ByungWooJung": "Field: Biblical Theology\nPresents a biblical-theological vision of redemptive history that connects the whole Bible to preaching and ministry.",
-                "DongJinPark": "Field: Practical Theology\nProvides practical training for pastoral and mission contexts, helping students develop servant leadership for ministry."
-            }
+"DongyaulTae": "Education\n- 경북대학교 무역학과 졸업 (문학사, B.A.)\n- 고려신학대학원 졸업 (목회학석사, M.Div.)\n- Calvin Theological Seminary (Th.M.)\n- Calvin Theological Seminary (Ph.D.)",
+                "jaeSungKim": "Education\n- 총신대학교 신학과 졸업 (문학사, B.A.)\n- 합동신학대학원 졸업 (목회학석사, M.Div.)\n- 서울대학교 대학원 졸업 (문학석사, M.A.)\n- Calvin Theological Seminary 졸업 (신학석사, Th.M.)\n- Westminster Theological Seminary 졸업 (철학박사, Ph.D.)",
+                "AYunKim": "Education\n- 고려대학교 중국어중국문학과 졸업 (문학사, B.A.)\n- Trinity Evangelical Divinity School 졸업 (목회학석사, M.Div.)\n- Gordon-Conwell Theological Seminary (Th.M.)\n- Trinity Evangelical Divinity School (Ph.D.)",
+                "JiHyeLee": "Education\n- 한동대학교 법학부 졸업 (법학사)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Wheaton College (M.A.)\n- Emory University (Th.M.)\n- University of St. Andrews (Ph.D.)",
+                "JungHwaLee": "Education\n- 이화여자대학교 불어불문학과 졸업 (문학사, B.A.)\n- 서울대학교 대학원 불어불문학과 졸업 (문학석사, M.A.)\n- 서울대학교 대학원 불어불문학과 박사과정 수료\n- 국제신학대학원대학교 졸업 (목회학석사, M.Div.)\n- 국제신학대학원대학교 졸업 (신학석사, Th.M.)\n- 국제신학대학원대학교 졸업 (철학박사, Ph.D.)",
+                "ShinKwangChoi": "Education\n- 고려대학교 교육학과 졸업 (B.A.)\n- 수도국제대학원대학교 목회연구과 목회학석사 (M.Div. Equiv.)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Calvin Theological Seminary 신학석사 (Th.M., 조직신학·역사신학)\n- Southwestern Baptist Theological Seminary 철학박사 (Ph.D., 조직신학)",
+                "PungRyongKim": "Education\n- 한성대학교 영문학과 졸업 (문학사, B.A.)\n- 합동신학대학원대학교 졸업 (목회학석사, M.Div.)\n- University of Aberdeen (Th.M.)\n- University of Aberdeen (Ph.D.)",
+                "ByungWooJung": "Education\n- 국제신학대학원대학교 졸업 (목회학석사, M.Div. / 신학석사, Th.M.)\n- Ezra Bible Institute 대학원 박사과정 수료",
+                "DongJinPark": "Education\n- 중앙대학교 신문방송학과 졸업 (문학사, B.A.)\n- 합동신학대학원대학교 졸업 (목회학석사, M.Div.)\n- McMaster Divinity College (M.A.)\n- McMaster Divinity College (Ph.D.)"
+            },
+            "categories": {
+                "systematicTheology": "Systematic Theology",
+                "oldTestament": "Old Testament Studies",
+                "newTestament": "New Testament Studies",
+                "churchHistory": "Church History",
+                "biblicalTheology": "Biblical Theology",
+                "preaching": "Preaching"
             }
         }
     }
+}
