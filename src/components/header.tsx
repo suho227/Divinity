@@ -70,7 +70,7 @@ export default function Header() {
         { href: '/about/departments/calendar', label: 'dept_calendar' }
     ];
 
-   const admissionMenuItems = [
+    const admissionMenuItems = [
         { href: '/admission', label: 'admissionGuide' },
         { href: '/admission/forms', label: 'admissionForms' },
         { href: '/admission/consultation', label: 'admissionConsultation' },
@@ -86,17 +86,20 @@ export default function Header() {
                         {/* <span className="hidden sm:inline">TEL. 03-3865-4442</span>
                         <span className="sm:hidden">03-3865-4442</span> */}
                     </div>
-   <div className="relative">
+                    <div className="relative">
                         <button
                             type="button"
                             aria-haspopup="menu"
                             aria-expanded={isLanguageOpen}
                             onClick={() => setIsLanguageOpen((open) => !open)}
                             onBlur={() => setTimeout(() => setIsLanguageOpen(false), 100)}
-                            className="flex items-center gap-2 text-white/80 hover:text-brand-orange transition-all text-[10px] md:text-[11px] font-black tracking-widest uppercase"
+                            className="flex min-w-24 items-center justify-center gap-2 rounded-full border border-white/40 bg-black px-3 py-1.5 text-xs font-black text-white shadow-sm transition-all hover:border-brand-orange hover:text-brand-orange md:min-w-28 md:text-sm"
                         >
-                            <span className={`text-[8px] transition-transform ml-1 ${isLanguageOpen ? 'rotate-180' : ''}`}>▼</span>                        </button>
-   <ul className={`absolute top-full right-0 mt-1 w-36 overflow-hidden rounded-sm border border-white/20 bg-[#050505] shadow-2xl transition-all duration-300 z-[60] ${isLanguageOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+                            {languages.find(l => l.code === locale)?.name ?? languages[0].name}
+                            <span className={`text-[10px] transition-transform ml-1 ${isLanguageOpen ? 'rotate-180' : ''}`}>▼</span>
+                        </button>
+
+                        <ul className={`absolute top-full right-0 mt-2 w-40 overflow-hidden rounded-lg border border-white/20 bg-black shadow-2xl transition-all duration-300 z-[60] ${isLanguageOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
                             {languages.map((lang) => {
                                 const isActiveLanguage = locale === lang.code;
 
@@ -107,7 +110,7 @@ export default function Header() {
                                             locale={lang.code}
                                             onMouseDown={(event) => event.preventDefault()}
                                             onClick={() => setIsLanguageOpen(false)}
-                                            className={`block border-b border-white/10 px-4 py-3 text-sm font-black tracking-normal transition-all last:border-b-0 ${isActiveLanguage ? 'bg-brand-orange text-[#001529]' : 'bg-black text-white hover:bg-white/10 hover:text-brand-orange'}`}
+                                            className={`block border-b border-white/10 px-4 py-3 text-base font-black tracking-normal transition-all last:border-b-0 ${isActiveLanguage ? 'bg-white/10 text-brand-orange shadow-[inset_4px_0_0_#E88B2E]' : 'bg-black text-white hover:bg-white/10 hover:text-brand-orange'}`}
                                         >
                                             {lang.name}
                                         </Link>
@@ -123,19 +126,19 @@ export default function Header() {
             <div className="bg-[#001529] h-20 md:h-24 flex items-center">
                 {/* 🌟 7xl 박스가 로고와 메뉴 전체를 감싸야 합니다! */}
                 <div className="w-full px-4 md:px-8 lg:px-10 flex lg:grid lg:grid-cols-[auto_1fr_auto] items-center justify-between gap-6">                    <Link href="/" className="flex items-center gap-3 z-20 shrink-0">
-                        <div className="relative w-10 h-10 md:w-14 md:h-14 rounded-full overflow-hidden border-2 border-brand-orange bg-white">
-                            <Image src="/logo2.jpg" alt="Logo" fill className="object-cover" />
-                        </div>
-                        <div className="flex flex-col text-white">
-                            <span className="text-[8px] md:text-[10px] text-brand-orange font-black tracking-[0.2em] uppercase leading-none mb-1">{t('subTitle')}</span>
-                            <span className="text-lg md:text-2xl font-black tracking-tighter break-keep">{t('schoolName')}</span>
-                        </div>
-                    </Link>
+                    <div className="relative w-10 h-10 md:w-14 md:h-14 rounded-full overflow-hidden border-2 border-brand-orange bg-white">
+                        <Image src="/logo2.jpg" alt="Logo" fill className="object-cover" />
+                    </div>
+                    <div className="flex flex-col text-white">
+                        <span className="text-[8px] md:text-[10px] text-brand-orange font-black tracking-[0.2em] uppercase leading-none mb-1">{t('subTitle')}</span>
+                        <span className="text-lg md:text-2xl font-black tracking-tighter break-keep">{t('schoolName')}</span>
+                    </div>
+                </Link>
 
                     {/* 데스크탑 메뉴 */}
                     <div className="hidden lg:flex flex-1 items-center justify-end gap-8">
-                    <nav className="hidden lg:flex items-center justify-center gap-10 px-8">
-                        <div className="relative group">
+                        <nav className="hidden lg:flex items-center justify-center gap-10 px-8">
+                            <div className="relative group">
                                 <Link href="/about/intro" className="text-white font-bold text-[16px] hover:text-brand-orange transition-all py-8 flex items-center gap-1">
                                     {t('about')} <span className="text-[8px] group-hover:rotate-180 transition-transform">▼</span>
                                 </Link>
@@ -150,7 +153,7 @@ export default function Header() {
                                 </ul>
                             </div>
 
-                             <div className="relative group">
+                            <div className="relative group">
                                 <Link href="/about/departments/bth" className="text-white font-bold text-[16px] hover:text-brand-orange transition-all py-8 flex items-center gap-1">
                                     {t('departments')} <span className="text-[8px] group-hover:rotate-180 transition-transform">▼</span>
                                 </Link>
@@ -165,26 +168,26 @@ export default function Header() {
                                 </ul>
                             </div>
 
- <div className="relative group">
-                            <Link href="/admission" className="text-white font-bold text-[16px] hover:text-brand-orange transition-all py-8 flex items-center gap-1">
-                                {t('admissionInfo')} <span className="text-[8px] group-hover:rotate-180 transition-transform">▼</span>
-                            </Link>
-                            <ul className="absolute top-full left-1/2 -translate-x-1/2 w-48 bg-[#001529] border-t-2 border-brand-orange shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                                {admissionMenuItems.map((item) => (
-                                    <li key={item.label}>
-                                        <Link href={item.href} className="block px-6 py-4 text-sm text-gray-300 hover:text-white hover:bg-white/5 border-b border-white/5 transition-all break-keep">
-                                            {t(item.label)}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+                            <div className="relative group">
+                                <Link href="/admission" className="text-white font-bold text-[16px] hover:text-brand-orange transition-all py-8 flex items-center gap-1">
+                                    {t('admissionInfo')} <span className="text-[8px] group-hover:rotate-180 transition-transform">▼</span>
+                                </Link>
+                                <ul className="absolute top-full left-1/2 -translate-x-1/2 w-48 bg-[#001529] border-t-2 border-brand-orange shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                    {admissionMenuItems.map((item) => (
+                                        <li key={item.label}>
+                                            <Link href={item.href} className="block px-6 py-4 text-sm text-gray-300 hover:text-white hover:bg-white/5 border-b border-white/5 transition-all break-keep">
+                                                {t(item.label)}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
 
 
-                        <Link href="/notice" className="text-white font-bold text-[16px] hover:text-brand-orange transition-all py-8">
+                            <Link href="/notice" className="text-white font-bold text-[16px] hover:text-brand-orange transition-all py-8">
                                 {t('notice')}
                             </Link>
-                                           {/* 자료실 탭 임시 비노출: 다시 사용할 때 아래 링크를 주석 해제하세요. */}
+                            {/* 자료실 탭 임시 비노출: 다시 사용할 때 아래 링크를 주석 해제하세요. */}
                             {/*
                             <Link href="/archive" className="text-white font-bold text-[16px] hover:text-brand-orange transition-all py-8">
                                 {t('archive')}
@@ -192,22 +195,22 @@ export default function Header() {
                             */}
                         </nav>
 
- {/* 데스크탑 외부 링크 버튼 */}
-                    <div className="hidden lg:flex shrink-0 items-center justify-end gap-3">
-                        {externalMenuLinks.map((link) => (
-                            <a
-                                key={link.href}
-                                href={link.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label={t(link.ariaLabelKey)}
-                                className="group/link inline-flex items-center gap-2 rounded-full border border-brand-orange/70 px-4 py-2 text-sm font-black text-white transition-all hover:-translate-y-0.5 hover:bg-brand-orange hover:text-[#001529] hover:shadow-lg hover:shadow-black/20"
-                            >
-                                <ExternalLinkIcon className="h-5 w-5 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
-                                <span>{t(link.labelKey)}</span>
-                            </a>
-                        ))}
-                    </div>
+                        {/* 데스크탑 외부 링크 버튼 */}
+                        <div className="hidden lg:flex shrink-0 items-center justify-end gap-3">
+                            {externalMenuLinks.map((link) => (
+                                <a
+                                    key={link.href}
+                                    href={link.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={t(link.ariaLabelKey)}
+                                    className="group/link inline-flex items-center gap-2 rounded-full border border-brand-orange/70 px-4 py-2 text-sm font-black text-white transition-all hover:-translate-y-0.5 hover:bg-brand-orange hover:text-[#001529] hover:shadow-lg hover:shadow-black/20"
+                                >
+                                    <ExternalLinkIcon className="h-5 w-5 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
+                                    <span>{t(link.labelKey)}</span>
+                                </a>
+                            ))}
+                        </div>
 
 
                     </div>
@@ -230,7 +233,8 @@ export default function Header() {
             {/* 모바일 사이드바 메뉴 (동일) */}
             {isMenuOpen && (
                 <div className="lg:hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm">
-                    <div className="absolute right-0 top-0 h-full w-64 overflow-y-auto bg-[#001529] p-8 shadow-2xl">                        <ul className="mt-12 space-y-6">
+                    <div className="absolute right-0 top-0 h-full w-64 overflow-y-auto bg-[#001529] p-8 shadow-2xl">
+                        <ul className="mt-12 space-y-6">
                             <li>
                                 <p className="text-brand-orange font-black text-xs mb-3">{t('about')}</p>
                                 <div className="space-y-3 pl-4 border-l border-white/10">
@@ -255,13 +259,13 @@ export default function Header() {
                                     ))}
                                 </div>
                             </li>
-                       {/* 자료실 모바일 메뉴 임시 비노출: 다시 사용할 때 아래 링크를 주석 해제하세요. */}
+                            {/* 자료실 모바일 메뉴 임시 비노출: 다시 사용할 때 아래 링크를 주석 해제하세요. */}
                             {/*
                             <li>
                                 <Link href="/archive" onClick={() => setIsMenuOpen(false)} className="block text-white font-bold">{t('archive')}</Link>
                             </li>
                             */}
- {externalMenuLinks.map((link) => (
+                            {externalMenuLinks.map((link) => (
                                 <li key={link.href}>
                                     <a
                                         href={link.href}
@@ -276,7 +280,7 @@ export default function Header() {
                                     </a>
                                 </li>
                             ))}
-                         </ul>
+                        </ul>
                     </div>
                 </div>
             )}

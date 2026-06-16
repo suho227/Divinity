@@ -143,23 +143,72 @@
                     "Common Courses and Separate Classes (Final Week of the 8th Semester)"
                 ],
                 "rows": [
-                    ["Theology Proper (Sudokukje Graduate University)", "Anthropology (Sudokukje Graduate University)", "Christology (Sudokukje Graduate University)", "Creeds and Confessions (Graduate) Sudokukje Graduate University, 2nd Year 2nd Semester"],
-                    ["Early Church History (Pastor Shin Kwang Choi)", "Medieval Church History (Pastor Shin Kwang Choi)", "Reformation History (Pastor Shin Kwang Choi)", "Church Education (Undergraduate), 2nd Year 2nd Semester (Pastor Sung Jin Park)"],
-                    ["Pastor Jong Seop Jin (Church History)", "Pentateuch (Pastor Sang Min Kim)", "Historical Books (Pastor Dong Hwi Noh)", "Old Testament Hermeneutics (Graduate), 1st Year 1st Semester (Sudokukje)"],
-                    ["Gospels (Pastor Kwon Sung Oh)", "Greek (Pastor In Yong Kim)", "Pauline Epistles (Pastor Dae Young Kim)", "Acts (Undergraduate) - Pastor Kwon Sung Oh, 2-1, 3-1"],
-                    ["Worship Studies (Pastor Dae Young Kim)", "Homiletics / Practice (Pastor Eun Joo Jung)", "Missiology (Pastor Sung Sam Ahn)", "Revelation (Graduate), 3rd Year 2nd Semester (Sudokukje)"],
-                    ["Soteriology (Pastor Yong Hwa Na)", "Ecclesiology (Pastor Han Gon Kim)", "Revelation and Eschatology (Sudokukje Graduate University)", "New Testament Interpretation (Graduate) 1-2 Wed / New Testament Preaching (Undergraduate) 3-2"],
-                    ["Modern and Contemporary Church History (Pastor Sung Jin Park)", "Japanese Church History (Pastor Ki Seop Shin)", "Prison Epistles (Pastor Kwang Seop Park)", "Old Testament Exegesis (Graduate) 2-1 Wed / Psalms (Undergraduate) 4-2 Wed"],
-                    ["Poetic Books (Sudokukje Graduate University)", "Prophets (Sudokukje Graduate University)", "Old Testament Theology / Introduction (Sudokukje Graduate University)", "Church Polity (Graduate) 3-1 Pastor Ki Seop Shin"],
-                    ["New Testament Theology (Sudokukje Graduate University)", "General Epistles (Pastor Sung Jin Park)", "Biblical Hermeneutics (Sudokukje Graduate University)", "Pastoral Theology (Undergraduate) Pastor Sang Min Kim, 1st Year 1st Semester"],
-                    ["Evangelism (Pastor Ki Seop Shin)", "Pastoral Counseling (Pastor Dong Hwi Noh)", "Apocalyptic Literature (Sudokukje Graduate University)", "Study of Jesus' Parables (Undergraduate) 4-1 Sudokukje"],
-                    ["Pastoral Counseling / Praise (Pastor Dong Hwi Noh)", "", "", ""],
-                    ["Pastoral Theology (Pastor Sang Min Kim)", "", "", ""],
-                    ["Biblical Theology (Pastor Seung Lee)", "", "", ""],
-                    ["The Kingdom of God and Jesus' Parables (Professor Seung Ah Han)", "", "", ""],
-                    ["Special Lecture on Heresies (Pastor Young Guk Seo) / Exodus (Pastor Han Gon Kim)", "", "", ""],
-                    ["Missiology (Pastor Timothy Shin)", "", "", ""],
-                    ["Pentateuch (Professor Ki Moon Sung)", "", "", ""]
+            [
+                        "Theology of God(SIU)",
+                        "Doctrine of Man(SIU)",
+                        "Christology (SIU)",
+                        "Core classes and Electives\n(Last Week, 8 times)"
+                    ],
+                    [
+                        "Early Church History(Pastor Choi Shin Gwang)",
+                        "Medieval Church History (Pastor Choi Shin Gwang)",
+                        "Religious Reformation (Pastor Choi Shin Gwang)",
+                        "Church Education(Undergraduate) 2nd Year 2nd Semester (Pastor Park Sung Jin)"
+                    ],
+                    [
+                        "Basics of Hebrew(Pastor Kim In Young)",
+                        "Pentateuchs (Pastor Kim Sang Min)",
+                        "Historical Books (Pastor Noh Dong Hee)",
+                        "O.T. Hermeneutics(Graduate) 1st Year 1st Semester (SIU)"
+                    ],
+                    [
+                        "The Gospels (Pastor Oh Kwon Son)",
+                        "Greek (Pastor Kim In Young)",
+                        "Pauline Epistles (Pastor Kim Dae Young)",
+                        "Acts (Undergraduate) - Pastor Oh Kwon Son 2-1, 3-1"
+                    ],
+                    [
+                        "Worship (Pastor Kim Dae Young)",
+                        "Homiletics (Pastor Jung Eun Joo)",
+                        "Mission (Pastor Ahn Sung Sam)",
+                        "Revelations (Graduate) 3rd Year 2nd Semester(SIU)"
+                    ],
+                    [
+                        "Soteriology (Pastor Na Young Hwa)",
+                        "Church (Pastor Kim Han Gon)",
+                        "Revelations/Eschatology (SIU)",
+                        "N.T. Hermeneutics(Graduate) 1-2 / N.T. Homiletics (Undergraduate) 3-2"
+                    ],
+                    [
+                        "Modern Church History (Pastor Park Sung Jin)",
+                        "Japan Church History (Pastor Shin Kisho)",
+                        "Prison Epistles(Pastor Park Gwang Sub)",
+                        "O.T. Commentaries(Graduate) 2-1 / Psalms(Undergraduate) 4-2"
+                    ],
+                    [
+                        "Poetic Books (SIU)",
+                        "Prophetic Books (SIU)",
+                        "Old Testament (SIU)",
+                        "Ecclesiastical Government(Graduate) 3-1 Pastor Shin Kisho"
+                    ],
+                    [
+                        "New Testament (SIU)",
+                        "General Epistles (Pastor Park Sung Jin)",
+                        "Biblical Hermeneutics (SIU)",
+                        "Pastoral Ministry (Undergraduate) Pastor Kim Sang Min 1st Year 1st Semester"
+                    ],
+                    [
+                        "Evangelism (Pastor Shin Kisho)",
+                        "Pastoral Counseling (Pastor Noh Dong Hee)",
+                        "Apocalyptic Literature (SIU)",
+                        "Jesus' Parables(Undergraduate) 4-1 SIU"
+                    ],
+                    [
+                        "Lecturer : SIU Professors",
+                        "",
+                        "",
+                        "Role of Associate Pastor(undergraduate 1-2) Pastor Kim Dae Young"
+                    ]
                 ]
             },
             "degreeName": "B.Th. Course",
@@ -229,15 +278,15 @@
                 },
                 "calendar": {
                 "pageTitle": "Academic Calendar",
-                "monthName": "{month}",
-                "majorSchedule": "Major Schedule",
-                "noEvent": "No official events scheduled.",
-                "events": {
-                    "m3": "17: Opening Seminar",
-                    "m4": "21: School Holiday",
-                    "m5": "22: School Holiday",
-                    "m6": "23: Closing Intensive Seminar"
-                }
+                    "monthName": "{month}",
+                    "majorSchedule": "Major Schedule",
+                    "noEvent": "No official events scheduled.",
+                    "events": {
+                        "m3": "17: Opening Seminar",
+                        "m4": "21: School Holiday",
+                        "m5": "22: School Holiday",
+                        "m6": "23: Closing Intensive Seminar"
+                    }
             }
             },
             
