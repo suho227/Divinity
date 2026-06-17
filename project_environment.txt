@@ -1,0 +1,126 @@
+프로젝트 환경 스냅샷
+생성일: 2026-06-17
+
+운영체제: Windows
+워크스페이스 루트: C:\sinhak
+현재 편집 파일: src/app/[locale]/about/faculty/page.tsx
+열려있는 터미널: node
+
+루트 디렉토리 항목:
+.env.local
+.env.local.example
+.git/
+.gitignore
+.next/
+.vscode/
+esslint.config.mjs
+lint_log.txt
+messages/
+navigation.ts
+next-env.d.ts
+next.config.mjs
+node_modules/
+package-lock.json
+package.json
+postcss.config.mjs
+public/
+README.md
+sanity.cli.ts
+sanity.config.ts
+src/
+tailwind.config.ts
+TECH_STACK.txt
+tsconfig.json
+
+package.json 내용:
+
+{
+  "name": "sinhak",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@portabletext/react": "^6.0.2",
+    "@sanity/client": "^7.14.1",
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^4.22.0",
+    "@supabase/ssr": "^0.8.0",
+    "@supabase/supabase-js": "^2.93.3",
+    "lucide-react": "^0.563.0",
+    "next": "16.1.4",
+    "next-intl": "^4.7.0",
+    "next-sanity": "^11.6.12",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "sanity": "^4.22.0",
+    "styled-components": "^6.3.9"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
+
+추가: Tech Stack 및 환경 요구사항
+- Node.js: 권장 LTS (예: >=18)
+- 패키지 매니저: npm (또는 pnpm/yarn) — 설치: `npm install`
+- 실행 스크립트: `npm run dev`, `npm run build`, `npm start`
+- 프레임워크: Next.js 16.1.4
+- UI: React 19.2.3
+- 타입: TypeScript (^5) — `tsconfig.json` 존재
+- 스타일: Tailwind CSS (v4), PostCSS, Autoprefixer, styled-components
+- CMS: Sanity (sanity.config.ts, sanity.cli.ts) — 필요 env: `SANITY_PROJECT_ID`, `SANITY_DATASET`, (관리용 토큰)
+- Backend/Auth: Supabase (`@supabase/supabase-js`, `@supabase/ssr`) — 필요 env: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, 서버용 키
+- 이미지/미디어: `@sanity/image-url`
+- Lint/Formatter: ESLint (`npm run lint`)
+- .env: `.env.local` 및 샘플 `.env.local.example` 존재 — 환경변수 관리 필요
+- 개발 도구: VS Code 권장, 확장 추천: ESLint, Tailwind CSS IntelliSense, Prettier (옵션)
+
+간단 실행 가이드
+```
+npm install
+npm run dev
+```
+
+주의/권장사항
+- Node 버전 관리는 `nvm` 또는 `volta` 사용 권장
+- 배포 시 `NEXT_PUBLIC_` 접두사가 붙은 공개 키와 서버 전용 키를 구분해서 관리하세요
+- Sanity나 Supabase 설정이 필요한 경우 프로젝트 소유자에게 자격증명 요청
+
+끝.
+
+처음 깃허브에서 프로젝트를 가져왔을 때 해야 할 일
+- 1) 리포지토리 클론: `git clone <repo-url>`
+- 2) 브랜치 확인/생성: `git checkout -b my-feature` 또는 `git switch <branch>`
+- 3) `.env.local` 설정: `.env.local.example`을 복사 후 필요한 환경변수 기입
+- 4) Node 버전 확인/설정: `node -v` (권장 LTS 사용), 필요시 `nvm`/`volta`로 설정
+- 5) 패키지 설치: `npm install` (또는 `pnpm install`/`yarn install`)
+- 6) lint 및 타입체크 실행: `npm run lint` 및 `tsc --noEmit` (선택)
+- 7) 개발 서버 실행: `npm run dev` 후 로컬 동작 확인
+- 8) Sanity/Supabase 초기화: 필요 시 프로젝트 설정(프로젝트 ID, 키) 확인
+- 9) 초기 커밋/푸시 작업: 변경사항 로컬에서 커밋 후 원격으로 PR 생성
+- 10) 문서 확인: `README.md`, `TECH_STACK.txt`, `project_environment.txt` 검토
+
+간단한 빠른 체크 명령
+```
+git clone <repo-url>
+cd <repo>
+cp .env.local.example .env.local
+npm install
+npm run dev
+```
+
+끝.

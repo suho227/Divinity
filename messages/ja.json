@@ -27,7 +27,9 @@
         "acsLinkLabel": "ACS ",
         "acsLinkAriaLabel": "azabu christian school のウェブサイトを開く",
         "azabuLinkLabel": "麻布福音教会",
-        "azabuLinkAriaLabel": "麻布福音教会のウェブサイトを開く"
+        "azabuLinkAriaLabel": "麻布福音教会のウェブサイトを開く",
+        "openMenu": "モバイルメニューを開く",
+        "closeMenu": "モバイルメニューを閉じる"
     },
     "NotFound": {
         "title": "ページが見つかりません。",

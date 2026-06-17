@@ -28,7 +28,9 @@
     "acsLinkLabel": "ACS",
     "acsLinkAriaLabel": "ACS 아자부 크리스찬 스쿨 웹사이트 열기",
     "azabuLinkLabel": "아자부복음교회",
-    "azabuLinkAriaLabel": "아자부복음교회 웹사이트 열기"
+    "azabuLinkAriaLabel": "아자부복음교회 웹사이트 열기",
+     "openMenu": "모바일 메뉴 열기",
+    "closeMenu": "모바일 메뉴 닫기"
   },
   "NotFound": {
     "title": "페이지를 찾을 수 없습니다.",

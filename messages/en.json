@@ -27,7 +27,9 @@
         "acsLinkLabel": "ACS",
         "acsLinkAriaLabel": "Open the Azabu Christian School website",
         "azabuLinkLabel": "Azabu Gospel Church",
-        "azabuLinkAriaLabel": "Open the Azabu Gospel Church website"
+        "azabuLinkAriaLabel": "Open the Azabu Gospel Church website",
+        "openMenu": "Open mobile menu",
+        "closeMenu": "Close mobile menu"
     },
     "Index": {
         "introSubtitle": "INTRODUCTION",

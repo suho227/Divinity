@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, usePathname } from '@/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
@@ -56,6 +56,21 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isLanguageOpen, setIsLanguageOpen] = useState(false);
 
+    useEffect(() => {
+        if (!isMenuOpen) {
+            return;
+        }
+
+        const handleEscape = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') {
+                setIsMenuOpen(false);
+            }
+        };
+
+        document.addEventListener('keydown', handleEscape);
+        return () => document.removeEventListener('keydown', handleEscape);
+    }, [isMenuOpen]);
+
     const aboutSubMenus = [
         { name: 'greeting', href: '/about/greeting' },
         { name: 'intro', href: '/about/intro' },
@@ -79,7 +94,6 @@ export default function Header() {
 
     return (
         <header className="w-full sticky top-0 z-50 shadow-2xl font-sans">
-            {/* 상단바: 여기도 중앙 정렬을 맞춰주는 것이 좋습니다 */}
             <div className="bg-black py-2 border-b border-white/10">
                 <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
                     <div className="flex gap-3 md:gap-6 text-[10px] md:text-[11px] text-white/70 font-bold tracking-widest">
@@ -218,10 +232,14 @@ export default function Header() {
 
                     {/* 모바일 메뉴 버튼 */}
                     <button
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        className="lg:hidden text-white p-2"
+                        type="button"
+                        aria-label={isMenuOpen ? t('closeMenu') : t('openMenu')}
+                        aria-expanded={isMenuOpen}
+                        aria-controls="mobile-navigation-menu"
+                        onClick={() => setIsMenuOpen((open) => !open)}
+                        className="lg:hidden text-white p-2 relative z-[110]"
                     >
-                        <div className="w-6 h-5 flex flex-col justify-between">
+                        <div className="w-6 h-5 flex flex-col justify-between" aria-hidden="true">
                             <span className={`h-0.5 w-full bg-white transition-all ${isMenuOpen ? 'rotate-45 translate-y-2.5' : ''}`} />
                             <span className={`h-0.5 w-full bg-white transition-all ${isMenuOpen ? 'opacity-0' : ''}`} />
                             <span className={`h-0.5 w-full bg-white transition-all ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
@@ -232,8 +250,15 @@ export default function Header() {
 
             {/* 모바일 사이드바 메뉴 (동일) */}
             {isMenuOpen && (
-                <div className="lg:hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm">
-                    <div className="absolute right-0 top-0 h-full w-64 overflow-y-auto bg-[#001529] p-8 shadow-2xl">
+                <div
+                    className="lg:hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm"
+                    onClick={() => setIsMenuOpen(false)}
+                >
+                    <div
+                        id="mobile-navigation-menu"
+                        className="absolute right-0 top-0 h-full w-64 overflow-y-auto bg-[#001529] p-8 shadow-2xl"
+                        onClick={(event) => event.stopPropagation()}
+                    >
                         <ul className="mt-12 space-y-6">
                             <li>
                                 <p className="text-brand-orange font-black text-xs mb-3">{t('about')}</p>

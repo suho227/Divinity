@@ -28,7 +28,9 @@
         "acsLinkLabel": "ACS ",
         "acsLinkAriaLabel": "打开 ACS 教育机构网站",
         "azabuLinkLabel": "麻布福音教会",
-        "azabuLinkAriaLabel": "打开麻布福音教会网站"
+        "azabuLinkAriaLabel": "打开麻布福音教会网站",
+        "openMenu": "打开移动菜单",
+        "closeMenu": "关闭移动菜单"
     },
     "NotFound": {
         "title": "找不到该页面。",
