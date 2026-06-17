@@ -10,7 +10,7 @@
         "dept_japanese": "Japanese Dept",
         "notice": "Notice",
         "archive": "Archive",
-         "admissionInfo": "Admissions",
+        "admissionInfo": "Admissions",
         "admissionGuide": "Admissions Guide",
         "admissionForms": "Application Forms",
         "admissionConsultation": "Admissions Consultation",
@@ -145,7 +145,7 @@
                     "Common Courses and Separate Classes (Final Week of the 8th Semester)"
                 ],
                 "rows": [
-            [
+                    [
                         "Theology of God(SIU)",
                         "Doctrine of Man(SIU)",
                         "Christology (SIU)",
@@ -279,7 +279,7 @@
                     ]
                 },
                 "calendar": {
-                "pageTitle": "Academic Calendar",
+                    "pageTitle": "Academic Calendar",
                     "monthName": "{month}",
                     "majorSchedule": "Major Schedule",
                     "noEvent": "No official events scheduled.",
@@ -287,11 +287,11 @@
                         "m3": "17: Opening Seminar",
                         "m4": "21: School Holiday",
                         "m5": "22: School Holiday",
-                        "m6": "23: Closing Intensive Seminar"
+                        "m6": "23-24: School Holiday\n30-7/1: Missiology (Pastor Timothy Shin)",
+                        "m7": "1: Missiology (Pastor Timothy Shin)"
                     }
-            }
+                }
             },
-            
             "sharedCourses": {
                 "title": "Shared Courses",
                 "provider": "Seminary lectures: 首都国際大学院大学",
@@ -318,7 +318,8 @@
                 "m3": "17: Opening Seminar",
                 "m4": "21: School Holiday",
                 "m5": "22: School Holiday",
-                "m6": "23: Closing Intensive Seminar"
+                "m6": "23-24: School Holiday\n30-7/1: Missiology (Pastor Timothy Shin)",
+                "m7": "1: Missiology (Pastor Timothy Shin)"
             }
         },
         "faculty": {
@@ -335,12 +336,12 @@
                 "PungRyongKim": "Professor Pung Ryong Kim",
                 "ByungWooJung": "Professor Byung Woo Jung",
                 "DongJinPark": "Professor Dong Jin Park"
-                  },
+            },
             "profileModalTitle": "Faculty Profile",
             "openProfile": "Open {name} profile",
             "closeProfile": "Close faculty profile",
             "profiles": {
-"DongyaulTae": "Education\n- 경북대학교 무역학과 졸업 (문학사, B.A.)\n- 고려신학대학원 졸업 (목회학석사, M.Div.)\n- Calvin Theological Seminary (Th.M.)\n- Calvin Theological Seminary (Ph.D.)",
+                "DongyaulTae": "Education\n- 경북대학교 무역학과 졸업 (문학사, B.A.)\n- 고려신학대학원 졸업 (목회학석사, M.Div.)\n- Calvin Theological Seminary (Th.M.)\n- Calvin Theological Seminary (Ph.D.)",
                 "jaeSungKim": "Education\n- 총신대학교 신학과 졸업 (문학사, B.A.)\n- 합동신학대학원 졸업 (목회학석사, M.Div.)\n- 서울대학교 대학원 졸업 (문학석사, M.A.)\n- Calvin Theological Seminary 졸업 (신학석사, Th.M.)\n- Westminster Theological Seminary 졸업 (철학박사, Ph.D.)",
                 "AYunKim": "Education\n- 고려대학교 중국어중국문학과 졸업 (문학사, B.A.)\n- Trinity Evangelical Divinity School 졸업 (목회학석사, M.Div.)\n- Gordon-Conwell Theological Seminary (Th.M.)\n- Trinity Evangelical Divinity School (Ph.D.)",
                 "JiHyeLee": "Education\n- 한동대학교 법학부 졸업 (법학사)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Wheaton College (M.A.)\n- Emory University (Th.M.)\n- University of St. Andrews (Ph.D.)",

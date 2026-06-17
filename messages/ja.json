@@ -291,7 +291,8 @@
                         "m3": "17: 開校セミナー",
                         "m4": "21: 休校",
                         "m5": "22: 休校",
-                        "m6": "23: 卒業セミナー"
+                        "m6": "23-24: 休み\n30-7/1: 宣教学 (申テモテ牧師)",
+                        "m7": "1: 宣教学 (申テモテ牧師)"
                     }
                 }
             },
@@ -319,7 +320,7 @@
             "openProfile": "{name}のプロフィールを開く",
             "closeProfile": "教授プロフィールを閉じる",
             "profiles": {
- "DongyaulTae": "学歴\n- 경북대학교 무역학과 졸업 (문학사, B.A.)\n- 고려신학대학원 졸업 (목회학석사, M.Div.)\n- Calvin Theological Seminary (Th.M.)\n- Calvin Theological Seminary (Ph.D.)",
+                "DongyaulTae": "学歴\n- 경북대학교 무역학과 졸업 (문학사, B.A.)\n- 고려신학대학원 졸업 (목회학석사, M.Div.)\n- Calvin Theological Seminary (Th.M.)\n- Calvin Theological Seminary (Ph.D.)",
                 "jaeSungKim": "学歴\n- 총신대학교 신학과 졸업 (문학사, B.A.)\n- 합동신학대학원 졸업 (목회학석사, M.Div.)\n- 서울대학교 대학원 졸업 (문학석사, M.A.)\n- Calvin Theological Seminary 졸업 (신학석사, Th.M.)\n- Westminster Theological Seminary 졸업 (철학박사, Ph.D.)",
                 "AYunKim": "学歴\n- 고려대학교 중국어중국문학과 졸업 (문학사, B.A.)\n- Trinity Evangelical Divinity School 졸업 (목회학석사, M.Div.)\n- Gordon-Conwell Theological Seminary (Th.M.)\n- Trinity Evangelical Divinity School (Ph.D.)",
                 "JiHyeLee": "学歴\n- 한동대학교 법학부 졸업 (법학사)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Wheaton College (M.A.)\n- Emory University (Th.M.)\n- University of St. Andrews (Ph.D.)",

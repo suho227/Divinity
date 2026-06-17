@@ -4,10 +4,44 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
+const parseEventItems = (rawData: string) =>
+    rawData
+        .split(/\n|,\s*/)
+        .map(item => item.trim())
+        .filter(Boolean);
+
+const getDaysInEventRange = (dateLabel: string, currentMonth: number) => {
+    const normalizedLabel = dateLabel.trim();
+    const [startLabel, endLabel] = normalizedLabel.split('-').map(part => part.trim());
+    const startDay = Number(startLabel.replace(/^\d+\//, ''));
+
+    if (!Number.isFinite(startDay)) {
+        return [];
+    }
+
+    if (!endLabel) {
+        return [String(startDay)];
+    }
+
+    const endMonthMatch = endLabel.match(/^(\d+)\/(\d+)$/);
+    const endMonth = endMonthMatch ? Number(endMonthMatch[1]) : currentMonth;
+    const endDay = endMonthMatch ? Number(endMonthMatch[2]) : Number(endLabel);
+
+    if (!Number.isFinite(endDay)) {
+        return [String(startDay)];
+    }
+
+    if (endMonth !== currentMonth) {
+        return [String(startDay)];
+    }
+
+    return Array.from({ length: endDay - startDay + 1 }, (_, index) => String(startDay + index));
+};
+
 export default function CalendarPage() {
     const t = useTranslations('About.departments.graduate.calendar');
     const now = new Date();
-    const [viewDate, setViewDate] = useState(new Date(now.getFullYear(), 2, 1)); // 3월 기준
+     const [viewDate, setViewDate] = useState(new Date(now.getFullYear(), now.getMonth(), 1)); 
 
     const currentYear = viewDate.getFullYear();
     const currentMonth = viewDate.getMonth();
@@ -23,11 +57,11 @@ export default function CalendarPage() {
 
     // 데이터 파싱
     const eventRawData = t.has(`events.m${currentMonth + 1}`) ? t(`events.m${currentMonth + 1}`) : "";
-    const eventDays = eventRawData ? eventRawData.split(', ').map(item => item.split(':')[0].trim()) : [];
-    const displayEvents = eventRawData ? eventRawData.split(', ').filter((item, index, self) =>
-        index === self.findIndex((t) => t.split(':')[1] === item.split(':')[1])
-    ) : [];
-
+     const eventItems = parseEventItems(eventRawData);
+    const eventDays = eventItems.flatMap(item => getDaysInEventRange(item.split(':')[0], currentMonth + 1));
+    const displayEvents = eventItems.filter((item, index, self) =>
+        index === self.findIndex((eventItem) => eventItem.split(':')[1] === item.split(':')[1])
+    );
     return (
         <main className="relative bg-[#FAF7F2] min-h-screen py-24 px-8 overflow-hidden">
             {/* 배경 이미지 */}
