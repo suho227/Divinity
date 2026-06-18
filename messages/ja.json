@@ -33,7 +33,8 @@
     },
     "NotFound": {
         "title": "ページが見つかりません。",
-        "description": "お探しのページは削除されたか、URLが変更された可能性があります。"
+        "description": "お探しのページは削除されたか、URLが変更された可能性があります。",
+        "homeLabel": "ホームに戻る"
     },
     "Index": {
         "introSubtitle": "INTRODUCTION",
@@ -338,6 +339,128 @@
                 "biblicalTheology": "聖書神学",
                 "preaching": "説教学"
             }
+        }
+    },
+    "Admission": {
+        "heroEyebrow": "Admissions Guide",
+        "heroTitleLine1": "召しに向かう",
+        "heroTitleLine2": "最初の一歩を設計します。",
+        "heroDescription": "東京国際神学院の募集課程、出願資格、提出書類、選考の流れを一目で確認できるよう整理しました。",
+        "processCta": "選考の流れを見る",
+        "noticeCta": "最新のお知らせを確認",
+        "intakeEyebrow": "Always Open",
+        "intakeTitleLine1": "随時受付",
+        "intakeTitleLine2": "個別案内",
+        "available": "可能",
+        "applicationSuffix": "受付",
+        "methods": [
+            "来校",
+            "郵送",
+            "メール"
+        ],
+        "programs": {
+            "eyebrow": "Programs",
+            "title": "募集課程・人数",
+            "description": "課程別の授業形態と募集人数をカード形式で整理しました。",
+            "cards": [
+                {
+                    "title": "神学科 学部課程",
+                    "degree": "B.Th. 課程",
+                    "method": "昼・夜間",
+                    "seats": "00名"
+                },
+                {
+                    "title": "神学 修士・博士課程",
+                    "degree": "M.Div. / Th.M. / Ph.D.",
+                    "method": "協力課程",
+                    "seats": "00名"
+                },
+                {
+                    "title": "日本語学科",
+                    "degree": "日本語集中課程",
+                    "method": "昼間",
+                    "seats": "00名"
+                }
+            ]
+        },
+        "eligibility": {
+            "eyebrow": "Eligibility",
+            "title": "出願資格",
+            "description": "学業能力と信仰訓練への誠実な参加意思を確認します。",
+            "items": [
+                "高等学校卒業、またはこれと同等以上の学力が認められる方。",
+                "本校の教育理念と信仰訓練に誠実に参加する意思のある方。",
+                "牧会者・宣教師・信徒リーダーなど、福音の働き人として備えられることを願う方。",
+                "外国籍の出願者は、日本での滞在および学業に必要な資格を備えている必要があります。"
+            ]
+        },
+        "process": {
+            "eyebrow": "Process",
+            "title": "選考方法・日程",
+            "description": "出願から合格発表まで段階ごとに個別案内します。",
+            "steps": [
+                {
+                    "title": "願書受付",
+                    "date": "随時受付",
+                    "content": "来校・郵送・メールで受付。"
+                },
+                {
+                    "title": "書類審査",
+                    "date": "受付後に個別案内",
+                    "content": "提出書類を確認。"
+                },
+                {
+                    "title": "面接選考",
+                    "date": "個別通知",
+                    "content": "信仰告白と学業計画を確認。"
+                },
+                {
+                    "title": "合格発表",
+                    "date": "個別通知",
+                    "content": "登録手続きを案内。"
+                }
+            ]
+        },
+        "documents": {
+            "eyebrow": "Documents",
+            "title": "提出書類",
+            "description": "出願区分に合わせて必要書類を漏れなくご準備ください。",
+            "rows": [
+                {
+                    "category": "共通書類",
+                    "docs": "入学願書、個人情報収集・利用同意書、誓約書。"
+                },
+                {
+                    "category": "学歴証明",
+                    "docs": "最終学校の卒業証明書および成績証明書。"
+                },
+                {
+                    "category": "信仰確認",
+                    "docs": "洗礼証明書または教会出席確認書、牧会者推薦書。"
+                },
+                {
+                    "category": "外国籍出願者",
+                    "docs": "パスポート写し、在留資格関連書類、学歴認証書類。"
+                }
+            ]
+        },
+        "notice": {
+            "eyebrow": "Notice",
+            "title": "出願者への注意事項",
+            "description": "選考前に必ず確認してください。",
+            "label": "NOTICE",
+            "items": [
+                "出願者は面接当日、指定された時間までに本校が案内した面接場所へ入室してください。",
+                "提出書類の内容が事実と異なる場合、合格または入学が取り消されることがあります。",
+                "提出された書類および選考料は返還されません。",
+                "募集日程および詳細な選考内容は学校の事情により変更される場合があり、変更事項はお知らせで案内します。"
+            ]
+        },
+        "help": {
+            "eyebrow": "Need Help?",
+            "title": "入学に関するお問い合わせ",
+            "description": "詳しい募集要項および最新日程はお知らせでご確認ください。",
+            "cta": "お知らせを見る"
         }
     }
 }

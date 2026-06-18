@@ -34,7 +34,8 @@
     },
     "NotFound": {
         "title": "找不到该页面。",
-        "description": "您查找的页面可能已被删除，或网址已更改。"
+        "description": "您查找的页面可能已被删除，或网址已更改。",
+        "homeLabel": "返回首页"
     },
     "Index": {
         "introSubtitle": "INTRODUCTION",
@@ -371,6 +372,128 @@
                 "biblicalTheology": "圣经神学",
                 "preaching": "讲道学"
             }
+        }
+    },
+    "Admission": {
+        "heroEyebrow": "Admissions Guide",
+        "heroTitleLine1": "规划迈向呼召的",
+        "heroTitleLine2": "第一步。",
+        "heroDescription": "我们整理了东京国际神学院的招生课程、申请资格、提交材料和选拔流程，方便您一目了然地查看。",
+        "processCta": "查看选拔流程",
+        "noticeCta": "查看最新通知",
+        "intakeEyebrow": "Always Open",
+        "intakeTitleLine1": "随时受理",
+        "intakeTitleLine2": "个别通知",
+        "available": "可受理",
+        "applicationSuffix": "申请",
+        "methods": [
+            "来校",
+            "邮寄",
+            "电子邮件"
+        ],
+        "programs": {
+            "eyebrow": "Programs",
+            "title": "招生课程及名额",
+            "description": "按课程整理授课方式和招生名额，便于快速查看。",
+            "cards": [
+                {
+                    "title": "神学科本科课程",
+                    "degree": "B.Th. 课程",
+                    "method": "日间/夜间",
+                    "seats": "00名"
+                },
+                {
+                    "title": "神学硕士/博士课程",
+                    "degree": "M.Div. / Th.M. / Ph.D.",
+                    "method": "合作课程",
+                    "seats": "00名"
+                },
+                {
+                    "title": "日语学科",
+                    "degree": "日语集中课程",
+                    "method": "日间",
+                    "seats": "00名"
+                }
+            ]
+        },
+        "eligibility": {
+            "eyebrow": "Eligibility",
+            "title": "申请资格",
+            "description": "我们将确认申请人的学习能力以及参与信仰训练的诚意。",
+            "items": [
+                "高中毕业或被认定具有同等以上学历者。",
+                "愿意诚实参与本校教育理念和信仰训练者。",
+                "希望预备成为牧会者、宣教士、平信徒领袖等福音事工者。",
+                "外国申请者须具备在日本居留和学习所需的资格。"
+            ]
+        },
+        "process": {
+            "eyebrow": "Process",
+            "title": "选拔方法及日程",
+            "description": "从申请到合格发表，各阶段均个别通知。",
+            "steps": [
+                {
+                    "title": "提交申请",
+                    "date": "随时受理",
+                    "content": "可来校、邮寄或电子邮件提交。"
+                },
+                {
+                    "title": "材料审查",
+                    "date": "受理后个别通知",
+                    "content": "确认提交材料。"
+                },
+                {
+                    "title": "面试选拔",
+                    "date": "个别通知",
+                    "content": "确认信仰告白和学习计划。"
+                },
+                {
+                    "title": "合格发表",
+                    "date": "个别通知",
+                    "content": "说明注册手续。"
+                }
+            ]
+        },
+        "documents": {
+            "eyebrow": "Documents",
+            "title": "提交材料",
+            "description": "请根据申请类别完整准备所需材料。",
+            "rows": [
+                {
+                    "category": "共同材料",
+                    "docs": "入学申请书、个人信息收集及使用同意书、誓约书。"
+                },
+                {
+                    "category": "学历证明",
+                    "docs": "最终学校毕业证明书及成绩证明书。"
+                },
+                {
+                    "category": "信仰确认",
+                    "docs": "洗礼证明或教会出席确认书、牧会者推荐书。"
+                },
+                {
+                    "category": "外国申请者",
+                    "docs": "护照复印件、居留资格相关材料、学历认证材料。"
+                }
+            ]
+        },
+        "notice": {
+            "eyebrow": "Notice",
+            "title": "申请者注意事项",
+            "description": "选拔前请务必确认以下事项。",
+            "label": "NOTICE",
+            "items": [
+                "申请者须在面试当天指定时间前到达本校通知的面试地点。",
+                "若提交材料内容与事实不符，可能取消合格或入学资格。",
+                "已提交的材料和选拔费不予退还。",
+                "招生日程和详细选拔内容可能因学校情况而变更，变更事项将通过通知公告。"
+            ]
+        },
+        "help": {
+            "eyebrow": "Need Help?",
+            "title": "入学相关咨询",
+            "description": "详细招生简章及最新日程请查看通知公告。",
+            "cta": "查看通知"
         }
     }
 }

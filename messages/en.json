@@ -31,6 +31,11 @@
         "openMenu": "Open mobile menu",
         "closeMenu": "Close mobile menu"
     },
+    "NotFound": {
+        "title": "Page not found",
+        "description": "The page you are looking for may have been removed or the address may have changed.",
+        "homeLabel": "Back to Home"
+    },
     "Index": {
         "introSubtitle": "INTRODUCTION",
         "introTitle": "Equipping Ministers to Revitalize\nChurches in Japan and the World",
@@ -359,6 +364,128 @@
                 "biblicalTheology": "Biblical Theology",
                 "preaching": "Preaching"
             }
+        }
+       },
+    "Admission": {
+        "heroEyebrow": "Admissions Guide",
+        "heroTitleLine1": "Design your first step",
+        "heroTitleLine2": "toward your calling.",
+        "heroDescription": "Review Tokyo International Seminary programs, eligibility, required documents, and the admissions process in one clear guide.",
+        "processCta": "View admissions process",
+        "noticeCta": "Check latest notices",
+        "intakeEyebrow": "Always Open",
+        "intakeTitleLine1": "Rolling applications",
+        "intakeTitleLine2": "Individual guidance",
+        "available": "Available",
+        "applicationSuffix": "application",
+        "methods": [
+            "In person",
+            "Mail",
+            "Email"
+        ],
+        "programs": {
+            "eyebrow": "Programs",
+            "title": "Programs and Seats",
+            "description": "Program formats and seat counts are organized into easy-to-scan cards.",
+            "cards": [
+                {
+                    "title": "Undergraduate Theology",
+                    "degree": "B.Th. Program",
+                    "method": "Day / Evening",
+                    "seats": "00 seats"
+                },
+                {
+                    "title": "Graduate Theology",
+                    "degree": "M.Div. / Th.M. / Ph.D.",
+                    "method": "Partner Program",
+                    "seats": "00 seats"
+                },
+                {
+                    "title": "Japanese Language Department",
+                    "degree": "Intensive Japanese Program",
+                    "method": "Daytime",
+                    "seats": "00 seats"
+                }
+            ]
+        },
+        "eligibility": {
+            "eyebrow": "Eligibility",
+            "title": "Eligibility",
+            "description": "We review academic readiness and a sincere commitment to faith formation.",
+            "items": [
+                "Applicants who have graduated from high school or have equivalent academic qualifications.",
+                "Applicants willing to faithfully participate in the school’s educational vision and faith training.",
+                "Applicants preparing to serve the gospel as pastors, missionaries, or lay leaders.",
+                "International applicants must hold the qualifications required for residence and study in Japan."
+            ]
+        },
+        "process": {
+            "eyebrow": "Process",
+            "title": "Admissions Process and Schedule",
+            "description": "Each step from application to admission results is guided individually.",
+            "steps": [
+                {
+                    "title": "Application Submission",
+                    "date": "Rolling applications",
+                    "content": "Submit in person, by mail, or by email."
+                },
+                {
+                    "title": "Document Review",
+                    "date": "Individual guidance after submission",
+                    "content": "Submitted documents are reviewed."
+                },
+                {
+                    "title": "Interview",
+                    "date": "Individually notified",
+                    "content": "Faith statement and study plan are reviewed."
+                },
+                {
+                    "title": "Admission Results",
+                    "date": "Individually notified",
+                    "content": "Registration procedures are provided."
+                }
+            ]
+        },
+        "documents": {
+            "eyebrow": "Documents",
+            "title": "Required Documents",
+            "description": "Please prepare all documents required for your applicant category.",
+            "rows": [
+                {
+                    "category": "Common documents",
+                    "docs": "Application form, consent to collect/use personal information, pledge form."
+                },
+                {
+                    "category": "Academic records",
+                    "docs": "Certificate of graduation and transcript from the most recent school."
+                },
+                {
+                    "category": "Faith confirmation",
+                    "docs": "Baptism certificate or church attendance confirmation, pastoral recommendation."
+                },
+                {
+                    "category": "International applicants",
+                    "docs": "Passport copy, residence status documents, academic credential verification documents."
+                }
+            ]
+        },
+        "notice": {
+            "eyebrow": "Notice",
+            "title": "Applicant Notices",
+            "description": "Please review these notes before the admissions process.",
+            "label": "NOTICE",
+            "items": [
+                "Applicants must arrive at the interview location by the time designated by the school.",
+                "Admission may be canceled if submitted documents are found to be false.",
+                "Submitted documents and application fees are non-refundable.",
+                "Schedules and admission details may change according to school circumstances; changes will be announced through notices."
+            ]
+        },
+        "help": {
+            "eyebrow": "Need Help?",
+            "title": "Admissions Questions",
+            "description": "Please check notices for detailed admission guidelines and the latest schedule.",
+            "cta": "View notices"
         }
     }
 }

@@ -4,86 +4,428 @@
 - Name: sinhak
 - Version: 0.1.0
 - Description: Tokyo International Seminary Website
-- Type: Next.js Web Application
+- Type: Next.js Web Application (Full-stack)
+- Status: Active Development
 
 2. Technology Stack
---------------------------------------------------------------------------------
-[Core]
+================================================================================
+
+[Core Framework & Runtime]
 - Framework: Next.js 16.1.4 (App Router)
-- Language: TypeScript 5.x
+- Language: TypeScript 5.x (strict mode enabled)
 - Runtime: Node.js
+- Build Tool: Next.js built-in (Webpack 5)
 
 [Frontend & UI]
-- Library: React 19.2.3
-- Styling: Tailwind CSS v4.x (@tailwindcss/postcss)
-- CSS Processing: PostCSS, Autoprefixer
-- Icons/Assets: lucide-react (presumed), NEXT.js Image optimization
+- React: 19.2.3
+- React DOM: 19.2.3
+- UI Library: Tailwind CSS v4 (@tailwindcss/postcss: 4.1.18)
+- Typography Plugin: @tailwindcss/typography (0.5.19)
+- CSS Processing: PostCSS 4.x, Autoprefixer (10.4.23)
+- Icon Library: lucide-react (0.563.0)
+- Component Styling: styled-components (6.3.9)
+- Image Optimization: Next.js native Image component
 
 [Backend & Services]
-- Database & Auth: Supabase
-  - Client: @supabase/ssr, @supabase/supabase-js
-  - Usage: Authentication (Cookies), Database interaction
-- CMS (Content Management): Sanity.io
-  - Client: @sanity/client, next-sanity, @sanity/image-url
-  - Usage: Dynamic content management (Announcements, etc.)
-  - Config: Single workspace, 'production' dataset
+- Database & Authentication: Supabase
+  - @supabase/ssr (0.8.0) - Server-Side Rendering support
+  - @supabase/supabase-js (2.93.3) - JavaScript client library
+  - Purpose: User authentication (Cookie-based), Database operations
+
+- Content Management System (CMS): Sanity.io
+  - sanity (4.22.0) - Core CMS library
+  - @sanity/client (7.14.1) - JavaScript client
+  - @sanity/image-url (1.2.0) - Image optimization
+  - @sanity/vision (4.22.0) - Query builder
+  - next-sanity (11.6.12) - Next.js integration
+  - @portabletext/react (6.0.2) - Rich text rendering
+  - Sanity Studio: Integrated admin UI (structureTool)
+  - Config: Project ID: o656ekmv, Dataset: 'production'
+  - Content Types: about, notice (expandable)
 
 [Internationalization (i18n)]
-- Library: next-intl (v4.7.0)
-- RoutingStrategy: Prefix-based (e.g., /en/about, /ko/about)
+- Library: next-intl (4.7.0)
+- Routing Strategy: Prefix-based dynamic routing ([locale]/)
 - Supported Locales: ko (default), en, ja, zh
-- Message Storage: /messages/*.json
+- Message Storage: /messages/*.json (4 language files)
+- Configuration: Server-side with getRequestConfig
 
 3. Project Structure
---------------------------------------------------------------------------------
+================================================================================
 /
-├── messages/               # Translation JSON files (en.json, ko.json, etc.)
-├── public/                 # Static assets (images, fonts)
+├── messages/                   # Internationalization (i18n)
+│   ├── en.json                 # English translations
+│   ├── ja.json                 # Japanese translations
+│   ├── ko.json                 # Korean translations (default)
+│   └── zh.json                 # Chinese (Simplified) translations
+│
+├── public/                     # Static assets (images, fonts, etc.)
+│
 ├── src/
-│   ├── app/                # Next.js App Router pages
-│   │   └── [locale]/       # Localized routes root
-│   ├── components/         # Reusable React components
-│   ├── sanity/             # Sanity CMS configuration & schemas
-│   │   └── schemas/        # Content type definitions
-│   ├── utils/              # Helper functions (e.g., Supabase client)
-│   ├── i18n.ts             # next-intl server-side configuration
-│   ├── middleware.ts       # Route protection & locale redirection
-│   └── navigation.ts       # Navigation logic / router wrappers
-├── .env.local              # Local environment variables
-├── next.config.mjs         # Next.js configuration (with i18n plugin)
-├── tailwind.config.ts      # Tailwind configuration
-└── tsconfig.json           # TypeScript configuration
+│   ├── app/                    # Next.js App Router
+│   │   ├── layout.tsx          # Root layout (global meta, providers)
+│   │   ├── not-found.tsx       # 404 page
+│   │   ├── globals.css         # Global CSS (Tailwind directives)
+│   │   ├── [locale]/           # Locale-prefixed routes (i18n routing)
+│   │   │   ├── layout.tsx      # Localized layout
+│   │   │   ├── NotFound.tsx    # Localized 404 page
+│   │   │   ├── page.tsx        # Home page
+│   │   │   ├── about/          # About section
+│   │   │   │   ├── departments/ (BTH, Calendar, Graduate, Japanese)
+│   │   │   │   ├── faculty/
+│   │   │   │   ├── greeting/
+│   │   │   │   ├── history/
+│   │   │   │   ├── intro/
+│   │   │   │   └── location/
+│   │   │   ├── admission/      # Admission page
+│   │   │   ├── archive/        # Archive page
+│   │   │   ├── curriculum/     # Curriculum pages
+│   │   │   ├── departments/    # (Japanese, Theology)
+│   │   │   └── notice/         # News/Announcements
+│   │   │       ├── page.tsx    # Notice list (Sanity-driven)
+│   │   │       └── [slug]/     # Notice detail page
+│   │   └── studio/             # Sanity Studio integration
+│   │       └── [[...tool]]/    # Catch-all route for studio pages
+│   │
+│   ├── components/             # Reusable React components
+│   │   ├── header.tsx          # Header component
+│   │   ├── Navbar.tsx          # Navigation bar
+│   │   └── footer.tsx          # Footer component
+│   │
+│   ├── sanity/                 # Sanity CMS configuration
+│   │   ├── client.ts           # Sanity client instance
+│   │   ├── env.ts              # Environment variables validation
+│   │   ├── structure.ts        # Sanity Studio structure
+│   │   └── schemas/
+│   │       ├── schemaTypes/
+│   │       │   ├── about.ts    # About page schema
+│   │       │   ├── notice.ts   # Notice/News schema
+│   │       └── index.ts        # Schema exports
+│   │
+│   ├── utils/                  # Utility functions
+│   │   └── supabase/
+│   │       └── server.ts       # Supabase server client
+│   │
+│   ├── i18n.ts                 # next-intl configuration (server-side)
+│   ├── middleware.ts           # Route protection & locale detection
+│   └── navigation.ts           # Next.js routing utilities & links
+│
+├── .env.local                  # Local environment variables (NOT in version control)
+├── .env.local.example          # Example environment template
+├── .eslintrc.cjs               # ESLint configuration
+├── .gitignore                  # Git ignore rules
+├── eslint.config.mjs           # ESLint config (flat config format)
+├── next.config.mjs             # Next.js configuration (with next-intl plugin)
+├── postcss.config.mjs          # PostCSS configuration (Tailwind, Autoprefixer)
+├── sanity.cli.ts               # Sanity CLI configuration
+├── sanity.config.ts            # Sanity CMS configuration
+├── tailwind.config.ts          # Tailwind CSS configuration
+├── tsconfig.json               # TypeScript configuration
+├── package.json                # Project dependencies
+├── package-lock.json           # Dependency lock file
+├── next-env.d.ts               # Auto-generated Next.js types
+├── README.md                   # Project documentation
+├── TECH_STACK.txt              # This file
+└── lint_log.txt                # ESLint output log
 
-4. Key Configurations
---------------------------------------------------------------------------------
-[Routing & i18n]
-- Middleware (`src/middleware.ts`) automatically handles locale prefixes.
-- Matches: `/`, `/(ko|ja|en|zh)/:path*`
-- Fallback Locale: 'ko'
+4. Key Configurations & Implementation Details
+================================================================================
 
-[Sanity CMS]
-- Project ID: Configured in environmental variables
+[Routing & Internationalization]
+- Next.js middleware (`src/middleware.ts`) handles locale prefix routing
+- Route pattern: `/` or `/(ko|ja|en|zh)/:path*`
+- Default locale fallback: 'ko' (Korean)
+- Locale detection: Request-based with fallback to default
+- All routes are wrapped in [locale] parameter for multi-language support
+
+[Sanity CMS Integration]
+- Project ID: o656ekmv
+- Organization ID: oWQyIjvX6
 - Dataset: production
-- Plugins: deskTool (Studio UI)
+- Studio URL: http://localhost:3000/studio (when dev server running)
+- Plugins: structureTool (replaces older deskTool)
+- Features:
+  * Rich text editing with PortableText
+  * Image optimization
+  * Real-time content editing
+  * Schema-driven content validation
+
+[TypeScript Configuration]
+- Target: ES2017
+- Strict mode: Enabled
+- Module resolution: bundler
+- Path alias: @ → ./src/
+- JSX: react-jsx (React 19 compatible)
+- Incremental compilation: Enabled
+
+[ESLint & Code Quality]
+- Config Format: Flat config (eslint.config.mjs)
+- Base configs: Next.js core-web-vitals + TypeScript
+- Includes: Core Web Vitals linting, TypeScript linting
+- Ignored paths: .next, out, build, next-env.d.ts
 
 [Tailwind CSS]
-- Version 4 usage (CSS-first configuration likely in global css or PostCSS)
-- Configured via `postcss.config.mjs`
+- Version: 4.x (PostCSS-based)
+- Plugins:
+  * @tailwindcss/postcss (4.1.18)
+  * @tailwindcss/typography (0.5.19) - for rich text content
+- Processing: Via postcss.config.mjs with autoprefixer
+- Global directives: In src/app/globals.css
+
+[Supabase Setup]
+- Authentication: Session-based (cookies)
+- SSR support: @supabase/ssr for server-side rendering
+- Database: PostgreSQL (via Supabase managed DB)
+- Auth flow: Cookie-based authentication with middleware
+- Server client: src/utils/supabase/server.ts
 
 5. Environment Variables (.env.local)
---------------------------------------------------------------------------------
-Required keys for local development:
-- NEXT_PUBLIC_SANITY_PROJECT_ID
-- NEXT_PUBLIC_SANITY_DATASET
-- NEXT_PUBLIC_SUPABASE_URL
-- NEXT_PUBLIC_SUPABASE_ANON_KEY
+================================================================================
+Required for local development:
 
-6. Available Scripts
---------------------------------------------------------------------------------
-- npm run dev      : Start development server (Next.js)
-- npm run build    : Build for production
-- npm run start    : Start production server
-- npm run lint     : Run ESLint
+[Sanity Configuration]
+NEXT_PUBLIC_SANITY_PROJECT_ID=o656ekmv
+NEXT_PUBLIC_SANITY_DATASET=production
+NEXT_PUBLIC_SANITY_API_VERSION=2023-05-03  (recommended)
 
+[Supabase Configuration]
+NEXT_PUBLIC_SUPABASE_URL=<your-supabase-url>
+NEXT_PUBLIC_SUPABASE_ANON_KEY=<your-supabase-anon-key>
 
-Woosuho227!!
+Note: .env.local is NOT version controlled. Use .env.local.example as template.
+
+6. Package Dependencies
+================================================================================
+
+[Production Dependencies]
+├── @portabletext/react (6.0.2)      # Rich text rendering for Sanity content
+├── @sanity/client (7.14.1)          # Sanity content queries
+├── @sanity/image-url (1.2.0)        # Image URL builder
+├── @sanity/vision (4.22.0)          # GROQ query builder/tester
+├── @supabase/ssr (0.8.0)            # Supabase SSR authentication
+├── @supabase/supabase-js (2.93.3)  # Supabase JavaScript client
+├── lucide-react (0.563.0)           # Icon library
+├── next (16.1.4)                    # Core framework
+├── next-intl (4.7.0)                # Internationalization
+├── next-sanity (11.6.12)            # Sanity & Next.js integration
+├── react (19.2.3)                   # UI library
+├── react-dom (19.2.3)               # React DOM
+├── sanity (4.22.0)                  # Sanity CLI & utilities
+└── styled-components (6.3.9)        # CSS-in-JS styling
+
+[Development Dependencies]
+├── @tailwindcss/postcss (4.1.18)    # Tailwind CSS v4 support
+├── @tailwindcss/typography (0.5.19) # Typography plugin for rich text
+├── @types/node (20.x)               # Node.js types
+├── @types/react (19.x)              # React types
+├── @types/react-dom (19.x)          # React DOM types
+├── autoprefixer (10.4.23)           # CSS vendor prefixing
+├── eslint (9.x)                     # Linter
+├── eslint-config-next (16.1.4)      # Next.js ESLint config
+├── tailwindcss (4.x)                # Tailwind CSS framework
+└── typescript (5.x)                 # TypeScript compiler
+
+7. Available Scripts
+================================================================================
+npm run dev        → Start development server (http://localhost:3000)
+                     Includes hot reload for code, styles, and content changes
+npm run build      → Create optimized production build
+npm run start      → Start production server
+npm run lint       → Run ESLint across src/ and other configured paths
+                     Uses flat config format from eslint.config.mjs
+
+8. Development Workflow
+================================================================================
+
+[Getting Started]
+1. Clone repository
+2. Install dependencies: npm install
+3. Set up .env.local from .env.local.example template
+4. Run dev server: npm run dev
+5. Open http://localhost:3000 in browser
+6. Sanity Studio accessible at http://localhost:3000/studio
+
+[Working with Content]
+- Edit dynamic content (notices, about info) in Sanity Studio
+- Changes reflect immediately via live content queries
+- Uses GROQ queries for flexible data fetching
+
+[Adding New Pages]
+- Create file under src/app/[locale]/{feature}/page.tsx
+- All routes automatically localized via [locale] parameter
+- Add translations to messages/*.json files
+
+[Working with Multilingual Content]
+- Use next-intl hooks: useTranslations(), useLocale()
+- Message keys centralized in /messages/*.json
+- Locale prefix handled automatically by middleware & router
+
+9. Technology Rationale
+================================================================================
+
+[Next.js 16]
+- App Router for modern, file-based routing
+- Server Components for optimal performance
+- Built-in Image optimization
+- Automatic static optimization
+
+[Sanity.io]
+- Headless CMS allows flexible content architecture
+- Real-time collaborative editing for admin team
+- GROQ query language for precise content fetching
+- Fully customizable schema and validation
+
+[next-intl]
+- Seamless integration with Next.js App Router
+- Server-side i18n without client-side weight
+- Type-safe translations
+- Route-based locale detection
+
+[Supabase]
+- Open-source PostgreSQL database platform
+- Built-in authentication with multiple providers
+- Real-time subscriptions for live data
+- Row-level security for data protection
+
+[Tailwind CSS v4]
+- CSS-first configuration (no JavaScript config needed)
+- Better performance and smaller bundle size
+- Built-in responsive design utilities
+- Plugins for extended functionality
+
+10. Performance & Optimization
+================================================================================
+
+[Code Splitting]
+- Next.js automatic code splitting per route
+- Dynamic imports for large components
+
+[Image Optimization]
+- Next.js Image component with Sanity image optimization
+- Automatic WebP conversion
+- Responsive image serving via next/image
+
+[CSS Optimization]
+- Tailwind CSS v4 tree-shaking of unused styles
+- PostCSS minification in production
+- Critical CSS inlined
+
+[Type Safety]
+- Full TypeScript strict mode enabled
+- Type-safe content queries via Sanity client
+- Typed translations via next-intl
+
+11. Deployment Considerations
+================================================================================
+
+[Vercel (Recommended)]
+- Seamless Next.js deployment
+- Automatic builds and previews on push
+- Edge Functions support
+- Environment variables management
+
+[Production Build]
+- Run: npm run build
+- Start: npm start
+- Optimized for performance and bundle size
+
+[Environment Setup]
+- Configure all .env variables on deployment platform
+- Sanity project ID remains public (prefixed with NEXT_PUBLIC_)
+- Supabase keys: public (NEXT_PUBLIC_) and private keys if needed
+
+12. Useful Resources & Documentation
+================================================================================
+
+[Official Documentation]
+- Next.js: https://nextjs.org/docs
+- React: https://react.dev
+- TypeScript: https://www.typescriptlang.org/docs/
+- Tailwind CSS: https://tailwindcss.com/docs
+- next-intl: https://next-intl-docs.vercel.app
+- Sanity: https://www.sanity.io/docs
+- Supabase: https://supabase.com/docs
+
+[Key Files to Know]
+- src/i18n.ts - Internationalization setup
+- src/middleware.ts - Route handling and locale detection
+- sanity.config.ts - Sanity CMS configuration
+- src/sanity/client.ts - Sanity client instance
+- src/utils/supabase/server.ts - Supabase server client
+- next.config.mjs - Next.js configuration
+- eslint.config.mjs - ESLint flat configuration
+
+13. Common Tasks & Quick Reference
+================================================================================
+
+[Add New Language]
+1. Create messages/{locale}.json with translations
+2. Update i18n.ts to include new locale in array
+3. Add to URL routing pattern in middleware.ts
+4. Test at /{locale}/
+
+[Query Sanity Content]
+- Use GROQ query language
+- Example: *[_type == "notice"] | order(_createdAt desc)
+- Test queries in Sanity Vision (available in Studio)
+
+[Debug Mode]
+- npm run lint - Check for errors
+- Check browser console for client-side errors
+- Check terminal for server-side errors
+- Sanity Studio: /studio/debug
+
+[Production Checklist]
+- Set all .env variables on deployment platform
+- Run npm run build locally to verify build
+- Test npm start locally
+- Verify ESLint passes: npm run lint
+- Check responsive design on multiple devices
+- Test all locales
+
+14. Project Status & Notes
+================================================================================
+
+Last Updated: 2026-06-18
+Version: 0.1.0 (Active Development)
+Status: Fully Configured & Ready for Development
+
+[Recently Completed]
+✓ Tech stack documentation update and verification
+✓ Next.js 16 App Router with App Router setup
+✓ TypeScript strict mode enabled
+✓ Multilingual routing (Korean, English, Japanese, Chinese)
+✓ Sanity CMS integration with schemas (about, notice)
+✓ Supabase authentication setup
+✓ Tailwind CSS v4 with typography plugin
+✓ ESLint flat config (v9.x)
+✓ Complete page structure and routing
+✓ Component architecture (Header, Navbar, Footer)
+
+[Currently In Progress]
+- Sanity content population for notices and pages
+- Supabase database initialization and seeding
+- Authentication flow implementation
+- Content migration and optimization
+
+[Planned Features]
+- Search functionality (Sanity or Algolia integration)
+- Event calendar system
+- Email notification system
+- Advanced admin dashboard
+- Analytics and monitoring
+- Content versioning
+- SEO optimization (sitemap, robots.txt)
+- Performance monitoring
+
+[Known Issues]
+- None currently documented
+- Check lint_log.txt for any linting issues
+- Review git commit history for recent fixes
+
+[Development Notes]
+- All sensitive credentials stored in .env.local (NOT version controlled)
+- Use .env.local.example as template for setup
+- Middleware handles all locale-based routing automatically
+- Sanity Studio available at /studio during development
+- Default locale is Korean (ko) - fallback for unmatched routes
