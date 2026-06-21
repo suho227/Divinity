@@ -2,6 +2,7 @@ export default {
     name: 'notice',
     title: 'お知らせ',
     type: 'document',
+
     fields: [
         {
             name: 'title',
@@ -16,39 +17,107 @@ export default {
             ],
             validation: (Rule: any) => Rule.required(),
         },
+
         {
             name: 'slug',
             title: '주소(Slug)',
             type: 'slug',
             options: {
-                // 🌟 문자열 'title.ko' 대신, 아래와 같이 함수를 사용해야 정확히 값을 가져옵니다.
                 source: (doc: any) => doc.title?.ja,
                 maxLength: 96,
-                // 🌟 제목이 없을 때 에러가 나지 않도록 설정을 추가할 수 있습니다.
-                slugify: (input: string) => input
-                    .toLowerCase()
-                    .replace(/\s+/g, '-') // 공백을 하이픈으로 변경
-                    .slice(0, 96)
+                slugify: (input: string) =>
+                    input
+                        .toLowerCase()
+                        .replace(/\s+/g, '-')
+                        .slice(0, 96),
             },
             validation: (Rule: any) => Rule.required(),
         },
+
         {
             name: 'publishedAt',
             title: '登録日時',
             type: 'datetime',
             initialValue: () => new Date().toISOString(),
         },
+
         {
             name: 'content',
             title: 'お知らせ内容',
             type: 'object',
             fields: [
-                { name: 'ko', title: '한국어 내용', type: 'array', of: [{ type: 'block' }] },
-                { name: 'ja', title: '日本語内容', type: 'array', of: [{ type: 'block' }] },
-                { name: 'en', title: 'English Content', type: 'array', of: [{ type: 'block' }] },
-                { name: 'zh', title: '中文内容', type: 'array', of: [{ type: 'block' }] },
+                {
+                    name: 'ko',
+                    title: '한국어 내용',
+                    type: 'array',
+                    of: [{ type: 'block' }],
+                },
+                {
+                    name: 'ja',
+                    title: '日本語内容',
+                    type: 'array',
+                    of: [{ type: 'block' }],
+                },
+                {
+                    name: 'en',
+                    title: 'English Content',
+                    type: 'array',
+                    of: [{ type: 'block' }],
+                },
+                {
+                    name: 'zh',
+                    title: '中文内容',
+                    type: 'array',
+                    of: [{ type: 'block' }],
+                },
             ],
         },
+
+        {
+            name: 'attachments',
+            title: '添付ファイル',
+            type: 'array',
+            description: 'PDF、Word、Excelなどの書類を添付できます。',
+            of: [
+                {
+                    type: 'file',
+                    options: {
+                        accept:
+                            '.pdf,.doc,.docx,.xls,.xlsx,.csv,.hwp,.hwpx',
+                    },
+                    fields: [
+                        {
+                            name: 'displayName',
+                            title: '表示名',
+                            type: 'object',
+                            fields: [
+                                {
+                                    name: 'ko',
+                                    title: '한국어 파일명',
+                                    type: 'string',
+                                },
+                                {
+                                    name: 'ja',
+                                    title: '日本語ファイル名',
+                                    type: 'string',
+                                },
+                                {
+                                    name: 'en',
+                                    title: 'English File Name',
+                                    type: 'string',
+                                },
+                                {
+                                    name: 'zh',
+                                    title: '中文文件名',
+                                    type: 'string',
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
+
         {
             name: 'isImportant',
             title: '重要なお知らせ',
