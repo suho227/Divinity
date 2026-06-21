@@ -1,466 +1,550 @@
 {
-    "navigation": {
-        "intro": "学校紹介",
-        "about": "About Us",
-        "greeting": "ご挨拶",
-        "history": "沿革",
-        "location": "アクセス",
-        "departments": "学科案内",
-        "dept_bth": "神学科",
-        "dept_japanese": "日本語学科",
-        "notice": "お知らせ",
-        "archive": "資料室",
-        "admissionInfo": "入学情報",
-        "admissionGuide": "入学案内",
-        "admissionForms": "入学書式",
-        "admissionConsultation": "入学相談",
-        "subTitle": "宗教法人",
-        "title": "東京国際神学校",
-        "schoolName": "東京国際神学校",
-        "address": "〒111-0053 東京都台東区浅草橋3-11-8",
-        "transport": "JR浅草橋駅から徒歩5分",
-        "tel": "03-3865-4442",
-        "email": "tokyo.seminary@gmail.com",
-        "dept_calendar": "学事日程",
-        "faculty": "教職員",
-        "churchLinkLabel": "教会リンク",
-        "acsLinkLabel": "ACS ",
-        "acsLinkAriaLabel": "azabu christian school のウェブサイトを開く",
-        "azabuLinkLabel": "麻布福音教会",
-        "azabuLinkAriaLabel": "麻布福音教会のウェブサイトを開く",
-        "openMenu": "モバイルメニューを開く",
-        "closeMenu": "モバイルメニューを閉じる"
+  "navigation": {
+    "intro": "学校紹介",
+    "about": "About Us",
+    "greeting": "ご挨拶",
+    "history": "沿革",
+    "location": "アクセス",
+    "departments": "学科案内",
+    "dept_bth": "神学科",
+    "dept_japanese": "日本語学科",
+    "notice": "お知らせ",
+    "archive": "資料室",
+    "admissionInfo": "入学情報",
+    "admissionGuide": "入学案内",
+    "admissionForms": "入学書式",
+    "admissionConsultation": "入学相談",
+    "subTitle": "宗教法人",
+    "title": "東京国際神学校",
+    "schoolName": "東京国際神学校",
+    "address": "〒111-0053 東京都台東区浅草橋3-11-8",
+    "transport": "JR浅草橋駅から徒歩5分",
+    "tel": "03-3865-4442",
+    "email": "tokyo.seminary@gmail.com",
+    "dept_calendar": "学事日程",
+    "faculty": "教職員",
+    "churchLinkLabel": "教会リンク",
+    "acsLinkLabel": "ACS ",
+    "acsLinkAriaLabel": "azabu christian school のウェブサイトを開く",
+    "azabuLinkLabel": "麻布福音教会",
+    "azabuLinkAriaLabel": "麻布福音教会のウェブサイトを開く",
+    "openMenu": "モバイルメニューを開く",
+    "closeMenu": "モバイルメニューを閉じる"
+  },
+  "NotFound": {
+    "title": "ページが見つかりません。",
+    "description": "お探しのページは削除されたか、URLが変更された可能性があります。",
+    "homeLabel": "ホームに戻る"
+  },
+  "Index": {
+    "introSubtitle": "INTRODUCTION",
+    "introTitle": "日本と世界の教会を生かす\n使命者を養成します。",
+    "introDescription": "東京国際神学校は福音の情熱で日本全域と世界列邦に向かう霊的指導者を育てるための道場です。",
+    "introMore": "詳細を見る",
+    "subTitle": "宗教法人",
+    "title": "東京国際神学校",
+    "description": "日本と世界の教会を生かす伝道者を養成します",
+    "admission": "入学案内"
+  },
+  "About": {
+    "notice": {
+      "pageTitle": "お知らせ",
+      "backToList": "一覧に戻る"
     },
-    "NotFound": {
-        "title": "ページが見つかりません。",
-        "description": "お探しのページは削除されたか、URLが変更された可能性があります。",
-        "homeLabel": "ホームに戻る"
+    "greeting": {
+      "pageTitle": "ご挨拶",
+      "chairman": {
+        "role": "理事長",
+        "name": "丁恩柱 牧師",
+        "headline": "十字架の福音によって日本を目覚めへと導く神学校",
+        "message": "東京国際神学校にお訪ねいただいた皆様に、心より感謝申し上げます。\n\n本校は聖書に基づいた改革派神学の路線に従い、牧회자および宣教師を養成する神学校です。プロテスタント宣教167周年を迎えた日本の現在の福音化率は、未だ1％未満に留まっています。宣教学の観点から見ると、日本はまさに「未伝道部族」とも言えるのです。\n\nさらに遺憾なことに、現在の日本キリスト教界は牧会者の高齢化による「無牧教会」が増加しており、信徒数15名以下の未自立教会が全体の80％に達しているのが現状です。東京国際神学校は、このような時代の現実に向き合い、変革の一翼を担ってまいります。\n\nイエスキリストの十字架の贖いと復活の福音で完全に武装した牧会者・宣教師を養成し、日本の教会と万国に向けて、命の躍動を引き起こしてまいる所存です。皆様の温かい関心とお祈りをお願い申し上げます。",
+        "history": [
+          "東亜大学校 法経大学 経営学科 卒業 (1974)",
+          "総神大学校(舎堂) 神学大学院(第81回) 卒業 (1988)",
+          "American University of California 牧会学博士 (D.Min.) (2005)",
+          "大韓イエス教長老会総会(改革) 元総会長 (元総代理)",
+          "社会福祉法人 ユニワールド 理事長 (現)",
+          "一般社団法人 国際テコンドーマスター連盟 総裁 (現)",
+          "改革公報 理事長 (現)"
+        ]
+      },
+      "dean": {
+        "role": "校長",
+        "name": "申キショウ牧師",
+        "headline": "神がはじめられた働き、日本教会の回復へ",
+        "message": "東京国際神学校へようこそ。\n\n本神学校のビジョンは、キリスト中心で聖書に根ざした宣教的神学教育を通し、日本と世界に福音をもたらす働き人を育成することです。\n\n日本は、キリスト教宣教において大きな可能性と同時に深い課題を抱える国です。世界でも有数の影響力を持ちながら、霊的には十分に福音が行き渡っていないこの国は、聖書の真理に坚く立ち、霊性と宣教的使命感を備えた伝道者を必要としています。本神学校は、その必要に応えるために設立されました。\n\n本校のカリキュラムは、聖書学、神学、実践的使役、霊的形成を統合し、キリスト中心の学びの共同体の中で提供されます。教員には、首都国際大学（SIS）において神学教育に携わってきた教授陣と、大韓イエス長老会改革教団（RPCK）に属する牧師が含まれており、学問的卓越性と牧会的経験の双方を教育に生かしています。\n\n牧会者としての働き、他文化宣教、キリスト教教育、あるいは神学理解をより深めたいと願う方々に、本学での学びをご検討いただければ幸いです。",
+        "history": [
+          "ウェストミンスター大学院大学校 卒業 (B.Th.Equiv.)",
+          "カルビン大学校 卒業",
+          "東京サンシャイン専門学校 卒業 (日本語学科)",
+          "マニラ神科大学 卒業 (神学研究科)",
+          "首都国際大学院大学校 神学研究院 卒業 (牧会学修士 / M.Div.)",
+          "カリフォルニア・ユニオン大学院 (神学哲学博士)",
+          "American University 名誉牧会学博士",
+          "宗教法人 麻布福音教会 担任牧師 (現)",
+          "Azabu Christian School 代表理事長 (現)",
+          "NPO法人 レイマ 代表理事長 (現)",
+          "宗教法人 東京国際神学校 学長 (現)"
+        ]
+      }
     },
-    "Index": {
-        "introSubtitle": "INTRODUCTION",
-        "introTitle": "日本と世界の教会を生かす\n使命者を養成します。",
-        "introDescription": "東京国際神学校は福音の情熱で日本全域と世界列邦に向かう霊的指導者を育てるための道場です。",
-        "introMore": "詳細を見る",
-        "subTitle": "宗教法人",
-        "title": "東京国際神学校",
-        "description": "日本と世界の教会を生かす伝道者を養成します",
-        "admission": "入学案内"
-    },
-    "About": {
-        "notice": {
-            "pageTitle": "お知らせ",
-            "backToList": "一覧に戻る"
+    "intro": {
+      "pageTitle": "学校紹介",
+      "philosophy": {
+        "title": "教育理念",
+        "subtitle": "Education Philosophy",
+        "item1": {
+          "title": "1. ただ聖書",
+          "desc": "全ての教育と牧会の基準は神様のみ言葉である。"
         },
-        "greeting": {
-            "pageTitle": "ご挨拶",
-            "chairman": {
-                "role": "理事長",
-                "name": "丁恩柱 牧師",
-                "headline": "十字架の福音によって日本を目覚めへと導く神学校",
-                "message": "東京国際神学校にお訪ねいただいた皆様に、心より感謝申し上げます。\n\n本校は聖書に基づいた改革派神学の路線に従い、牧회자および宣教師を養成する神学校です。プロテスタント宣教167周年を迎えた日本の現在の福音化率は、未だ1％未満に留まっています。宣教学の観点から見ると、日本はまさに「未伝道部族」とも言えるのです。\n\nさらに遺憾なことに、現在の日本キリスト教界は牧会者の高齢化による「無牧教会」が増加しており、信徒数15名以下の未自立教会が全体の80％に達しているのが現状です。東京国際神学校は、このような時代の現実に向き合い、変革の一翼を担ってまいります。\n\nイエスキリストの十字架の贖いと復活の福音で完全に武装した牧会者・宣教師を養成し、日本の教会と万国に向けて、命の躍動を引き起こしてまいる所存です。皆様の温かい関心とお祈りをお願い申し上げます。",
-                "history": [
-                    "東亜大学校 法経大学 経営学科 卒業 (1974)",
-                    "総神大学校(舎堂) 神学大学院(第81回) 卒業 (1988)",
-                    "American University of California 牧会学博士 (D.Min.) (2005)",
-                    "大韓イエス教長老会総会(改革) 元総会長 (元総代理)",
-                    "社会福祉法人 ユニワールド 理事長 (現)",
-                    "一般社団法人 国際テコンドーマスター連盟 総裁 (現)",
-                    "改革公報 理事長 (現)"
-                ]
-            },
-            "dean": {
-                "role": "校長",
-                "name": "申キショウ牧師",
-                "headline": "神がはじめられた働き、日本教会の回復へ",
-                "message": "東京国際神学校へようこそ。\n\n本神学校のビジョンは、キリスト中心で聖書に根ざした宣教的神学教育を通し、日本と世界に福音をもたらす働き人を育成することです。\n\n日本は、キリスト教宣教において大きな可能性と同時に深い課題を抱える国です。世界でも有数の影響力を持ちながら、霊的には十分に福音が行き渡っていないこの国は、聖書の真理に坚く立ち、霊性と宣教的使命感を備えた伝道者を必要としています。本神学校は、その必要に応えるために設立されました。\n\n本校のカリキュラムは、聖書学、神学、実践的使役、霊的形成を統合し、キリスト中心の学びの共同体の中で提供されます。教員には、首都国際大学（SIS）において神学教育に携わってきた教授陣と、大韓イエス長老会改革教団（RPCK）に属する牧師が含まれており、学問的卓越性と牧会的経験の双方を教育に生かしています。\n\n牧会者としての働き、他文化宣教、キリスト教教育、あるいは神学理解をより深めたいと願う方々に、本学での学びをご検討いただければ幸いです。",
-                "history": [
-                    "ウェストミンスター大学院大学校 卒業 (B.Th.Equiv.)",
-                    "カルビン大学校 卒業",
-                    "東京サンシャイン専門学校 卒業 (日本語学科)",
-                    "マニラ神科大学 卒業 (神学研究科)",
-                    "首都国際大学院大学校 神学研究院 卒業 (牧会学修士 / M.Div.)",
-                    "カリフォルニア・ユニオン大学院 (神学哲学博士)",
-                    "American University 名誉牧会学博士",
-                    "宗教法人 麻布福音教会 担任牧師 (現)",
-                    "Azabu Christian School 代表理事長 (現)",
-                    "NPO法人 レイマ 代表理事長 (現)",
-                    "宗教法人 東京国際神学校 学長 (現)"
-                ]
-            }
+        "item2": {
+          "title": "2. ただキリスト",
+          "desc": "キリストを中心に教会と使役者をたてていく。"
         },
-        "intro": {
-            "pageTitle": "学校紹介",
-            "philosophy": {
-                "title": "教育理念",
-                "subtitle": "Education Philosophy",
-                "item1": {
-                    "title": "1. ただ聖書",
-                    "desc": "全ての教育と牧会の基準は神様のみ言葉である。"
-                },
-                "item2": {
-                    "title": "2. ただキリスト",
-                    "desc": "キリストを中心に教会と使役者をたてていく。"
-                },
-                "item3": {
-                    "title": "3. ただ恵み",
-                    "desc": "恵みによって呼ばれた使命者としての人生を教育する。"
-                },
-                "item4": {
-                    "title": "4. ただ信仰",
-                    "desc": "信仰による牧会と宣教を訓練する。"
-                },
-                "item5": {
-                    "title": "5. ただ神に栄光",
-                    "desc": "全ての教育の目的は神の栄光である。"
-                }
-            },
-            "motto": {
-                "title": "校訓",
-                "subtitle": "School Motto",
-                "item1": "ただ福音の体質化",
-                "item2": "祈りの生活化",
-                "item3": "世界福音化"
-            }
+        "item3": {
+          "title": "3. ただ恵み",
+          "desc": "恵みによって呼ばれた使命者としての人生を教育する。"
         },
-        "history": {
-            "pageTitle": "学校沿革",
-            "title": "東京国際神学校の歩み",
-            "items": {
-                "item1": {
-                    "year": "2026",
-                    "event": "東京国際神学校 設立"
-                }
-            }
+        "item4": {
+          "title": "4. ただ信仰",
+          "desc": "信仰による牧会と宣教を訓練する。"
         },
-        "location": {
-            "title": "アクセス",
-            "subtitle": "アクセス方法",
-            "address": "〒133-0051 東京都江戸川区北小岩3-13-11",
-            "transport": "京成江戸川駅から徒歩8分",
-            "tel": "03-3865-4442"
-        },
-        "departments": {
-            "pageTitle": "学科案内",
-            "introMessage": "聖書に基づいた神学教育を通じて使役者を養成する神学科",
-            "curriculum": {
-                "headers": [
-                    "1年生",
-                    "2年生",
-                    "3年生",
-                    "共通科目及び分離授業\n(8番目学期最後の週)"
-                ],
-                "rows": [
-                    [
-                        "神論(首都国際大学院)",
-                        "人間論(首都国際大学院)",
-                        "キリスト論(首都国際大学院)",
-                        "信条学(大学院) 首都国際大学院 2年2学期"
-                    ],
-                    [
-                        "初代教会史(최신광牧師)",
-                        "中世教会史(최신광牧師)",
-                        "宗教改革史(최신광牧師)",
-                        "教会教育(学部) 2年2学期(박성진牧師)"
-                    ],
-                    [
-                        "ヘブライ語基礎(김인용牧師)",
-                        "モーセ五書(김상민牧師)",
-                        "歴史書(노동휘牧師)",
-                        "旧約解釈学(大学院) 1年1学期(首都国際)"
-                    ],
-                    [
-                        "福音書(오권성牧師)",
-                        "ギリシャ語(김인용牧師)",
-                        "パウロ書簡(김대영牧師)",
-                        "使徒言行録(学部) - 오권성牧師 2-1, 3-1"
-                    ],
-                    [
-                        "礼拝学(김대영牧師)",
-                        "説教法 / 実習(정은주牧師)",
-                        "宣教学(안성삼牧師)",
-                        "ヨハネの黙示録(大学院) 3年2学期(首都国際)"
-                    ],
-                    [
-                        "救済論(나용화牧師)",
-                        "教会論(김한곤牧師)",
-                        "黙示録と終末論(首都国際大学院)",
-                        "新約解釈(大学院) 1-2 / 新約説教(学部) 3-2"
-                    ],
-                    [
-                        "近現代教会史(박성진牧師)",
-                        "日本教会史(신기섭牧師)",
-                        "獄中書簡(박광섭牧師)",
-                        "旧約註解(大学院) 2-1 / 詩編(学部) 4-2"
-                    ],
-                    [
-                        "詩歌書(首都国際大学院)",
-                        "預言書(首都国際大学院)",
-                        "旧約神学 / 総論(首都国際大学院)",
-                        "教회정치(大学院) 3-1 신기섭牧師"
-                    ],
-                    [
-                        "新約神学(首都国際大学院)",
-                        "公同書簡(박성진牧師)",
-                        "聖書解釈学(首都国際大学院)",
-                        "牧会学(学部) 김상민牧師 1年1学期"
-                    ],
-                    [
-                        "伝道学(신기섭牧師)",
-                        "牧会相談(노동휘牧師)",
-                        "黙示文学(首都国際大学院)",
-                        "イエスの比喩研究(学部) 4-1 首都国際"
-                    ],
-                    [
-                        "講師：首都国際大学院大学",
-                        "",
-                        "",
-                        "副牧師の役割(学部 1-2) 김대영牧師"
-                    ]
-                ]
-            },
-            "degreeName": "神学士 (B.Th.) 課程",
-            "yearInfo": "1年カリキュラム",
-            "semester1": "1学期",
-            "semester2": "2学期",
-            "categories": {
-                "majorReq": "学必",
-                "majorElect": "学選",
-                "genReq": "教必",
-                "genElect": "教選",
-                "other": "専選/専必"
-            },
-            "subjects": {
-                "otIntro": "旧約概論",
-                "ntIntro": "新約概論",
-                "histEd": "キリスト教教育史",
-                "philTheo": "哲学的神学",
-                "psychIntro": "心理学概論",
-                "theoEng1": "神学英語 I",
-                "bibWorldview": "聖書的世界観",
-                "churchMusic": "教会音楽",
-                "otBack": "旧約背景史",
-                "westminster": "ウェストミンスター信仰告白",
-                "introEd": "キリスト教教育概論",
-                "pentateuch": "モーセ五書解釈",
-                "histDoc": "教理史",
-                "philIntro": "哲学の理解",
-                "edPsych": "教育心理学",
-                "wisdom": "知恵書(知恵文学研究)",
-                "theoEng2": "神学英語 II",
-                "modernWorld": "現代の世界観",
-                "comm": "コミュニケーション",
-                "ntBack": "新約背景史"
-            },
-            "graduate": {
-                "pageTitle": "神学修士/博士 (M.Div/Th.M/Ph.D)",
-                "intro": "本大学院課程は、改革総会および首都国際大学院大学とのMOUを通じて、御言葉と実力を兼ね備えた専門使役者を養成します。",
-                "partner": "講師および協力：首都国際大学院大学",
-                "years": {
-                    "y1": "1年課程",
-                    "y2": "2年課程",
-                    "y3": "3年課程",
-                    "common": "共通および分離授業"
-                },
-                "subjects": {
-                    "y1": "神論, 初期教会史, ヘブライ語基礎, 福音書, 礼拝学, 救済論, 近現代教会史, 詩歌書, 新約神学, 伝道学",
-                    "y2": "人間論, 中世教会史, モーセ五書, ギリシャ語, 説教学/実習, 教会論, 日本教会史, 預言書, 共同書簡, 牧会カウンセリング",
-                    "y3": "キリスト論, 宗教改革史, 歴史書, パウロ書簡, 宣教学, 黙示録と終末論, 獄中書簡, 旧約神学/総論, 聖書解釈学, 黙示文学",
-                    "common": "新条学, 教会教育, 旧約解釈学, 使徒言行録, ヨハネ黙示録, 新約解釈と説教"
-                },
-                "sharedCourses": {
-                    "title": "共通科目",
-                    "provider": "神学校講義: 首都国際大学院大学",
-                    "courses": [
-                        "神論",
-                        "初代教会史",
-                        "ヘブライ語",
-                        "福音書",
-                        "礼拝学",
-                        "組織神学",
-                        "近現代教会史",
-                        "詩篇",
-                        "新約神学",
-                        "伝道学"
-                    ]
-                },
-                "calendar": {
-                    "pageTitle": "学事日程",
-                    "monthName": "{month}月",
-                    "majorSchedule": "主な日程",
-                    "noEvent": "該当月には公式行事が計画されていません。",
-                    "events": {
-                        "m3": "17: 開校セミナー",
-                        "m4": "21: 休校",
-                        "m5": "22: 休校",
-                        "m6": "23-24: 休み\n30-7/1: 宣教学 (申テモテ牧師)",
-                        "m7": "1: 宣教学 (申テモテ牧師)"
-                    }
-                }
-            },
-            "japanese": {
-                "pageTitle": "日本語学科",
-                "description": "学科紹介を準備中です。"
-            }
-        },
-        "faculty": {
-            "pageTitle": "教職員",
-            "description": "東京国際神学校に仕える教授・牧会者です。",
-            "members": {
-                "kwangseop": "パク・グァンソプ牧師",
-                "DongyaulTae": "テ・ドンヨル教授",
-                "jaeSungKim": "キム・ジェソン教授",
-                "AYunKim": "キム・アユン教授",
-                "JiHyeLee": "イ・ジヘ教授",
-                "JungHwaLee": "イ・ジョンファ教授",
-                "ShinKwangChoi": "チェ・シングァン教授",
-                "PungRyongKim": "キム・プンリョン教授",
-                "ByungWooJung": "チョン・ビョンウ教授",
-                "DongJinPark": "パク・ドンジン教授"
-            },
-            "profileModalTitle": "教授プロフィール",
-            "openProfile": "{name}のプロフィールを開く",
-            "closeProfile": "教授プロフィールを閉じる",
-            "profiles": {
-                "DongyaulTae": "学歴\n- 경북대학교 무역학과 졸업 (문학사, B.A.)\n- 고려신학대학원 졸업 (목회학석사, M.Div.)\n- Calvin Theological Seminary (Th.M.)\n- Calvin Theological Seminary (Ph.D.)",
-                "jaeSungKim": "学歴\n- 총신대학교 신학과 졸업 (문학사, B.A.)\n- 합동신학대학원 졸업 (목회학석사, M.Div.)\n- 서울대학교 대학원 졸업 (문학석사, M.A.)\n- Calvin Theological Seminary 졸업 (신학석사, Th.M.)\n- Westminster Theological Seminary 졸업 (철학박사, Ph.D.)",
-                "AYunKim": "学歴\n- 고려대학교 중국어중국문학과 졸업 (문학사, B.A.)\n- Trinity Evangelical Divinity School 졸업 (목회학석사, M.Div.)\n- Gordon-Conwell Theological Seminary (Th.M.)\n- Trinity Evangelical Divinity School (Ph.D.)",
-                "JiHyeLee": "学歴\n- 한동대학교 법학부 졸업 (법학사)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Wheaton College (M.A.)\n- Emory University (Th.M.)\n- University of St. Andrews (Ph.D.)",
-                "JungHwaLee": "学歴\n- 이화여자대학교 불어불문학과 졸업 (문학사, B.A.)\n- 서울대학교 대학원 불어불문학과 졸업 (문학석사, M.A.)\n- 서울대학교 대학원 불어불문학과 박사과정 수료\n- 국제신학대학원대학교 졸업 (목회학석사, M.Div.)\n- 국제신학대학원대학교 졸업 (신학석사, Th.M.)\n- 국제신학대학원대학교 졸업 (철학박사, Ph.D.)",
-                "ShinKwangChoi": "学歴\n- 고려대학교 교육학과 졸업 (B.A.)\n- 수도국제대학원대학교 목회연구과 목회학석사 (M.Div. Equiv.)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Calvin Theological Seminary 신학석사 (Th.M., 조직신학·역사신학)\n- Southwestern Baptist Theological Seminary 철학박사 (Ph.D., 조직신학)",
-                "PungRyongKim": "学歴\n- 한성대학교 영문학과 졸업 (문학사, B.A.)\n- 합동신학대학원대학교 졸업 (목회학석사, M.Div.)\n- University of Aberdeen (Th.M.)\n- University of Aberdeen (Ph.D.)",
-                "ByungWooJung": "学歴\n- 국제신학대학원대학교 졸업 (목회학석사, M.Div. / 신학석사, Th.M.)\n- Ezra Bible Institute 대학원 박사과정 수료",
-                "DongJinPark": "学歴\n- 중앙대학교 신문방송학과 졸업 (문학사, B.A.)\n- 합동신학대학원대학교 졸업 (목회학석사, M.Div.)\n- McMaster Divinity College (M.A.)\n- McMaster Divinity College (Ph.D.)"
-            },
-            "categories": {
-                "systematicTheology": "組織神学",
-                "oldTestament": "旧約学",
-                "newTestament": "新約学",
-                "churchHistory": "教会史",
-                "biblicalTheology": "聖書神学",
-                "preaching": "説教学"
-            }
+        "item5": {
+          "title": "5. ただ神に栄光",
+          "desc": "全ての教育の目的は神の栄光である。"
         }
+      },
+      "motto": {
+        "title": "校訓",
+        "subtitle": "School Motto",
+        "item1": "ただ福音の体質化",
+        "item2": "祈りの生活化",
+        "item3": "世界福音化"
+      }
     },
-    "Admission": {
-        "heroEyebrow": "Admissions Guide",
-        "heroTitleLine1": "召しに向かう",
-        "heroTitleLine2": "最初の一歩を設計します。",
-        "heroDescription": "東京国際神学院の募集課程、出願資格、提出書類、選考の流れを一目で確認できるよう整理しました。",
-        "processCta": "選考の流れを見る",
-        "noticeCta": "最新のお知らせを確認",
-        "intakeEyebrow": "Always Open",
-        "intakeTitleLine1": "随時受付",
-        "intakeTitleLine2": "個別案内",
-        "available": "可能",
-        "applicationSuffix": "受付",
-        "methods": [
-            "来校",
-            "郵送",
-            "メール"
+    "history": {
+      "pageTitle": "学校沿革",
+      "title": "東京国際神学校の歩み",
+      "items": {
+        "item1": {
+          "year": "2026",
+          "event": "東京国際神学校 設立"
+        }
+      }
+    },
+    "location": {
+      "title": "アクセス",
+      "subtitle": "アクセス方法",
+      "address": "〒133-0051 東京都江戸川区北小岩3-13-11",
+      "transport": "京成江戸川駅から徒歩8分",
+      "tel": "03-3865-4442"
+    },
+    "departments": {
+      "pageTitle": "学科案内",
+      "introMessage": "聖書に基づいた神学教育を通じて使役者を養成する神学科",
+      "curriculum": {
+        "headers": [
+          "1年生",
+          "2年生",
+          "3年生",
+          "共通科目及び分離授業\n(8番目学期最後の週)"
         ],
-        "programs": {
-            "eyebrow": "Programs",
-            "title": "募集課程・人数",
-            "description": "課程別の授業形態と募集人数をカード形式で整理しました。",
-            "cards": [
-                {
-                    "title": "神学科 学部課程",
-                    "degree": "B.Th. 課程",
-                    "method": "昼・夜間",
-                    "seats": "00名"
-                },
-                {
-                    "title": "神学 修士・博士課程",
-                    "degree": "M.Div. / Th.M. / Ph.D.",
-                    "method": "協力課程",
-                    "seats": "00名"
-                },
-                {
-                    "title": "日本語学科",
-                    "degree": "日本語集中課程",
-                    "method": "昼間",
-                    "seats": "00名"
-                }
-            ]
+        "rows": [
+          [
+            "神論(首都国際大学院)",
+            "人間論(首都国際大学院)",
+            "キリスト論(首都国際大学院)",
+            "信条学(大学院) 首都国際大学院 2年2学期"
+          ],
+          [
+            "初代教会史(최신광牧師)",
+            "中世教会史(최신광牧師)",
+            "宗教改革史(최신광牧師)",
+            "教会教育(学部) 2年2学期(박성진牧師)"
+          ],
+          [
+            "ヘブライ語基礎(김인용牧師)",
+            "モーセ五書(김상민牧師)",
+            "歴史書(노동휘牧師)",
+            "旧約解釈学(大学院) 1年1学期(首都国際)"
+          ],
+          [
+            "福音書(오권성牧師)",
+            "ギリシャ語(김인용牧師)",
+            "パウロ書簡(김대영牧師)",
+            "使徒言行録(学部) - 오권성牧師 2-1, 3-1"
+          ],
+          [
+            "礼拝学(김대영牧師)",
+            "説教法 / 実習(정은주牧師)",
+            "宣教学(안성삼牧師)",
+            "ヨハネの黙示録(大学院) 3年2学期(首都国際)"
+          ],
+          [
+            "救済論(나용화牧師)",
+            "教会論(김한곤牧師)",
+            "黙示録と終末論(首都国際大学院)",
+            "新約解釈(大学院) 1-2 / 新約説教(学部) 3-2"
+          ],
+          [
+            "近現代教会史(박성진牧師)",
+            "日本教会史(신기섭牧師)",
+            "獄中書簡(박광섭牧師)",
+            "旧約註解(大学院) 2-1 / 詩編(学部) 4-2"
+          ],
+          [
+            "詩歌書(首都国際大学院)",
+            "預言書(首都国際大学院)",
+            "旧約神学 / 総論(首都国際大学院)",
+            "教회정치(大学院) 3-1 신기섭牧師"
+          ],
+          [
+            "新約神学(首都国際大学院)",
+            "公同書簡(박성진牧師)",
+            "聖書解釈学(首都国際大学院)",
+            "牧会学(学部) 김상민牧師 1年1学期"
+          ],
+          [
+            "伝道学(신기섭牧師)",
+            "牧会相談(노동휘牧師)",
+            "黙示文学(首都国際大学院)",
+            "イエスの比喩研究(学部) 4-1 首都国際"
+          ],
+          [
+            "講師：首都国際大学院大学",
+            "",
+            "",
+            "副牧師の役割(学部 1-2) 김대영牧師"
+          ]
+        ]
+      },
+      "degreeName": "神学士 (B.Th.) 課程",
+      "yearInfo": "1年カリキュラム",
+      "semester1": "1学期",
+      "semester2": "2学期",
+      "categories": {
+        "majorReq": "学必",
+        "majorElect": "学選",
+        "genReq": "教必",
+        "genElect": "教選",
+        "other": "専選/専必"
+      },
+      "subjects": {
+        "otIntro": "旧約概論",
+        "ntIntro": "新約概論",
+        "histEd": "キリスト教教育史",
+        "philTheo": "哲学的神学",
+        "psychIntro": "心理学概論",
+        "theoEng1": "神学英語 I",
+        "bibWorldview": "聖書的世界観",
+        "churchMusic": "教会音楽",
+        "otBack": "旧約背景史",
+        "westminster": "ウェストミンスター信仰告白",
+        "introEd": "キリスト教教育概論",
+        "pentateuch": "モーセ五書解釈",
+        "histDoc": "教理史",
+        "philIntro": "哲学の理解",
+        "edPsych": "教育心理学",
+        "wisdom": "知恵書(知恵文学研究)",
+        "theoEng2": "神学英語 II",
+        "modernWorld": "現代の世界観",
+        "comm": "コミュニケーション",
+        "ntBack": "新約背景史"
+      },
+      "graduate": {
+        "pageTitle": "神学修士/博士 (M.Div/Th.M/Ph.D)",
+        "intro": "本大学院課程は、改革総会および首都国際大学院大学とのMOUを通じて、御言葉と実力を兼ね備えた専門使役者を養成します。",
+        "partner": "講師および協力：首都国際大学院大学",
+        "years": {
+          "y1": "1年課程",
+          "y2": "2年課程",
+          "y3": "3年課程",
+          "common": "共通および分離授業"
         },
-        "eligibility": {
-            "eyebrow": "Eligibility",
-            "title": "出願資格",
-            "description": "学業能力と信仰訓練への誠実な参加意思を確認します。",
-            "items": [
-                "高等学校卒業、またはこれと同等以上の学力が認められる方。",
-                "本校の教育理念と信仰訓練に誠実に参加する意思のある方。",
-                "牧会者・宣教師・信徒リーダーなど、福音の働き人として備えられることを願う方。",
-                "外国籍の出願者は、日本での滞在および学業に必要な資格を備えている必要があります。"
-            ]
+        "subjects": {
+          "y1": "神論, 初期教会史, ヘブライ語基礎, 福音書, 礼拝学, 救済論, 近現代教会史, 詩歌書, 新約神学, 伝道学",
+          "y2": "人間論, 中世教会史, モーセ五書, ギリシャ語, 説教学/実習, 教会論, 日本教会史, 預言書, 共同書簡, 牧会カウンセリング",
+          "y3": "キリスト論, 宗教改革史, 歴史書, パウロ書簡, 宣教学, 黙示録と終末論, 獄中書簡, 旧約神学/総論, 聖書解釈学, 黙示文学",
+          "common": "新条学, 教会教育, 旧約解釈学, 使徒言行録, ヨハネ黙示録, 新約解釈と説教"
         },
-        "process": {
-            "eyebrow": "Process",
-            "title": "選考方法・日程",
-            "description": "出願から合格発表まで段階ごとに個別案内します。",
-            "steps": [
-                {
-                    "title": "願書受付",
-                    "date": "随時受付",
-                    "content": "来校・郵送・メールで受付。"
-                },
-                {
-                    "title": "書類審査",
-                    "date": "受付後に個別案内",
-                    "content": "提出書類を確認。"
-                },
-                {
-                    "title": "面接選考",
-                    "date": "個別通知",
-                    "content": "信仰告白と学業計画を確認。"
-                },
-                {
-                    "title": "合格発表",
-                    "date": "個別通知",
-                    "content": "登録手続きを案内。"
-                }
-            ]
+        "sharedCourses": {
+          "title": "共通科目",
+          "provider": "神学校講義: 首都国際大学院大学",
+          "courses": [
+            "神論",
+            "初代教会史",
+            "ヘブライ語",
+            "福音書",
+            "礼拝学",
+            "組織神学",
+            "近現代教会史",
+            "詩篇",
+            "新約神学",
+            "伝道学"
+          ]
         },
-        "documents": {
-            "eyebrow": "Documents",
-            "title": "提出書類",
-            "description": "出願区分に合わせて必要書類を漏れなくご準備ください。",
-            "rows": [
-                {
-                    "category": "共通書類",
-                    "docs": "入学願書、個人情報収集・利用同意書、誓約書。"
-                },
-                {
-                    "category": "学歴証明",
-                    "docs": "最終学校の卒業証明書および成績証明書。"
-                },
-                {
-                    "category": "信仰確認",
-                    "docs": "洗礼証明書または教会出席確認書、牧会者推薦書。"
-                },
-                {
-                    "category": "外国籍出願者",
-                    "docs": "パスポート写し、在留資格関連書類、学歴認証書類。"
-                }
-            ]
-        },
-        "notice": {
-            "eyebrow": "Notice",
-            "title": "出願者への注意事項",
-            "description": "選考前に必ず確認してください。",
-            "label": "NOTICE",
-            "items": [
-                "出願者は面接当日、指定された時間までに本校が案内した面接場所へ入室してください。",
-                "提出書類の内容が事実と異なる場合、合格または入学が取り消されることがあります。",
-                "提出された書類および選考料は返還されません。",
-                "募集日程および詳細な選考内容は学校の事情により変更される場合があり、変更事項はお知らせで案内します。"
-            ]
-        },
-        "help": {
-            "eyebrow": "Need Help?",
-            "title": "入学に関するお問い合わせ",
-            "description": "詳しい募集要項および最新日程はお知らせでご確認ください。",
-            "cta": "お知らせを見る"
+        "calendar": {
+          "pageTitle": "学事日程",
+          "monthName": "{month}月",
+          "majorSchedule": "主な日程",
+          "noEvent": "該当月には公式行事が計画されていません。",
+          "events": {
+            "m3": "17: 開校セミナー",
+            "m4": "21: 休校",
+            "m5": "22: 休校",
+            "m6": "23-24: 休み\n30-7/1: 宣教学 (申テモテ牧師)",
+            "m7": "1: 宣教学 (申テモテ牧師)"
+          }
         }
+      },
+      "japanese": {
+        "pageTitle": "日本語学科",
+        "description": "学科紹介を準備中です。"
+      }
+    },
+    "faculty": {
+      "pageTitle": "教職員",
+      "description": "東京国際神学校に仕える教授・牧会者です。",
+      "members": {
+        "kwangseop": "パク・グァンソプ牧師",
+        "DongyaulTae": "テ・ドンヨル教授",
+        "jaeSungKim": "キム・ジェソン教授",
+        "AYunKim": "キム・アユン教授",
+        "JiHyeLee": "イ・ジヘ教授",
+        "JungHwaLee": "イ・ジョンファ教授",
+        "ShinKwangChoi": "チェ・シングァン教授",
+        "PungRyongKim": "キム・プンリョン教授",
+        "ByungWooJung": "チョン・ビョンウ教授",
+        "DongJinPark": "パク・ドンジン教授"
+      },
+      "profileModalTitle": "教授プロフィール",
+      "openProfile": "{name}のプロフィールを開く",
+      "closeProfile": "教授プロフィールを閉じる",
+      "profiles": {
+        "DongyaulTae": "学歴\n- 경북대학교 무역학과 졸업 (문학사, B.A.)\n- 고려신학대학원 졸업 (목회학석사, M.Div.)\n- Calvin Theological Seminary (Th.M.)\n- Calvin Theological Seminary (Ph.D.)",
+        "jaeSungKim": "学歴\n- 총신대학교 신학과 졸업 (문학사, B.A.)\n- 합동신학대학원 졸업 (목회학석사, M.Div.)\n- 서울대학교 대학원 졸업 (문학석사, M.A.)\n- Calvin Theological Seminary 졸업 (신학석사, Th.M.)\n- Westminster Theological Seminary 졸업 (철학박사, Ph.D.)",
+        "AYunKim": "学歴\n- 고려대학교 중국어중국문학과 졸업 (문학사, B.A.)\n- Trinity Evangelical Divinity School 졸업 (목회학석사, M.Div.)\n- Gordon-Conwell Theological Seminary (Th.M.)\n- Trinity Evangelical Divinity School (Ph.D.)",
+        "JiHyeLee": "学歴\n- 한동대학교 법학부 졸업 (법학사)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Wheaton College (M.A.)\n- Emory University (Th.M.)\n- University of St. Andrews (Ph.D.)",
+        "JungHwaLee": "学歴\n- 이화여자대학교 불어불문학과 졸업 (문학사, B.A.)\n- 서울대학교 대학원 불어불문학과 졸업 (문학석사, M.A.)\n- 서울대학교 대학원 불어불문학과 박사과정 수료\n- 국제신학대학원대학교 졸업 (목회학석사, M.Div.)\n- 국제신학대학원대학교 졸업 (신학석사, Th.M.)\n- 국제신학대학원대학교 졸업 (철학박사, Ph.D.)",
+        "ShinKwangChoi": "学歴\n- 고려대학교 교육학과 졸업 (B.A.)\n- 수도국제대학원대학교 목회연구과 목회학석사 (M.Div. Equiv.)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Calvin Theological Seminary 신학석사 (Th.M., 조직신학·역사신학)\n- Southwestern Baptist Theological Seminary 철학박사 (Ph.D., 조직신학)",
+        "PungRyongKim": "学歴\n- 한성대학교 영문학과 졸업 (문학사, B.A.)\n- 합동신학대학원대학교 졸업 (목회학석사, M.Div.)\n- University of Aberdeen (Th.M.)\n- University of Aberdeen (Ph.D.)",
+        "ByungWooJung": "学歴\n- 국제신학대학원대학교 졸업 (목회학석사, M.Div. / 신학석사, Th.M.)\n- Ezra Bible Institute 대학원 박사과정 수료",
+        "DongJinPark": "学歴\n- 중앙대학교 신문방송학과 졸업 (문학사, B.A.)\n- 합동신학대학원대학교 졸업 (목회학석사, M.Div.)\n- McMaster Divinity College (M.A.)\n- McMaster Divinity College (Ph.D.)"
+      },
+      "categories": {
+        "systematicTheology": "組織神学",
+        "oldTestament": "旧約学",
+        "newTestament": "新約学",
+        "churchHistory": "教会史",
+        "biblicalTheology": "聖書神学",
+        "preaching": "説教学"
+      }
     }
+  },
+  "Admission": {
+    "heroEyebrow": "Admissions Guide",
+    "heroTitleLine1": "召しに向かう",
+    "heroTitleLine2": "最初の一歩を設計します。",
+    "heroDescription": "東京国際神学院の募集課程、出願資格、提出書類、選考の流れを一目で確認できるよう整理しました。",
+    "processCta": "選考の流れを見る",
+    "noticeCta": "最新のお知らせを確認",
+    "intakeEyebrow": "Always Open",
+    "intakeTitleLine1": "随時受付",
+    "intakeTitleLine2": "個別案内",
+    "available": "可能",
+    "applicationSuffix": "受付",
+    "methods": [
+      "来校",
+      "郵送",
+      "メール"
+    ],
+    "programs": {
+      "eyebrow": "Programs",
+      "title": "募集課程・人数",
+      "description": "課程別の授業形態と募集人数をカード形式で整理しました。",
+      "cards": [
+        {
+          "title": "神学科 学部課程",
+          "degree": "B.Th. 課程",
+          "method": "昼・夜間",
+          "seats": "00名"
+        },
+        {
+          "title": "神学 修士・博士課程",
+          "degree": "M.Div. / Th.M. / Ph.D.",
+          "method": "協力課程",
+          "seats": "00名"
+        },
+        {
+          "title": "日本語学科",
+          "degree": "日本語集中課程",
+          "method": "昼間",
+          "seats": "00名"
+        }
+      ]
+    },
+    "eligibility": {
+      "eyebrow": "Eligibility",
+      "title": "出願資格",
+      "description": "学業能力と信仰訓練への誠実な参加意思を確認します。",
+      "items": [
+        "高等学校卒業、またはこれと同等以上の学力が認められる方。",
+        "本校の教育理念と信仰訓練に誠実に参加する意思のある方。",
+        "牧会者・宣教師・信徒リーダーなど、福音の働き人として備えられることを願う方。",
+        "外国籍の出願者は、日本での滞在および学業に必要な資格を備えている必要があります。"
+      ]
+    },
+    "process": {
+      "eyebrow": "Process",
+      "title": "選考方法・日程",
+      "description": "出願から合格発表まで段階ごとに個別案内します。",
+      "steps": [
+        {
+          "title": "願書受付",
+          "date": "随時受付",
+          "content": "来校・郵送・メールで受付。"
+        },
+        {
+          "title": "書類審査",
+          "date": "受付後に個別案内",
+          "content": "提出書類を確認。"
+        },
+        {
+          "title": "面接選考",
+          "date": "個別通知",
+          "content": "信仰告白と学業計画を確認。"
+        },
+        {
+          "title": "合格発表",
+          "date": "個別通知",
+          "content": "登録手続きを案内。"
+        }
+      ]
+    },
+    "documents": {
+      "eyebrow": "Documents",
+      "title": "提出書類",
+      "description": "出願区分に合わせて必要書類を漏れなくご準備ください。",
+      "rows": [
+        {
+          "category": "共通書類",
+          "docs": "入学願書、個人情報収集・利用同意書、誓約書。"
+        },
+        {
+          "category": "学歴証明",
+          "docs": "最終学校の卒業証明書および成績証明書。"
+        },
+        {
+          "category": "信仰確認",
+          "docs": "洗礼証明書または教会出席確認書、牧会者推薦書。"
+        },
+        {
+          "category": "外国籍出願者",
+          "docs": "パスポート写し、在留資格関連書類、学歴認証書類。"
+        }
+      ]
+    },
+    "notice": {
+      "eyebrow": "Notice",
+      "title": "出願者への注意事項",
+      "description": "選考前に必ず確認してください。",
+      "label": "NOTICE",
+      "items": [
+        "出願者は面接当日、指定された時間までに本校が案内した面接場所へ入室してください。",
+        "提出書類の内容が事実と異なる場合、合格または入学が取り消されることがあります。",
+        "提出された書類および選考料は返還されません。",
+        "募集日程および詳細な選考内容は学校の事情により変更される場合があり、変更事項はお知らせで案内します。"
+      ]
+    },
+    "help": {
+      "eyebrow": "Need Help?",
+      "title": "入学に関するお問い合わせ",
+      "description": "詳しい募集要項および最新日程はお知らせでご確認ください。",
+      "cta": "お知らせを見る"
+    },
+    "tuition": {
+      "metadata": {
+        "title": "入学案内 | 学費案内",
+        "description": "東京国際神学校の学科別学費および振込口座をご案内します。"
+      },
+      "hero": {
+        "badge": "入学案内",
+        "title": "学費案内",
+        "description": "神学科および神学研究科の学年別学費と振込口座をご確認いただけます。"
+      },
+      "bank": {
+        "eyebrow": "Tuition Payment",
+        "title": "学費振込口座",
+        "description": "学費をお振り込みの際は、入学者のお名前を確認できるよう、振込人名をご入力ください。",
+        "bankName": "銀行名",
+        "branchName": "支店名",
+        "accountNumber": "口座番号",
+        "accountHolder": "口座名義"
+      },
+      "notice": "表示金額の単位は日本円です。振込手数料は振込人のご負担となります。お振り込み前に口座情報と金額をご確認ください。",
+      "departments": {
+        "theology": {
+          "title": "神学科",
+          "description": "神学科4年課程の学期別学費をご案内します。"
+        },
+        "graduate": {
+          "title": "神学研究科",
+          "description": "神学研究科3年課程の学期別学費をご案内します。"
+        }
+      },
+      "years": {
+        "year1": "1年次",
+        "year2": "2年次",
+        "year3": "3年次",
+        "year4": "4年次"
+      },
+      "periods": {
+        "enrollment": "入学手続時",
+        "firstSemester": "前期",
+        "secondSemester": "後期"
+      },
+      "table": {
+        "item": "項目",
+        "admissionFee": "入学金",
+        "tuition": "授業料",
+        "facilityFee": "施設設備費",
+        "subtotal": "小計",
+        "currency": "金額単位：日本円（JPY）"
+      },
+      "footerNotice": {
+        "title": "学費納入時の注意事項",
+        "description": "納入時期や分納の可否など、詳細については学校からの案内をご確認ください。学費または振込口座に変更がある場合は、学校より別途ご案内します。"
+      },
+      "schedule": {
+        "eyebrow": "Class Schedule",
+        "title": "時間割",
+        "description": "神学科夜間課程および神学研究科の火曜日の授業時間です。",
+        "day": "火曜日",
+        "theology": {
+          "title": "神学科",
+          "badge": "夜間",
+          "period1": "1限目",
+          "period2": "2限目",
+          "period3": "3限目"
+        },
+        "graduate": {
+          "title": "神学研究科",
+          "period1": "1限目",
+          "period2": "2限目",
+          "period3": "3限目",
+          "lunch": "昼食",
+          "period4": "4限目",
+          "period5": "5限目",
+          "period6": "6限目"
+        }
+      },
+      "documents": {
+        "eyebrow": "Application Documents",
+        "title": "提出書類のご案内",
+        "description": "入学申請に必要な書類と記入方法は、入学願書書式ページでご確認いただけます。願書を作成する前に、提出項目と注意事項を必ずご確認ください。",
+        "button": "入学願書書式を見る",
+        "buttonAriaLabel": "入学願書書式ページへ移動"
+      }
+    }
+  }
 }

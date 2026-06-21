@@ -88,7 +88,7 @@
         ]
       }
     },
-     "intro": {
+    "intro": {
       "pageTitle": "School Introduction",
       "philosophy": {
         "title": "Education Philosophy",
@@ -132,7 +132,7 @@
         }
       }
     },
-     "location": {
+    "location": {
       "title": "Location",
       "subtitle": "How to Find Us",
       "address": "〒133-0051 Kita-Koiwa 3-13-11, Edogawa-ku, Tokyo",
@@ -261,13 +261,13 @@
           "y3": "3rd Year",
           "common": "Common & Separate Classes"
         },
-          "subjects": {
+        "subjects": {
           "y1": "Systematic Theology, Early Church History, Hebrew...",
           "y2": "Anthropology, Medieval Church History, Greek...",
           "y3": "Christology, Reformation History, Missiology...",
           "common": "Confessions, Christian Education, OT Hermeneutics"
         },
-         "sharedCourses": {
+        "sharedCourses": {
           "title": "Shared Courses",
           "provider": "Seminary lectures: 首都国際大学院大学",
           "courses": [
@@ -283,7 +283,7 @@
             "Evangelism"
           ]
         },
-          "calendar": {
+        "calendar": {
           "pageTitle": "Academic Calendar",
           "monthName": "{month}",
           "majorSchedule": "Major Schedule",
@@ -434,7 +434,7 @@
           "date": "Individual guidance after submission",
           "content": "Submitted documents are reviewed."
         },
-         {
+        {
           "title": "Interview",
           "date": "Individually notified",
           "content": "Faith statement and study plan are reviewed."
@@ -455,7 +455,7 @@
           "category": "Common documents",
           "docs": "Application form, consent to collect/use personal information, pledge form."
         },
-          {
+        {
           "category": "Academic records",
           "docs": "Certificate of graduation and transcript from the most recent school."
         },
@@ -504,7 +504,7 @@
               "label": "2nd Period",
               "time": "20:00 - 20:50"
             },
-              {
+            {
               "label": "3rd Period",
               "time": "21:00 - 21:50"
             }
@@ -526,15 +526,15 @@
               "label": "3rd Period",
               "time": "11:00 - 11:50"
             },
-              {
+            {
               "label": "Lunch",
               "time": "12:00 - 13:00"
             },
-               {
+            {
               "label": "4th Period",
               "time": "13:00 - 13:50"
             },
-              {
+            {
               "label": "5th Period",
               "time": "14:00 - 14:50"
             },
@@ -542,153 +542,93 @@
               "label": "6th Period",
               "time": "15:00 - 15:50"
             }
-                ]
+          ]
         }
       ]
     },
     "tuition": {
-      "eyebrow": "Tuition & Payment",
-      "title": "Tuition and Payment Information",
-      "description": "Admission fees, tuition, facility fees, and the payment account are listed below.",
-      "accountTitle": "Payment Account",
-      "bankName": "Bank",
-      "branchName": "Branch",
-      "accountNumber": "Account No.",
-      "accountHolder": "Account Holder",
-      "account": {
-        "bank": "Kiraboshi Bank",
-        "branch": "042 Kinshicho",
-        "number": "5027969",
-        "holder": "Azabu Gospel Church Tokyo International Seminary"
+      "metadata": {
+        "title": "Admissions | Tuition Information",
+        "description": "Tuition fees and payment account information for each department."
       },
-      "tables": [
-        {
+      "hero": {
+        "badge": "Admissions",
+        "title": "Tuition Information",
+        "description": "View tuition fees by academic year and the bank account information for tuition payments."
+      },
+      "bank": {
+        "eyebrow": "Tuition Payment",
+        "title": "Bank Account",
+        "description": "When making a tuition payment, please enter the applicant's name as the sender so that the payment can be identified.",
+        "bankName": "Bank",
+        "branchName": "Branch",
+        "accountNumber": "Account Number",
+        "accountHolder": "Account Holder"
+      },
+      "notice": "All amounts are shown in Japanese yen. Bank transfer fees must be paid by the sender. Please confirm the account information and amount before transferring.",
+      "departments": {
+        "theology": {
           "title": "Department of Theology",
-          "headers": [
-            "Item",
-            "Year 1 Upon enrolling",
-            "Year 1 2nd Sem",
-            "Year 2 1st Sem",
-            "Year 2 2nd Sem",
-            "Year 3 1st Sem",
-            "Year 3 2nd Sem",
-            "Year 4 1st Sem",
-            "Year 4 2nd Sem"
-          ],
-          "rows": [
-            {
-              "item": "Admission Fee",
-              "values": [
-                "50,000",
-                "-",
-                "-",
-                "-",
-                "-",
-                "-",
-                "-",
-                "-"
-              ]
-            },
-            {
-              "item": "Tuition",
-              "values": [
-                "150,000",
-                "150,000",
-                "150,000",
-                "150,000",
-                "150,000",
-                "150,000",
-                "150,000",
-                "150,000"
-              ]
-            },
-            {
-              "item": "Facility Fee",
-              "values": [
-                "50,000",
-                "-",
-                "50,000",
-                "-",
-                "50,000",
-                "-",
-                "50,000",
-                "-"
-              ]
-            },
-            {
-              "item": "Total",
-              "values": [
-                "250,000",
-                "150,000",
-                "200,000",
-                "150,000",
-                "200,000",
-                "150,000",
-                "200,000",
-                "150,000"
-              ]
-            }
-          ]
+          "description": "Semester tuition fees for the four-year theology program."
         },
-         {
+        "graduate": {
           "title": "Graduate Department of Theology",
-          "headers": [
-            "Item",
-            "Year 1 Upon enrolling",
-            "Year 1 2nd Sem",
-            "Year 2 1st Sem",
-            "Year 2 2nd Sem",
-            "Year 3 1st Sem",
-            "Year 3 2nd Sem"
-          ],
-          "rows": [
-            {
-              "item": "Admission Fee",
-              "values": [
-                "50,000",
-                "-",
-                "-",
-                "-",
-                "-",
-                "-"
-              ]
-            },
-            {
-              "item": "Tuition",
-              "values": [
-                "180,000",
-                "180,000",
-                "180,000",
-                "180,000",
-                "180,000",
-                "180,000"
-              ]
-            },
-             {
-              "item": "Facility Fee",
-              "values": [
-                "50,000",
-                "-",
-                "50,000",
-                "-",
-                "50,000",
-                "-"
-              ]
-            },
-             {
-              "item": "Total",
-              "values": [
-                "280,000",
-                "180,000",
-                "230,000",
-                "180,000",
-                "230,000",
-                "180,000"
-              ]
-            }
-          ]
+          "description": "Semester tuition fees for the three-year graduate theology program."
         }
-              ]
+      },
+      "years": {
+        "year1": "Year 1",
+        "year2": "Year 2",
+        "year3": "Year 3",
+        "year4": "Year 4"
+      },
+      "periods": {
+        "enrollment": "Upon enrolling",
+        "firstSemester": "1st Semester",
+        "secondSemester": "2nd Semester"
+      },
+      "table": {
+        "item": "Item",
+        "admissionFee": "Admission Fee",
+        "tuition": "Tuition",
+        "facilityFee": "Facility Fee",
+        "subtotal": "Total",
+        "currency": "Currency: Japanese yen (JPY)"
+      },
+      "footerNotice": {
+        "title": "Important payment information",
+        "description": "Please follow the school's instructions regarding payment deadlines and installment options. Any changes to tuition fees or bank account information will be announced separately."
+      },
+      "schedule": {
+        "eyebrow": "Class Schedule",
+        "title": "Class Schedule",
+        "description": "Tuesday class times for the evening Department of Theology and the Graduate Department of Theology.",
+        "day": "Tuesday",
+        "theology": {
+          "title": "Department of Theology",
+          "badge": "Evening",
+          "period1": "Period 1",
+          "period2": "Period 2",
+          "period3": "Period 3"
+        },
+        "graduate": {
+          "title": "Graduate Department of Theology",
+          "period1": "Period 1",
+          "period2": "Period 2",
+          "period3": "Period 3",
+          "lunch": "Lunch",
+          "period4": "Period 4",
+          "period5": "Period 5",
+          "period6": "Period 6"
+        }
+      },
+      "documents": {
+        "eyebrow": "Application Documents",
+        "title": "Required Documents",
+        "description": "The required application documents and instructions are available on the application forms page. Please review all submission requirements before completing your application.",
+        "button": "View Application Forms",
+        "buttonAriaLabel": "Go to the application forms page"
+      }
     }
-    }
+  }
 }

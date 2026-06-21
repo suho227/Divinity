@@ -1,499 +1,583 @@
 {
-    "navigation": {
-        "intro": "学校介绍",
-        "about": "About Us",
-        "greeting": "问候",
-        "history": "沿革",
-        "location": "路线",
-        "departments": "学科介绍",
-        "dept_bth": "神学科",
-        "dept_grad": "神学硕士/博士",
-        "dept_japanese": "日语学科",
-        "notice": "通知",
-        "archive": "资料室",
-        "admissionInfo": "入学信息",
-        "admissionGuide": "入学指南",
-        "admissionForms": "入学表格",
-        "admissionConsultation": "入学咨询",
-        "subTitle": "宗教法人",
-        "title": "东京国际神学院",
-        "schoolName": "东京国际神学院",
-        "address": "〒111-0053 東京都台東区浅草桥3-11-8",
-        "transport": "JR浅草桥站步行5分钟",
-        "tel": "03-3865-4442",
-        "email": "tokyo.seminary@gmail.com",
-        "dept_calendar": "学术日历",
-        "faculty": "师资介绍",
-        "churchLinkLabel": "教会链接",
-        "acsLinkLabel": "ACS ",
-        "acsLinkAriaLabel": "打开 ACS 教育机构网站",
-        "azabuLinkLabel": "麻布福音教会",
-        "azabuLinkAriaLabel": "打开麻布福音教会网站",
-        "openMenu": "打开移动菜单",
-        "closeMenu": "关闭移动菜单"
+  "navigation": {
+    "intro": "学校介绍",
+    "about": "About Us",
+    "greeting": "问候",
+    "history": "沿革",
+    "location": "路线",
+    "departments": "学科介绍",
+    "dept_bth": "神学科",
+    "dept_grad": "神学硕士/博士",
+    "dept_japanese": "日语学科",
+    "notice": "通知",
+    "archive": "资料室",
+    "admissionInfo": "入学信息",
+    "admissionGuide": "入学指南",
+    "admissionForms": "入学表格",
+    "admissionConsultation": "入学咨询",
+    "subTitle": "宗教法人",
+    "title": "东京国际神学院",
+    "schoolName": "东京国际神学院",
+    "address": "〒111-0053 東京都台東区浅草桥3-11-8",
+    "transport": "JR浅草桥站步行5分钟",
+    "tel": "03-3865-4442",
+    "email": "tokyo.seminary@gmail.com",
+    "dept_calendar": "学术日历",
+    "faculty": "师资介绍",
+    "churchLinkLabel": "教会链接",
+    "acsLinkLabel": "ACS ",
+    "acsLinkAriaLabel": "打开 ACS 教育机构网站",
+    "azabuLinkLabel": "麻布福音教会",
+    "azabuLinkAriaLabel": "打开麻布福音教会网站",
+    "openMenu": "打开移动菜单",
+    "closeMenu": "关闭移动菜单"
+  },
+  "NotFound": {
+    "title": "找不到该页面。",
+    "description": "您查找的页面可能已被删除，或网址已更改。",
+    "homeLabel": "返回首页"
+  },
+  "Index": {
+    "introSubtitle": "INTRODUCTION",
+    "introTitle": "培养能够复兴日本和世界\n教会的使命者。",
+    "introDescription": "东京国际神学院是培养怀揣福音热情，走向全日本和世界列邦的属灵领袖的摇篮。",
+    "introMore": "了解更多",
+    "subTitle": "宗教法人",
+    "title": "东京国际神学院",
+    "description": "培育使日本与世界教会得以复兴的传道人。",
+    "admission": "入学指南"
+  },
+  "About": {
+    "notice": {
+      "pageTitle": "通知",
+      "backToList": "返回列表"
     },
-    "NotFound": {
-        "title": "找不到该页面。",
-        "description": "您查找的页面可能已被删除，或网址已更改。",
-        "homeLabel": "返回首页"
+    "greeting": {
+      "pageTitle": "问候",
+      "chairman": {
+        "role": "",
+        "name": "丁 恩柱 牧师",
+        "headline": "借着十字架的福音引导日本走向属灵觉醒的神学院",
+        "message": "谨此向所有莅临东京国际神学校的各位，致以最诚挚的感谢与祝福。\n\n本校遵循以圣经为核心的改革宗神学传统，致力于培养满怀使命感的牧会者与宣教士。尽管日本已迎来新教宣教167周年，但目前的福音化率仍然不足1%。从宣教学的角度来看，日本可以说仍然是一个极具挑战的“未得之民”地区。\n\n更令人遗憾的是，当今日本基督教界因牧会者老龄化而导致“无牧教会”不断增加，信徒人数在15人以下、尚未实现自立的教会约占整体的80%。面对这一严峻的现状，东京国际神学校正直面时代现实，并立志在上帝的旨意中，承担起推动变革的一份神圣责任。\n\n我们将悉心培养完全装备于耶稣基督十字架救赎与复活福音中的神之仆人，致力于向日本的教会以及世界万国带去生命的更新与活力。诚挚恳请各位给予我们持续的关心，并为我们的事工献上代祷。",
+        "history": [
+          "东亚大学 法经学院 经营学系 毕业 (1974)",
+          "总神大学校（舍堂）神学大学院 第81届 毕业 (1988)",
+          "American University of California 牧会学博士（D.Min.）取得 (2005)",
+          "大韩耶稣教长老会总会（改革）前总会长／前总代理",
+          "社会福祉法人 UniWorld 理事长（现任）",
+          "一般社团法人 国际跆拳道大师联盟 总裁（现任）",
+          "改革公报 理事长（现任，教团官方报纸）"
+        ]
+      },
+      "dean": {
+        "role": "院长",
+        "name": "申 キショウ 牧师",
+        "headline": "神所开始的事工，迈向日本教会的恢复",
+        "message": "东京国际神学校积极回应神赐予当代日本教会的急迫呼召。我们已与改革宗总会及首都国际研究生大学签署合作备忘录，正式开启并推进协力宣教的神圣事工。\n\n这一合作是为了恢复日本各教派及无牧教会而建立的“信仰联合”，旨在培养兼具神的话语深度、扎实的神学根基与实际牧会现场应对能力的时代牧者。本校始终立足于圣经性的改革宗神学，致力于履行神学校的神圣使命，培育使教会得生命、使事工现场得恢复的忠心仆人。\n\n与此同时，我们也积极预备能够在多民族、多文化社会中传扬福音的宣教型领袖。我们将顺服主所吩咐的“使万民作我的门徒”的大使命，向全地宣告迈向世界福音化的决心与异象。\n\n我们深信，这项由神亲自开启的工作，也必将由神亲自引导并最终成全。东京国际神学校将作为服事日本教会与万民的宝贵器皿，忠心地在真理的道路上行走到底。",
+        "history": [
+          "威斯敏斯特研究生大学 毕业（神学学士同等，B.Th. Equiv.）",
+          "加尔文大学 毕业",
+          "东京阳光专门学校 毕业（日语学科）",
+          "马尼拉神科大学 毕业（神学研究科）",
+          "首都国际研究生大学 神学研究院 毕业（牧会学硕士 / M.Div.）",
+          "加利福尼亚联合研究生院 神学哲学博士（Ph.D.）",
+          "American University 名誉牧会学博士",
+          "宗教法人 麻布福音教会 主任牧师（现任）",
+          "Azabu Christian School 理事长（现任）",
+          "NPO法人 Reima 理事长（现任）",
+          "宗教法人 东京国际神学校 校长（现任）"
+        ]
+      }
     },
-    "Index": {
-        "introSubtitle": "INTRODUCTION",
-        "introTitle": "培养能够复兴日本和世界\n教会的使命者。",
-        "introDescription": "东京国际神学院是培养怀揣福音热情，走向全日本和世界列邦的属灵领袖的摇篮。",
-        "introMore": "了解更多",
-        "subTitle": "宗教法人",
-        "title": "东京国际神学院",
-        "description": "培育使日本与世界教会得以复兴的传道人。",
-        "admission": "入学指南"
-    },
-    "About": {
-        "notice": {
-            "pageTitle": "通知",
-            "backToList": "返回列表"
+    "intro": {
+      "pageTitle": "学校介绍",
+      "philosophy": {
+        "title": "教育理念",
+        "subtitle": "Education Philosophy",
+        "item1": {
+          "title": "1. 唯独圣经",
+          "desc": "所有教育和牧会的标准是神的话语。"
         },
-        "greeting": {
-            "pageTitle": "问候",
-            "chairman": {
-                "role": "",
-                "name": "丁 恩柱 牧师",
-                "headline": "借着十字架的福音引导日本走向属灵觉醒的神学院",
-                "message": "谨此向所有莅临东京国际神学校的各位，致以最诚挚的感谢与祝福。\n\n本校遵循以圣经为核心的改革宗神学传统，致力于培养满怀使命感的牧会者与宣教士。尽管日本已迎来新教宣教167周年，但目前的福音化率仍然不足1%。从宣教学的角度来看，日本可以说仍然是一个极具挑战的“未得之民”地区。\n\n更令人遗憾的是，当今日本基督教界因牧会者老龄化而导致“无牧教会”不断增加，信徒人数在15人以下、尚未实现自立的教会约占整体的80%。面对这一严峻的现状，东京国际神学校正直面时代现实，并立志在上帝的旨意中，承担起推动变革的一份神圣责任。\n\n我们将悉心培养完全装备于耶稣基督十字架救赎与复活福音中的神之仆人，致力于向日本的教会以及世界万国带去生命的更新与活力。诚挚恳请各位给予我们持续的关心，并为我们的事工献上代祷。",
-                "history": [
-                    "东亚大学 法经学院 经营学系 毕业 (1974)",
-                    "总神大学校（舍堂）神学大学院 第81届 毕业 (1988)",
-                    "American University of California 牧会学博士（D.Min.）取得 (2005)",
-                    "大韩耶稣教长老会总会（改革）前总会长／前总代理",
-                    "社会福祉法人 UniWorld 理事长（现任）",
-                    "一般社团法人 国际跆拳道大师联盟 总裁（现任）",
-                    "改革公报 理事长（现任，教团官方报纸）"
-                ]
-            },
-            "dean": {
-                "role": "院长",
-                "name": "申 キショウ 牧师",
-                "headline": "神所开始的事工，迈向日本教会的恢复",
-                "message": "东京国际神学校积极回应神赐予当代日本教会的急迫呼召。我们已与改革宗总会及首都国际研究生大学签署合作备忘录，正式开启并推进协力宣教的神圣事工。\n\n这一合作是为了恢复日本各教派及无牧教会而建立的“信仰联合”，旨在培养兼具神的话语深度、扎实的神学根基与实际牧会现场应对能力的时代牧者。本校始终立足于圣经性的改革宗神学，致力于履行神学校的神圣使命，培育使教会得生命、使事工现场得恢复的忠心仆人。\n\n与此同时，我们也积极预备能够在多民族、多文化社会中传扬福音的宣教型领袖。我们将顺服主所吩咐的“使万民作我的门徒”的大使命，向全地宣告迈向世界福音化的决心与异象。\n\n我们深信，这项由神亲自开启的工作，也必将由神亲自引导并最终成全。东京国际神学校将作为服事日本教会与万民的宝贵器皿，忠心地在真理的道路上行走到底。",
-                "history": [
-                    "威斯敏斯特研究生大学 毕业（神学学士同等，B.Th. Equiv.）",
-                    "加尔文大学 毕业",
-                    "东京阳光专门学校 毕业（日语学科）",
-                    "马尼拉神科大学 毕业（神学研究科）",
-                    "首都国际研究生大学 神学研究院 毕业（牧会学硕士 / M.Div.）",
-                    "加利福尼亚联合研究生院 神学哲学博士（Ph.D.）",
-                    "American University 名誉牧会学博士",
-                    "宗教法人 麻布福音教会 主任牧师（现任）",
-                    "Azabu Christian School 理事长（现任）",
-                    "NPO法人 Reima 理事长（现任）",
-                    "宗教法人 东京国际神学校 校长（现任）"
-                ]
-            }
+        "item2": {
+          "title": "2. 唯独基督",
+          "desc": "以基督为中心建立教会和事工者。"
         },
-        "intro": {
-            "pageTitle": "学校介绍",
-            "philosophy": {
-                "title": "教育理念",
-                "subtitle": "Education Philosophy",
-                "item1": {
-                    "title": "1. 唯独圣经",
-                    "desc": "所有教育和牧会的标准是神的话语。"
-                },
-                "item2": {
-                    "title": "2. 唯独基督",
-                    "desc": "以基督为中心建立教会和事工者。"
-                },
-                "item3": {
-                    "title": "3. 唯独恩典",
-                    "desc": "教育蒙恩召的使命者的人生。"
-                },
-                "item4": {
-                    "title": "4. 唯独信心",
-                    "desc": "训练凭信心生活的牧会和宣教。"
-                },
-                "item5": {
-                    "title": "5. 唯独荣耀归神",
-                    "desc": "所有教育的目的是神的荣耀。"
-                }
-            },
-            "motto": {
-                "title": "校 训",
-                "subtitle": "School Motto",
-                "item1": "唯独福音的体质化",
-                "item2": "祷告的生活化",
-                "item3": "世界福音化"
-            }
+        "item3": {
+          "title": "3. 唯独恩典",
+          "desc": "教育蒙恩召的使命者的人生。"
         },
-        "history": {
-            "pageTitle": "学校沿革",
-            "title": "东京国际神学院的足迹",
-            "items": {
-                "item1": {
-                    "year": "2026",
-                    "event": "东京国际神学院 成立"
-                }
-            }
+        "item4": {
+          "title": "4. 唯独信心",
+          "desc": "训练凭信心生活的牧会和宣教。"
         },
-        "location": {
-            "title": "来校路线",
-            "subtitle": "如何找到我们",
-            "address": "〒133-0051 东京都江户川区北小岩 3-13-11",
-            "transport": "京成江户川站步行8分钟",
-            "tel": "03-3865-4442"
-        },
-        "departments": {
-            "pageTitle": "学科介绍",
-            "introMessage": "以圣经为基础的神学教育，研究福音真理，培养服事教会和世界的事工者。",
-            "curriculum": {
-                "headers": [
-                    "一年级",
-                    "二年级",
-                    "三年级",
-                    "共同科目及分班课程（第8学期最后一周）"
-                ],
-                "rows": [
-                    [
-                        "神论（首都国际研究生院）",
-                        "人论（首都国际研究生院）",
-                        "基督论（首都国际研究生院）",
-                        "信条学（研究生院）首都国际研究生院 二年级第二学期"
-                    ],
-                    [
-                        "初代教会史（崔新光牧师）",
-                        "中世纪教会史（崔新光牧师）",
-                        "宗教改革史（崔新光牧师）",
-                        "教会教育（本科）二年级第二学期（朴成镇牧师）"
-                    ],
-                    [
-                        "陈宗燮牧师（教会史）",
-                        "摩西五经（金相民牧师）",
-                        "历史书（卢东辉牧师）",
-                        "旧约解释学（研究生院）一年级第一学期（首都国际）"
-                    ],
-                    [
-                        "福音书（吴权成牧师）",
-                        "希腊语（金仁勇牧师）",
-                        "保罗书信（金大永牧师）",
-                        "使徒行传（本科）- 吴权成牧师 2-1、3-1"
-                    ],
-                    [
-                        "礼拜学（金大永牧师）",
-                        "讲道学 / 实习（郑恩珠牧师）",
-                        "宣教学（安成三牧师）",
-                        "启示录（研究生院）三年级第二学期（首都国际）"
-                    ],
-                    [
-                        "救恩论（罗容和牧师）",
-                        "教会论（金汉坤牧师）",
-                        "启示录与末世论（首都国际研究生院）",
-                        "新约解释（研究生院）1-2周三 / 新约讲道（本科）3-2"
-                    ],
-                    [
-                        "近现代教会史（朴成镇牧师）",
-                        "日本教会史（申基燮牧师）",
-                        "狱中书信（朴光燮牧师）",
-                        "旧约注释（研究生院）2-1周三 / 诗篇（本科）4-2周三"
-                    ],
-                    [
-                        "诗歌书（首都国际研究生院）",
-                        "先知书（首都国际研究生院）",
-                        "旧约神学 / 总论（首都国际研究生院）",
-                        "教会政治（研究生院）3-1 申基燮牧师"
-                    ],
-                    [
-                        "新约神学（首都国际研究生院）",
-                        "公同书信（朴成镇牧师）",
-                        "圣经解释学（首都国际研究生院）",
-                        "牧会学（本科）金相民牧师 一年级第一学期"
-                    ],
-                    [
-                        "传道学（申基燮牧师）",
-                        "牧会辅导（卢东辉牧师）",
-                        "启示文学（首都国际研究生院）",
-                        "耶稣比喻研究（本科）4-1 首都国际"
-                    ],
-                    [
-                        "牧会辅导 / 赞美（卢东辉牧师）",
-                        "",
-                        "",
-                        ""
-                    ],
-                    [
-                        "牧会学（金相民牧师）",
-                        "",
-                        "",
-                        ""
-                    ],
-                    [
-                        "圣经神学（李胜牧师）",
-                        "",
-                        "",
-                        ""
-                    ],
-                    [
-                        "神国与耶稣的比喻（韩承娥教授）",
-                        "",
-                        "",
-                        ""
-                    ],
-                    [
-                        "异端专题讲座（徐英国牧师）/ 出埃及记（金汉坤牧师）",
-                        "",
-                        "",
-                        ""
-                    ],
-                    [
-                        "宣教学（申提摩太牧师）",
-                        "",
-                        "",
-                        ""
-                    ],
-                    [
-                        "摩西五经（成基文教授）",
-                        "",
-                        "",
-                        ""
-                    ]
-                ]
-            },
-            "degreeName": "神学士 (B.Th.) 课程",
-            "yearInfo": "一年级课程表",
-            "semester1": "第一学期",
-            "semester2": "第二学期",
-            "categories": {
-                "majorReq": "专业必修",
-                "majorElect": "专业选修",
-                "genReq": "通识必修",
-                "genElect": "通识选修",
-                "other": "专选/专必"
-            },
-            "subjects": {
-                "otIntro": "旧约概论",
-                "ntIntro": "新约概论",
-                "histEd": "基督教教育史",
-                "philTheo": "哲学神学",
-                "psychIntro": "心理学概论",
-                "theoEng1": "神学英语 I",
-                "bibWorldview": "圣经世界观",
-                "churchMusic": "教会音乐",
-                "otBack": "旧约背景史",
-                "westminster": "威斯敏斯特信条",
-                "introEd": "基督教教育概论",
-                "pentateuch": "五经解释",
-                "histDoc": "教义史",
-                "philIntro": "哲学的理解",
-                "edPsych": "教育心理学",
-                "wisdom": "智慧书",
-                "theoEng2": "神学英语 II",
-                "modernWorld": "现代世界观",
-                "comm": "沟通",
-                "ntBack": "新约背景史"
-            },
-            "graduate": {
-                "pageTitle": "神学硕士/博士 (M.Div/Th.M/Ph.D)",
-                "intro": "本研究生院课程通过与改革总会及首都国际大学院大学的MOU，培养专业事工者。",
-                "partner": "讲师及合作：首都国际大学院大学",
-                "years": {
-                    "y1": "一年级",
-                    "y2": "二年级",
-                    "y3": "三年级",
-                    "common": "共同及分班授课"
-                },
-                "subjects": {
-                    "y1": "组织神学, 初期教会史, 希伯来语...",
-                    "y2": "人类学, 中世教会史, 希腊语...",
-                    "y3": "基督论, 宗教改革史, 宣教学...",
-                    "common": "新条学, 教会教育, 旧约解释学"
-                },
-                "sharedCourses": {
-                    "title": "共同课程",
-                    "provider": "神学院课程：首都国际大学院大学",
-                    "courses": [
-                        "神论",
-                        "初期教会史",
-                        "希伯来语",
-                        "福音书",
-                        "礼拜学",
-                        "系统神学",
-                        "近现代教会史",
-                        "诗篇",
-                        "新约神学",
-                        "传道学"
-                    ]
-                },
-                "calendar": {
-                    "pageTitle": "学术日历",
-                    "monthName": "{month}",
-                    "majorSchedule": "学术日程",
-                    "noEvent": "本月没有安排官方活动。",
-                    "events": {
-                        "m3": "17: 开学特别讲座",
-                        "m4": "21: 休校",
-                        "m5": "22: 休校",
-                        "m6": "23-24: 休校\n30-7/1: 宣教学 (申提摩太牧师)",
-                        "m7": "1: 宣教学 (申提摩太牧师)"
-                    }
-                }
-            }
-        },
-        "faculty": {
-            "pageTitle": "师资团队",
-            "description": "服事东京国际神学院的教授与牧者。",
-            "members": {
-                "kwangseop": "朴光燮牧师",
-                "DongyaulTae": "太东烈教授",
-                "jaeSungKim": "金在成教授",
-                "AYunKim": "金雅允教授",
-                "JiHyeLee": "李知慧教授",
-                "JungHwaLee": "李贞和教授",
-                "ShinKwangChoi": "崔信光教授",
-                "PungRyongKim": "金丰龙教授",
-                "ByungWooJung": "郑炳祐教授",
-                "DongJinPark": "朴东镇教授"
-            },
-            "profileModalTitle": "教授简介",
-            "openProfile": "打开{name}简介",
-            "closeProfile": "关闭教授简介",
-            "profiles": {
-                "DongyaulTae": "学历\n- 경북대학교 무역학과 졸업 (문학사, B.A.)\n- 고려신학대학원 졸업 (목회학석사, M.Div.)\n- Calvin Theological Seminary (Th.M.)\n- Calvin Theological Seminary (Ph.D.)",
-                "jaeSungKim": "学历\n- 총신대학교 신학과 졸업 (문학사, B.A.)\n- 합동신학대학원 졸업 (목회학석사, M.Div.)\n- 서울대학교 대학원 졸업 (문학석사, M.A.)\n- Calvin Theological Seminary 졸업 (신학석사, Th.M.)\n- Westminster Theological Seminary 졸업 (철학박사, Ph.D.)",
-                "AYunKim": "学历\n- 고려대학교 중국어중국문학과 졸업 (문학사, B.A.)\n- Trinity Evangelical Divinity School 졸업 (목회학석사, M.Div.)\n- Gordon-Conwell Theological Seminary (Th.M.)\n- Trinity Evangelical Divinity School (Ph.D.)",
-                "JiHyeLee": "学历\n- 한동대학교 법학부 졸업 (법학사)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Wheaton College (M.A.)\n- Emory University (Th.M.)\n- University of St. Andrews (Ph.D.)",
-                "JungHwaLee": "学历\n- 이화여자대학교 불어불문학과 졸업 (문학사, B.A.)\n- 서울대학교 대학원 불어불문학과 졸업 (문학석사, M.A.)\n- 서울대학교 대학원 불어불문학과 박사과정 수료\n- 국제신학대학원대학교 졸업 (목회학석사, M.Div.)\n- 국제신학대학원대학교 졸업 (신학석사, Th.M.)\n- 국제신학대학원대학교 졸업 (철학박사, Ph.D.)",
-                "ShinKwangChoi": "学历\n- 고려대학교 교육학과 졸업 (B.A.)\n- 수도국제대학원대학교 목회연구과 목회학석사 (M.Div. Equiv.)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Calvin Theological Seminary 신학석사 (Th.M., 조직신학·역사신학)\n- Southwestern Baptist Theological Seminary 철학박사 (Ph.D., 조직신학)",
-                "PungRyongKim": "学历\n- 한성대학교 영문학과 졸업 (문학사, B.A.)\n- 합동신학대학원대학교 졸업 (목회학석사, M.Div.)\n- University of Aberdeen (Th.M.)\n- University of Aberdeen (Ph.D.)",
-                "ByungWooJung": "学历\n- 국제신학대학원대학교 졸업 (목회학석사, M.Div. / 신학석사, Th.M.)\n- Ezra Bible Institute 대학원 박사과정 수료",
-                "DongJinPark": "学历\n- 중앙대학교 신문방송학과 졸업 (문학사, B.A.)\n- 합동신학대학원대학교 졸업 (목회학석사, M.Div.)\n- McMaster Divinity College (M.A.)\n- McMaster Divinity College (Ph.D.)"
-            },
-            "categories": {
-                "systematicTheology": "系统神学",
-                "oldTestament": "旧约学",
-                "newTestament": "新约学",
-                "churchHistory": "教会史",
-                "biblicalTheology": "圣经神学",
-                "preaching": "讲道学"
-            }
+        "item5": {
+          "title": "5. 唯独荣耀归神",
+          "desc": "所有教育的目的是神的荣耀。"
         }
+      },
+      "motto": {
+        "title": "校 训",
+        "subtitle": "School Motto",
+        "item1": "唯独福音的体质化",
+        "item2": "祷告的生活化",
+        "item3": "世界福音化"
+      }
     },
-    "Admission": {
-        "heroEyebrow": "Admissions Guide",
-        "heroTitleLine1": "规划迈向呼召的",
-        "heroTitleLine2": "第一步。",
-        "heroDescription": "我们整理了东京国际神学院的招生课程、申请资格、提交材料和选拔流程，方便您一目了然地查看。",
-        "processCta": "查看选拔流程",
-        "noticeCta": "查看最新通知",
-        "intakeEyebrow": "Always Open",
-        "intakeTitleLine1": "随时受理",
-        "intakeTitleLine2": "个别通知",
-        "available": "可受理",
-        "applicationSuffix": "申请",
-        "methods": [
-            "来校",
-            "邮寄",
-            "电子邮件"
+    "history": {
+      "pageTitle": "学校沿革",
+      "title": "东京国际神学院的足迹",
+      "items": {
+        "item1": {
+          "year": "2026",
+          "event": "东京国际神学院 成立"
+        }
+      }
+    },
+    "location": {
+      "title": "来校路线",
+      "subtitle": "如何找到我们",
+      "address": "〒133-0051 东京都江户川区北小岩 3-13-11",
+      "transport": "京成江户川站步行8分钟",
+      "tel": "03-3865-4442"
+    },
+    "departments": {
+      "pageTitle": "学科介绍",
+      "introMessage": "以圣经为基础的神学教育，研究福音真理，培养服事教会和世界的事工者。",
+      "curriculum": {
+        "headers": [
+          "一年级",
+          "二年级",
+          "三年级",
+          "共同科目及分班课程（第8学期最后一周）"
         ],
-        "programs": {
-            "eyebrow": "Programs",
-            "title": "招生课程及名额",
-            "description": "按课程整理授课方式和招生名额，便于快速查看。",
-            "cards": [
-                {
-                    "title": "神学科本科课程",
-                    "degree": "B.Th. 课程",
-                    "method": "日间/夜间",
-                    "seats": "00名"
-                },
-                {
-                    "title": "神学硕士/博士课程",
-                    "degree": "M.Div. / Th.M. / Ph.D.",
-                    "method": "合作课程",
-                    "seats": "00名"
-                },
-                {
-                    "title": "日语学科",
-                    "degree": "日语集中课程",
-                    "method": "日间",
-                    "seats": "00名"
-                }
-            ]
+        "rows": [
+          [
+            "神论（首都国际研究生院）",
+            "人论（首都国际研究生院）",
+            "基督论（首都国际研究生院）",
+            "信条学（研究生院）首都国际研究生院 二年级第二学期"
+          ],
+          [
+            "初代教会史（崔新光牧师）",
+            "中世纪教会史（崔新光牧师）",
+            "宗教改革史（崔新光牧师）",
+            "教会教育（本科）二年级第二学期（朴成镇牧师）"
+          ],
+          [
+            "陈宗燮牧师（教会史）",
+            "摩西五经（金相民牧师）",
+            "历史书（卢东辉牧师）",
+            "旧约解释学（研究生院）一年级第一学期（首都国际）"
+          ],
+          [
+            "福音书（吴权成牧师）",
+            "希腊语（金仁勇牧师）",
+            "保罗书信（金大永牧师）",
+            "使徒行传（本科）- 吴权成牧师 2-1、3-1"
+          ],
+          [
+            "礼拜学（金大永牧师）",
+            "讲道学 / 实习（郑恩珠牧师）",
+            "宣教学（安成三牧师）",
+            "启示录（研究生院）三年级第二学期（首都国际）"
+          ],
+          [
+            "救恩论（罗容和牧师）",
+            "教会论（金汉坤牧师）",
+            "启示录与末世论（首都国际研究生院）",
+            "新约解释（研究生院）1-2周三 / 新约讲道（本科）3-2"
+          ],
+          [
+            "近现代教会史（朴成镇牧师）",
+            "日本教会史（申基燮牧师）",
+            "狱中书信（朴光燮牧师）",
+            "旧约注释（研究生院）2-1周三 / 诗篇（本科）4-2周三"
+          ],
+          [
+            "诗歌书（首都国际研究生院）",
+            "先知书（首都国际研究生院）",
+            "旧约神学 / 总论（首都国际研究生院）",
+            "教会政治（研究生院）3-1 申基燮牧师"
+          ],
+          [
+            "新约神学（首都国际研究生院）",
+            "公同书信（朴成镇牧师）",
+            "圣经解释学（首都国际研究生院）",
+            "牧会学（本科）金相民牧师 一年级第一学期"
+          ],
+          [
+            "传道学（申基燮牧师）",
+            "牧会辅导（卢东辉牧师）",
+            "启示文学（首都国际研究生院）",
+            "耶稣比喻研究（本科）4-1 首都国际"
+          ],
+          [
+            "牧会辅导 / 赞美（卢东辉牧师）",
+            "",
+            "",
+            ""
+          ],
+          [
+            "牧会学（金相民牧师）",
+            "",
+            "",
+            ""
+          ],
+          [
+            "圣经神学（李胜牧师）",
+            "",
+            "",
+            ""
+          ],
+          [
+            "神国与耶稣的比喻（韩承娥教授）",
+            "",
+            "",
+            ""
+          ],
+          [
+            "异端专题讲座（徐英国牧师）/ 出埃及记（金汉坤牧师）",
+            "",
+            "",
+            ""
+          ],
+          [
+            "宣教学（申提摩太牧师）",
+            "",
+            "",
+            ""
+          ],
+          [
+            "摩西五经（成基文教授）",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      "degreeName": "神学士 (B.Th.) 课程",
+      "yearInfo": "一年级课程表",
+      "semester1": "第一学期",
+      "semester2": "第二学期",
+      "categories": {
+        "majorReq": "专业必修",
+        "majorElect": "专业选修",
+        "genReq": "通识必修",
+        "genElect": "通识选修",
+        "other": "专选/专必"
+      },
+      "subjects": {
+        "otIntro": "旧约概论",
+        "ntIntro": "新约概论",
+        "histEd": "基督教教育史",
+        "philTheo": "哲学神学",
+        "psychIntro": "心理学概论",
+        "theoEng1": "神学英语 I",
+        "bibWorldview": "圣经世界观",
+        "churchMusic": "教会音乐",
+        "otBack": "旧约背景史",
+        "westminster": "威斯敏斯特信条",
+        "introEd": "基督教教育概论",
+        "pentateuch": "五经解释",
+        "histDoc": "教义史",
+        "philIntro": "哲学的理解",
+        "edPsych": "教育心理学",
+        "wisdom": "智慧书",
+        "theoEng2": "神学英语 II",
+        "modernWorld": "现代世界观",
+        "comm": "沟通",
+        "ntBack": "新约背景史"
+      },
+      "graduate": {
+        "pageTitle": "神学硕士/博士 (M.Div/Th.M/Ph.D)",
+        "intro": "本研究生院课程通过与改革总会及首都国际大学院大学的MOU，培养专业事工者。",
+        "partner": "讲师及合作：首都国际大学院大学",
+        "years": {
+          "y1": "一年级",
+          "y2": "二年级",
+          "y3": "三年级",
+          "common": "共同及分班授课"
         },
-        "eligibility": {
-            "eyebrow": "Eligibility",
-            "title": "申请资格",
-            "description": "我们将确认申请人的学习能力以及参与信仰训练的诚意。",
-            "items": [
-                "高中毕业或被认定具有同等以上学历者。",
-                "愿意诚实参与本校教育理念和信仰训练者。",
-                "希望预备成为牧会者、宣教士、平信徒领袖等福音事工者。",
-                "外国申请者须具备在日本居留和学习所需的资格。"
-            ]
+        "subjects": {
+          "y1": "组织神学, 初期教会史, 希伯来语...",
+          "y2": "人类学, 中世教会史, 希腊语...",
+          "y3": "基督论, 宗教改革史, 宣教学...",
+          "common": "新条学, 教会教育, 旧约解释学"
         },
-        "process": {
-            "eyebrow": "Process",
-            "title": "选拔方法及日程",
-            "description": "从申请到合格发表，各阶段均个别通知。",
-            "steps": [
-                {
-                    "title": "提交申请",
-                    "date": "随时受理",
-                    "content": "可来校、邮寄或电子邮件提交。"
-                },
-                {
-                    "title": "材料审查",
-                    "date": "受理后个别通知",
-                    "content": "确认提交材料。"
-                },
-                {
-                    "title": "面试选拔",
-                    "date": "个别通知",
-                    "content": "确认信仰告白和学习计划。"
-                },
-                {
-                    "title": "合格发表",
-                    "date": "个别通知",
-                    "content": "说明注册手续。"
-                }
-            ]
+        "sharedCourses": {
+          "title": "共同课程",
+          "provider": "神学院课程：首都国际大学院大学",
+          "courses": [
+            "神论",
+            "初期教会史",
+            "希伯来语",
+            "福音书",
+            "礼拜学",
+            "系统神学",
+            "近现代教会史",
+            "诗篇",
+            "新约神学",
+            "传道学"
+          ]
         },
-        "documents": {
-            "eyebrow": "Documents",
-            "title": "提交材料",
-            "description": "请根据申请类别完整准备所需材料。",
-            "rows": [
-                {
-                    "category": "共同材料",
-                    "docs": "入学申请书、个人信息收集及使用同意书、誓约书。"
-                },
-                {
-                    "category": "学历证明",
-                    "docs": "最终学校毕业证明书及成绩证明书。"
-                },
-                {
-                    "category": "信仰确认",
-                    "docs": "洗礼证明或教会出席确认书、牧会者推荐书。"
-                },
-                {
-                    "category": "外国申请者",
-                    "docs": "护照复印件、居留资格相关材料、学历认证材料。"
-                }
-            ]
-        },
-        "notice": {
-            "eyebrow": "Notice",
-            "title": "申请者注意事项",
-            "description": "选拔前请务必确认以下事项。",
-            "label": "NOTICE",
-            "items": [
-                "申请者须在面试当天指定时间前到达本校通知的面试地点。",
-                "若提交材料内容与事实不符，可能取消合格或入学资格。",
-                "已提交的材料和选拔费不予退还。",
-                "招生日程和详细选拔内容可能因学校情况而变更，变更事项将通过通知公告。"
-            ]
-        },
-        "help": {
-            "eyebrow": "Need Help?",
-            "title": "入学相关咨询",
-            "description": "详细招生简章及最新日程请查看通知公告。",
-            "cta": "查看通知"
+        "calendar": {
+          "pageTitle": "学术日历",
+          "monthName": "{month}",
+          "majorSchedule": "学术日程",
+          "noEvent": "本月没有安排官方活动。",
+          "events": {
+            "m3": "17: 开学特别讲座",
+            "m4": "21: 休校",
+            "m5": "22: 休校",
+            "m6": "23-24: 休校\n30-7/1: 宣教学 (申提摩太牧师)",
+            "m7": "1: 宣教学 (申提摩太牧师)"
+          }
         }
+      }
+    },
+    "faculty": {
+      "pageTitle": "师资团队",
+      "description": "服事东京国际神学院的教授与牧者。",
+      "members": {
+        "kwangseop": "朴光燮牧师",
+        "DongyaulTae": "太东烈教授",
+        "jaeSungKim": "金在成教授",
+        "AYunKim": "金雅允教授",
+        "JiHyeLee": "李知慧教授",
+        "JungHwaLee": "李贞和教授",
+        "ShinKwangChoi": "崔信光教授",
+        "PungRyongKim": "金丰龙教授",
+        "ByungWooJung": "郑炳祐教授",
+        "DongJinPark": "朴东镇教授"
+      },
+      "profileModalTitle": "教授简介",
+      "openProfile": "打开{name}简介",
+      "closeProfile": "关闭教授简介",
+      "profiles": {
+        "DongyaulTae": "学历\n- 경북대학교 무역학과 졸업 (문학사, B.A.)\n- 고려신학대학원 졸업 (목회학석사, M.Div.)\n- Calvin Theological Seminary (Th.M.)\n- Calvin Theological Seminary (Ph.D.)",
+        "jaeSungKim": "学历\n- 총신대학교 신학과 졸업 (문학사, B.A.)\n- 합동신학대학원 졸업 (목회학석사, M.Div.)\n- 서울대학교 대학원 졸업 (문학석사, M.A.)\n- Calvin Theological Seminary 졸업 (신학석사, Th.M.)\n- Westminster Theological Seminary 졸업 (철학박사, Ph.D.)",
+        "AYunKim": "学历\n- 고려대학교 중국어중국문학과 졸업 (문학사, B.A.)\n- Trinity Evangelical Divinity School 졸업 (목회학석사, M.Div.)\n- Gordon-Conwell Theological Seminary (Th.M.)\n- Trinity Evangelical Divinity School (Ph.D.)",
+        "JiHyeLee": "学历\n- 한동대학교 법학부 졸업 (법학사)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Wheaton College (M.A.)\n- Emory University (Th.M.)\n- University of St. Andrews (Ph.D.)",
+        "JungHwaLee": "学历\n- 이화여자대학교 불어불문학과 졸업 (문학사, B.A.)\n- 서울대학교 대학원 불어불문학과 졸업 (문학석사, M.A.)\n- 서울대학교 대학원 불어불문학과 박사과정 수료\n- 국제신학대학원대학교 졸업 (목회학석사, M.Div.)\n- 국제신학대학원대학교 졸업 (신학석사, Th.M.)\n- 국제신학대학원대학교 졸업 (철학박사, Ph.D.)",
+        "ShinKwangChoi": "学历\n- 고려대학교 교육학과 졸업 (B.A.)\n- 수도국제대학원대학교 목회연구과 목회학석사 (M.Div. Equiv.)\n- Southwestern Baptist Theological Seminary (M.Div.)\n- Calvin Theological Seminary 신학석사 (Th.M., 조직신학·역사신학)\n- Southwestern Baptist Theological Seminary 철학박사 (Ph.D., 조직신학)",
+        "PungRyongKim": "学历\n- 한성대학교 영문학과 졸업 (문학사, B.A.)\n- 합동신학대학원대학교 졸업 (목회학석사, M.Div.)\n- University of Aberdeen (Th.M.)\n- University of Aberdeen (Ph.D.)",
+        "ByungWooJung": "学历\n- 국제신학대학원대학교 졸업 (목회학석사, M.Div. / 신학석사, Th.M.)\n- Ezra Bible Institute 대학원 박사과정 수료",
+        "DongJinPark": "学历\n- 중앙대학교 신문방송학과 졸업 (문학사, B.A.)\n- 합동신학대학원대학교 졸업 (목회학석사, M.Div.)\n- McMaster Divinity College (M.A.)\n- McMaster Divinity College (Ph.D.)"
+      },
+      "categories": {
+        "systematicTheology": "系统神学",
+        "oldTestament": "旧约学",
+        "newTestament": "新约学",
+        "churchHistory": "教会史",
+        "biblicalTheology": "圣经神学",
+        "preaching": "讲道学"
+      }
     }
+  },
+  "Admission": {
+    "heroEyebrow": "Admissions Guide",
+    "heroTitleLine1": "规划迈向呼召的",
+    "heroTitleLine2": "第一步。",
+    "heroDescription": "我们整理了东京国际神学院的招生课程、申请资格、提交材料和选拔流程，方便您一目了然地查看。",
+    "processCta": "查看选拔流程",
+    "noticeCta": "查看最新通知",
+    "intakeEyebrow": "Always Open",
+    "intakeTitleLine1": "随时受理",
+    "intakeTitleLine2": "个别通知",
+    "available": "可受理",
+    "applicationSuffix": "申请",
+    "methods": [
+      "来校",
+      "邮寄",
+      "电子邮件"
+    ],
+    "programs": {
+      "eyebrow": "Programs",
+      "title": "招生课程及名额",
+      "description": "按课程整理授课方式和招生名额，便于快速查看。",
+      "cards": [
+        {
+          "title": "神学科本科课程",
+          "degree": "B.Th. 课程",
+          "method": "日间/夜间",
+          "seats": "00名"
+        },
+        {
+          "title": "神学硕士/博士课程",
+          "degree": "M.Div. / Th.M. / Ph.D.",
+          "method": "合作课程",
+          "seats": "00名"
+        },
+        {
+          "title": "日语学科",
+          "degree": "日语集中课程",
+          "method": "日间",
+          "seats": "00名"
+        }
+      ]
+    },
+    "eligibility": {
+      "eyebrow": "Eligibility",
+      "title": "申请资格",
+      "description": "我们将确认申请人的学习能力以及参与信仰训练的诚意。",
+      "items": [
+        "高中毕业或被认定具有同等以上学历者。",
+        "愿意诚实参与本校教育理念和信仰训练者。",
+        "希望预备成为牧会者、宣教士、平信徒领袖等福音事工者。",
+        "外国申请者须具备在日本居留和学习所需的资格。"
+      ]
+    },
+    "process": {
+      "eyebrow": "Process",
+      "title": "选拔方法及日程",
+      "description": "从申请到合格发表，各阶段均个别通知。",
+      "steps": [
+        {
+          "title": "提交申请",
+          "date": "随时受理",
+          "content": "可来校、邮寄或电子邮件提交。"
+        },
+        {
+          "title": "材料审查",
+          "date": "受理后个别通知",
+          "content": "确认提交材料。"
+        },
+        {
+          "title": "面试选拔",
+          "date": "个别通知",
+          "content": "确认信仰告白和学习计划。"
+        },
+        {
+          "title": "合格发表",
+          "date": "个别通知",
+          "content": "说明注册手续。"
+        }
+      ]
+    },
+    "documents": {
+      "eyebrow": "Documents",
+      "title": "提交材料",
+      "description": "请根据申请类别完整准备所需材料。",
+      "rows": [
+        {
+          "category": "共同材料",
+          "docs": "入学申请书、个人信息收集及使用同意书、誓约书。"
+        },
+        {
+          "category": "学历证明",
+          "docs": "最终学校毕业证明书及成绩证明书。"
+        },
+        {
+          "category": "信仰确认",
+          "docs": "洗礼证明或教会出席确认书、牧会者推荐书。"
+        },
+        {
+          "category": "外国申请者",
+          "docs": "护照复印件、居留资格相关材料、学历认证材料。"
+        }
+      ]
+    },
+    "notice": {
+      "eyebrow": "Notice",
+      "title": "申请者注意事项",
+      "description": "选拔前请务必确认以下事项。",
+      "label": "NOTICE",
+      "items": [
+        "申请者须在面试当天指定时间前到达本校通知的面试地点。",
+        "若提交材料内容与事实不符，可能取消合格或入学资格。",
+        "已提交的材料和选拔费不予退还。",
+        "招生日程和详细选拔内容可能因学校情况而变更，变更事项将通过通知公告。"
+      ]
+    },
+    "help": {
+      "eyebrow": "Need Help?",
+      "title": "入学相关咨询",
+      "description": "详细招生简章及最新日程请查看通知公告。",
+      "cta": "查看通知"
+    },
+    "tuition": {
+      "metadata": {
+        "title": "入学指南 | 学费说明",
+        "description": "介绍东京国际神学校各专业的学费及汇款账户。"
+      },
+      "hero": {
+        "badge": "入学指南",
+        "title": "学费说明",
+        "description": "您可以查看神学系和神学研究科各学年的学费及汇款账户信息。"
+      },
+      "bank": {
+        "eyebrow": "Tuition Payment",
+        "title": "学费汇款账户",
+        "description": "汇款时，请在汇款人姓名中填写入学者姓名，以便学校确认付款信息。",
+        "bankName": "银行名称",
+        "branchName": "支店名称",
+        "accountNumber": "账号",
+        "accountHolder": "账户名义"
+      },
+      "notice": "表中金额均为日元。汇款手续费由汇款人承担，汇款前请再次确认账户信息和金额。",
+      "departments": {
+        "theology": {
+          "title": "神学系",
+          "description": "神学系四年制课程各学期的学费说明。"
+        },
+        "graduate": {
+          "title": "神学研究科",
+          "description": "神学研究科三年制课程各学期的学费说明。"
+        }
+      },
+      "years": {
+        "year1": "第一学年",
+        "year2": "第二学年",
+        "year3": "第三学年",
+        "year4": "第四学年"
+      },
+      "periods": {
+        "enrollment": "办理入学手续时",
+        "firstSemester": "前期",
+        "secondSemester": "后期"
+      },
+      "table": {
+        "item": "项目",
+        "admissionFee": "入学金",
+        "tuition": "学费",
+        "facilityFee": "设施设备费",
+        "subtotal": "小计",
+        "currency": "金额单位：日元（JPY）"
+      },
+      "footerNotice": {
+        "title": "缴纳学费时的注意事项",
+        "description": "有关缴费期限及是否可以分期付款等详细内容，请遵照学校的通知。学费或汇款账户发生变更时，学校将另行通知。"
+      },
+      "schedule": {
+        "eyebrow": "Class Schedule",
+        "title": "课程时间表",
+        "description": "神学系夜间课程与神学研究科的星期二上课时间。",
+        "day": "星期二",
+        "theology": {
+          "title": "神学系",
+          "badge": "夜间",
+          "period1": "第1节",
+          "period2": "第2节",
+          "period3": "第3节"
+        },
+        "graduate": {
+          "title": "神学研究科",
+          "period1": "第1节",
+          "period2": "第2节",
+          "period3": "第3节",
+          "lunch": "午餐",
+          "period4": "第4节",
+          "period5": "第5节",
+          "period6": "第6节"
+        }
+      },
+      "documents": {
+        "eyebrow": "Application Documents",
+        "title": "提交材料说明",
+        "description": "申请入学所需的材料及填写方法，可在入学申请表页面查看。填写申请表前，请务必确认提交项目和注意事项。",
+        "button": "查看入学申请表",
+        "buttonAriaLabel": "前往入学申请表页面"
+      }
+    }
+  }
 }

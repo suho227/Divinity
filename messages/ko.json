@@ -551,6 +551,36 @@
       "footerNotice": {
         "title": "학비 납부 시 유의사항",
         "description": "납부 일정과 분납 가능 여부 등 자세한 사항은 학교의 안내에 따라 주세요. 등록금 또는 납부 계좌가 변경되는 경우 학교에서 별도로 안내합니다."
+      },
+      "schedule": {
+        "eyebrow": "Class Schedule",
+        "title": "시간표",
+        "description": "신학과 야간 과정과 신학연구과의 화요일 수업 시간입니다.",
+        "day": "화요일",
+        "theology": {
+          "title": "신학과",
+          "badge": "야간",
+          "period1": "1교시",
+          "period2": "2교시",
+          "period3": "3교시"
+        },
+        "graduate": {
+          "title": "신학연구과",
+          "period1": "1교시",
+          "period2": "2교시",
+          "period3": "3교시",
+          "lunch": "점심시간",
+          "period4": "4교시",
+          "period5": "5교시",
+          "period6": "6교시"
+        }
+      },
+      "documents": {
+        "eyebrow": "Application Documents",
+        "title": "제출 서류 안내",
+        "description": "입학 지원에 필요한 서류와 작성 방법은 입학 원서 서식 페이지에서 확인하실 수 있습니다. 원서를 작성하기 전에 제출 항목과 안내 사항을 반드시 확인해 주세요.",
+        "button": "입학 원서 서식 보기",
+        "buttonAriaLabel": "입학 원서 서식 페이지로 이동"
       }
     }
   }
