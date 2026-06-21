@@ -579,5 +579,23 @@
         "buttonAriaLabel": "前往入学申请表页面"
       }
     }
+  },
+  "AdmissionForms": {
+    "sidebarTitle": "入学信息",
+    "title": "入学表格",
+    "description": "查看入学申请所需的表格和说明文件。",
+    "newLabel": "新内容",
+    "empty": "暂无入学表格通知。",
+    "download": "下载附件表格",
+    "backToList": "返回入学表格列表",
+    "menu": {
+      "guide": "入学指南",
+      "notice": "入学通知",
+      "onlineApply": "提交申请",
+      "editApplication": "修改申请",
+      "results": "录取结果",
+      "forms": "入学表格",
+      "consultation": "入学咨询"
+    }
   }
 }

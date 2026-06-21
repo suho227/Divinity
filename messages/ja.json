@@ -546,5 +546,23 @@
         "buttonAriaLabel": "入学願書書式ページへ移動"
       }
     }
+  },
+  "AdmissionForms": {
+    "sidebarTitle": "入学情報",
+    "title": "入学書式",
+    "description": "入学出願に必要な書式と案内文書をご確認ください。",
+    "newLabel": "新着",
+    "empty": "登録された入学書式のお知らせはありません。",
+    "download": "添付書式をダウンロード",
+    "backToList": "入学書式一覧へ戻る",
+    "menu": {
+      "guide": "入学案内",
+      "notice": "入学公告",
+      "onlineApply": "願書受付",
+      "editApplication": "願書修正",
+      "results": "合格者発表",
+      "forms": "入学書式",
+      "consultation": "入学相談"
+    }
   }
 }

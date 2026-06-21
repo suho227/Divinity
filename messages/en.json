@@ -630,5 +630,23 @@
         "buttonAriaLabel": "Go to the application forms page"
       }
     }
+  },
+  "AdmissionForms": {
+    "sidebarTitle": "Admissions",
+    "title": "Application Forms",
+    "description": "Review application forms and guidance documents required for admission.",
+    "newLabel": "New",
+    "empty": "No application form notices have been posted.",
+    "download": "Download attached form",
+    "backToList": "Back to application forms",
+    "menu": {
+      "guide": "Admissions Guide",
+      "notice": "Admission Notices",
+      "onlineApply": "Online Application",
+      "editApplication": "Edit Application",
+      "results": "Admission Results",
+      "forms": "Application Forms",
+      "consultation": "Admissions Consultation"
+    }
   }
 }

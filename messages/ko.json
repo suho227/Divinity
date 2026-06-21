@@ -583,5 +583,23 @@
         "buttonAriaLabel": "입학 원서 서식 페이지로 이동"
       }
     }
+  },
+  "AdmissionForms": {
+    "sidebarTitle": "입학정보",
+    "title": "입학서식",
+    "description": "입학 지원에 필요한 서식과 안내 문서를 확인하세요.",
+    "newLabel": "새글",
+    "empty": "등록된 입학서식 공지가 없습니다.",
+    "download": "첨부 서식 다운로드",
+    "backToList": "입학서식 목록으로 돌아가기",
+    "menu": {
+      "guide": "입학안내",
+      "notice": "입학공지",
+      "onlineApply": "원서접수",
+      "editApplication": "원서수정",
+      "results": "합격자발표",
+      "forms": "입학서식",
+      "consultation": "입학상담"
+    }
   }
 }

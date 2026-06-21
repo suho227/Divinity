@@ -137,21 +137,22 @@ export default function Header() {
             </div>
 
             {/* 메인 네비게이션: 핵심 수정 구간 */}
-            <div className="bg-[#001529] h-20 md:h-24 flex items-center">
+            <div className="bg-[#001529] min-h-20 md:min-h-24 flex items-center py-3 md:py-4">
                 {/* 🌟 7xl 박스가 로고와 메뉴 전체를 감싸야 합니다! */}
-                <div className="w-full px-4 md:px-8 lg:px-10 flex lg:grid lg:grid-cols-[auto_1fr_auto] items-center justify-between gap-6">                    <Link href="/" className="flex items-center gap-3 z-20 shrink-0">
-                    <div className="relative w-10 h-10 md:w-14 md:h-14 rounded-full overflow-hidden border-2 border-brand-orange bg-white">
-                        <Image src="/logo2.jpg" alt="Logo" fill className="object-cover" />
-                    </div>
-                    <div className="flex flex-col text-white">
-                        <span className="text-[8px] md:text-[10px] text-brand-orange font-black tracking-[0.2em] uppercase leading-none mb-1">{t('subTitle')}</span>
-                        <span className="text-lg md:text-2xl font-black tracking-tighter break-keep">{t('schoolName')}</span>
-                    </div>
-                </Link>
+                <div className="w-full min-w-0 px-4 md:px-8 lg:px-10 flex xl:grid xl:grid-cols-[minmax(0,auto)_1fr_auto] items-center justify-between gap-4 md:gap-6">
+                    <Link href="/" className="flex min-w-0 flex-1 items-center gap-3 z-20 xl:flex-none">
+                        <div className="relative w-10 h-10 md:w-14 md:h-14 rounded-full overflow-hidden border-2 border-brand-orange bg-white">
+                            <Image src="/logo2.jpg" alt="Logo" fill className="object-cover" />
+                        </div>
+                        <div className="flex min-w-0 flex-col text-white">
+                            <span className="text-[8px] md:text-[10px] text-brand-orange font-black tracking-[0.2em] uppercase leading-tight mb-1 break-words">{t('subTitle')}</span>
+                            <span className="text-base leading-tight sm:text-lg md:text-2xl font-black tracking-tighter break-words">{t('schoolName')}</span>
+                        </div>
+                    </Link>
 
                     {/* 데스크탑 메뉴 */}
-                    <div className="hidden lg:flex flex-1 items-center justify-end gap-8">
-                        <nav className="hidden lg:flex items-center justify-center gap-10 px-8">
+                    <div className="hidden xl:flex flex-1 items-center justify-end gap-8">
+                        <nav className="hidden xl:flex items-center justify-center gap-10 px-8">
                             <div className="relative group">
                                 <Link href="/about/intro" className="text-white font-bold text-[16px] hover:text-brand-orange transition-all py-8 flex items-center gap-1">
                                     {t('about')} <span className="text-[8px] group-hover:rotate-180 transition-transform">▼</span>
@@ -210,7 +211,7 @@ export default function Header() {
                         </nav>
 
                         {/* 데스크탑 외부 링크 버튼 */}
-                        <div className="hidden lg:flex shrink-0 items-center justify-end gap-3">
+                        <div className="hidden xl:flex shrink-0 items-center justify-end gap-3">
                             {externalMenuLinks.map((link) => (
                                 <a
                                     key={link.href}
@@ -237,8 +238,7 @@ export default function Header() {
                         aria-expanded={isMenuOpen}
                         aria-controls="mobile-navigation-menu"
                         onClick={() => setIsMenuOpen((open) => !open)}
-                        className="lg:hidden text-white p-2 relative z-[110]"
-                    >
+                        className="xl:hidden text-white p-2 relative z-[110]"                    >
                         <div className="w-6 h-5 flex flex-col justify-between" aria-hidden="true">
                             <span className={`h-0.5 w-full bg-white transition-all ${isMenuOpen ? 'rotate-45 translate-y-2.5' : ''}`} />
                             <span className={`h-0.5 w-full bg-white transition-all ${isMenuOpen ? 'opacity-0' : ''}`} />
@@ -251,7 +251,7 @@ export default function Header() {
             {/* 모바일 사이드바 메뉴 (동일) */}
             {isMenuOpen && (
                 <div
-                    className="lg:hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm"
+                    className="xl:hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm"
                     onClick={() => setIsMenuOpen(false)}
                 >
                     <div

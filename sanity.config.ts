@@ -4,6 +4,7 @@ import { defineConfig } from 'sanity';
 import { structureTool } from 'sanity/structure'; // 최신 버전은 deskTool 대신 structureTool을 권장합니다.
 import about from './src/sanity/schemas/schemaTypes/about';
 import notice from './src/sanity/schemas/schemaTypes/notice';
+import admissionFormNotice from './src/sanity/schemas/schemaTypes/admissionFormNotice';
 
 export default defineConfig({
     name: 'default',
@@ -21,6 +22,6 @@ export default defineConfig({
 
     schema: {
         // 🌟 about과 notice가 정상적으로 등록되었습니다.
-        types: [about, notice],
+        types: [about, notice, admissionFormNotice],
     },
 });
