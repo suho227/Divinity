@@ -1,180 +1,494 @@
-import { useTranslations } from 'next-intl';
-import { Link } from '@/navigation';
+import type { Metadata } from 'next';
+import {
+  Building2,
+  CircleAlert,
+  GraduationCap,
+  Landmark,
+  WalletCards,
+} from 'lucide-react';
+import { getTranslations } from 'next-intl/server';
 
-const programTones = [
-    'from-[#1A2B4C] to-[#2f4d86]',
-    'from-[#6f3f16] to-[#E88B2E]',
-    'from-[#163d3a] to-[#2e8b7a]',
+type PageProps = {
+  params: Promise<{
+    locale: string;
+  }>;
+};
+
+type TuitionRow = {
+  key: 'admissionFee' | 'tuition' | 'facilityFee' | 'subtotal';
+  values: Array<number | null>;
+};
+
+type PeriodColumn = {
+  year: string;
+  period: string;
+};
+
+type YearGroup = {
+  label: string;
+  count: number;
+};
+
+const theologyRows: TuitionRow[] = [
+  {
+    key: 'admissionFee',
+    values: [50000, null, null, null, null, null, null, null],
+  },
+  {
+    key: 'tuition',
+    values: [
+      150000,
+      150000,
+      150000,
+      150000,
+      150000,
+      150000,
+      150000,
+      150000,
+    ],
+  },
+  {
+    key: 'facilityFee',
+    values: [50000, null, 50000, null, 50000, null, 50000, null],
+  },
+  {
+    key: 'subtotal',
+    values: [
+      250000,
+      150000,
+      200000,
+      150000,
+      200000,
+      150000,
+      200000,
+      150000,
+    ],
+  },
 ];
 
-type ProgramCard = {
-    title: string;
-    degree: string;
-    method: string;
-    seats: string;
-};
+const graduateRows: TuitionRow[] = [
+  {
+    key: 'admissionFee',
+    values: [50000, null, null, null, null, null],
+  },
+  {
+    key: 'tuition',
+    values: [180000, 180000, 180000, 180000, 180000, 180000],
+  },
+  {
+    key: 'facilityFee',
+    values: [50000, null, 50000, null, 50000, null],
+  },
+  {
+    key: 'subtotal',
+    values: [280000, 180000, 230000, 180000, 230000, 180000],
+  },
+];
 
-type ScheduleStep = {
-    title: string;
-    date: string;
-    content: string;
-};
+function getNumberLocale(locale: string) {
+  const localeMap: Record<string, string> = {
+    ko: 'ko-KR',
+    en: 'en-US',
+    ja: 'ja-JP',
+    zh: 'zh-CN',
+  };
 
-type DocumentRow = {
-    category: string;
-    docs: string;
-};
-
-export default function AdmissionPage() {
-    const t = useTranslations('Admission');
-    const programCards = t.raw('programs.cards') as ProgramCard[];
-    const qualifications = t.raw('eligibility.items') as string[];
-    const documentRows = t.raw('documents.rows') as DocumentRow[];
-    const scheduleRows = t.raw('process.steps') as ScheduleStep[];
-    const notices = t.raw('notice.items') as string[];
-    const methods = t.raw('methods') as string[];
-
-    return (
-        <main className="min-h-screen overflow-hidden bg-[#f7efe0] text-brand-navy">
-            <section className="relative isolate px-6 pb-20 pt-20 md:pb-28 md:pt-28">
-                <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_15%_15%,rgba(232,139,46,0.24),transparent_34%),radial-gradient(circle_at_85%_5%,rgba(26,43,76,0.22),transparent_30%),linear-gradient(135deg,#fffaf0_0%,#f7efe0_48%,#edf3f5_100%)]" />
-                <div className="absolute left-1/2 top-12 -z-10 h-72 w-72 rounded-full border border-brand-orange/20 md:h-[34rem] md:w-[34rem]" />
-                <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
-                    <div>
-                        <p className="mb-5 inline-flex rounded-full border border-brand-orange/30 bg-white/70 px-5 py-2 text-xs font-black uppercase tracking-[0.42em] text-brand-orange shadow-sm backdrop-blur">
-                            {t('heroEyebrow')}
-                        </p>
-                        <h1 className="max-w-4xl text-5xl font-black leading-[1.05] tracking-[-0.04em] text-brand-navy md:text-7xl">
-                            {t('heroTitleLine1')}<br />{t('heroTitleLine2')}
-                        </h1>
-                        <p className="mt-7 max-w-2xl text-lg font-medium leading-9 text-slate-700 md:text-xl">
-                            {t('heroDescription')}
-                        </p>
-                        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                            <a href="#admission-process" className="inline-flex items-center justify-center rounded-full bg-brand-navy px-8 py-4 text-sm font-black text-white shadow-xl shadow-brand-navy/20 transition hover:-translate-y-1 hover:bg-brand-orange">
-                                {t('processCta')}
-                            </a>
-                            <Link href="/notice" className="inline-flex items-center justify-center rounded-full border border-brand-navy/20 bg-white/80 px-8 py-4 text-sm font-black text-brand-navy transition hover:-translate-y-1 hover:border-brand-orange hover:text-brand-orange">
-                                {t('noticeCta')}
-                            </Link>
-                        </div>
-                    </div>
-
-                    <div className="relative">
-                        <div className="rounded-[2rem] border border-white/80 bg-white/75 p-5 shadow-2xl shadow-brand-navy/15 backdrop-blur">
-                            <div className="rounded-[1.5rem] bg-brand-navy p-7 text-white">
-                                <p className="text-sm font-black uppercase tracking-[0.36em] text-brand-orange">{t('intakeEyebrow')}</p>
-                                <h2 className="mt-5 text-3xl font-black leading-tight">{t('intakeTitleLine1')}<br />{t('intakeTitleLine2')}</h2>
-                                <div className="mt-8 grid gap-3">
-                                    {methods.map((item) => (
-                                        <div key={item} className="flex items-center justify-between rounded-2xl bg-white/10 px-5 py-4 text-sm font-bold">
-                                            <span>{item} {t('applicationSuffix')}</span>
-                                            <span className="text-brand-orange">{t('available')}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="mx-auto max-w-7xl px-6 pb-24">
-                <SectionHeader eyebrow={t('programs.eyebrow')} title={t('programs.title')} description={t('programs.description')} />
-                <div className="grid gap-5 md:grid-cols-3">
-                    {programCards.map((program, index) => (
-                        <article key={program.title} className={`rounded-[1.75rem] bg-gradient-to-br ${programTones[index]} p-7 text-white shadow-xl shadow-brand-navy/10`}>
-                            <p className="text-sm font-black text-white/65">{program.degree}</p>
-                            <h3 className="mt-4 text-2xl font-black leading-tight">{program.title}</h3>
-                            <div className="mt-8 flex items-end justify-between border-t border-white/20 pt-5">
-                                <span className="rounded-full bg-white/15 px-4 py-2 text-sm font-bold">{program.method}</span>
-                                <span className="text-3xl font-black">{program.seats}</span>
-                            </div>
-                        </article>
-                    ))}
-                </div>
-            </section>
-
-            <section className="bg-white px-6 py-24">
-                <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-                    <div id="admission-eligibility">
-                        <SectionHeader eyebrow={t('eligibility.eyebrow')} title={t('eligibility.title')} description={t('eligibility.description')} />
-                        <div className="grid gap-4">
-                            {qualifications.map((item, index) => (
-                                <div key={item} className="flex gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-orange text-sm font-black text-white">{index + 1}</span>
-                                    <p className="font-bold leading-8 text-slate-700">{item}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div id="admission-process">
-                        <SectionHeader eyebrow={t('process.eyebrow')} title={t('process.title')} description={t('process.description')} />
-                        <div className="relative space-y-4 before:absolute before:left-7 before:top-7 before:h-[calc(100%-3.5rem)] before:w-px before:bg-brand-orange/30">
-                            {scheduleRows.map((row, index) => (
-                                <article key={row.title} className="relative flex gap-5 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
-                                    <span className="z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-navy text-sm font-black text-white">{String(index + 1).padStart(2, '0')}</span>
-                                    <div>
-                                        <h3 className="text-xl font-black text-brand-navy">{row.title}</h3>
-                                        <p className="mt-2 font-black text-brand-orange">{row.date}</p>
-                                        <p className="mt-1 leading-7 text-slate-600">{row.content}</p>
-                                    </div>
-                                </article>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="mx-auto grid max-w-7xl gap-8 px-6 py-24 lg:grid-cols-[1.15fr_0.85fr]">
-                <div id="admission-documents" className="rounded-[2rem] bg-white p-6 shadow-xl shadow-brand-navy/10 md:p-8">
-                    <SectionHeader eyebrow={t('documents.eyebrow')} title={t('documents.title')} description={t('documents.description')} compact />
-                    <div className="mt-8 divide-y divide-slate-100 overflow-hidden rounded-2xl border border-slate-200">
-                        {documentRows.map((row) => (
-                            <div key={row.category} className="grid gap-2 bg-white p-5 md:grid-cols-[10rem_1fr] md:gap-6">
-                                <strong className="text-brand-navy">{row.category}</strong>
-                                <p className="leading-7 text-slate-600">{row.docs}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div id="admission-notice" className="rounded-[2rem] bg-brand-navy p-6 text-white shadow-xl shadow-brand-navy/20 md:p-8">
-                    <SectionHeader eyebrow={t('notice.eyebrow')} title={t('notice.title')} description={t('notice.description')} compact dark />
-                    <div className="mt-8 space-y-4">
-                        {notices.map((notice, index) => (
-                            <div key={notice} className="rounded-2xl bg-white/10 p-5 leading-7">
-                                <span className="mb-2 block text-sm font-black text-brand-orange">{t('notice.label')} {index + 1}</span>
-                                {notice}
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <section className="px-6 pb-24">
-                <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-gradient-to-r from-brand-orange to-[#f2b56f] p-8 text-brand-navy shadow-2xl shadow-brand-orange/20 md:flex md:items-center md:justify-between md:p-12">
-                    <div>
-                        <p className="text-sm font-black uppercase tracking-[0.34em] text-white/80">{t('help.eyebrow')}</p>
-                        <h2 className="mt-3 text-3xl font-black md:text-4xl">{t('help.title')}</h2>
-                        <p className="mt-3 font-bold text-brand-navy/75">{t('help.description')}</p>
-                    </div>
-                    <Link href="/notice" className="mt-8 inline-flex rounded-full bg-brand-navy px-8 py-4 text-sm font-black text-white transition hover:-translate-y-1 hover:bg-white hover:text-brand-navy md:mt-0">
-                        {t('help.cta')}
-                    </Link>
-                </div>
-            </section>
-        </main>
-    );
+  return localeMap[locale] ?? 'ko-KR';
 }
 
-function SectionHeader({ eyebrow, title, description, compact = false, dark = false }: { eyebrow: string; title: string; description: string; compact?: boolean; dark?: boolean }) {
-    return (
-        <div className={compact ? '' : 'mb-10'}>
-            <p className="text-sm font-black uppercase tracking-[0.34em] text-brand-orange">{eyebrow}</p>
-            <h2 className={`mt-3 text-3xl font-black tracking-[-0.03em] md:text-4xl ${dark ? 'text-white' : 'text-brand-navy'}`}>{title}</h2>
-            <p className={`mt-4 leading-8 ${dark ? 'text-white/70' : 'text-slate-600'}`}>{description}</p>
+function formatAmount(value: number | null, locale: string) {
+  if (value === null) {
+    return '-';
+  }
+
+  return new Intl.NumberFormat(getNumberLocale(locale)).format(value);
+}
+
+type TuitionTableProps = {
+  title: string;
+  description: string;
+  periods: PeriodColumn[];
+  yearGroups: YearGroup[];
+  rows: TuitionRow[];
+  locale: string;
+  labels: {
+    item: string;
+    admissionFee: string;
+    tuition: string;
+    facilityFee: string;
+    subtotal: string;
+    currency: string;
+  };
+};
+
+function TuitionTable({
+  title,
+  description,
+  periods,
+  yearGroups,
+  rows,
+  locale,
+  labels,
+}: TuitionTableProps) {
+  return (
+    <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+      <div className="border-b border-slate-200 bg-slate-50 px-5 py-6 sm:px-8">
+        <div className="flex items-start gap-4">
+          <div className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-indigo-100 text-indigo-700">
+            <GraduationCap aria-hidden="true" className="size-6" />
+          </div>
+
+          <div>
+            <h2 className="text-xl font-bold tracking-tight text-slate-950 sm:text-2xl">
+              {title}
+            </h2>
+            <p className="mt-1 text-sm leading-6 text-slate-600">
+              {description}
+            </p>
+          </div>
         </div>
-    );
+      </div>
+
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[900px] border-collapse text-center text-sm">
+          <caption className="sr-only">{title}</caption>
+
+          <thead>
+            <tr className="bg-indigo-950 text-white">
+              <th
+                rowSpan={2}
+                scope="col"
+                className="sticky left-0 z-20 min-w-36 border-r border-indigo-800 bg-indigo-950 px-4 py-4 font-semibold"
+              >
+                {labels.item}
+              </th>
+
+              {yearGroups.map((group) => (
+                <th
+                  key={group.label}
+                  colSpan={group.count}
+                  scope="colgroup"
+                  className="border-r border-indigo-800 px-4 py-3 font-semibold last:border-r-0"
+                >
+                  {group.label}
+                </th>
+              ))}
+            </tr>
+
+            <tr className="bg-indigo-900 text-indigo-50">
+              {periods.map((column, index) => (
+                <th
+                  key={`${column.year}-${column.period}-${index}`}
+                  scope="col"
+                  className="min-w-28 border-r border-indigo-800 px-3 py-3 text-xs font-medium last:border-r-0"
+                >
+                  {column.period}
+                </th>
+              ))}
+            </tr>
+          </thead>
+
+          <tbody>
+            {rows.map((row, rowIndex) => {
+              const isSubtotal = row.key === 'subtotal';
+
+              return (
+                <tr
+                  key={row.key}
+                  className={
+                    isSubtotal
+                      ? 'bg-indigo-50 font-bold text-indigo-950'
+                      : rowIndex % 2 === 0
+                        ? 'bg-white'
+                        : 'bg-slate-50/70'
+                  }
+                >
+                  <th
+                    scope="row"
+                    className={[
+                      'sticky left-0 z-10 border-b border-r border-slate-200 px-4 py-4 text-left font-semibold',
+                      isSubtotal
+                        ? 'bg-indigo-50 text-indigo-950'
+                        : rowIndex % 2 === 0
+                          ? 'bg-white text-slate-900'
+                          : 'bg-slate-50 text-slate-900',
+                    ].join(' ')}
+                  >
+                    {labels[row.key]}
+                  </th>
+
+                  {row.values.map((value, index) => (
+                    <td
+                      key={`${row.key}-${index}`}
+                      className={[
+                        'border-b border-r border-slate-200 px-4 py-4 tabular-nums last:border-r-0',
+                        value === null
+                          ? 'text-slate-400'
+                          : isSubtotal
+                            ? 'text-indigo-950'
+                            : 'text-slate-700',
+                      ].join(' ')}
+                    >
+                      {formatAmount(value, locale)}
+                    </td>
+                  ))}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      <div className="flex items-center justify-end border-t border-slate-200 bg-white px-5 py-3 sm:px-8">
+        <p className="text-xs font-medium text-slate-500">
+          {labels.currency}
+        </p>
+      </div>
+    </section>
+  );
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({
+    locale,
+    namespace: 'Admission',
+  });
+
+  return {
+    title: t('metadata.title'),
+    description: t('metadata.description'),
+  };
+}
+
+export default async function AdmissionPage({ params }: PageProps) {
+  const { locale } = await params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: 'Admission',
+  });
+
+  const theologyPeriods: PeriodColumn[] = [
+    {
+      year: t('years.year1'),
+      period: t('periods.enrollment'),
+    },
+    {
+      year: t('years.year1'),
+      period: t('periods.secondSemester'),
+    },
+    {
+      year: t('years.year2'),
+      period: t('periods.firstSemester'),
+    },
+    {
+      year: t('years.year2'),
+      period: t('periods.secondSemester'),
+    },
+    {
+      year: t('years.year3'),
+      period: t('periods.firstSemester'),
+    },
+    {
+      year: t('years.year3'),
+      period: t('periods.secondSemester'),
+    },
+    {
+      year: t('years.year4'),
+      period: t('periods.firstSemester'),
+    },
+    {
+      year: t('years.year4'),
+      period: t('periods.secondSemester'),
+    },
+  ];
+
+  const graduatePeriods: PeriodColumn[] = [
+    {
+      year: t('years.year1'),
+      period: t('periods.enrollment'),
+    },
+    {
+      year: t('years.year1'),
+      period: t('periods.secondSemester'),
+    },
+    {
+      year: t('years.year2'),
+      period: t('periods.firstSemester'),
+    },
+    {
+      year: t('years.year2'),
+      period: t('periods.secondSemester'),
+    },
+    {
+      year: t('years.year3'),
+      period: t('periods.firstSemester'),
+    },
+    {
+      year: t('years.year3'),
+      period: t('periods.secondSemester'),
+    },
+  ];
+
+  const theologyYearGroups: YearGroup[] = [
+    { label: t('years.year1'), count: 2 },
+    { label: t('years.year2'), count: 2 },
+    { label: t('years.year3'), count: 2 },
+    { label: t('years.year4'), count: 2 },
+  ];
+
+  const graduateYearGroups: YearGroup[] = [
+    { label: t('years.year1'), count: 2 },
+    { label: t('years.year2'), count: 2 },
+    { label: t('years.year3'), count: 2 },
+  ];
+
+  const labels = {
+    item: t('table.item'),
+    admissionFee: t('table.admissionFee'),
+    tuition: t('table.tuition'),
+    facilityFee: t('table.facilityFee'),
+    subtotal: t('table.subtotal'),
+    currency: t('table.currency'),
+  };
+
+  const bankInformation = [
+    {
+      label: t('bank.bankName'),
+      value: 'きらぼし銀行',
+    },
+    {
+      label: t('bank.branchName'),
+      value: '042 錦糸町',
+    },
+    {
+      label: t('bank.accountNumber'),
+      value: '5027969',
+    },
+    {
+      label: t('bank.accountHolder'),
+      value: '麻布福音教会東京国際神学校',
+    },
+  ];
+
+  return (
+    <main className="min-h-screen bg-slate-50">
+      <section className="relative overflow-hidden bg-indigo-950">
+        <div
+          aria-hidden="true"
+          className="absolute -right-32 -top-40 size-[500px] rounded-full bg-indigo-700/40 blur-3xl"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute -bottom-48 -left-24 size-[450px] rounded-full bg-sky-500/20 blur-3xl"
+        />
+
+        <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-24 lg:px-10">
+          <div className="max-w-3xl">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-indigo-100 backdrop-blur-sm">
+              <WalletCards aria-hidden="true" className="size-4" />
+              {t('hero.badge')}
+            </div>
+
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              {t('hero.title')}
+            </h1>
+
+            <p className="mt-6 max-w-2xl text-base leading-8 text-indigo-100 sm:text-lg">
+              {t('hero.description')}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-7xl space-y-10 px-5 py-12 sm:px-8 sm:py-16 lg:px-10 lg:py-20">
+        <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+            <div className="max-w-xl">
+              <div className="flex items-center gap-3">
+                <div className="flex size-11 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700">
+                  <Landmark aria-hidden="true" className="size-6" />
+                </div>
+
+                <div>
+                  <p className="text-sm font-semibold text-emerald-700">
+                    {t('bank.eyebrow')}
+                  </p>
+                  <h2 className="text-2xl font-bold tracking-tight text-slate-950">
+                    {t('bank.title')}
+                  </h2>
+                </div>
+              </div>
+
+              <p className="mt-4 text-sm leading-7 text-slate-600">
+                {t('bank.description')}
+              </p>
+            </div>
+
+            <div className="grid flex-1 gap-3 sm:grid-cols-2">
+              {bankInformation.map((item) => (
+                <div
+                  key={item.label}
+                  className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4"
+                >
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    {item.label}
+                  </dt>
+                  <dd className="mt-2 break-words text-sm font-bold text-slate-950 sm:text-base">
+                    {item.value}
+                  </dd>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <div className="flex items-start gap-3 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4 text-amber-950">
+          <CircleAlert
+            aria-hidden="true"
+            className="mt-0.5 size-5 shrink-0 text-amber-600"
+          />
+          <p className="text-sm leading-6">{t('notice')}</p>
+        </div>
+
+        <TuitionTable
+          title={t('departments.theology.title')}
+          description={t('departments.theology.description')}
+          periods={theologyPeriods}
+          yearGroups={theologyYearGroups}
+          rows={theologyRows}
+          locale={locale}
+          labels={labels}
+        />
+
+        <TuitionTable
+          title={t('departments.graduate.title')}
+          description={t('departments.graduate.description')}
+          periods={graduatePeriods}
+          yearGroups={graduateYearGroups}
+          rows={graduateRows}
+          locale={locale}
+          labels={labels}
+        />
+
+        <section className="rounded-3xl bg-indigo-950 px-6 py-8 text-white sm:px-10">
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
+            <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-white/10">
+              <Building2 aria-hidden="true" className="size-6" />
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold">{t('footerNotice.title')}</h2>
+              <p className="mt-2 max-w-3xl text-sm leading-7 text-indigo-100">
+                {t('footerNotice.description')}
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  );
 }

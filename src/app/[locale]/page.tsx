@@ -23,7 +23,7 @@ export default function HomePage() {
                     <div className="w-24 h-1.5 bg-brand-orange mx-auto mb-10"></div>
                     <p className="text-2xl md:text-3xl font-medium mb-12 max-w-4xl mx-auto leading-relaxed drop-shadow-md">{t('description')}</p>
                     <Link
-                        href="/admission"
+                        href="/admission.tuition"
                         className="
         /* 기본 스타일: 오렌지 배경 + 흰색 글씨 */
         px-14 py-5 

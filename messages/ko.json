@@ -34,7 +34,7 @@
   },
   "NotFound": {
     "title": "페이지를 찾을 수 없습니다.",
-   "description": "요청하신 페이지가 존재하지 않거나 주소가 변경되었을 수 있습니다.",
+    "description": "요청하신 페이지가 존재하지 않거나 주소가 변경되었을 수 있습니다.",
     "homeLabel": "홈으로 돌아가기"
   },
   "Index": {
@@ -498,6 +498,60 @@
       "title": "입학 관련 문의",
       "description": "상세 모집 요강 및 최신 일정은 공지사항에서 확인해 주세요.",
       "cta": "공지사항 보기"
+    },
+    "tuition": {
+      "metadata": {
+        "title": "입학 안내 | 학비 안내",
+        "description": "도쿄국제신학교의 학과별 학비와 납부 계좌를 안내합니다."
+      },
+      "hero": {
+        "badge": "입학 안내",
+        "title": "학비 안내",
+        "description": "신학과와 신학연구과의 학년별 학비 및 납부 계좌 정보를 확인하실 수 있습니다."
+      },
+      "bank": {
+        "eyebrow": "Tuition Payment",
+        "title": "학비 납부 계좌",
+        "description": "학비를 송금하실 때에는 입학자의 이름을 확인할 수 있도록 송금인명을 입력해 주세요.",
+        "bankName": "은행명",
+        "branchName": "지점명",
+        "accountNumber": "계좌번호",
+        "accountHolder": "명의"
+      },
+      "notice": "표시된 금액의 단위는 일본 엔입니다. 송금 수수료는 송금인이 부담하며, 납부 전 계좌 정보와 금액을 다시 확인해 주세요.",
+      "departments": {
+        "theology": {
+          "title": "신학과",
+          "description": "신학과 4년 과정의 학기별 학비 안내입니다."
+        },
+        "graduate": {
+          "title": "신학연구과",
+          "description": "신학연구과 3년 과정의 학기별 학비 안내입니다."
+        }
+      },
+      "years": {
+        "year1": "1년차",
+        "year2": "2년차",
+        "year3": "3년차",
+        "year4": "4년차"
+      },
+      "periods": {
+        "enrollment": "입학 수속 시",
+        "firstSemester": "전기",
+        "secondSemester": "후기"
+      },
+      "table": {
+        "item": "항목",
+        "admissionFee": "입학금",
+        "tuition": "수업료",
+        "facilityFee": "시설설비비",
+        "subtotal": "소계",
+        "currency": "금액 단위: 일본 엔(JPY)"
+      },
+      "footerNotice": {
+        "title": "학비 납부 시 유의사항",
+        "description": "납부 일정과 분납 가능 여부 등 자세한 사항은 학교의 안내에 따라 주세요. 등록금 또는 납부 계좌가 변경되는 경우 학교에서 별도로 안내합니다."
+      }
     }
   }
 }
