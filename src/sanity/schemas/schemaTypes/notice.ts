@@ -18,7 +18,7 @@ export default {
             validation: (Rule: any) => Rule.required(),
         },
 
-        {
+        { 
             name: 'slug',
             title: '주소(Slug)',
             type: 'slug',

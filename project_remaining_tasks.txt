@@ -1,0 +1,51 @@
+프로젝트 우선순위 작업 정리
+=======================
+
+1. 가장 먼저 해결할 항목 (우선순위 1)
+---------------------------------
+- ESLint 오류 수정
+  * src/app/[locale]/admission/forms/[slug]/page.tsx: any 타입 사용 제거
+    - 이유: TypeScript에서 any를 쓰면 타입 안정성이 떨어지고, 코드가 커질 때 오류를 찾기 어려워집니다.
+  * src/app/[locale]/departments/theology/page.tsx: any 타입 사용 제거
+    - 이유: 데이터 구조가 명확하지 않을 때 잘못된 값이 들어와도 컴파일 단계에서 잡지 못할 수 있습니다.
+  * src/app/[locale]/departments/theology/page.tsx: React 특수 문자 따옴표 escape 문제 수정
+    - 이유: 브라우저와 React에서 문자열 처리 오류를 일으킬 수 있어 화면 렌더링 시 문제가 생길 수 있습니다.
+  * src/app/[locale]/notice/[slug]/page.tsx: any 타입 사용 제거
+    - 이유: 공지사항 데이터가 잘못된 형태로 들어오면 상세 페이지 렌더링이 깨질 수 있습니다.
+  * src/app/[locale]/notice/page.tsx: any 타입 사용 제거
+    - 이유: notice 목록 페이지에서 데이터 타입이 불명확하면 목록 표시가 비정상적으로 동작할 수 있습니다.
+  * src/sanity/client.ts: any 타입 사용 제거
+    - 이유: Sanity에서 불러오는 데이터의 형태를 명확히 하지 않으면 유지보수와 확장이 어려워집니다.
+  * src/sanity/schemas/schemaTypes/admissionFormNotice.ts: any 타입 사용 제거
+    - 이유: CMS 스키마 정의가 타입 안전하지 않으면 콘텐츠 편집 시 예측하지 못한 문제가 생길 수 있습니다.
+  * src/sanity/schemas/schemaTypes/notice.ts: any 타입 사용 제거
+    - 이유: 공지사항 콘텐츠 구조를 안정적으로 관리하려면 타입이 필요합니다.
+  * tailwind.config.ts: require() 사용 문제 수정
+    - 이유: 현재 ESLint 규칙상 금지된 방식이라 프로젝트 검사 단계에서 실패합니다.
+
+2. 다음으로 해결할 항목 (우선순위 2)
+----------------------------------
+- 코드 정리 및 ESLint 경고 해소
+  * src/app/[locale]/about/location/page.tsx: 사용하지 않는 변수(mapSrc) 제거
+    - 이유: 불필요한 코드는 가독성을 떨어뜨리고, 나중에 유지보수 시 혼란을 줍니다.
+  * postcss.config.mjs: 익명 export 대신 변수에 할당 후 export
+    - 이유: 코드 스타일과 lint 규칙을 맞추기 위해서입니다.
+
+3. 이후 확인할 항목 (우선순위 3)
+---------------------------------
+- 빌드 테스트
+  * eslint 통과 후 npm run build 실행
+    - 이유: 코드를 수정한 뒤 실제로 웹사이트가 정상적으로 빌드되는지 확인해야 합니다.
+- 서비스 연결 확인
+  * Sanity CMS 연결이 정상인지 확인
+    - 이유: 공지사항과 관리자 페이지가 실제로 동작하려면 CMS 연결이 필요합니다.
+  * Supabase 환경 변수가 올바른지 확인
+    - 이유: 데이터 저장이나 인증 기능을 쓰기 위해 환경 설정이 필요합니다.
+  * Google Maps 임베드가 정상 동작하는지 확인
+    - 이유: 위치 안내 페이지가 실제 사용자가 볼 때 정상적으로 표시되어야 합니다.
+
+4. 현재 상태 요약
+----------------
+- lint 결과: 20개 문제 (16개 오류, 4개 경고)
+- 가장 시급한 것은 TypeScript 타입 관련 오류와 ESLint 규칙 위반입니다.
+- 이 문제들을 정리하지 않으면 프로젝트가 안정적으로 실행되거나 유지보수되기 어렵습니다.
