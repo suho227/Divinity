@@ -1,24 +1,80 @@
-import Image from 'next/image';
-import { notFound } from 'next/navigation';
-import { PortableText } from '@portabletext/react';
-import { Download } from 'lucide-react';
-import { getTranslations } from 'next-intl/server';
-import { client, urlFor } from '@/sanity/client';
-import { Link } from '@/navigation';
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import { PortableText } from "@portabletext/react";
+import type { TypedObject } from "@portabletext/types";
+import { Download } from "lucide-react";
+import { getTranslations } from "next-intl/server";
+import { client, urlFor } from "@/sanity/client";
+import { Link } from "@/navigation";
 
 type PageProps = {
     params: Promise<{ locale: string; slug: string }>;
 };
 
-function getLocalizedText(value: Record<string, string> | undefined, locale: string) {
-    return value?.[locale] || value?.ko || value?.ja || value?.en || value?.zh || '';
+type LocalizedText = Record<string, string | undefined>;
+
+type Attachment = {
+    _key?: string;
+    asset?: {
+        url?: string;
+        originalFilename?: string;
+    };
+};
+
+type AdmissionFormNotice = {
+    title?: LocalizedText;
+    content?: Record<string, TypedObject[]>;
+    publishedAt?: string;
+    isImportant?: boolean;
+    attachments?: Attachment[];
+};
+
+function getLocalizedText(value: LocalizedText | undefined, locale: string) {
+    return (
+        value?.[locale] || value?.ko || value?.ja || value?.en || value?.zh || ""
+    );
 }
+
+function getLocalizedContent(
+    value: AdmissionFormNotice["content"],
+    locale: string,
+): TypedObject[] {
+    return (
+        value?.[locale] ||
+        value?.ko ||
+        value?.ja ||
+        value?.en ||
+        value?.zh ||
+        []
+    );
+}
+
+const admissionFormNoticeQuery = `
+    *[_type == "admissionFormNotice" && (slug.current == $slug || _id == $slug)][0]{
+        title,
+        content,
+        publishedAt,
+        isImportant,
+        attachments[]{
+            _key,
+            asset->{
+                url,
+                originalFilename
+            }
+        }
+    }
+`;
 
 const components = {
     types: {
         image: ({ value }: any) => (
             <div className="relative my-8 h-[260px] w-full md:h-[460px]">
-                <Image src={urlFor(value).url()} alt="Admission form content" fill className="rounded-xl object-contain" />
+                <Image
+                    src={urlFor(value).url()}
+                    alt="Admission form content"
+                    fill
+                    className="rounded-xl object-contain"
+                />
             </div>
         ),
     },
@@ -26,30 +82,48 @@ const components = {
 
 export async function generateMetadata({ params }: PageProps) {
     const { locale, slug } = await params;
-    const notice = await client.fetch(`*[_type == "admissionFormNotice" && slug.current == $slug][0]{title}`, { slug });
-
-    return { title: `${getLocalizedText(notice?.title, locale)} | 도쿄국제신학교` };
+    const notice = await client.fetch<Pick<AdmissionFormNotice, "title">>(
+        admissionFormNoticeQuery,
+        { slug },
+    );
+    const title = getLocalizedText(notice?.title, locale);
+    return { title: `${title || "입학서식"} | 도쿄국제신학교` };
 }
 
 export default async function AdmissionFormsDetailPage({ params }: PageProps) {
     const { locale, slug } = await params;
-    const t = await getTranslations('AdmissionForms');
-    const notice = await client.fetch(`*[_type == "admissionFormNotice" && slug.current == $slug][0]`, { slug });
+    const t = await getTranslations("AdmissionForms");
+    const notice = await client.fetch<AdmissionFormNotice>(
+        admissionFormNoticeQuery,
+        { slug },
+    );
 
     if (!notice) notFound();
 
     const title = getLocalizedText(notice.title, locale);
-    const content = notice.content?.[locale] || notice.content?.ko || notice.content?.ja || notice.content?.en || notice.content?.zh || [];
+    const content = getLocalizedContent(notice.content, locale);
+    const attachments =
+        notice.attachments?.filter((attachment) => attachment.asset?.url) || [];
 
     return (
         <main className="min-h-screen bg-[#f3f4f9] px-4 py-16 md:py-24">
             <article className="mx-auto max-w-4xl overflow-hidden rounded-3xl bg-white shadow-sm">
                 <header className="border-b border-slate-200 px-6 py-8 md:px-10">
                     <div className="mb-4 flex flex-wrap items-center gap-3 text-sm text-slate-500">
-                        {notice.isImportant && <span className="rounded bg-[#2d6fdf] px-2.5 py-1 text-xs font-bold text-white">NEW</span>}
-                        <time dateTime={notice.publishedAt}>{notice.publishedAt ? new Date(notice.publishedAt).toLocaleDateString(locale) : ''}</time>
+                        {notice.isImportant && (
+                            <span className="rounded bg-[#2d6fdf] px-2.5 py-1 text-xs font-bold text-white">
+                                NEW
+                            </span>
+                        )}
+                        <time dateTime={notice.publishedAt}>
+                            {notice.publishedAt
+                                ? new Date(notice.publishedAt).toLocaleDateString(locale)
+                                : ""}
+                        </time>
                     </div>
-                    <h1 className="break-keep text-3xl font-black leading-tight text-slate-950 md:text-4xl">{title}</h1>
+                    <h1 className="break-keep text-3xl font-black leading-tight text-slate-950 md:text-4xl">
+                        {title}
+                    </h1>
                 </header>
 
                 <div className="min-h-[360px] px-6 py-10 md:px-10">
@@ -57,18 +131,31 @@ export default async function AdmissionFormsDetailPage({ params }: PageProps) {
                         <PortableText value={content} components={components} />
                     </div>
 
-                    {notice.fileUrl && (
-                        <a href={notice.fileUrl} className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#1b3f91] px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-[#2d6fdf]" target="_blank" rel="noreferrer">
-                            <Download aria-hidden="true" className="size-4" />
-                            {t('download')}
-                        </a>
+                    {attachments.length > 0 && (
+                        <div className="mt-10 flex flex-col gap-3 border-t border-slate-200 pt-8">
+                            {attachments.map((attachment, index) => (
+                                <a
+                                    key={attachment._key || attachment.asset?.url || index}
+                                    href={attachment.asset?.url}
+                                    className="inline-flex w-fit items-center gap-2 rounded-full bg-[#1b3f91] px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-[#2d6fdf]"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <Download aria-hidden="true" className="size-4" />
+                                    {attachment.asset?.originalFilename || t("download")}
+                                </a>
+                            ))}
+                        </div>
                     )}
                 </div>
             </article>
 
             <div className="mt-10 text-center">
-                <Link href="/admission/forms" className="inline-flex items-center rounded-full bg-white px-7 py-3 text-sm font-bold text-[#1b3f91] shadow-sm transition-colors hover:bg-[#1b3f91] hover:text-white">
-                    ← {t('backToList')}
+                <Link
+                    href="/admission/forms"
+                    className="inline-flex items-center rounded-full bg-white px-7 py-3 text-sm font-bold text-[#1b3f91] shadow-sm transition-colors hover:bg-[#1b3f91] hover:text-white"
+                >
+                    ← {t("backToList")}
                 </Link>
             </div>
         </main>
