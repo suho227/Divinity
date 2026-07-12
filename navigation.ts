@@ -3,8 +3,8 @@ import { defineRouting } from 'next-intl/routing';
 
 // 1. 라우팅 설정을 정의합니다.
 export const routing = defineRouting({
-    locales: ['ko', 'ja', 'en'],
-    defaultLocale: 'ko',
+    locales: ['ko', 'ja', 'en', 'zh'],
+    defaultLocale: 'ja',
     // 주소창에 항상 언어 코드를 표시합니다.
     localePrefix: 'always'
 });

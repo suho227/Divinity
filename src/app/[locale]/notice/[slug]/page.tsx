@@ -53,6 +53,25 @@ function getAttachmentName(attachment: Attachment, locale: string) {
     );
 }
 
+function getAttachmentDownloadUrl(attachment: Attachment, locale: string) {
+    if (!attachment.asset?.url) return '';
+
+    const separator = attachment.asset.url.includes('?') ? '&' : '?';
+    const filename = encodeURIComponent(getAttachmentName(attachment, locale));
+
+    return `${attachment.asset.url}${separator}dl=${filename}`;
+}
+
+function getAttachmentFileType(attachment: Attachment) {
+    const source = attachment.asset?.originalFilename || attachment.asset?.url || '';
+    const filename = source.split('?')[0];
+    const extension = filename.split('.').pop();
+
+    if (!extension || extension === filename) return '';
+
+    return extension.toUpperCase();
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {
     const { locale, slug } = await params;
     const notice = await client.fetch(noticeQuery, { slug });
@@ -93,7 +112,7 @@ export default async function NoticeDetailPage({ params }: { params: Promise<{ l
                 <article className="bg-white shadow-xl border border-gray-200 overflow-hidden rounded-lg">
 
                     {/* 2. 남색 헤더 영역: 글자색을 반드시 text-white로 설정해야 보입니다! */}
-                    <header className="bg-[#1A2B4C] p-10 md:p-14 text-white">
+                       <header className="relative bg-[#1A2B4C] p-10 md:p-14 text-white">
                         <div className="flex items-center gap-3 mb-6">
                             {notice.isImportant && (
                                 <span className="bg-[#E88B2E] text-white text-[10px] font-bold px-2 py-1 rounded">
@@ -106,22 +125,36 @@ export default async function NoticeDetailPage({ params }: { params: Promise<{ l
                         </div>
 
                         {attachments.length > 0 && (
-                            <div className="absolute right-6 top-6 flex max-w-[45%] flex-wrap justify-end gap-2 md:right-10 md:top-10">
-                                {attachments.map((attachment: Attachment, index: number) => (
-                                    <a
-                                        key={attachment._key || attachment.asset?.url || index}
-                                        href={attachment.asset?.url}
-                                        className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-xs font-bold text-[#1A2B4C] shadow-md transition-colors hover:bg-[#E88B2E] hover:text-white md:text-sm"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <Download aria-hidden="true" className="size-4" />
-                                        {getAttachmentName(attachment, locale)}
-                                    </a>
-                                ))}
-                            </div>
+                            <details className="group absolute right-6 top-6 md:right-10 md:top-10">
+                                <summary className="flex cursor-pointer list-none items-center gap-2 rounded-full bg-white px-5 py-2.5 text-xs font-bold text-[#1A2B4C] shadow-md transition-colors hover:bg-[#E88B2E] hover:text-white md:text-sm [&::-webkit-details-marker]:hidden">
+                                    <Download aria-hidden="true" className="size-4" />
+                                    {attachmentLabels[locale] || attachmentLabels.ko}
+                                    <span className="text-[11px] opacity-70 md:text-xs">
+                                        {attachments.length}
+                                    </span>
+                                </summary>
+                                <div className="absolute right-0 z-20 mt-2 flex min-w-64 flex-col overflow-hidden rounded-2xl bg-white py-2 text-[#1A2B4C] shadow-xl ring-1 ring-black/5">
+                                    {attachments.map((attachment: Attachment, index: number) => (
+                                        <a
+                                            key={attachment._key || attachment.asset?.url || index}
+                                            href={getAttachmentDownloadUrl(attachment, locale)}
+                                            className="flex items-center gap-2 px-4 py-3 text-sm font-bold transition-colors hover:bg-gray-100"
+                                            download={getAttachmentName(attachment, locale)}
+                                        >
+                                            <Download aria-hidden="true" className="size-4 shrink-0" />
+                                            <span className="flex flex-1 items-center justify-between gap-3">
+                                                <span className="break-keep">{getAttachmentName(attachment, locale)}</span>
+                                                {getAttachmentFileType(attachment) && (
+                                                    <span className="shrink-0 rounded-full bg-[#1A2B4C]/10 px-2 py-0.5 text-[10px] font-black tracking-wide text-[#1A2B4C]">
+                                                        {getAttachmentFileType(attachment)}
+                                                    </span>
+                                                )}
+                                            </span>
+                                        </a>
+                                    ))}
+                                </div>
+                            </details>
                         )}
-
 
                         {/* 🌟 제목 색상을 흰색으로 고정하여 투명 현상 해결 */}
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight break-keep text-white">
@@ -131,23 +164,6 @@ export default async function NoticeDetailPage({ params }: { params: Promise<{ l
 
                     {/* 3. 본문 영역: 충분한 여백(p-12)을 주어 가독성 확보 */}
                     <div className="p-10 md:p-16 min-h-[400px]">
-                        {attachments.length > 0 && (
-                            <div className="mb-8 flex flex-wrap justify-end gap-3">
-                                {attachments.map((attachment: Attachment, index: number) => (
-                                    <a
-                                        key={attachment._key || attachment.asset?.url || index}
-                                        href={attachment.asset?.url}
-                                        className="inline-flex items-center gap-2 rounded-full bg-[#1A2B4C] px-6 py-3 text-sm font-bold text-white shadow-md transition-colors hover:bg-[#E88B2E]"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <Download aria-hidden="true" className="size-4" />
-                                        {getAttachmentName(attachment, locale)}
-                                    </a>
-                                ))}
-                            </div>
-                        )}
-
                         <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed font-light prose-img:mx-auto">
                             <PortableText
                                 value={notice.content[locale] || notice.content['ko']}
