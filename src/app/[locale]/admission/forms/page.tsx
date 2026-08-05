@@ -88,11 +88,12 @@ export default async function AdmissionFormsPage({ params }: PageProps) {
                 {notices.map((notice, index) => {
                   const number = notices.length - index;
                   const title = getLocalizedText(notice.title, locale);
+                  const hrefSlug = encodeURIComponent(notice._id);
 
                   return (
                     <li key={notice._id}>
                       <Link
-                        href={`/admission/forms/${notice.slug || notice._id}`}
+                        href={`/admission/forms/${hrefSlug}`}
                         className="grid gap-3 px-2 py-5 text-sm transition-colors hover:bg-slate-50 sm:grid-cols-[56px_1fr_120px] sm:items-center md:px-7"
                       >
                         <span className="text-center text-slate-500">

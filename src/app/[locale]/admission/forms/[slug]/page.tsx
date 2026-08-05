@@ -116,9 +116,10 @@ const components = {
 
 export async function generateMetadata({ params }: PageProps) {
     const { locale, slug } = await params;
+    const decodedSlug = decodeURIComponent(slug);
     const notice = await client.fetch<Pick<AdmissionFormNotice, "title">>(
         admissionFormNoticeQuery,
-        { slug },
+        { slug: decodedSlug },
     );
     const title = getLocalizedText(notice?.title, locale);
     return { title: `${title || "입학서식"} | 도쿄국제신학교` };
@@ -126,10 +127,11 @@ export async function generateMetadata({ params }: PageProps) {
 
 export default async function AdmissionFormsDetailPage({ params }: PageProps) {
     const { locale, slug } = await params;
+    const decodedSlug = decodeURIComponent(slug);
     const t = await getTranslations("AdmissionForms");
     const notice = await client.fetch<AdmissionFormNotice>(
         admissionFormNoticeQuery,
-        { slug },
+        { slug: decodedSlug },
     );
 
     if (!notice) notFound();
